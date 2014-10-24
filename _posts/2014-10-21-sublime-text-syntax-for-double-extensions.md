@@ -7,7 +7,7 @@ For a while I’ve had the frustration of any files with a `.erb` extension open
 
 None of the `.sublime-settings` files that came with the default install of Sublime Text had file extension patterns for anything but single extensions, but it turns out that the same approach works for any arbitrary string of text following a dot, even if that string includes dots: `css.scss.erb` works just as well as `erb` would. My extension patterns for Sass and HTML (Rails) syntax coloring now look like the following.
 
-```
+{% highlight json %}
 // Sass.sublime-settings
 {
   "extensions": [
@@ -15,13 +15,13 @@ None of the `.sublime-settings` files that came with the default install of Subl
     "scss"
   ]
 }
-```
+{% endhighlight %}
 
-```
+{% highlight json %}
 // HTML (Rails).sublime-settings
 {
   "extensions": [
     "html.erb"
   ]
 }
-```
+{% endhighlight %}
