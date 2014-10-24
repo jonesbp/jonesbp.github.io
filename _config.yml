@@ -1,3 +1,5 @@
 name: La Tinaja
 markdown: redcarpet
-rouge: true
+redcarpet:
+  extensions: [footnotes]
+highlighter: rouge
