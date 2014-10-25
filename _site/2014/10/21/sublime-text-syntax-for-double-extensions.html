@@ -29,20 +29,20 @@
 
 <p>None of the <code>.sublime-settings</code> files that came with the default install of Sublime Text had file extension patterns for anything but single extensions, but it turns out that the same approach works for any arbitrary string of text following a dot, even if that string includes dots: <code>css.scss.erb</code> works just as well as <code>erb</code> would. My extension patterns for Sass and HTML (Rails) syntax coloring now look like the following.</p>
 
-<div class="highlight"><pre><code class="language-json" data-lang="json"><span class="err">//</span><span class="w"> </span><span class="err">Sass.sublime-settings</span><span class="w">
-</span><span class="p">{</span><span class="w">
-  </span><span class="s2">"extensions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="s2">"scss.erb"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"scss"</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span></code></pre></div>
+<div class="highlight"><pre><code class="language-json" data-lang="json"><span class="err">//</span> <span class="err">Sass.sublime-settings</span>
+<span class="p">{</span>
+  <span class="nt">&quot;extensions&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;scss.erb&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;scss&quot;</span>
+  <span class="p">]</span>
+<span class="p">}</span></code></pre></div>
 
-<div class="highlight"><pre><code class="language-json" data-lang="json"><span class="err">//</span><span class="w"> </span><span class="err">HTML</span><span class="w"> </span><span class="err">(Rails).sublime-settings</span><span class="w">
-</span><span class="p">{</span><span class="w">
-  </span><span class="s2">"extensions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="s2">"html.erb"</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span></code></pre></div>
+<div class="highlight"><pre><code class="language-json" data-lang="json"><span class="err">//</span> <span class="err">HTML</span> <span class="err">(Rails).sublime-settings</span>
+<span class="p">{</span>
+  <span class="nt">&quot;extensions&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;html.erb&quot;</span>
+  <span class="p">]</span>
+<span class="p">}</span></code></pre></div>
 
 </div>
 
@@ -65,5 +65,18 @@
           </div>
         </div>
 
+        <script type="text/javascript">
+          var _gauges = _gauges || [];
+          (function() {
+            var t   = document.createElement('script');
+            t.type  = 'text/javascript';
+            t.async = true;
+            t.id    = 'gauges-tracker';
+            t.setAttribute('data-site-id', '5070c837613f5d59940000e1');
+            t.src = '//secure.gaug.es/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+          })();
+        </script>
     </body>
 </html>
