@@ -5,17 +5,17 @@ title: Set Up a Staging Environment for Your Rails App on Heroku
 
 This morning I had occasion to set up a staging environment on the first Rails project I’ve run on Heroku for a client in a little while and rediscovered a few of the little Heroku-specific things you need to do to make this work. I decided to write something up to help me remember in the future.
 
-## Why Staging?
+### Why Staging?
 
 If you’re running a small web application on Heroku, it may feel like overkill to set up a separate staging environment when it’s just you or a small team making changes. However, even with the simplest applications, the smallest difference between development and production environments can cause things to blow up. Setting up a staging environment, and taking advantage of it, will save you eventually.
 
 If you’re working on an application for client, the staging environment provides the perfect way to show your work in progress and receive feedback without having to arrange demonstrations in the production environment.
 
-## What is a Staging Environment?
+### What is a Staging Environment?
 
 Your goal for your staging environment is to blend the benefits of your development and production environments. Like your development environment, no one needs to see this code until you’re ready for them to and you’re free to experiment and to leave your unfinished business lying around. However, unlike your development environment, your staging environment should be running on a server configured exactly as your production server is. This balance lets you try new ideas in a production-like environment without spreading your mess to your actual production environment.
 
-## Getting Set Up on Heroku
+### Getting Set Up on Heroku
 
 I’m going to assume you already have things well-configured to get your project deployed to a public production enviornment on Heroku.
 

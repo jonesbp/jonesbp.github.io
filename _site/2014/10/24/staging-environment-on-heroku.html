@@ -6,12 +6,15 @@
         <title>Set Up a Staging Environment for Your Rails App on Heroku</title>
         <meta name="viewport" content="width=device-width">
 
+        <script src="//use.typekit.net/iei2wij.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-
+        <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
 
@@ -27,17 +30,17 @@
 <div class="post">
 <p>This morning I had occasion to set up a staging environment on the first Rails project I’ve run on Heroku for a client in a little while and rediscovered a few of the little Heroku-specific things you need to do to make this work. I decided to write something up to help me remember in the future.</p>
 
-<h2 id="why-staging">Why Staging?</h2>
+<h3 id="why-staging">Why Staging?</h3>
 
 <p>If you’re running a small web application on Heroku, it may feel like overkill to set up a separate staging environment when it’s just you or a small team making changes. However, even with the simplest applications, the smallest difference between development and production environments can cause things to blow up. Setting up a staging environment, and taking advantage of it, will save you eventually.</p>
 
 <p>If you’re working on an application for client, the staging environment provides the perfect way to show your work in progress and receive feedback without having to arrange demonstrations in the production environment.</p>
 
-<h2 id="what-is-a-staging-environment">What is a Staging Environment?</h2>
+<h3 id="what-is-a-staging-environment">What is a Staging Environment?</h3>
 
 <p>Your goal for your staging environment is to blend the benefits of your development and production environments. Like your development environment, no one needs to see this code until you’re ready for them to and you’re free to experiment and to leave your unfinished business lying around. However, unlike your development environment, your staging environment should be running on a server configured exactly as your production server is. This balance lets you try new ideas in a production-like environment without spreading your mess to your actual production environment.</p>
 
-<h2 id="getting-set-up-on-heroku">Getting Set Up on Heroku</h2>
+<h3 id="getting-set-up-on-heroku">Getting Set Up on Heroku</h3>
 
 <p>I’m going to assume you already have things well-configured to get your project deployed to a public production enviornment on Heroku.</p>
 
