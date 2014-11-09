@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setting the Syntax for Files with Multiple Extensions in Sublime Text
+excerpt: "I’ve been frustrated with Sublime Text syntax highlighting defaults on files with multiple name extensions that I finally spent 15 minutes figuring out how to fix them."
 ---
 
 For a while I’ve had the frustration of any files with a `.erb` extension opening in Sublime Text with the HTML (Rails) syntax coloring. I have some SASS stylesheets that I’d like to run through the Ruby interpreter, so they need the `.erb` extension, but I want the syntax coloring from the [Sass package](https://sublime.wbond.net/packages/Sass).

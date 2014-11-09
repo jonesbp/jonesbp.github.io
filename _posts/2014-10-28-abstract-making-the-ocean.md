@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Abstract: Making the Ocean: Global Space, Sailor Practice, and Bureaucratic Archives in the Sixteenth-Century Spanish Maritime Empire"
+excerpt: "This week I’ve finally submitted the abstract of my PhD dissertation for the History department at UT-Austin."
 ---
 
 This week I’ve finally submitted the abstract of my PhD dissertation for the History department at UT-Austin:
