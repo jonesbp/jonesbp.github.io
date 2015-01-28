@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Show PHP Errors in MAMP</title>
+        <meta name="viewport" content="width=device-width">
+
+        <script src="//use.typekit.net/iei2wij.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">La Tinaja</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <h2>Show PHP Errors in MAMP</h2>
+<p class="meta">28 Jan 2015</p>
+
+<div class="post">
+<p>I’ve been using <a href="http://mamp.info">MAMP</a> for local hosting on PHP-based client sites recently rather than bothering with maintaining my own configurations for small projects. The only problem was that I lost my error reporting. I’d been satisfied to live without them until recently I had a legitimate bug to track down.</p>
+
+<p>MAMP uses its own PHP instead of your default system installation, so you need to find the configuration specific to the version it’s running. You’ll find the (possibly several) versions of PHP MAMP has installed inside of the MAMP application bundle, so head there and list the contents of the <code>config</code> directory. You are most likely running the version of PHP with the highest version number. In my case, right now, it’s 5.4.10:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /Applications/MAMP/conf
+<span class="nv">$ </span>ls
+<span class="nv">$ </span><span class="nb">cd </span>php5.4.10</code></pre></div>
+
+<p>And open <code>php.ini</code> using your text editor of choice, and look for the section headed <code>Error handling and logging</code>. There are several settings to adjust here, but the basic one is <code>error_reporting</code>. The relevant line will be commented out by default, so you’ll remove the leading <code>;</code> to activate the setting.</p>
+
+<p>From this:</p>
+
+<p><code>
+;error_reporting  =  E_ALL
+</code></p>
+
+<p>to this:</p>
+
+<p><code>
+error_reporting  =  E_ALL
+</code></p>
+
+<p>You may want to adjust the neighboring settings based on your needs, but this is sufficient to get some error feedback without losing the convenience of MAMP.</p>
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                <b>Brian Jones</b><br />
+                <a href="mailto:jonesbp@me.com">jonesbp@me.com</a><br />
+                <a href="https://twitter.com/jonesbp">twitter.com/jonesbp</a><br />
+                <a href="http://github.com/jonesbp">github.com/jonesbp</a><br />
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <b>Projects</b><br />
+                <a href="http://foamgarden.com">Foam Garden</a><br />
+                <a href="http://theappendix.net">The Appendix</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+          var _gauges = _gauges || [];
+          (function() {
+            var t   = document.createElement('script');
+            t.type  = 'text/javascript';
+            t.async = true;
+            t.id    = 'gauges-tracker';
+            t.setAttribute('data-site-id', '5070c837613f5d59940000e1');
+            t.src = '//secure.gaug.es/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+          })();
+        </script>
+    </body>
+</html>
