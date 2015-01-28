@@ -6,13 +6,17 @@ title: La Tinaja
 <div id="home">
   <ul class="posts">
     {% for post in site.posts %}
-      <li>
-        <a class="list-title" href="{{ post.url }}">{{ post.title }}</a> 
-        <p>
-          {{ post.excerpt }} <a class="detail" href="{{ post.url }}">Read more &raquo;</a> <a class="detail" href="{{ post.url }}">{{ post.date | date_to_string }}</a>
-        </p>
-        <hr>
-      </li>
+      {% if post.type == "long" %}
+        <li>
+          <a class="list-title" href="{{ post.url }}">{{ post.title }}</a> 
+          <p>
+            {{ post.excerpt }} <a class="detail" href="{{ post.url }}">Read more &raquo;</a> <a class="detail" href="{{ post.url }}">{{ post.date | date_to_string }}</a>
+          </p>
+          <hr>
+        </li>
+      {% else %}
+      
+      {% endif %}
     {% endfor %}
   </ul>
 </div>

@@ -2,6 +2,7 @@
 layout: post
 title: Set Up a Staging Environment for Your Rails App on Heroku
 excerpt: "Setting up a staging environment on Heroku requires a couple of special steps that I’ve decided to keep here in the same place."
+type: long
 ---
 
 This morning I had occasion to set up a staging environment on the first Rails project I’ve run on Heroku for a client in a little while and rediscovered a few of the little Heroku-specific things you need to do to make this work. I decided to write something up to help me remember in the future.
