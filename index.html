@@ -14,8 +14,13 @@ title: La Tinaja
           </p>
           <hr>
         </li>
-      {% else %}
-      
+      {% elsif post.type == "tech_note" %}
+        <li>
+          <span class="indicator">✎</span><a class="list-title" href="{{ post.url }}">{{ post.title}} &raquo;</a>
+          <p>
+            <a class="detail" href="{{ post.url }}">{{ post.date | date_to_string }}</a>
+          </p>
+        </li>
       {% endif %}
     {% endfor %}
   </ul>

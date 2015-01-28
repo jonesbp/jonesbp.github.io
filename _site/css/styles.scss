@@ -73,6 +73,18 @@ p {
 .posts li {
   line-height: 1.25em;
   margin-bottom: 2em;
+  position: relative;
+
+  span.indicator {
+    display: inline-block;
+    font: {
+      size: .75em;
+    }
+    float: left;
+    margin: {
+      left: -1.333em;
+    }
+  }
 
   a.list-title {
     text-decoration: none;
@@ -117,11 +129,6 @@ p {
       content: "";
     }
   }
-}
-
-.posts span {
-  color: $mediumHighlight;
-  font-size: 80%;
 }
 
 // Site //
