@@ -136,7 +136,7 @@ span.indicator {
 
     &:after {
       border-width: 0;
-      color: $mediumHighlight;
+      color: darken($background,6%);
       content: "❊";
     }
   }
