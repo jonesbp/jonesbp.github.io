@@ -63,6 +63,18 @@ p {
   }
 }
 
+span.indicator {
+  display: inline-block;
+  font: {
+    size: .75em;
+  }
+  float: left;
+  margin: {
+    left: -1.333em;
+  }
+}
+
+
 // Home //
 
 .posts {
@@ -82,17 +94,6 @@ p {
 
     a.list-title {
       font-weight: 500;
-    }
-  }
-
-  span.indicator {
-    display: inline-block;
-    font: {
-      size: .75em;
-    }
-    float: left;
-    margin: {
-      left: -1.333em;
     }
   }
 

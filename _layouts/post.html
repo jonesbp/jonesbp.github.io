@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
+{% if page.type == "tech_note" %}
+  <h2><span class="indicator">✎</span>{{ page.title }}</h2>
+{% else %}
+  <h2>{{ page.title }}</h2>
+{% endif %}
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post">

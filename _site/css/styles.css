@@ -36,6 +36,12 @@ h3 {
 p {
   margin-bottom: 1em; }
 
+span.indicator {
+  display: inline-block;
+  font-size: .75em;
+  float: left;
+  margin-left: -1.333em; }
+
 .posts {
   list-style-type: none;
   margin: 0 2em 4em 2em; }
@@ -50,11 +56,6 @@ p {
   padding: 1em 2em .25em 2em; }
 .posts li.long-post a.list-title {
   font-weight: 500; }
-.posts li span.indicator {
-  display: inline-block;
-  font-size: .75em;
-  float: left;
-  margin-left: -1.333em; }
 .posts li a.list-title {
   text-decoration: none; }
 .posts li a.list-title:hover {
