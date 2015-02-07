@@ -13,6 +13,10 @@ body {
   }
 }
 
+i {
+  font-style: italic;
+}
+
 a {
   color: $accent;
 
@@ -239,6 +243,59 @@ span.indicator {
 
 .post ul, .post ol {
   margin-left: 1.35em;
+
+  li {
+    margin-bottom: .5em;
+  }
+}
+
+.post ul.reading-list {
+  li {
+    margin-bottom: 1.5em;
+  }
+
+  span.citation {
+    display: block;
+    font: {
+      weight: 500;
+    }
+    margin-bottom: .5em;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  span.note {
+    display: block;
+    margin-bottom: .25em;
+  }
+
+  span.links {
+    display: block;
+    font: {
+      size: .75em;
+    }
+    text-align: right;
+
+    a {
+      background-color: $lightHighlight;
+      border-radius: .25em;
+      color: $mediumHighlight;
+      margin-right: .25em;
+      padding: .125em .5em;
+      text-decoration: none;
+
+      &:hover {
+        color: $accent2;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .post code {
