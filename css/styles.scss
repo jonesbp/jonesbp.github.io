@@ -154,6 +154,11 @@ span.indicator {
   line-height: 1.5em;
 }
 
+.header {
+  border-bottom: 4px solid $lightHighlight;
+  margin-bottom: 2em;
+}
+
 .header a {
   font-weight: bold;
   text-decoration: none;
@@ -161,7 +166,7 @@ span.indicator {
 
 .title {
   display: inline-block;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .title a {
