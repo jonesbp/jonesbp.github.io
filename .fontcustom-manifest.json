@@ -1,0 +1,54 @@
+{
+  "checksum": {
+    "previous": "b3f6af5b826b19a30be440141834e03aaa1e85be1acfd6cd0f2d6ec3864e6e19",
+    "current": "b3f6af5b826b19a30be440141834e03aaa1e85be1acfd6cd0f2d6ec3864e6e19"
+  },
+  "fonts": [
+    "icons-font/font/fontcustom_b3f6af5b826b19a30be440141834e03a.ttf",
+    "icons-font/font/fontcustom_b3f6af5b826b19a30be440141834e03a.svg",
+    "icons-font/font/fontcustom_b3f6af5b826b19a30be440141834e03a.woff",
+    "icons-font/font/fontcustom_b3f6af5b826b19a30be440141834e03a.eot"
+  ],
+  "glyphs": {
+    "book": {
+      "codepoint": 61696,
+      "source": "icons-font/book.svg"
+    },
+    "note": {
+      "codepoint": 61697,
+      "source": "icons-font/note.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": false,
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "fontcustom",
+    "force": false,
+    "input": {
+      "templates": "icons-font",
+      "vectors": "icons-font"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "icons-font/font",
+      "fonts": "icons-font/font",
+      "preview": "icons-font/font"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "icons-font/font/fontcustom.css",
+    "icons-font/font/fontcustom-preview.html"
+  ]
+}

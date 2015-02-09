@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "fontcustom.css";
 @import "colors.scss";
 
 body {
@@ -69,12 +70,9 @@ p {
 
 span.indicator {
   display: inline-block;
-  font: {
-    size: .75em;
-  }
   float: left;
   margin: {
-    left: -1.333em;
+    left: -1.5em;
   }
 }
 
