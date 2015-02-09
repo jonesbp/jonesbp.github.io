@@ -49,6 +49,7 @@ h2 {
     size: 1.25em;
     weight: 500;
   }
+  margin-bottom: 1em;
 }
 
 h3 {
@@ -186,6 +187,28 @@ span.indicator {
   margin-top: 2em;
   padding-top: 1em;
   overflow: hidden;
+
+  p.credits {
+    font-size: .75em;
+    clear: both;
+    padding-top: 2em;
+    text-align: center;
+
+    a {
+      background: $lightHighlight;
+      border-radius: .25em;
+      color: $darkHighlight;
+      margin-right: .25em;
+      padding: .125em .5em;
+      text-decoration: none;
+
+      &:hover {
+        text: {
+          decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 .footer .contact {
