@@ -203,8 +203,9 @@ span.indicator {
       text-decoration: none;
 
       &:hover {
+        color: $accent2;
         text: {
-          decoration: underline;
+          decoration: none;
         }
       }
     }
