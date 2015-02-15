@@ -28,7 +28,7 @@ layout: default
                   {{ book.citation }}
                 {% endif -%}
               </span>
-              <span class="note">{{ note.content }}</span>
+              <span class="note">{{ note.content | markdownify }}</span>
               <span class="links">
                 {% if book.oclc -%}
                   <a href="http://worldcat.org/oclc/{{ book.oclc }}">WorldCat &raquo;</a>
