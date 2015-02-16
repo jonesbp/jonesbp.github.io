@@ -137,17 +137,6 @@ span.indicator {
     }
   }
 
-  hr {
-    border-width: 0;
-    margin-top: 1em;
-    text-align: center;
-
-    &:after {
-      border-width: 0;
-      color: $mediumHighlight;
-      content: "❊";
-    }
-  }
 }
 
 // Site //
@@ -278,6 +267,18 @@ span.indicator {
 
   li {
     margin-bottom: .5em;
+  }
+}
+
+.post hr {
+  border-width: 0;
+  margin: 1.5em 0 3em 0;
+  text-align: center;
+
+  &:after {
+    border-width: 0;
+    color: $mediumHighlight;
+    content: "❊ ❊ ❊";
   }
 }
 
