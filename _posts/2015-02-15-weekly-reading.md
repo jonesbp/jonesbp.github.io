@@ -1,6 +1,7 @@
 ---
 layout: reading_list
 title: "Weekly Reading: February 15, 2015"
+excerpt: "This week’s reading includes material on the built environment, the tech industry, and the Hispanic roots of the United States."
 type: reading_list
 ---
 

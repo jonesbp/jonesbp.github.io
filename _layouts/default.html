@@ -12,6 +12,12 @@
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
 
+        {% if page.excerpt %}
+          <meta name="description" content="{{ page.excerpt }}">
+        {% else %}
+          <meta name="description" content="My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history."
+        {% endif %}
+
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/styles.css">

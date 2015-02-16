@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Duplicate Nodes in Osmosis Update"
+excerpt: "Quick fix for an error I ran into while updating OpenStreetMap’s self-hosted geocoding server"
 type: tech_note
 ---
 

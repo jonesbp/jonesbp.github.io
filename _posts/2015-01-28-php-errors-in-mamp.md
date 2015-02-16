@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Show PHP Errors in MAMP"
+excerpt: "Quick howto on turning on PHP error reporting when hosting sites locally with MAMP"
 type: tech_note
 ---
 

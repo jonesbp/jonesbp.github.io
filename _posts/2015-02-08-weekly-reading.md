@@ -1,6 +1,7 @@
 ---
 layout: reading_list
 title: "Weekly Reading: February 8, 2015"
+excerpt: "Books and essays I read this week include material on online media and imperial history."
 type: reading_list
 ---
 
