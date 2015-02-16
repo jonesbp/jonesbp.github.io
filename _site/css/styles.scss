@@ -114,7 +114,7 @@ span.indicator {
   }
 
   p {
-    line-height: 1.75em;
+    line-height: 167%;
     margin-top: .5em;
 
     span.excerpt {
@@ -237,6 +237,10 @@ span.indicator {
 // Posts //
 
 /* standard */
+.post p {
+  line-height: 167%;
+}
+
 .post pre {
   border-radius: .4em;
   border: 1px solid $mediumHighlight;
@@ -282,11 +286,31 @@ span.indicator {
   }
 }
 
-.post ul.reading-list {
-  li {
-    margin-bottom: 1.5em;
+.post.reading_list ul {
+  margin-bottom: 3em;
+}
+
+.post.reading_list li {
+  line-height: 167%;
+  margin-bottom: 1.5em;
+
+  &:after {
+    border-width: 0;
+    color: $mediumHighlight;
+    content: "❊ ❊ ❊";
+    display: block;
+    margin-top: 1em;
+    text-align: center;
   }
 
+  &:last-child {
+    &:after {
+      content: "";
+    }
+  }
+}
+
+.post ul.reading-list {
   span.citation {
     display: block;
     font: {

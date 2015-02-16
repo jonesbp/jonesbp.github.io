@@ -8,6 +8,6 @@ layout: default
 {% endif %}
 <p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
+<div class="post {{ page.type }}">
 {{ content }}
 </div>

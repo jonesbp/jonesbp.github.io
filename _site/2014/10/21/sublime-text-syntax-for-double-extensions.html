@@ -17,7 +17,6 @@
         
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
@@ -33,7 +32,7 @@
 
 <p class="meta">21 Oct 2014</p>
 
-<div class="post">
+<div class="post long">
 <p>For a while I’ve had the frustration of any files with a <code>.erb</code> extension opening in Sublime Text with the HTML (Rails) syntax coloring. I have some SASS stylesheets that I’d like to run through the Ruby interpreter, so they need the <code>.erb</code> extension, but I want the syntax coloring from the <a href="https://sublime.wbond.net/packages/Sass">Sass package</a>.</p>
 
 <p>None of the <code>.sublime-settings</code> files that came with the default install of Sublime Text had file extension patterns for anything but single extensions, but it turns out that the same approach works for any arbitrary string of text following a dot, even if that string includes dots: <code>css.scss.erb</code> works just as well as <code>erb</code> would. My extension patterns for Sass and HTML (Rails) syntax coloring now look like the following.</p>

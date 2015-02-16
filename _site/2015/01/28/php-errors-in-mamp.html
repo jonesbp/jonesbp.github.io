@@ -17,7 +17,6 @@
         
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
@@ -33,7 +32,7 @@
 
 <p class="meta">28 Jan 2015</p>
 
-<div class="post">
+<div class="post tech_note">
 <p>I’ve been using <a href="http://mamp.info">MAMP</a> for local hosting on PHP-based client sites recently rather than bothering with maintaining my own configurations for small projects. The only problem was that I lost my error reporting. I’d been satisfied to live without them until recently I had a legitimate bug to track down.</p>
 
 <p>MAMP uses its own PHP instead of your default system installation, so you need to find the configuration specific to the version it’s running. You’ll find the (possibly several) versions of PHP MAMP has installed inside of the MAMP application bundle, so head there and list the contents of the <code>config</code> directory. You are most likely running the version of PHP with the highest version number. In my case, right now, it’s 5.4.10:</p>
