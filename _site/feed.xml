@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>La Tinaja</title>
+<description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
+<link></link>
+<atom:link href="http://feed.press/tinaja" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Review: Lauren Benton, A Search For Sovereignty: Law and Geography in European Empires, 1400-1900</title>
+
+
+<description>Lauren Benton’s work provides important new tools for relating the development of colonial and international legal regimes to geography and to the application of spatial thinking to understanding historical processes.</description>
+
+<pubDate>Mon, 16 Feb 2015 00:00:00 -0500</pubDate>
+<link>/2015/02/16/review-benton-search-for-sovereignty.html</link>
+<guid isPermaLink="true">/2015/02/16/review-benton-search-for-sovereignty.html</guid>
+</item>
+
+<item>
+<title>Weekly Reading: February 15, 2015</title>
+
+
+<description>This week’s reading includes material on the built environment, the tech industry, and the Hispanic roots of the United States.</description>
+
+<pubDate>Sun, 15 Feb 2015 00:00:00 -0500</pubDate>
+<link>/2015/02/15/weekly-reading.html</link>
+<guid isPermaLink="true">/2015/02/15/weekly-reading.html</guid>
+</item>
+
+<item>
+<title>Weekly Reading: February 8, 2015</title>
+
+
+<description>Books and essays I read this week include material on online media and imperial history.</description>
+
+<pubDate>Sun, 08 Feb 2015 00:00:00 -0500</pubDate>
+<link>/2015/02/08/weekly-reading.html</link>
+<guid isPermaLink="true">/2015/02/08/weekly-reading.html</guid>
+</item>
+
+<item>
+<title>Duplicate Nodes in Osmosis Update</title>
+
+
+<description>Quick fix for an error I ran into while updating OpenStreetMap’s self-hosted geocoding server</description>
+
+<pubDate>Thu, 05 Feb 2015 00:00:00 -0500</pubDate>
+<link>/2015/02/05/osmosis-duplicate-keys.html</link>
+<guid isPermaLink="true">/2015/02/05/osmosis-duplicate-keys.html</guid>
+</item>
+
+<item>
+<title>Show PHP Errors in MAMP</title>
+
+
+<description>Quick howto on turning on PHP error reporting when hosting sites locally with MAMP</description>
+
+<pubDate>Wed, 28 Jan 2015 00:00:00 -0500</pubDate>
+<link>/2015/01/28/php-errors-in-mamp.html</link>
+<guid isPermaLink="true">/2015/01/28/php-errors-in-mamp.html</guid>
+</item>
+
+<item>
+<title>Abstract: Making the Ocean: Global Space, Sailor Practice, and Bureaucratic Archives in the Sixteenth-Century Spanish Maritime Empire</title>
+
+
+<description>This week I’ve finally submitted the abstract of my PhD dissertation for the History department at UT-Austin.</description>
+
+<pubDate>Tue, 28 Oct 2014 00:00:00 -0400</pubDate>
+<link>/2014/10/28/abstract-making-the-ocean.html</link>
+<guid isPermaLink="true">/2014/10/28/abstract-making-the-ocean.html</guid>
+</item>
+
+<item>
+<title>Set Up a Staging Environment for Your Rails App on Heroku</title>
+
+
+<description>Setting up a staging environment on Heroku requires a couple of special steps that I’ve decided to keep here in the same place.</description>
+
+<pubDate>Fri, 24 Oct 2014 00:00:00 -0400</pubDate>
+<link>/2014/10/24/staging-environment-on-heroku.html</link>
+<guid isPermaLink="true">/2014/10/24/staging-environment-on-heroku.html</guid>
+</item>
+
+<item>
+<title>Setting the Syntax for Files with Multiple Extensions in Sublime Text</title>
+
+
+<description>I’ve been frustrated with Sublime Text syntax highlighting defaults on files with multiple name extensions that I finally spent 15 minutes figuring out how to fix them.</description>
+
+<pubDate>Tue, 21 Oct 2014 00:00:00 -0400</pubDate>
+<link>/2014/10/21/sublime-text-syntax-for-double-extensions.html</link>
+<guid isPermaLink="true">/2014/10/21/sublime-text-syntax-for-double-extensions.html</guid>
+</item>
+
+</channel>
