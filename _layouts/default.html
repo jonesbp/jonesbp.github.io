@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
+        <title>{{ page.title | strip_html }}</title>
         <meta name="viewport" content="width=device-width">
 
         <script src="//use.typekit.net/iei2wij.js"></script>
@@ -15,7 +15,7 @@
         {% if page.excerpt %}
           <meta name="description" content="{{ page.excerpt }}">
         {% else %}
-          <meta name="description" content="My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history."
+          <meta name="description" content="My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.">
         {% endif %}
 
         <!-- Custom CSS -->
