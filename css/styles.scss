@@ -87,13 +87,18 @@ span.indicator {
 
 .posts li {
   line-height: 1.25em;
-  margin-bottom: 1em;
+  margin: 1.5em 0;
   position: relative;
 
   &.long-post {
     background-color: lighten($lightHighlight,10%);
+    border: {
+      color: $mediumHighlight;
+      style: solid;
+      width: 0 0 1px 0;
+    }
     margin: 0 -2em .1em -2em;
-    padding: 1em 2em .25em 2em;
+    padding: 1em 2em 1.5em 2em;
 
     a.list-title {
       font-weight: 500;
@@ -134,12 +139,12 @@ span.indicator {
 
   hr {
     border-width: 0;
-    margin-top: 1.25em;
+    margin-top: 1em;
     text-align: center;
 
     &:after {
       border-width: 0;
-      color: darken($background,6%);
+      color: $mediumHighlight;
       content: "❊";
     }
   }
