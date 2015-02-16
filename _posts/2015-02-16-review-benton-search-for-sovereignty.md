@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Review: Lauren Benton, _A Search For Sovereignty: Law and Geography in European Empires, 1400-1900_"
+title: "Review: Lauren Benton, <i>A Search For Sovereignty: Law and Geography in European Empires, 1400-1900</i>"
 excerpt: "Lauren Benton’s work provides important new tools for relating the development of colonial and international legal regimes to geography and to the application of spatial thinking to understanding historical processes."
 type: long
 ---
