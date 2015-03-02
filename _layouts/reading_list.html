@@ -16,7 +16,7 @@ layout: default
           {% capture notedate %}{{ note.date | date: '%s' }}{% endcapture %}
           {% capture pagedate %}{{ page.date | date: '%s' }}{% endcapture %}
           {% assign notedate = notedate | plus: 0 %}
-          {% assign lastweek = pagedate | minus: 518400 %}
+          {% assign lastweek = pagedate | minus: 604800 %}
           {% if notedate >= lastweek %}
             <li>
               <span class="citation">
