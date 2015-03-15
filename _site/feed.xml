@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Weekly Reading: March 15, 2015</title>
+
+
+<description>This week’s reading includes an overview of medieval European fishery and an analysis of the medium of comics..</description>
+
+<pubDate>Sun, 15 Mar 2015 00:00:00 -0400</pubDate>
+<link>http://tinaja.computer/2015/03/15/weekly-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2015/03/15/weekly-reading.html</guid>
+</item>
+
+<item>
 <title>Weekly Reading: March 1, 2015</title>
 
 
@@ -103,17 +114,6 @@
 <pubDate>Fri, 24 Oct 2014 00:00:00 -0400</pubDate>
 <link>http://tinaja.computer/2014/10/24/staging-environment-on-heroku.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2014/10/24/staging-environment-on-heroku.html</guid>
-</item>
-
-<item>
-<title>Setting the Syntax for Files with Multiple Extensions in Sublime Text</title>
-
-
-<description>I’ve been frustrated with Sublime Text syntax highlighting defaults on files with multiple name extensions that I finally spent 15 minutes figuring out how to fix them.</description>
-
-<pubDate>Tue, 21 Oct 2014 00:00:00 -0400</pubDate>
-<link>http://tinaja.computer/2014/10/21/sublime-text-syntax-for-double-extensions.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2014/10/21/sublime-text-syntax-for-double-extensions.html</guid>
 </item>
 
 </channel>
