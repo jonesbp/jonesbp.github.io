@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>The Browser as Command Line</title>
+
+
+<description>Who is the audience for browser-based tools and services on mobile devices?</description>
+
+<pubDate>Mon, 23 Mar 2015 00:00:00 -0400</pubDate>
+<link>http://tinaja.computer/2015/03/23/browser_as_command_line.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2015/03/23/browser_as_command_line.html</guid>
+</item>
+
+<item>
 <title>Weekly Reading: March 22, 2015</title>
 
 
@@ -103,17 +114,6 @@
 <pubDate>Wed, 28 Jan 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/01/28/php-errors-in-mamp.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/01/28/php-errors-in-mamp.html</guid>
-</item>
-
-<item>
-<title>Abstract: Making the Ocean: Global Space, Sailor Practice, and Bureaucratic Archives in the Sixteenth-Century Spanish Maritime Empire</title>
-
-
-<description>This week I’ve finally submitted the abstract of my PhD dissertation for the History department at UT-Austin.</description>
-
-<pubDate>Tue, 28 Oct 2014 00:00:00 -0400</pubDate>
-<link>http://tinaja.computer/2014/10/28/abstract-making-the-ocean.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2014/10/28/abstract-making-the-ocean.html</guid>
 </item>
 
 </channel>

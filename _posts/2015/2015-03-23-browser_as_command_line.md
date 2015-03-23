@@ -1,0 +1,13 @@
+---
+layout: post
+title: The Browser as Command Line
+excerpt: "Who is the audience for browser-based tools and services on mobile devices?"
+type: long
+---
+
+
+Horace Dediu recently [analogized on Twitter](https://twitter.com/asymco/status/578677694554050561) between the command line on the desktop and the browser on mobile devices. He is not the first to make the argument for the importance of native on mobile devices; John Gruber makes the case frequently on [The Talk Show](http://daringfireball.net/thetalkshow/) and [Daring Fireball](http://daringfireball.net) that native apps are the natural interface for content on a mobile device. The takeover interface of a native app fills the glass front of the device and, while that app is active, the device becomes an object solely devoted to the set of interactions that app provides. While I’m using a calculator app, my device becomes a calculator; while I’m using a mapping app, my device becomes a wayfinding machine. For these apps that want to be presented as products or that make sense as standalone tools or experiences, this native experience is clearly best.
+
+For months (or years?) I’ve listened to these arguments and been discouraged to find myself agreeing with them. The truth is I’d prefer to be able to use my existing web-oriented skills to make cross-platform services than to spend a large chunk of my limited attention on developing an iOS-only skill set. This analogy from Dediu, though, clicked for me. It is not that the only way to deliver software to devices is through a native app, but that there is an audience for native apps and an audience for browser-based services. One audience is large and general; one is small and specialized. I just need to be realistic with myself about which audience is mine. At the moment, fortunately, I think most of my ideas for what comes next actually fit with the specialist audience.
+
+I still plan to mess around with iOS development at some point. Swift still appeals to me and I could always catch my Objective-C knowledge up to the current state of the art if starting from scratch with Swift feels like too much work. But having always thought I was primarily interested in ‘product’-oriented development, I’ve realized that in the last year or so I’ve become much more of a tinkerer and a services- and tools-oriented developer. My current ideas might fit better in the ‘browser as command line’ than as apps. If I want to keep making them web-based, it makes sense to push them in that direction.
