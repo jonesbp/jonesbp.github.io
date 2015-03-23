@@ -1,0 +1,11 @@
+---
+layout: reading_list
+title: "Weekly Reading: March 22, 2015"
+excerpt: "This week’s reading includes light comic sci-fi fantasy, commandments for a digital age, and Tex-Mex."
+type: reading_list
+---
+
+### Links
+
+- [**True Tex-Mex Cuisine’s Long Adios—Texas Monthly**](http://www.texasmonthly.com/daily-post/true-tex-mex-cuisines-long-adios): This piece tracing the ins and outs of the Tex-Mex restaurant scene (mostly in Houston) over the past few decades is essentially my life’s story in restaurants. The longer I spend away, the more likely I am to want to head to Ninfa’s on Navigation or Molina’s or El Real first (or Matt’s El Rancho in Austin) than I am to want Pico’s or Hugo’s or Sazón. One thing I worry about when people talk about Tex-Mex, and it’s present in this essay, is the conflation of the food culture of Tex-Mex restaurants initially designed to serve a primarily Anglo clientele with the “Tex-Mex food” generally. There’s good reason for that as the genrification of that menu happened in restaurants, but it’s important also to remember the Tex-Mex foodways that predate this Anglicized menu (call them “Tejano” foodways?). They are related, but distinct. Robb Walsh’s [Tex-Mex Cookbook](http://www.amazon.com/gp/product/0767914880/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0767914880&linkCode=as2&tag=latin031-20&linkId=XAVC4CTR6C4YWMBK) is the best example I know of letting them share the spotlight.
+- [**Just five bucks a month**](http://scribbling.net/2015/03/20/just-five-bucks-a-month/): Gina Trapani’s writeup of the exhausting process of having to write and rewrite the billing platform for ThinkUp seven times in the first year and a half or so of the product’s life was reminiscent of my own experience (on a smaller scale) with The Appendix and our billing and subscription needs. This is an essential story to keep in mind for anyone considering writing a service that involves recurring billing. I’m going to keep it in front of mind as I work on what comes next in the coming months.
