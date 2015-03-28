@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>brianjon.es</title>
+
+
+<description>My experiment with a personal biography site</description>
+
+<pubDate>Sat, 28 Mar 2015 00:00:00 -0400</pubDate>
+<link>http://tinaja.computer/2015/03/28/brianjon.es.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2015/03/28/brianjon.es.html</guid>
+</item>
+
+<item>
 <title>The Browser as Command Line</title>
 
 
@@ -103,17 +114,6 @@
 <pubDate>Thu, 05 Feb 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/02/05/osmosis-duplicate-keys.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/02/05/osmosis-duplicate-keys.html</guid>
-</item>
-
-<item>
-<title>Show PHP Errors in MAMP</title>
-
-
-<description>Quick howto on turning on PHP error reporting when hosting sites locally with MAMP</description>
-
-<pubDate>Wed, 28 Jan 2015 00:00:00 -0500</pubDate>
-<link>http://tinaja.computer/2015/01/28/php-errors-in-mamp.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2015/01/28/php-errors-in-mamp.html</guid>
 </item>
 
 </channel>
