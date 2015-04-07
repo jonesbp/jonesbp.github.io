@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Auto-reloading Fluid Instance for WakaTime</title>
+
+
+<description>Simple userscript for a auto-reloading Fluid instance to use with WakaTime (or any other web dashboard)</description>
+
+<pubDate>Tue, 07 Apr 2015 00:00:00 -0400</pubDate>
+<link>http://tinaja.computer/2015/04/07/fluid-instance-for-wakatime.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2015/04/07/fluid-instance-for-wakatime.html</guid>
+</item>
+
+<item>
 <title>Weekly Reading: April 5, 2015</title>
 
 
@@ -103,17 +114,6 @@
 <pubDate>Sun, 15 Feb 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/02/15/weekly-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/02/15/weekly-reading.html</guid>
-</item>
-
-<item>
-<title>Weekly Reading: February 8, 2015</title>
-
-
-<description>Books and essays I read this week include material on online media and imperial history.</description>
-
-<pubDate>Sun, 08 Feb 2015 00:00:00 -0500</pubDate>
-<link>http://tinaja.computer/2015/02/08/weekly-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2015/02/08/weekly-reading.html</guid>
 </item>
 
 </channel>
