@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Weekly Reading: April 12, 2015</title>
+
+
+<description>Books and essays I read this week include personal memories, computer languages, and historiographical provocation.</description>
+
+<pubDate>Mon, 13 Apr 2015 00:00:00 -0400</pubDate>
+<link>http://tinaja.computer/2015/04/13/weekly-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2015/04/13/weekly-reading.html</guid>
+</item>
+
+<item>
 <title>Auto-reloading Fluid Instance for WakaTime</title>
 
 
@@ -103,17 +114,6 @@
 <pubDate>Mon, 16 Feb 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/02/16/review-benton-search-for-sovereignty.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/02/16/review-benton-search-for-sovereignty.html</guid>
-</item>
-
-<item>
-<title>Weekly Reading: February 15, 2015</title>
-
-
-<description>This week’s reading includes material on the built environment, the tech industry, and the Hispanic roots of the United States.</description>
-
-<pubDate>Sun, 15 Feb 2015 00:00:00 -0500</pubDate>
-<link>http://tinaja.computer/2015/02/15/weekly-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2015/02/15/weekly-reading.html</guid>
 </item>
 
 </channel>
