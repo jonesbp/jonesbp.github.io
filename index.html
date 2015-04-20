@@ -20,6 +20,8 @@ title: La Tinaja
             <span class="indicator icon-note"></span>
           {% elsif post.type == "reading_list" %}
             <span class="indicator icon-book"></span>
+          {% elsif post.type == "list" %}
+            <span class="indicator icon-list"></span>
           {% endif %}
           <a class="list-title" href="{{ post.url }}">{{ post.title }} &raquo;</a>
           <p>

@@ -271,11 +271,11 @@ span.indicator {
 }
 
 .post ul, .post ol {
-  margin-left: 1.35em;
+  margin: 2em 0 2em 1.35em;
+}
 
-  li {
-    margin-bottom: .5em;
-  }
+.post ul {
+  list-style-type: circle;
 }
 
 .post hr {
