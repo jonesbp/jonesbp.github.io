@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-          <title>Auto-reloading Fluid Instance for WakaTime ≫ La Tinaja</title>
+          <title>Notes ≫ La Tinaja</title>
         
 
         <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         
-          <meta name="description" content="Simple userscript for a auto-reloading Fluid instance to use with WakaTime (or any other web dashboard)">
+          <meta name="description" content="My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.">
         
 
         <!-- Custom CSS -->
@@ -35,28 +35,73 @@
             <a class="extra" href="/reading">reading</a>
           </div>
 
-          
-  <h2><span class="indicator icon-note"></span>Auto-reloading Fluid Instance for WakaTime</h2>
-
-<p class="meta">07 Apr 2015</p>
-
-<div class="post tech_note">
-<p>I’ve been playing with running <a href="http://wakatime.com">WakaTime</a> in my text editors recently to get some data about how much time I spend working in my text editor. It’s been interesting to see the difference between time I mark on a time sheet and what WakaTime records—that difference representing time spent in documentation or notes or other reference materials rather than on coding or writing.</p>
-
-<p>I don’t know that I’ll use WakaTime forever, but during this early experimental phase it’s been fun to have it open in the background while I work. Of course, the service is still new and the dashboard view does not live update. I’ve fixed that by giving WakaTime its own <a href="http://fluidapp.com">Fluid</a> instance with a simple userscript.</p>
-
-<p><img src="/assets/images/2015-04-07/Wakatime_reload.jpg" alt="WakaTime Userscript" /></p>
-
-<p>In your Fluid instance, go to the <strong>Window</strong> menu and select the <strong>Userscripts</strong> item. You’ll be presented with the window pictured above. Create a new rule with the <strong>+</strong> button, name it what you’d like and enter this simple Javascript:</p>
-
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">location</span><span class="p">.</span><span class="nx">reload</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
-<span class="p">},</span> <span class="mi">300000</span><span class="p">);</span></code></pre></div>
-
-<p>I’m trying to be friendly to WakaTime, so that will only reload your dashboard every 5 minutes. Adjust accordingly if desired. That’s it.</p>
-
+          <div id="home">
+  <ul class="posts">
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          <span class="indicator icon-note"></span>
+          <a class="list-title" href="/2015/04/07/fluid-instance-for-wakatime.html">Auto-reloading Fluid Instance for WakaTime &raquo;</a>
+          <p>
+            <span class="details"><a class="detail" href="/2015/04/07/fluid-instance-for-wakatime.html">07 Apr 2015</a></span>
+          </p>
+        </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <li>
+          <span class="indicator icon-note"></span>
+          <a class="list-title" href="/2015/02/05/osmosis-duplicate-keys.html">Duplicate Nodes in Osmosis Update &raquo;</a>
+          <p>
+            <span class="details"><a class="detail" href="/2015/02/05/osmosis-duplicate-keys.html">05 Feb 2015</a></span>
+          </p>
+        </li>
+      
+    
+      
+        <li>
+          <span class="indicator icon-note"></span>
+          <a class="list-title" href="/2015/01/28/php-errors-in-mamp.html">Show PHP Errors in MAMP &raquo;</a>
+          <p>
+            <span class="details"><a class="detail" href="/2015/01/28/php-errors-in-mamp.html">28 Jan 2015</a></span>
+          </p>
+        </li>
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
 </div>
-
 
           <div class="footer">
             <div class="contact">

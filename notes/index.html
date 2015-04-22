@@ -1,0 +1,20 @@
+---
+layout: default
+title: Notes
+---
+
+<div id="home">
+  <ul class="posts">
+    {% for post in site.posts %}
+      {% if post.type == "tech_note" %}
+        <li>
+          <span class="indicator icon-note"></span>
+          <a class="list-title" href="{{ post.url }}">{{ post.title }} &raquo;</a>
+          <p>
+            <span class="details"><a class="detail" href="{{ post.url }}">{{ post.date | date_to_string }}</a></span>
+          </p>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
