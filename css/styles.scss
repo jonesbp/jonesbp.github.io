@@ -14,6 +14,10 @@ body {
   }
 }
 
+span.invisible-text {
+  display: none;
+}
+
 i, em {
   font-style: italic;
 }
@@ -159,11 +163,17 @@ span.indicator {
 .header a {
   font-weight: bold;
   text-decoration: none;
+  vertical-align: middle;
 }
 
 .title {
   display: inline-block;
   margin-bottom: 1em;
+
+  span.logo {
+    font-size: 2.5em;
+    margin-right: .125em;
+  }
 }
 
 .title a {
@@ -173,6 +183,13 @@ span.indicator {
 .header a.extra {
   color: $accent2;
   margin-left: 1em;
+}
+
+.header a.button {
+  font-size: 1.5em;
+  float: right;
+  margin-left: .5em;
+  padding-top: .66667em;
 }
 
 .meta {

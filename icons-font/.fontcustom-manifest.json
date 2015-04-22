@@ -1,18 +1,26 @@
 {
   "checksum": {
-    "previous": "badfed0cedab57379fe6f33a27e44d2b72e9142dd2e0bc07b35429a22d155cca",
-    "current": "badfed0cedab57379fe6f33a27e44d2b72e9142dd2e0bc07b35429a22d155cca"
+    "previous": "0835e426621a94313da8bd0ca7be371f6bda2dad4b0cf4ed9664f9332882d3a5",
+    "current": "0835e426621a94313da8bd0ca7be371f6bda2dad4b0cf4ed9664f9332882d3a5"
   },
   "fonts": [
-    "fontcustom/fontcustom_badfed0cedab57379fe6f33a27e44d2b.ttf",
-    "fontcustom/fontcustom_badfed0cedab57379fe6f33a27e44d2b.svg",
-    "fontcustom/fontcustom_badfed0cedab57379fe6f33a27e44d2b.woff",
-    "fontcustom/fontcustom_badfed0cedab57379fe6f33a27e44d2b.eot"
+    "fontcustom/fontcustom_0835e426621a94313da8bd0ca7be371f.ttf",
+    "fontcustom/fontcustom_0835e426621a94313da8bd0ca7be371f.svg",
+    "fontcustom/fontcustom_0835e426621a94313da8bd0ca7be371f.woff",
+    "fontcustom/fontcustom_0835e426621a94313da8bd0ca7be371f.eot"
   ],
   "glyphs": {
     "book": {
       "codepoint": 61696,
       "source": "./book.svg"
+    },
+    "fg": {
+      "codepoint": 61700,
+      "source": "./fg.svg"
+    },
+    "head": {
+      "codepoint": 61699,
+      "source": "./head.svg"
     },
     "list": {
       "codepoint": 61697,
@@ -21,6 +29,10 @@
     "note": {
       "codepoint": 61698,
       "source": "./note.svg"
+    },
+    "tinaja": {
+      "codepoint": 61701,
+      "source": "./tinaja.svg"
     }
   },
   "options": {

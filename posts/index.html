@@ -1,0 +1,20 @@
+---
+layout: default
+title: Posts
+---
+
+<div id="home">
+  <ul class="posts">
+    {% for post in site.posts %}
+      {% if post.type == "long" %}
+        <li class="long-post">
+          <a class="list-title" href="{{ post.url }}">{{ post.title }}</a> 
+          <p>
+            <span class="excerpt">{{ post.excerpt }}</span> <span class="details"><a class="detail" href="{{ post.url }}">Read more &raquo;</a> <a class="detail" href="{{ post.url }}">{{ post.date | date_to_string }}</a></span>
+          </p>
+          <!-- <hr> -->
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
