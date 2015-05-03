@@ -5,8 +5,7 @@ title: Posts
 
 <div id="home">
   <ul class="posts">
-    {% for post in site.posts %}
-      {% if post.type == "long" %}
+    {% for post in site.posts -%}{% if post.type == "long" -%}
         <li class="long-post">
           <a class="list-title" href="{{ post.url }}">{{ post.title }}</a> 
           <p>
@@ -14,7 +13,6 @@ title: Posts
           </p>
           <!-- <hr> -->
         </li>
-      {% endif %}
-    {% endfor %}
+      {% endif -%}{% endfor -%}
   </ul>
 </div>
