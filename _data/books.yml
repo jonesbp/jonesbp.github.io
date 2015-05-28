@@ -194,3 +194,31 @@
   notes:
     - date: 2015-05-16T00:00:00Z
       content: "I had seen several of these essays (or perhaps precursors to them) online, but taking them all in again together with the material I hadn’t seen before made for a good reminder of why I enjoy reading Bogost on the material and cultural aspects of technology. Some of these are clear provocations (the iPhone as cigarette, for example), but this sort of experimentation is precisely what is missing from most of the writing happening from more straight-ahead ‘tech’ writers. My favorite covered the changing design biases over Apple history from the Apple ][ as a tinkerer’s machine to the hermetically sealed consumer objects of today. Bogost’s sensitivity to the marketing, documentation, and material design of the products in addition to their technical capabilities made this not-new-to-him argument for more compelling than those I’ve seen from Jeff Atwood or Cory Doctorow. The quickly-produced e-book with cheap print option format of this University of Minnesota Press series was also intriguing. I’m curious to check out other titles."  
+- citation: "Clare Churcher. <i>Beginning Database Design: From Novice to Professional</i>. Berkeley, CA: Apress, 2007."
+  alpha: "Churcher, Clare"
+  oclc: 232363370
+  amzn: 1430242094
+  notes:
+    - date: 2015-05-18T00:00:00Z
+      content: "Having learned database design and programming through self-study and essentially completely through trial-and-error, I’ve always been sensitive to the possibility that I’m missing some basics when I encounter a bit of database jargon I don’t understand. About to embark on a couple of projects on which naivete regarding database design could come and bite me later on. Ran through this introductory presentation pretty quickly; it was clearly written and basically platform-agnostic."
+- citation: "Brian K. Vaughan, Pia Guerra, and Goran Sudzuka. <i>Y, the Last Man. Book Three</i>. New York: DC Comics, 2010."
+  alpha: "Vaughan, Brian K., Pia Guerra, and Goran Sudzuka"
+  oclc: 795909508
+  amzn: 1401225780
+  notes:
+    - date: 2015-05-18T00:00:00Z
+      content: "I continue to wish that there were more engagement with the consequences of the plague in the world rather than following the protagonists. The Australian navy’s primacy in submarine warfare because it had been the only navy with mixed male and female submarine crews is another great example of the payoffs of the world built here."
+- citation: "Misha Glenny. <i>McMafia: A Journey through the Global Criminal Underworld</i>. New York: Knopf Books, 2008."
+  alpha: "Glenny, Misha"
+  oclc: 162501937
+  amzn: 1400095123
+  notes:
+    - date: 2015-05-22T00:00:00Z
+      content: "Glenny has a dry wit, even at times when dealing with some pretty bleak material. He sets out to explain the globalized generation of organized crime, framing his chronology between the collapse of the Soviet Union and China’s ascendance on the global stage. Fascinating details and anecdotes, but also a compelling argument for the role of the misguided international policing, trade, and military policies in incubating these criminal organizations."
+- citation: "Nicola De Bellis. <i>Bibliometrics and Citation Analysis: From the Science Citation Index to Cybermetrics</i>. Lanham, MD: Scarecrow Press, 2009."
+  alpha: "De Bellis, Nicola"
+  oclc: 371149831
+  amzn: 0810867133
+  notes: 
+    - date: 2015-05-23T00:00:00Z
+      content: "I’ve been thinking a lot about citations in history writing recently because of a new project. This history of the development of citation analysis techniques in the sciences was actually surprisingly engaging and readable. A great introduction to thinking some of the basic theoretical questions information scientists consider in working when analyzing citations and other (potential) markers of intellectual community."
