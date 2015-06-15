@@ -222,3 +222,24 @@
   notes: 
     - date: 2015-05-23T00:00:00Z
       content: "I’ve been thinking a lot about citations in history writing recently because of a new project. This history of the development of citation analysis techniques in the sciences was actually surprisingly engaging and readable. A great introduction to thinking some of the basic theoretical questions information scientists consider in working when analyzing citations and other (potential) markers of intellectual community."
+- citation: "Anthony Grafton. <i>The Footnote: A Curious History</i>. Cambridge, MA: Harvard University Press, 1997."
+  alpha: "Grafton, Anthony"
+  oclc: 37030661
+  amzn: 0674307607
+  notes:
+    - date: 2015-06-08T00:00:00Z
+      content: "I first read this book about 12 or 13 years ago for Jim Sidbury’s undegraduate historiography seminar at UT-Austin. I re-read it as a way to get further into the thinking about citations and concordances I’ve been doing recently. The structural conceit of investigating Ranke’s citations and antecedents as a way of challenging his claim to inventing modern professionalized historiography is a great example of the exploratory or discovery sensation provided by citation that I’d like to play with."
+- citation: "Robin Sloan. <i>Mr. Penumbra’s 24-Hour Bookstore</i>. New York: Farrar, Straus and Giroux, 2012."
+  alpha: "Sloan, Robin"
+  oclc: 778422009
+  amzn: 1250037751
+  notes:
+    - date: 2015-06-10T00:00:00Z
+      content: "Read this (and immediately recommended it to Chris) when we were starting up [The Appendix](http://theappendix.net) when the book came out a few years ago. I love the balanced affection for books and digital technology and their crossovers as well as the expression of friendship through collaborative partnership in work and creativity. Read it again this week as a new project with some Appendicistas gets under way."
+- citation: "Warren Ellis. <i>Crooked Little Vein</i>. New York: William Morrow, 2007."
+  alpha: "Ellis, Warran"
+  oclc: 80361435
+  amzn: 0061252050
+  notes:
+    - date: 2015-06-13T00:00:00Z
+      content: "Hard-boiled detective fiction as a Bush-era grotesquerie. The first time I’ve encountered Columbus, Ohio in fiction. It does not come off well. Fun and quick read."

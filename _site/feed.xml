@@ -7,12 +7,23 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Weekly Reading: June 14, 2015</title>
+
+
+<description>Things I read this week include code, bookstores, and testicular saline injections.</description>
+
+<pubDate>Sun, 14 Jun 2015 00:00:00 -0500</pubDate>
+<link>http://tinaja.computer/2015/06/14/weekly-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2015/06/14/weekly-reading.html</guid>
+</item>
+
+<item>
 <title>Weekly Reading: May 24, 2015</title>
 
 
 <description>Books I read this week include global criminal networks and tracking scientific collaboration.</description>
 
-<pubDate>Sun, 24 May 2015 00:00:00 -0400</pubDate>
+<pubDate>Sun, 24 May 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/05/24/weekly-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/05/24/weekly-reading.html</guid>
 </item>
@@ -23,7 +34,7 @@
 
 <description>Books I read this week include interplanetary family troubles and consumer electronics.</description>
 
-<pubDate>Sun, 17 May 2015 00:00:00 -0400</pubDate>
+<pubDate>Sun, 17 May 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/05/17/weekly-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/05/17/weekly-reading.html</guid>
 </item>
@@ -34,7 +45,7 @@
 
 <description>Books and essays I read this week include non-linear biography, drones, and hitmen.</description>
 
-<pubDate>Sun, 03 May 2015 00:00:00 -0400</pubDate>
+<pubDate>Sun, 03 May 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/05/03/weekly-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/05/03/weekly-reading.html</guid>
 </item>
@@ -45,7 +56,7 @@
 
 <description>Douglas Coupland lists satellite operators in his McLuhan biography.</description>
 
-<pubDate>Mon, 20 Apr 2015 00:00:00 -0400</pubDate>
+<pubDate>Mon, 20 Apr 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/04/20/coupland-satellites.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/04/20/coupland-satellites.html</guid>
 </item>
@@ -56,7 +67,7 @@
 
 <description>Books and essays I read this week include non-linear biography, drones, and hitmen.</description>
 
-<pubDate>Sun, 19 Apr 2015 00:00:00 -0400</pubDate>
+<pubDate>Sun, 19 Apr 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/04/19/weekly-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/04/19/weekly-reading.html</guid>
 </item>
@@ -67,7 +78,7 @@
 
 <description>Books and essays I read this week include personal memories, computer languages, and historiographical provocation.</description>
 
-<pubDate>Sun, 12 Apr 2015 00:00:00 -0400</pubDate>
+<pubDate>Sun, 12 Apr 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/04/12/weekly-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/04/12/weekly-reading.html</guid>
 </item>
@@ -78,7 +89,7 @@
 
 <description>Simple userscript for a auto-reloading Fluid instance to use with WakaTime (or any other web dashboard)</description>
 
-<pubDate>Tue, 07 Apr 2015 00:00:00 -0400</pubDate>
+<pubDate>Tue, 07 Apr 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/04/07/fluid-instance-for-wakatime.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/04/07/fluid-instance-for-wakatime.html</guid>
 </item>
@@ -89,7 +100,7 @@
 
 <description>This week’s reading includes material on bots, gamer girls, and purgatory.</description>
 
-<pubDate>Sun, 05 Apr 2015 00:00:00 -0400</pubDate>
+<pubDate>Sun, 05 Apr 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/04/05/weekly-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/04/05/weekly-reading.html</guid>
 </item>
@@ -100,20 +111,9 @@
 
 <description>My experiment with a personal biography site</description>
 
-<pubDate>Sat, 28 Mar 2015 00:00:00 -0400</pubDate>
+<pubDate>Sat, 28 Mar 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/03/28/brianjon.es.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/03/28/brianjon.es.html</guid>
-</item>
-
-<item>
-<title>The Browser as Command Line</title>
-
-
-<description>Who is the audience for browser-based tools and services on mobile devices?</description>
-
-<pubDate>Mon, 23 Mar 2015 00:00:00 -0400</pubDate>
-<link>http://tinaja.computer/2015/03/23/browser_as_command_line.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2015/03/23/browser_as_command_line.html</guid>
 </item>
 
 </channel>
