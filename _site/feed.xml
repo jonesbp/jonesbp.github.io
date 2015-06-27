@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Codex Vitae</title>
+
+
+<description>A list of the titles of codices in Robin Sloan’s _Mr. Penumbra’s 24-Hour Bookstore_</description>
+
+<pubDate>Sat, 27 Jun 2015 00:00:00 -0500</pubDate>
+<link>http://tinaja.computer/2015/06/27/codices.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2015/06/27/codices.html</guid>
+</item>
+
+<item>
 <title>Weekly Reading: June 14, 2015</title>
 
 
@@ -103,17 +114,6 @@
 <pubDate>Sun, 05 Apr 2015 00:00:00 -0500</pubDate>
 <link>http://tinaja.computer/2015/04/05/weekly-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/04/05/weekly-reading.html</guid>
-</item>
-
-<item>
-<title>brianjon.es</title>
-
-
-<description>My experiment with a personal biography site</description>
-
-<pubDate>Sat, 28 Mar 2015 00:00:00 -0500</pubDate>
-<link>http://tinaja.computer/2015/03/28/brianjon.es.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2015/03/28/brianjon.es.html</guid>
 </item>
 
 </channel>
