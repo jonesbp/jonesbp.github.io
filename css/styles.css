@@ -52,6 +52,9 @@ span.indicator {
   float: left;
   margin-left: -1.5em; }
 
+img {
+  max-width: 100%; }
+
 .posts {
   list-style-type: none;
   margin: 0 2em 4em 2em; }
