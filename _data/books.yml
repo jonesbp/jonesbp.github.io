@@ -250,3 +250,31 @@
   notes:
     - date: 2015-06-26T00:00:00Z
       content: "This enormous global history of the seventeenth century both seeks to verify the epochal understanding of the century has a time of Great Crisis and investigates the connection of the widespread social upheaval to climate change during the Little Ice Age. As global history, it is impressively comprehensive while still showing the difficulties inherent to a global-scale project. England and Spain figure prominently—which is not surprising given Parker’s background—but India, China, Persia, and Japan all receive treatment on par with European states other than Spain and England. The Americas, Africa, and Australia play less of a role, but Parker acknowledges the lacuna and asserts the absence of archival and climatological data as its cause. The argument itself—the role of the Little Ice Age in generating social upheaval—is compelling, and the work seems to be a good model of the possibilities of using climatological data in a readable synthesis."
+- citation: "Erika Hall. <i>Just Enough Research</i>. New York: A Book Apart, 2013."
+  alpha: "Hall, Erika"
+  oclc: 858291170
+  amzn: 1937557103
+  notes:
+    - date: 2015-07-06T00:00:00Z
+      content: "Provides a good balance between big picture introduction to the design considerations ethnographic research can open up for a project and just enough nuts and bolts practical advice to point the reader in the direction of what to do next."
+- citation: "Seth Godin. <i>Poke the Box: When Was the Last Time You Did Something for the First Time?</i>. Seattle, WA: The Domino Project, 2011."
+  alpha: "Godin, Seth"
+  oclc: 701014708
+  amzn: 1936719002
+  notes: 
+    - date: 2015-07-08T00:00:00Z
+      content: "Seth Godin writes in the sort of breathless self-help style that I always have a difficult time slogging through, but there are always some insightful approaches to new ideas hanging around in the gung ho attitude. I’m glad to have read this while pulling together the initial pieces of a new project, but it was definitely the sort of reading that is more about creating a certain short-term frame of mind than in collecting new long-term insights to carry with me."
+- citation: "Dan Cederholm. <i>Sass for Web Designers</i>. New York: A Book Apart, 2013."
+  alpha: "Cederholm, Dan"
+  oclc: 863076598
+  amzn: 193755712X
+  notes: 
+    - date: 2015-07-09T00:00:00Z
+      content: "Having used Sass in practice for years, the introductory nature of most of this was familiar review. Having only learned by doing, however, it was nice to confirm I wasn’t missing any essential basic tools or features. That said, Cederholm’s techniques for using Sass with media queries are far beyond what I’ve been doing and I will start employing them immediately."
+- citation: "Erin Kissane. <i>The Elements of Content Strategy</i>. New York: A Book Apart, 2011."
+  alpha: "Kissane, Erin"
+  oclc: 705367793
+  amzn: B004ZRFJ4G
+  notes: 
+    - date: 2015-07-10T00:00:00Z
+      content: "I read this the first time as we were starting [The Appendix](http://theappendix.net), and it was helpful in providing some shape to how we would approach our content-creation process. Now, with The Appendix mostly in the rear-view mirror and a new project on the way, re-reading it has provided a whole new set of insights into what to do right next time."
