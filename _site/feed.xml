@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Which Internet to Build For?</title>
+
+
+<description>Do you build for the old internet of creating or the new one of sharing?</description>
+
+<pubDate>Thu, 20 Aug 2015 00:00:00 +0200</pubDate>
+<link>http://tinaja.computer/2015/08/20/old-vs-new-internet.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2015/08/20/old-vs-new-internet.html</guid>
+</item>
+
+<item>
 <title>Weekly Reading: August 16, 2015</title>
 
 
@@ -103,17 +114,6 @@
 <pubDate>Sun, 14 Jun 2015 00:00:00 +0200</pubDate>
 <link>http://tinaja.computer/2015/06/14/weekly-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/06/14/weekly-reading.html</guid>
-</item>
-
-<item>
-<title>Weekly Reading: May 24, 2015</title>
-
-
-<description>Books I read this week include global criminal networks and tracking scientific collaboration.</description>
-
-<pubDate>Sun, 24 May 2015 00:00:00 +0200</pubDate>
-<link>http://tinaja.computer/2015/05/24/weekly-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2015/05/24/weekly-reading.html</guid>
 </item>
 
 </channel>
