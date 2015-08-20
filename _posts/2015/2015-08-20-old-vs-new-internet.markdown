@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Which Internet to Build For?
 excerpt: "Do you build for the old internet of creating or the new one of sharing?"
 type: long
