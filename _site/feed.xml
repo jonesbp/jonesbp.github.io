@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Weekly Reading: August 23, 2015</title>
+
+
+<description>Things I read this week included honey badgers and drones.</description>
+
+<pubDate>Sun, 23 Aug 2015 00:00:00 +0200</pubDate>
+<link>http://tinaja.computer/2015/08/23/weekly-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2015/08/23/weekly-reading.html</guid>
+</item>
+
+<item>
 <title>Which Internet to Build For?</title>
 
 
@@ -103,17 +114,6 @@
 <pubDate>Sun, 28 Jun 2015 00:00:00 +0200</pubDate>
 <link>http://tinaja.computer/2015/06/28/weekly-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/06/28/weekly-reading.html</guid>
-</item>
-
-<item>
-<title>Codex Vitae</title>
-
-
-<description>A list of the titles of codices in Robin Sloan’s _Mr. Penumbra’s 24-Hour Bookstore_</description>
-
-<pubDate>Sat, 27 Jun 2015 00:00:00 +0200</pubDate>
-<link>http://tinaja.computer/2015/06/27/codices.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2015/06/27/codices.html</guid>
 </item>
 
 </channel>
