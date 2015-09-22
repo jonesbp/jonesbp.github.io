@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-          <title>Notes ≫ La Tinaja</title>
+          <title>Fix Plex Stuttering on Amazon Fire TV Stick ≫ La Tinaja</title>
         
 
         <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         
-          <meta name="description" content="My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.">
+          <meta name="description" content="These settings worked to get rid of annoying stuttering in Plex on Amazon Fire TV Stick.">
         
 
         <!-- Custom CSS -->
@@ -43,43 +43,33 @@
             </a>
           </div>
 
-          <div id="home">
-  <ul class="posts">
-    
-        <li>
-          <span class="indicator icon-note"></span>
-          <a class="list-title" href="/2015/09/22/plex-on-amazon-fire-tv-stick.html">Fix Plex Stuttering on Amazon Fire TV Stick &raquo;</a>
-          <p>
-            <span class="details"><a class="detail" href="/2015/09/22/plex-on-amazon-fire-tv-stick.html">22 Sep 2015</a></span>
-          </p>
-        </li>
-      
-        <li>
-          <span class="indicator icon-note"></span>
-          <a class="list-title" href="/2015/04/07/fluid-instance-for-wakatime.html">Auto-reloading Fluid Instance for WakaTime &raquo;</a>
-          <p>
-            <span class="details"><a class="detail" href="/2015/04/07/fluid-instance-for-wakatime.html">07 Apr 2015</a></span>
-          </p>
-        </li>
-      
-        <li>
-          <span class="indicator icon-note"></span>
-          <a class="list-title" href="/2015/02/05/osmosis-duplicate-keys.html">Duplicate Nodes in Osmosis Update &raquo;</a>
-          <p>
-            <span class="details"><a class="detail" href="/2015/02/05/osmosis-duplicate-keys.html">05 Feb 2015</a></span>
-          </p>
-        </li>
-      
-        <li>
-          <span class="indicator icon-note"></span>
-          <a class="list-title" href="/2015/01/28/php-errors-in-mamp.html">Show PHP Errors in MAMP &raquo;</a>
-          <p>
-            <span class="details"><a class="detail" href="/2015/01/28/php-errors-in-mamp.html">28 Jan 2015</a></span>
-          </p>
-        </li>
-      
-  </ul>
+          
+  <h2><span class="indicator icon-note"></span>Fix Plex Stuttering on Amazon Fire TV Stick</h2>
+
+<p class="meta">22 Sep 2015</p>
+
+<div class="post tech_note">
+<p>I grabbed one of the Amazon Fire TV Sticks when Amazon.com discounted them pre-order last year knowing that we’d be moving to Berlin and that it wouldn’t be a bad thing to have an easily portable way to watch some Netflix here.</p>
+
+<p>For streaming services it has worked great, but I also wanted to try to get Plex running on it to watch some of my own video content.</p>
+
+<p>A month ago I gave up after a few days of fiddling would not solve a <a href="https://forums.plex.tv/discussion/129220/stuttering-on-playback-on-fire-tv-stick">persistent stuttering issue</a>.</p>
+
+<p>Yesterday I tried again and eventually distilled a fix to two steps:</p>
+
+<ul>
+  <li>Use a ‘Force Direct Play’ device profile</li>
+  <li>Cap video quality at 2.0 Mbsp 720p video</li>
+</ul>
+
+<p>I can live with the compromises I’ve made here because I certainly didn’t buy a $20 HDMI dongle expecting videophile quality. I can actually watch a movie without the video hiccuping every few seconds.</p>
+
+<p>To change the <strong>device profile</strong>, go to <strong>Settings</strong> → <strong>Device media profile</strong> → <strong>Media profile</strong> → <strong>Force Direct Play</strong>.</p>
+
+<p>To change the <strong>video quality</strong>,  go to <strong>Settings</strong> → <strong>Video</strong> → <strong>Quality over local network</strong> → <strong>2.0 Mbps 720p</strong>.</p>
+
 </div>
+
 
           <div class="footer">
             <div class="contact">
