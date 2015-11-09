@@ -80,7 +80,7 @@ git merge development</code></pre></div>
 
 <p>In the above command we’re pushing from our local <code>staging</code> branch to the <code>master</code> branch on the remote named <code>staging-heroku</code>. If we’ve done everything correctly, we should see the usual Heroku deployment output, but on our Heroku staging app rather than the usual production app.</p>
 
-<p>You’ll need to run your migrations against the database you’ve set up on the staging app:</p>
+<p>You’ll need to run your migrations against the database you’ve set up on the staging app: </p>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">heroku run rake db:migrate --app your-staging-app-name</code></pre></div>
 
@@ -122,7 +122,7 @@ heroku pgbackups:restore HEROKU_POSTGRESQL_BLUE --app your-staging-app-name <spa
       <p>I know I said that your staging environment should be configured precisely as the production server is, but unless absolutely necessary, I actually tend to cheap out when configuring the staging app on Heroku. Unless I’m planning on specifically testing elements that would require running at scale, I stick with the free add-ons. Heroku makes it easy to ramp these services up and down as needed. <a href="#fnref:gocheap" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:password">
-      <p>This approach is convenient, but it’s not the most secure. In this case, I’m envisioning a small client project where I’m not sharing the code on an open repository. In cases where you anticipate sharing your code without wanting to share the passwords, using environment variables on Heroku for these settings would be more secure. <a href="#fnref:password" class="reversefootnote">&#8617;</a></p>
+      <p>This approach is convenient, but it’s not the most secure. In this case, I’m envisioning a small client project where I’m not sharing the code on an open repository. In cases where you anticipate sharing your code without wanting to share the passwords, using environment variables on Heroku for these settings would be more secure.  <a href="#fnref:password" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
