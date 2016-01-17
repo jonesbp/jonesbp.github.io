@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-          <title>Weekly Reading: August 16, 2015 ≫ La Tinaja</title>
+          <title>Testing Hazel Rule Notifications ≫ La Tinaja</title>
         
 
         <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         
-          <meta name="description" content="Things I read this week include a celebration of decoding ancient languages and personal data arbitrage.">
+          <meta name="description" content="Add a version number to messages when testing Hazel notifications.">
         
 
         <!-- Custom CSS -->
@@ -43,41 +43,22 @@
             </a>
           </div>
 
-          <h2><span class="indicator icon-book"></span>Weekly Reading: August 16, 2015</h2>
-<p class="meta">16 Aug 2015</p>
+          
+  <h2><span class="indicator icon-note"></span>Testing Hazel Rule Notifications</h2>
 
-<div class="post reading_list">
-  <h3 id="links">Links</h3>
+<p class="meta">14 Jan 2016</p>
 
-<ul>
-  <li><a href="http://www.newyorker.com/business/currency/facebook-should-pay-all-of-us"><strong>Facebook Should Pay All of Us—TIm Wu—The New Yorker</strong></a>: This is just a short bit and there’s not a ton new here if you’re at all familiar with conversations about personal data, privacy, and commerce on the internet. I link to it because I’d never seen anyone invoke the concept of “arbitrage” to describe the business model of taking undervalued personal information from customers and holding it for a future valuable purpose, but of course that’s what it is…</li>
-</ul>
+<div class="post tech_note">
+<p>Today I was working on a new <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> rule that uses a JavaScript action. Never having used the JavaScript support in Hazel, I was using notifications to give me some debugging messages. (JavaScript fails silently in Hazel—nice for avoiding annoyance in daily use, but bad for testing.)</p>
 
+<p>The problem was I thought I was seeing really inconsistent results based on the notifications I was getting and not getting. My mistake was assuming that when I wasn’t getting notifications it was because the JavaScript had failed and the notification step of my Hazel rule hadn’t executed.</p>
 
+<p>What was happening instead was that Notification Center was suppressing duplicate notification messages made under a certain time threshold. Notifications that I assumed weren’t displaying because the rule was terminated before they were triggered were in fact not displaying because they duplicated a recent notification.</p>
 
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-    <li>
-      <span class="citation">
-        
-          <a href="http://www.amazon.com/exec/obidos/asin/B009NQZPCU/ref=nosim/latin031-20">Margalit Fox. <i>The Riddle of the Labyrinth: The Quest to Crack an Ancient Code</i>. New York: Ecco, 2013.</a>
-        
-      </span>
-      <span class="note"><p>Margalit Fox is the obituaries editor for the <em>New York Times</em>, and it seems clear to me that the marks of that occupation are all over this account. I was struck repeatedly by the different decisions she made than I would have as a historian; the relative freedom she had to be impressionistic with regard to chronology and causal relationships in order perhaps to reach a truer picture of individual. I thoroughly enjoyed the narrative and appreciated that she did not shy away from a serious, but accessible, engagement with some of the deciphering practices developed by her subjects.</p>
-</span>
-      <span class="links">
-        
-          <a href="http://worldcat.org/oclc/841944772">WorldCat &raquo;</a>
-        
-        
-          <a href="http://www.amazon.com/exec/obidos/asin/B009NQZPCU/ref=nosim/latin031-20">Amazon &raquo;</a>
-        
-      </span>
-    </li>
-    
-  </ul>
+<p>My solution was simply to add a <code>v1</code>, <code>v2</code>, <code>v3</code>, etc. versioning tag to my notification messages as I tested new steps to force the messages to be unique.</p>
+
 </div>
+
 
           <div class="footer">
             <div class="contact">

@@ -7,6 +7,50 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Weekly Reading: January 17, 2016</title>
+
+
+<description>Things I read this week included the Rust Belt, boy bands, and medieval travel writing.</description>
+
+<pubDate>Sun, 17 Jan 2016 00:00:00 +0100</pubDate>
+<link>http://tinaja.computer/2016/01/17/weekly-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/01/17/weekly-reading.html</guid>
+</item>
+
+<item>
+<title>Testing Hazel Rule Notifications</title>
+
+
+<description>Add a version number to messages when testing Hazel notifications.</description>
+
+<pubDate>Thu, 14 Jan 2016 00:00:00 +0100</pubDate>
+<link>http://tinaja.computer/2016/01/14/versioned-notifications.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/01/14/versioned-notifications.html</guid>
+</item>
+
+<item>
+<title>Cassette Labels</title>
+
+
+<description>A list of labels releasing cassettes I’ve been into recently</description>
+
+<pubDate>Mon, 11 Jan 2016 00:00:00 +0100</pubDate>
+<link>http://tinaja.computer/2016/01/11/cassette-labels.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/01/11/cassette-labels.html</guid>
+</item>
+
+<item>
+<title>Weekly Reading: January 10, 2016</title>
+
+
+<description>Things I read this week included traitors, Terra Incognita, and walking buildings.</description>
+
+<pubDate>Sun, 10 Jan 2016 00:00:00 +0100</pubDate>
+<link>http://tinaja.computer/2016/01/10/weekly-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/01/10/weekly-reading.html</guid>
+</item>
+
+<item>
 <title>Weekly Reading: November 8, 2015</title>
 
 
@@ -70,50 +114,6 @@
 <pubDate>Thu, 20 Aug 2015 00:00:00 +0200</pubDate>
 <link>http://tinaja.computer/2015/08/20/berlin-atonal.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2015/08/20/berlin-atonal.html</guid>
-</item>
-
-<item>
-<title>Weekly Reading: August 16, 2015</title>
-
-
-<description>Things I read this week include a celebration of decoding ancient languages and personal data arbitrage.</description>
-
-<pubDate>Sun, 16 Aug 2015 00:00:00 +0200</pubDate>
-<link>http://tinaja.computer/2015/08/16/weekly-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2015/08/16/weekly-reading.html</guid>
-</item>
-
-<item>
-<title>Weekly Reading: August 9, 2015</title>
-
-
-<description>Things I read this week include an overview of typography for the web, a lamentation for the old Internet, and celebrity empathy.</description>
-
-<pubDate>Sun, 09 Aug 2015 00:00:00 +0200</pubDate>
-<link>http://tinaja.computer/2015/08/09/weekly-read.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2015/08/09/weekly-read.html</guid>
-</item>
-
-<item>
-<title>A Run in Berlin</title>
-
-
-<description>Streets from a morning run in Berlin.</description>
-
-<pubDate>Sat, 08 Aug 2015 00:00:00 +0200</pubDate>
-<link>http://tinaja.computer/2015/08/08/streets-from-a-run-in-berlin.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2015/08/08/streets-from-a-run-in-berlin.html</guid>
-</item>
-
-<item>
-<title>Weekly Reading: July 19, 2015</title>
-
-
-<description>Things I read this week include a new Scandinavian detective series and profiles.</description>
-
-<pubDate>Sun, 19 Jul 2015 00:00:00 +0200</pubDate>
-<link>http://tinaja.computer/2015/07/19/weekly-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2015/07/19/weekly-reading.html</guid>
 </item>
 
 </channel>
