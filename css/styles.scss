@@ -1,5 +1,7 @@
-@import "reset.css";
-@import "fontcustom.css";
+---
+---
+@import "reset.scss";
+@import "fontcustom.scss";
 @import "colors.scss";
 
 body {
@@ -154,9 +156,10 @@ img {
 // Site //
 
 .site {
-  width: 42em;
+  max-width: 42em;
   margin: 3em auto 2em;
   line-height: 1.5em;
+  width: 95%;
 }
 
 .header {
@@ -180,6 +183,16 @@ img {
   }
 }
 
+.header div.links {
+  display: inline-block;
+}
+
+.header div.buttons {
+  display: inline-block;
+  float: right;
+  padding-top: .66667em;
+}
+
 .title a {
   color: $accent;
 }
@@ -191,9 +204,7 @@ img {
 
 .header a.button {
   font-size: 1.5em;
-  float: right;
   margin-left: .5em;
-  padding-top: .66667em;
 }
 
 .meta {
@@ -413,5 +424,37 @@ img {
 
   ol {
     list-style-type: decimal;
+  }
+}
+
+@media all and (max-width: 550px) {
+  body {
+    font-size: 16px;
+  }
+
+  .site {
+    margin-top: 1em;
+  }
+
+  .posts li.long-post {
+    padding: 1em .5em .5em .5em;
+  }
+
+  .header div.links {
+    display: block;
+
+    a.extra:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .header div.buttons {
+    display: block;
+    float: none;
+    padding-bottom: .5em;
+
+    a.button:first-child {
+      margin-left: 0;
+    }
   }
 }
