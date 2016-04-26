@@ -3,6 +3,16 @@ layout: reading_list
 title: "Weekly Reading: April 12, 2015"
 excerpt: "Books and essays I read this week include personal memories, computer languages, and historiographical provocation."
 type: reading_list
+books:
+  - id: ullman-close-to-the-machine
+    note: >
+      <i>Close to the Machine</i> is the kind of book about computers that appears reverently in the words of many of my favorite writers who write about computers, and seemingly nowhere else. It’s a great document of what being engaged with computers and the online world felt like in the pre-bubble mid-90s, resonating with me even though I was still only in my teens. More universally, it is the best exploration of the worldview that experience with computer programming engenders and of the tensions inherent in being passionate for the possibilities of a medium so innately tied to unappealing corporate and material realities. I recently read Douglas Rushkoff’s <i>Program or Be Programmed</i> in which he makes the rhetorical case for programming literacy and its epistemological benefits; Ullman’s memoir provides the emotional case.
+  - id: vaughan-saga-3
+    note: >
+      I’ve fallen a bit behind with <i>Saga</i>, but it continues to be my favorite active series. This arc expands the scope beyond the core family of protagonists and begins to explore the negative consequences of conflict on the many proxies that fight it.
+  - id: guldi-armitage-manifesto
+    note: >
+      This short experiment in open-access publishing presents a provocative invitation to historians to use the analytical tools of the digital humanities to re-open <i>longue durée</i> perspectives. The tone is polemical and, as with any polemic, the presentation of historiographical trends is more simplified and argumentative than it is comprehensive and nuanced. There has been a good deal of recent pushback against the work (that I have not yet read, but plan to), and I imagine that at least some of the hullaballoo results from this aspect of the book. I can say, however, that as an undergraduate in the late 90s and early aughts and a graduate student in the late aughts and early teens, the historiographical, pedagaogical, and methodological tropes challenged here are at least anecdotally familiar to me and reflect some of my frustrations as a student. I am happy to accept the polemic its own terms in that sense.
 ---
 
 ### Links

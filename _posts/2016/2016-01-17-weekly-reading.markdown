@@ -3,6 +3,16 @@ layout: reading_list
 title: "Weekly Reading: January 17, 2016"
 excerpt: "Things I read this week included the Rust Belt, boy bands, and medieval travel writing."
 type: reading_list
+books:
+  - id: touati-islam-travel
+    note: >
+      Touati investigates the travel writing tradition in Islam primarily from the eighth through tenth centuries, with a nod to later writers such as Ibn Battuta. His jumping off point is a contrast with later European travelers for whom exotic sights beyond their own cultural sphere motivated their travel and for whom the trip itself may have simply been a means to the end of having an opportunity to write about the experience. Touati argues that for Muslim travelers writing about what they saw was not so immediate a reflex and that their interest in travel lay almost exclusively within the bounds of the Islamic world. Immediately useful as a reminder that “travel writing” as it is commonly imagined in Western historiography is a historically and culturally determined phenomenon. Also potentially useful in tracing late Greek geography through the Middle Ages into the fifteenth and sixteenth century re-engagement with Ptolemy et al.
+  - id: seabrook-song-machine
+    note: >
+      I bought this after hearing [John Seabrook’s episode](http://longform.org/posts/longform-podcast-162-john-seabrook) of the Longform podcast. Framing himself as an outsider (a ‘rock guy’ and a father) trying to develop an appreciation of his children’s popular music. , Seabrook writes a history of the contemporary ‘track and hook’ pop song from Ace of Base to Ke$ha, particularly by tracing the influence of Swedish pop producers Denniz Pop and Max Martin. Along the way, he dips into some rock-doc-style music industry gossip, business analysis, and light music theory.
+  - id: carter-botany-bay
+    note: >
+      Carter develops a ‘spatial history’ of Australia from the arrival to and naming of the continent by European navigators to contemporary debates on telling Aborigine history both in connection to Australian and on its own terms. Spatial history for Carter is a tool that counteracts imperial history; understanding the role of the environment in shaping human behavior subverts imperial narratives that treat the landscape as a simple stage set for the founding of the nation. For my purposes, Carter’s work with toponyms and movement are the most helpful, but his more general political argument regarding the potential for a spatial approach to history to allow for a more inclusive approach to the several Australian histories is compelling.
 ---
 
 ### Links

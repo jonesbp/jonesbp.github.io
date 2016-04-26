@@ -3,6 +3,13 @@ layout: reading_list
 title: "Weekly Reading: March 22, 2015"
 excerpt: "This week’s reading includes light comic sci-fi fantasy, commandments for a digital age, and Tex-Mex."
 type: reading_list
+books:
+  - id: meyer-off-to-be-the-wizard
+    note: >
+      I picked this up as an easy read having seen [Glenn Fleishman](https://twitter.com/glennf) recommend it on Twitter a few weeks ago. Having independently discovered that reality is only a computer simulation to which they have access to the main configuration repository, a collection of geeks find they’ve all had the idea to time travel to medieval England and pose as magicians with their new powers. For my tastes, the light humor element could have been less prominent in favor working through the consequences of the central conceit in more detail, but it was fun, easy, and great for picking up at odd hours with a newborn in the house. This is also the first book I’ve bought on one of Amazon’s inhouse imprints, and I was impressed by the presentation. I imagine I’ll eventually pick up the next one in the Magic 2.0 series.
+  - id: rushkoff-program-or-be-programmed
+    note: >
+      These ten short provocations about living online and in a digital age cover ethics and etiquette in roughly equal parts all to set up the core ‘command’ that to participate in this world with purpose one must understand the perspective gained from understanding programming. I find this conclusion—that everyone could benefit from the perspective gained from relatively short exposure to programming—a great corrective to the “Everyone must code!” evangelism. Given that the book was published in 2011, however, I wonder how much of just that brand of evangelism comes from a misunderstanding of the subtleties of Rushkoff’s argument. Regardless, the collection of questions about digital age ethics put me in a good frame of mind for approaching some of the post-dissertation projects I’ve been working on recently.
 ---
 
 ### Links

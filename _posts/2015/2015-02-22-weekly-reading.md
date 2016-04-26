@@ -3,6 +3,13 @@ layout: reading_list
 title: "Weekly Reading: February 22, 2015"
 excerpt: "This week’s reading includes material on the economics of soccer, open sourcing history research, and identify users for online services."
 type: reading_list
+books:
+  - id: kuper-szymanski-soccernomics
+    note: >
+      Encountering the optimistic argument towards the end of this book regarding the positive prospects for Iraq once it returns to more normal circumstances is rather poignant in a 2015 dominated by news of ISIS. This is precisely the sort of historical contingency that makes historians leery of overly schematic and predictive arguments regarding human behavior. Nonetheless, the authors’ irreverent stance towards the conventional wisdom of the footballing world and their rigorous analysis of English soccer make intriguing reading. That history from outside sport intervenes should not devalue the sports-related consequences of their analysis.
+  - id: fingerman-minimum-wage-bk-one
+    note: >
+      Fingerman’s slice of life approach does a good job of capturing that late-twenties phase of managing both to be unconcerned about wasting time in the present and overwhelmingly concerned about what might come of the future at the same time. There’s an out of time quality that reminds of me of Linklater’s _Slacker_. I like the people in _Slacker_ a lot more. I guess it’s no surprise that in this phase of my life I was an Austin guy and not a New York guy.
 ---
 
 ### Links

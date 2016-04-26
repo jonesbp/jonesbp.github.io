@@ -3,6 +3,13 @@ layout: reading_list
 title: "Weekly Reading: May 3, 2015"
 excerpt: "Books and essays I read this week include non-linear biography, drones, and hitmen."
 type: reading_list
+books:
+  - id: stephenson-some-remarks
+    note: >
+      I wanted to re-read [Mother Earth Mother Board](http://archive.wired.com/wired/archive/4.12/ffglass_pr.html), so I grabbed this from the library. There’s other worthwhile stuff here: a foreword written for David Foster Wallace’s _Everything and More_ that is a sort of DFW origin story based in the culture of Midwestern college towns and a lecture at Gresham College about genre and literature, in particular. My favorite parts of Stephenson’s fiction tend to be his deep digressions into the systems and tools being used or created by his characters. He tends to manage to give these sections real significance for the narrative or setting of the work in a way that a lot of name- and tech-spec-dropping speculative fiction does not.
+  - id: wilson-ms-marvel-2
+    note: >
+      The family dynamics of the first collected volume of this book won me over, and they’re unfortunately not much in evidence in this arc. However, it’s still a lot of fun, and even though it’s more focused on typical super-hero-y action, the setting and thematic trappings of that action keep the same sense of humor and unique, light tone.
 ---
 
 ### Links

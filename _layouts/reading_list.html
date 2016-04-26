@@ -7,29 +7,18 @@ layout: default
 <div class="post reading_list">
   {{ content }}
 
-  <h3>Books</h3>
-  <ul class="reading-list">
-    {% for book in site.data.books -%}{% for note in book.notes -%}{% if note.date <= page.date -%}{% capture notedate -%}{{ note.date | date: '%s' }}{% endcapture -%}{% capture pagedate -%}{{ page.date | date: '%s' }}{% endcapture -%}{% assign notedate = notedate | plus: 0 -%}{% assign lastweek = pagedate | minus: 604799 -%}{% if notedate >= lastweek -%}
-    <li>
-      <span class="citation">
-        {% if book.amzn -%}
-          <a href="http://www.amazon.com/exec/obidos/asin/{{ book.amzn }}/ref=nosim/latin031-20">{{ book.citation }}</a>
-        {% else if book.worldcat -%}
-          <a href="http://worldcat.org/oclc/{{ book.oclc }}">{{ book.citation }}</a>
-        {% else -%}
-          {{ book.citation }}
-        {% endif -%}
-      </span>
-      <span class="note">{{ note.content | markdownify }}</span>
-      <span class="links">
-        {% if book.oclc -%}
-          <a href="http://worldcat.org/oclc/{{ book.oclc }}">WorldCat &raquo;</a>
-        {% endif -%}
-        {% if book.amzn -%}
-          <a href="http://www.amazon.com/exec/obidos/asin/{{ book.amzn }}/ref=nosim/latin031-20">Amazon &raquo;</a>
-        {% endif -%}
-      </span>
-    </li>
-    {% endif -%}{% endif -%}{% endfor -%}{% endfor -%}
-  </ul>
+  {% if page.books.size > 0 %}
+    <h3>Books</h3>
+    <ul class="reading-list">
+      {% for book in page.books -%}
+        <li>
+          {% include books/citation.html book_id=book.id %}
+          {% if book.note -%}
+            <span class="note">{{ book.note | markdownify }}</span>
+          {% endif -%}
+          {% include books/links.html book_id=book.id %}
+        </li>
+      {% endfor -%}
+    </ul>
+  {% endif %}
 </div>

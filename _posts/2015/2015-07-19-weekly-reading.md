@@ -3,6 +3,16 @@ layout: reading_list
 title: "Weekly Reading: July 19, 2015"
 excerpt: "Things I read this week include a new Scandinavian detective series and profiles."
 type: reading_list
+books:
+  - id: nesser-minds-eye
+    note: >
+      One of the things that I enjoy most about crime fiction is its careful verisimilitude and the ability to speak to contemporary politics that results. Henning Mankell exemplifies this tendency among the Scandanavian detective fiction with which I’m familiar, and Richard Price is an obvious example of this tendency among American crime writers. Nesser sets his Inspector Van Veeteren series in a fictional Northern European no-place that removes this angle, but the detective story elements and an ambitious narrative structure more than make up for it. It’s been a long time since I’ve read detective fiction with as much interest in the unfolding of the mystery.
+  - id: nesser-borkmanns-point
+    note: >
+      I quickly moved on to the second book in the Inspector Van Veeteren series after reading the first this week. More tight detective fiction, and impressively, another ambitious structural conceit that is a total change in direction from the previous entry.
+  - id: slott-silver-surfer-1
+    note: >
+      I bought the first two issues of this new Silver Surfer book in hard-copy when it came out because Silver Surfer has always been one of my favorite characters and Dan Slott and Michael Allred are among my favorites in each of their respective crafts. I’ve only now been able to catch up and finish this arc by reading the first trade and it’s one of my favorites. The climax of the arc comes in 3 or 4 consecutive two page spreads that give Allred an opportunity for a real work out, and Slott throughout hits a great balance between hokey, knowing, and fun.
 ---
 
 ### Links

@@ -3,6 +3,13 @@ layout: reading_list
 title: "Weekly Reading: February 15, 2015"
 excerpt: "This week’s reading includes material on the built environment, the tech industry, and the Hispanic roots of the United States."
 type: reading_list
+books:
+  - id: carlson-marissa-mayer
+    note: >
+      A lot of the coverage this book has received in the tech press has focused on Mayer’s social idiosyncrasies and how they have damaged her ability to relate to and to lead the people she works with. The book’s three part structure, however—outlining the serial struggles of several pre-Mayer Yahoo! CEOs, Mayer’s success at Google, and Mayer’s struggles at Yahoo!—drives home Carlson’s doubt that it may be possible for anyone to succeed at Yahoo!. Carlson asks whether Yahoo! was simply the product of a specific, and now past, historical moment. Also of interest, but underdeveloped, was Carlson’s insight that Mayer’s hiring problems have her trying to do the work of a ‘media’ executive when she is a ‘product’ person. Reading this at the same time as Paul Ford on ‘[product](https://medium.com/message/its-kind-of-cheesy-being-green-2c72cc9e5eda)’ at [_The Message_](https://medium.com/message) this week added both some weight and some skepticism to that distinction.
+  - id: fernandez-armesto-our-america
+    note: >
+      _Our America_ is a provocation that mocks North American myths regarding the WASP foundations of the United States and their supposed exceptional consequences. It also, however, neatly packages for a general audience the benefits of addressing the deep Iberian histories of not only the large swathes of the continental US that were once part of the Spanish Empire and of Mexico, but of those regions typically understood to have only Anglophone legacies.
 ---
 
 ### Links
