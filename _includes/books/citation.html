@@ -1,0 +1,11 @@
+{% for book in site.books -%}{% if include.book_id == book.book_id -%}
+    <span class="citation">
+      {% if book.amzn -%}
+        <a href="http://www.amazon.com/exec/obidos/asin/{{ book.amzn }}/ref=nosim/latin031-20">{{ book.citation }}</a>
+      {% else if book.worldcat -%}
+        <a href="http://worldcat.org/oclc/{{ book.oclc }}">{{ book.citation }}</a>
+      {% else -%}
+        {{ book.citation }}
+      {% endif -%}
+    </span>
+{% endif -%}{% endfor -%}
