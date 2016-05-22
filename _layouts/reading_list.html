@@ -8,6 +8,7 @@ layout: default
   {{ content }}
 
   {% if page.books.size > 0 %}
+    <div class="clear-block"></div>
     <h3>Books</h3>
     <ul class="reading-list">
       {% for book in page.books -%}
