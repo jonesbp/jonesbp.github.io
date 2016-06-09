@@ -4,7 +4,7 @@ layout: default
 
 <div id="home">
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       {% if post.type == "long" %}
         <li class="long-post">
           <a class="list-title" href="{{ post.url }}">{{ post.title }}</a> 
@@ -30,4 +30,14 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
+
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">≪ Previous</a>
+    {% endif %}
+    <span class="page-number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Next ≫</a>
+    {% endif %}
+  </div>
 </div>

@@ -216,6 +216,22 @@ img {
   color: $darkHighlight;
 }
 
+.pagination {
+  text-align: center;
+
+  .page-number {
+    margin: 0 1em;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .footer {
   border-top: 4px solid $lightHighlight;
   clear: both;
