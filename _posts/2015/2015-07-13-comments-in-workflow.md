@@ -11,6 +11,6 @@ I just finished a workflow that needs two nested conditionals inside of a double
 
 In typical coding, comments would be my friend here. Workflow doesn’t explicitly support comments, but combining the **Text** action and the **Nothing** action provides an easy workaround.
 
-![Text ‘Comment’ in Workflow]({{ BASE_PATH }}/assets/images/2015-07-13/workflow-screenshot.jpg)
+![Text ‘Comment’ in Workflow](/images/2015/workflow-screenshot.jpg)
 
 Using this technique has helped me tame some mammoth scripts by making it much easier to pick up where I left off from session to session.

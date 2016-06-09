@@ -9,7 +9,7 @@ I’ve been playing with running [WakaTime](http://wakatime.com) in my text edit
 
 I don’t know that I’ll use WakaTime forever, but during this early experimental phase it’s been fun to have it open in the background while I work. Of course, the service is still new and the dashboard view does not live update. I’ve fixed that by giving WakaTime its own [Fluid](http://fluidapp.com) instance with a simple userscript.
 
-![WakaTime Userscript]({{ BASE_PATH }}/assets/images/2015-04-07/Wakatime_reload.jpg)
+![WakaTime Userscript](/images/2015/Wakatime_reload.jpg)
 
 In your Fluid instance, go to the **Window** menu and select the **Userscripts** item. You’ll be presented with the window pictured above. Create a new rule with the **+** button, name it what you’d like and enter this simple Javascript:
 
