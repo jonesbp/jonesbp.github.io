@@ -346,6 +346,45 @@ img {
   .post.reading_list li:last-child:after {
     content: ""; }
 
+table.books tr {
+  border-color: #FFF7C9;
+  border-style: solid;
+  border-width: 0 0 1px 0; }
+  table.books tr:last-child {
+    border-width: 0; }
+table.books ul.filters {
+  display: inline-block; }
+  table.books ul.filters li {
+    display: inline-block;
+    margin-left: 1em; }
+    table.books ul.filters li a {
+      display: inline-block;
+      text-decoration: none; }
+      table.books ul.filters li a.here {
+        background-color: #FFF7C9; }
+table.books th {
+  font-weight: bold;
+  padding: .5em .25em;
+  text-align: left;
+  text-transform: uppercase; }
+  table.books th.notes {
+    text-align: center; }
+table.books td {
+  padding: .5em .25em; }
+  table.books td.citation {
+    vertical-align: top;
+    width: 80%; }
+    table.books td.citation p {
+      margin: 0;
+      padding-left: 1em;
+      text-indent: -1em; }
+  table.books td.notes {
+    text-align: center;
+    vertical-align: middle;
+    width: 20%; }
+    table.books td.notes a {
+      white-space: nowrap; }
+
 .post ul.reading-list span.citation {
   display: block;
   font-weight: 500;
