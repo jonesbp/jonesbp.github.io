@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<table class="books">
+  <tr>
+    <th>
+      Books
+      <ul class="filters">
+        {% if page.year > 0 %}
+          <li><a href="/reading">All</a></li>
+        {% else %}
+          <li><a href="/reading" class="here">All</a></li>
+          {% endif %}
+        {% for year in page.years_list %}
+          {% if year == page.year %}
+            <li><a href="/reading/{{ year }}" class="here">{{ year }}</a></li>
+          {% else %}
+            <li><a href="/reading/{{ year }}">{{ year }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </th>
+    <th class="notes">Notes</th>
+  </tr>
+{% for book in page.books %}
+  <tr>
+    <td class="citation">
+      <p>{{ book.citation }}</p>
+    </td>
+    <td class="notes">
+      {% for note in book.notes %}
+        <a href="{{ note.permalink }}">{{ note.date | date: "%-d %b %Y" }}</a>
+      {% endfor %}
+    </td>
+  </tr>
+{% endfor %}
+</table>
