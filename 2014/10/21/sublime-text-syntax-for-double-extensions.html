@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+          <title>Setting the Syntax for Files with Multiple Extensions in Sublime Text ≫ La Tinaja</title>
+        
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
+
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+        <meta name="viewport" content="width=device-width">
+
+        <script src="//use.typekit.net/iei2wij.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        
+          <meta name="description" content="I’ve been frustrated with Sublime Text syntax highlighting defaults on files with multiple name extensions that I finally spent 15 minutes figuring out how to fix them.">
+        
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/"><span class="logo icon-tinaja"></span>La Tinaja</a></h1>
+            <div class="links">
+              <a class="extra" href="/">posts</a>
+            </div>
+            <div class="buttons">
+              <a class="button" href="http://brianjon.es" title="About Me">
+                <span class="icon-head"></span>
+                <span class="invisible-text">Foam Garden</span>
+              </a>
+              <a class="button" href="http://foamgarden.com" title="Foam Garden">
+                <span class="icon-fg"></span>
+                <span class="invisible-text">About Me</span>
+              </a>
+            </div>
+          </div>
+
+          
+  <h2>Setting the Syntax for Files with Multiple Extensions in Sublime Text</h2>
+
+<p class="meta">21 Oct 2014</p>
+
+<div class="post long">
+<p>For a while I’ve had the frustration of any files with a <code class="highlighter-rouge">.erb</code> extension opening in Sublime Text with the HTML (Rails) syntax coloring. I have some SASS stylesheets that I’d like to run through the Ruby interpreter, so they need the <code class="highlighter-rouge">.erb</code> extension, but I want the syntax coloring from the <a href="https://sublime.wbond.net/packages/Sass">Sass package</a>.</p>
+
+<p>None of the <code class="highlighter-rouge">.sublime-settings</code> files that came with the default install of Sublime Text had file extension patterns for anything but single extensions, but it turns out that the same approach works for any arbitrary string of text following a dot, even if that string includes dots: <code class="highlighter-rouge">css.scss.erb</code> works just as well as <code class="highlighter-rouge">erb</code> would. My extension patterns for Sass and HTML (Rails) syntax coloring now look like the following.</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="err">//</span><span class="w"> </span><span class="err">Sass.sublime-settings</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nt">"extensions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"scss.erb"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"scss"</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="err">//</span><span class="w"> </span><span class="err">HTML</span><span class="w"> </span><span class="err">(Rails).sublime-settings</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nt">"extensions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"html.erb"</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                <b>Brian Jones</b><br />
+                <a href="http://brianjon.es">brianjon.es</a><br />
+                <a href="https://twitter.com/jonesbp">twitter.com/jonesbp</a><br />
+                <a href="http://github.com/jonesbp">github.com/jonesbp</a>
+              </p>
+            </div>
+            <div class="contact">
+
+            </div>
+            <div class="contact">
+              <p>
+                <b>Projects</b><br />
+                <a href="http://backlist.cc">Backlist</a><br />
+                <a href="http://foamgarden.com">Foam Garden</a><br />
+                <a href="http://theappendix.net">The Appendix</a>
+              </p>
+            </div>
+            <div>
+              <p class="credits">
+                <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> <a href="/colophon.html">Colophon</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+          var _gauges = _gauges || [];
+          (function() {
+            var t   = document.createElement('script');
+            t.type  = 'text/javascript';
+            t.async = true;
+            t.id    = 'gauges-tracker';
+            t.setAttribute('data-site-id', '5070c837613f5d59940000e1');
+            t.src = '//secure.gaug.es/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+          })();
+        </script>
+    </body>
+</html>

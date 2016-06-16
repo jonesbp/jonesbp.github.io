@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+          <title>Derek Yu’s Spelunky ≫ La Tinaja</title>
+        
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
+
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+        <meta name="viewport" content="width=device-width">
+
+        <script src="//use.typekit.net/iei2wij.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        
+          <meta name="description" content="Derek Yu’s development post-mortem on his game Spelunky provides a sensitive, insightful take on working on large, long-term projects as in individual or small team.">
+        
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/"><span class="logo icon-tinaja"></span>La Tinaja</a></h1>
+            <div class="links">
+              <a class="extra" href="/">posts</a>
+            </div>
+            <div class="buttons">
+              <a class="button" href="http://brianjon.es" title="About Me">
+                <span class="icon-head"></span>
+                <span class="invisible-text">Foam Garden</span>
+              </a>
+              <a class="button" href="http://foamgarden.com" title="Foam Garden">
+                <span class="icon-fg"></span>
+                <span class="invisible-text">About Me</span>
+              </a>
+            </div>
+          </div>
+
+          <h2><span class="indicator icon-book"></span>Derek Yu’s <i>Spelunky</i></h2>
+<p class="meta">21 May 2016</p>
+
+<div class="post reading_list">
+  <p><img src="/images/2016/spelunky-cover.jpg" class="book-cover" alt="Spelunky cover" /></p>
+
+<p>My first experiences working on the kind of large-scale, self-directed project that lasts longer than a weekend afternoon or two came building computer games on a Mac Performa starting around 1995.<sup id="fnref:companions"><a href="#fn:companions" class="footnote">1</a></sup> My constant struggle was to balance learning new techniques in order to achieve the functionality I wanted, the temptation to drill further and further into writing up design documents and maps, and sticking with the boring parts long enough to finish the work I had set out to do in the first place.</p>
+
+<p>Since then I have moved on to large projects of other sorts—releasing records, finishing a dissertation, launching and then producing periodical publications, etc.—but I still find myself getting trapped in that no man’s land where the thread of what will move the project a step closer to becoming real gets lost.</p>
+
+<p>Derek Yu started making games around the same time and at a similar scale as a participant in a Windows games scene I was familiar with, but not a part of. In continuing to make games into his adult life, his path was a sort of alternate universe version of one I could have taken (though at a level of success I would not expect for myself, of course). That point of identification helped connect for me a history of disparate projects. Rather than a youthful hobby left behind, those games were perhaps the first in a series of large, self-directed projects in a wide variety of contexts that I have pursued into my own adult life.</p>
+
+<p>And it’s that identification that made Yu’s insight regarding the ‘grind’ really hit home. There’s a point in a large project when the early pitfalls of spending too much energy spinning out elaborate ideas with no plans for implementation give way, but the endgame where all that is left is to check some clearly defined items from an ever-shortening list is still nowhere in sight. This long middle portion is where all of the most important work happens, but not all work that can be done in this moment is equally healthy.</p>
+
+<p>The danger in this middle phase comes from grinding, and I know that I fall victim to this temptation all the time. The problem with grinding is that it feels productive—in fact it usually is <em>actually</em> productive—but focusing only accomplishing sequential, well-defined, or periodic tasks can become the trap. The recurring sense of small accomplishments feels better than opening back up to struggling with the big ideas that will make the work better. The project has forward momentum, but not necessarily a destination. I have been trying to become more sensitive to noticing when I’m at risk of getting stuck in this phase of a project, and reading about Yu’s experience with it helps to establish it as a natural part of long-term work rather than a personal deficiency.</p>
+
+<p>For me, this is the insight I’ll remember most clearly from <em>Spelunky</em>, but of course the primary focus of the book is the game design itself.</p>
+
+<hr />
+
+<p><a href="http://spelunkyworld.com">Spelunky</a> is a roguelike platformer game, meaning it combines action gameplay along the lines of games like Super Mario Bros. with randomly generated levels, items and entities in the game world that all interact according to the same rule set, and ‘permadeath’.<sup id="fnref:permadeath"><a href="#fn:permadeath" class="footnote">2</a></sup> This combination means that it is a game that rewards both the development of dexterity-based skill and deliberative analysis of how best to use the game’s systems in conjunction with one another. The unforgiving permadeath mechanic raises the stakes by locating all residue of past playthroughs in the player’s accumulated skill and understanding, rather than in the in-game accumulation of stats, items, or other markers of progress.</p>
+
+<p>All of these characteristics of the game will be apparent from the earliest playthroughs, but dozens (or hundreds or thousands) are necessary for the serendipitous potential of the layered systems Yu designed to manifest. It was the unique narrative moments that emerge from these interactions that won Spelunky its devoted community.</p>
+
+<p>Randomness doesn’t signify lack of intentionality, however. The overwhelming sense one gets of Yu in his discussion of his design process is of sensitivity and deliberation. Even as a fan of Spelunky, I had little appreciation for the depth of consideration Yu had put into the design. In the wake of Spelunky (and other procedurally-generated games of similar vintage like Minecraft and Binding of Isaac), there is a glut of games by small teams based on procedurally-generated content. The technique is appealing to small teams because it frees them from the time-consuming obligation of creating designed content, but most of these efforts pale in comparison to Spelunky. Yu’s description of his approach clearly demonstrates that this gap can be attributed to the care, planning, and attention to polish involved in developing his game’s systems beyond the initial engineering task of getting things up and running.</p>
+
+<p>This revelation is both humbling and inspiring. I have been intrigued by the possibilities of emergent behaviors in procedurally-generated games, Twitter bots, and other software agents in the last few years, but have hesitated to pick up the ball for a lack of insight into what distinguishes interesting random output from a simple tech demo. Yu’s experience provides a great map for starting to build these randomized systems in the spiriting of seeing what happens without abandoning the possibility of an intentional and designed product at the end.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:companions">
+      <p>My companions were <a href="https://en.wikipedia.org/wiki/CodeWarrior">CodeWarrior</a>, <a href="http://www.amazon.com/exec/obidos/asin/1568301839/ref=nosim/latin031-20"><em>Tricks of the Mac Game Programming Gurus</em></a>, and <a href="https://en.wikipedia.org/wiki/ResEdit">ResEdit</a>. I actually started with the <a href="http://www.macworld.com/article/1014313/19reviewscodewarrior.html">Discover Programming Starter Kit</a> version of CodeWarrior which my dad bought me at Microcenter on a lark and was certainly the most important impulse buy of my life. <a href="#fnref:companions" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:permadeath">
+      <p>The genre classification of ‘roguelike’ refers to <a href="https://en.wikipedia.org/wiki/Rogue_(video_game)">Rogue</a> an early dungeon-crawling game and has come to mean many things. Most common are procedurally-generated levels and permadeath—the concept that in each new game the player must start from scratch without any in-game benefits from previous sessions—but there are other attributes of the game and its derivatives to which designers may choose to respond. Yu focused on the rule from Rogue that all objects and entities in the game were subject to the same set of actions available to the player, and this decision is the source of much of the emergent interaction in the game’s systems. <a href="#fnref:permadeath" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+  
+    <div class="clear-block"></div>
+    <h3>Books</h3>
+    <ul class="reading-list">
+      
+        <li>
+          
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01CYVHYSS/ref=nosim/latin031-20">Derek Yu. <i>Spelunky</i>. Los Angeles: Boss Fight Books, 2016.</a>
+      
+    </span>
+
+          
+            <span class="note"><p><em>Spelunky</em> is the first of the Boss Fight Books series in which the game’s creator writes about his own game. In his post-mortem Yu makes clear the amount of sensitivity and deliberation required to design the systems that create the opportunities for serendipity that Spelunky provides.</p>
+</span>
+          
+          
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/944955142">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01CYVHYSS/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+        </li>
+      
+    </ul>
+  
+</div>
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                <b>Brian Jones</b><br />
+                <a href="http://brianjon.es">brianjon.es</a><br />
+                <a href="https://twitter.com/jonesbp">twitter.com/jonesbp</a><br />
+                <a href="http://github.com/jonesbp">github.com/jonesbp</a>
+              </p>
+            </div>
+            <div class="contact">
+
+            </div>
+            <div class="contact">
+              <p>
+                <b>Projects</b><br />
+                <a href="http://backlist.cc">Backlist</a><br />
+                <a href="http://foamgarden.com">Foam Garden</a><br />
+                <a href="http://theappendix.net">The Appendix</a>
+              </p>
+            </div>
+            <div>
+              <p class="credits">
+                <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> <a href="/colophon.html">Colophon</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+          var _gauges = _gauges || [];
+          (function() {
+            var t   = document.createElement('script');
+            t.type  = 'text/javascript';
+            t.async = true;
+            t.id    = 'gauges-tracker';
+            t.setAttribute('data-site-id', '5070c837613f5d59940000e1');
+            t.src = '//secure.gaug.es/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+          })();
+        </script>
+    </body>
+</html>

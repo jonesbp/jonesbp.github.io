@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+          <title>Show PHP Errors in MAMP ≫ La Tinaja</title>
+        
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
+
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+        <meta name="viewport" content="width=device-width">
+
+        <script src="//use.typekit.net/iei2wij.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        
+          <meta name="description" content="Quick howto on turning on PHP error reporting when hosting sites locally with MAMP">
+        
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/"><span class="logo icon-tinaja"></span>La Tinaja</a></h1>
+            <div class="links">
+              <a class="extra" href="/">posts</a>
+            </div>
+            <div class="buttons">
+              <a class="button" href="http://brianjon.es" title="About Me">
+                <span class="icon-head"></span>
+                <span class="invisible-text">Foam Garden</span>
+              </a>
+              <a class="button" href="http://foamgarden.com" title="Foam Garden">
+                <span class="icon-fg"></span>
+                <span class="invisible-text">About Me</span>
+              </a>
+            </div>
+          </div>
+
+          
+  <h2><span class="indicator icon-note"></span>Show PHP Errors in MAMP</h2>
+
+<p class="meta">28 Jan 2015</p>
+
+<div class="post tech_note">
+<p>I’ve been using <a href="http://mamp.info">MAMP</a> for local hosting on PHP-based client sites recently rather than bothering with maintaining my own configurations for small projects. The only problem was that I lost my error reporting. I’d been satisfied to live without them until recently I had a legitimate bug to track down.</p>
+
+<p>MAMP uses its own PHP instead of your default system installation, so you need to find the configuration specific to the version it’s running. You’ll find the (possibly several) versions of PHP MAMP has installed inside of the MAMP application bundle, so head there and list the contents of the <code class="highlighter-rouge">config</code> directory. You are most likely running the version of PHP with the highest version number. In my case, right now, it’s 5.4.10:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span><span class="nb">cd</span> /Applications/MAMP/conf
+<span class="gp">$ </span>ls
+<span class="gp">$ </span><span class="nb">cd </span>php5.4.10</code></pre></figure>
+
+<p>And open <code class="highlighter-rouge">php.ini</code> using your text editor of choice, and look for the section headed <code class="highlighter-rouge">Error handling and logging</code>. There are several settings to adjust here, but the basic one is <code class="highlighter-rouge">error_reporting</code>. The relevant line will be commented out by default, so you’ll remove the leading <code class="highlighter-rouge">;</code> to activate the setting.</p>
+
+<p>From this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>;error_reporting  =  E_ALL
+</code></pre>
+</div>
+
+<p>to this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>error_reporting  =  E_ALL
+</code></pre>
+</div>
+
+<p>You may want to adjust the neighboring settings based on your needs, but this is sufficient to get some error feedback without losing the convenience of MAMP.</p>
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                <b>Brian Jones</b><br />
+                <a href="http://brianjon.es">brianjon.es</a><br />
+                <a href="https://twitter.com/jonesbp">twitter.com/jonesbp</a><br />
+                <a href="http://github.com/jonesbp">github.com/jonesbp</a>
+              </p>
+            </div>
+            <div class="contact">
+
+            </div>
+            <div class="contact">
+              <p>
+                <b>Projects</b><br />
+                <a href="http://backlist.cc">Backlist</a><br />
+                <a href="http://foamgarden.com">Foam Garden</a><br />
+                <a href="http://theappendix.net">The Appendix</a>
+              </p>
+            </div>
+            <div>
+              <p class="credits">
+                <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> <a href="/colophon.html">Colophon</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+          var _gauges = _gauges || [];
+          (function() {
+            var t   = document.createElement('script');
+            t.type  = 'text/javascript';
+            t.async = true;
+            t.id    = 'gauges-tracker';
+            t.setAttribute('data-site-id', '5070c837613f5d59940000e1');
+            t.src = '//secure.gaug.es/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+          })();
+        </script>
+    </body>
+</html>
