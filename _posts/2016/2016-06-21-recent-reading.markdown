@@ -3,6 +3,7 @@ layout: reading_list
 title: "Recent Reading: Naval Architecture, Digital Locks, <i>World of Warcraft</i>"
 excerpt: "Things I’ve read recently include the science of shipbuilding, copyright, and raiding."
 type: reading_list
+date: 2016-06-21 16:00:00 +0200
 books:
   - id: doctorow-information
     note: >
