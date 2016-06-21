@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Recent Reading: Naval Architecture, Digital Locks, World of Warcraft</title>
+
+
+<description>Things I’ve read recently include the science of shipbuilding, copyright, and raiding.</description>
+
+<pubDate>Tue, 21 Jun 2016 16:00:00 +0200</pubDate>
+<link>http://tinaja.computer/2016/06/21/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/06/21/recent-reading.html</guid>
+</item>
+
+<item>
 <title>Copenhagen Psych Fest 2016</title>
 
 
@@ -104,17 +115,6 @@
 <pubDate>Thu, 14 Jan 2016 00:00:00 +0100</pubDate>
 <link>http://tinaja.computer/2016/01/14/versioned-notifications.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/01/14/versioned-notifications.html</guid>
-</item>
-
-<item>
-<title>Cassette Labels</title>
-
-
-<description>A list of labels releasing cassettes I’ve been into recently</description>
-
-<pubDate>Mon, 11 Jan 2016 00:00:00 +0100</pubDate>
-<link>http://tinaja.computer/2016/01/11/cassette-labels.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/01/11/cassette-labels.html</guid>
 </item>
 
 </channel>
