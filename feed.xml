@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Recent Reading: Roguelikes, Runners, and Triremes</title>
+
+
+<description>My reading the last couple of weeks has included ancient Mediterranean seafaring, early roguelikes, and Kenyan marathons.</description>
+
+<pubDate>Wed, 20 Jul 2016 10:20:08 +0200</pubDate>
+<link>http://tinaja.computer/2016/07/20/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/07/20/recent-reading.html</guid>
+</item>
+
+<item>
 <title>Recent Reading: Apocryphal Geography, Maps, and JavaScript</title>
 
 
@@ -104,17 +115,6 @@
 <pubDate>Sun, 24 Jan 2016 00:00:00 +0100</pubDate>
 <link>http://tinaja.computer/2016/01/24/weekly-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/01/24/weekly-reading.html</guid>
-</item>
-
-<item>
-<title>Weekly Reading: January 17, 2016</title>
-
-
-<description>Things I read this week included the Rust Belt, boy bands, and medieval travel writing.</description>
-
-<pubDate>Sun, 17 Jan 2016 00:00:00 +0100</pubDate>
-<link>http://tinaja.computer/2016/01/17/weekly-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/01/17/weekly-reading.html</guid>
 </item>
 
 </channel>
