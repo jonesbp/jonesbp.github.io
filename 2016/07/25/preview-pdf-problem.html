@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+          <title>Preview Pdf Problem ≫ La Tinaja</title>
+        
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
+
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+        <meta name="viewport" content="width=device-width">
+
+        <script src="//use.typekit.net/iei2wij.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        
+          <meta name="description" content="I recently had problems with PDFs opening in Preview on OS X El Capitán.">
+        
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/"><span class="logo icon-tinaja"></span>La Tinaja</a></h1>
+            <div class="links">
+              <a class="extra" href="/">posts</a>
+              <a class="extra" href="/reading">reading</a>
+            </div>
+            <div class="buttons">
+              <a class="button" href="http://brianjon.es" title="About Me">
+                <span class="icon-head"></span>
+                <span class="invisible-text">Foam Garden</span>
+              </a>
+              <a class="button" href="http://foamgarden.com" title="Foam Garden">
+                <span class="icon-fg"></span>
+                <span class="invisible-text">About Me</span>
+              </a>
+            </div>
+          </div>
+
+          
+  <h2><span class="indicator icon-note"></span>Preview Pdf Problem</h2>
+
+<p class="meta">25 Jul 2016</p>
+
+<div class="post tech_note">
+<p>I recently had problems with PDFs opening in Preview on OS X El Capitán. After weeks of thinking it was a problem with Preview, I eventually realized it was happening at a system level with PDF files generally. It’s pretty difficult to find helpful information by searching variations on ‘os x pdf preview not opening’, but I eventually found a <a href="https://discussions.apple.com/message/28953108#28953108">thread</a> that led me in the right direction.</p>
+
+<p>I first noticed that saving as a PDF from the print window and choosing to open in Preview did nothing. I could still save PDFs to Evernote or to Yoink so I mostly didn’t worry about it. Around the same time I noticed that the default application for PDFs on my system had become Acrobat Reader (a choice I would never have made of my own volition).</p>
+
+<p>When trying to open PDFs with Preview by using a contextual menu in Finder and selecting Preview from the <code class="highlighter-rouge">Open with…</code> menu, I’d be presented with a file dialog when Preview launched rather than the file I had selected, and re-selecting the file to open in that dialog (or any other PDF for that matter) would fail silently. Annoying, but I just started using other PDF viewers.</p>
+
+<p>Then I noticed that PDFs on my Desktop had changed to completely blank icons. Not any additional inconvenience, but increasingly troubling.</p>
+
+<p>Finally, planning for an upcoming trip, I dropped a PDF of my itinerary into Notes and saw that the new note had an image attached, but my PDF did not display inline in Notes. I realized then that my problem was with PDFs, not with Preview. Turns out Quick Look for PDFs was also not working, etc. etc.</p>
+
+<p>I eventually found the thread I mentioned in the intro and went from there to find this <a href="http://ohanaware.com/support/index.php?article=how-not-to-break-preview.html">support writeup on the Ohanaware website</a> about an incompatibility between one of their apps and El Capitán that corrupted the launch services database and interfered with Preview’s ability to open PDFs. They have released an app called Preview Reset to fix the problem that you can find from the same page. I had never used any of Ohanaware’s software, but their Preview Reset application rats on whichever application was the culprit on your system. In my case, Notability had caused the problem.</p>
+
+<p>So if you have a problem with losing PDF support in Preview or other system-level features in Finder (Quick Look), Notes (inline preview), etc.—particularly if you have been running Shine from Ohanaware or Notability, but it sounds like there are several applications that have caused this problem—try <a href="http://ohanaware.com/support/index.php?article=how-not-to-break-preview.html">Preview Reset</a> from Ohanaware and see if that fixes things.</p>
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                <b>Brian Jones</b><br />
+                <a href="http://brianjon.es">brianjon.es</a><br />
+                <a href="https://twitter.com/jonesbp">twitter.com/jonesbp</a><br />
+                <a href="http://github.com/jonesbp">github.com/jonesbp</a>
+              </p>
+            </div>
+            <div class="contact">
+
+            </div>
+            <div class="contact">
+              <p>
+                <b>Projects</b><br />
+                <a href="http://backlist.cc">Backlist</a><br />
+                <a href="http://foamgarden.com">Foam Garden</a><br />
+                <a href="http://theappendix.net">The Appendix</a>
+              </p>
+            </div>
+            <div>
+              <p class="credits">
+                <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> <a href="/colophon.html">Colophon</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+          var _gauges = _gauges || [];
+          (function() {
+            var t   = document.createElement('script');
+            t.type  = 'text/javascript';
+            t.async = true;
+            t.id    = 'gauges-tracker';
+            t.setAttribute('data-site-id', '5070c837613f5d59940000e1');
+            t.src = '//secure.gaug.es/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+          })();
+        </script>
+    </body>
+</html>
