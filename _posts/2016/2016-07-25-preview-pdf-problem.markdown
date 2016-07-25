@@ -1,6 +1,6 @@
 ---
 layout: post
-title:
+title: PDF Preview Problem on El Capitán
 excerpt: 'I recently had problems with PDFs opening in Preview on OS X El Capitán.'
 type: tech_note
 date: 2016-07-25T07:37:48+02:00
