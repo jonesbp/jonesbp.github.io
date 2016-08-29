@@ -7,12 +7,23 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Recent Reading: Failure, Responsive Design, and Flavors</title>
+
+
+<description>Notes on recent reading include failure in Silicon Valley and David Chang on flavor.</description>
+
+<pubDate>Mon, 29 Aug 2016 06:53:53 -0400</pubDate>
+<link>http://tinaja.computer/2016/08/29/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/08/29/recent-reading.html</guid>
+</item>
+
+<item>
 <title>PDF Preview Problem on El Capitán</title>
 
 
 <description>I recently had problems with PDFs opening in Preview on OS X El Capitán.</description>
 
-<pubDate>Mon, 25 Jul 2016 07:37:48 +0200</pubDate>
+<pubDate>Mon, 25 Jul 2016 01:37:48 -0400</pubDate>
 <link>http://tinaja.computer/2016/07/25/preview-pdf-problem.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/07/25/preview-pdf-problem.html</guid>
 </item>
@@ -23,7 +34,7 @@
 
 <description>My reading the last couple of weeks has included ancient Mediterranean seafaring, early roguelikes, and Kenyan marathons.</description>
 
-<pubDate>Wed, 20 Jul 2016 10:20:08 +0200</pubDate>
+<pubDate>Wed, 20 Jul 2016 04:20:08 -0400</pubDate>
 <link>http://tinaja.computer/2016/07/20/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/07/20/recent-reading.html</guid>
 </item>
@@ -34,7 +45,7 @@
 
 <description>My recent reading includes British exploration in the Pacific, scripting maps, and programming in JavaScript.</description>
 
-<pubDate>Tue, 05 Jul 2016 06:21:16 +0200</pubDate>
+<pubDate>Tue, 05 Jul 2016 00:21:16 -0400</pubDate>
 <link>http://tinaja.computer/2016/07/05/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/07/05/recent-reading.html</guid>
 </item>
@@ -45,7 +56,7 @@
 
 <description>Things I’ve read recently include the science of shipbuilding, copyright, and raiding.</description>
 
-<pubDate>Tue, 21 Jun 2016 16:00:00 +0200</pubDate>
+<pubDate>Tue, 21 Jun 2016 10:00:00 -0400</pubDate>
 <link>http://tinaja.computer/2016/06/21/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/06/21/recent-reading.html</guid>
 </item>
@@ -56,7 +67,7 @@
 
 <description>Artists performing at Copenhagen Psych Fest 2016</description>
 
-<pubDate>Thu, 16 Jun 2016 00:00:00 +0200</pubDate>
+<pubDate>Thu, 16 Jun 2016 00:00:00 -0400</pubDate>
 <link>http://tinaja.computer/2016/06/16/copenhagen-psych-fest.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/06/16/copenhagen-psych-fest.html</guid>
 </item>
@@ -67,7 +78,7 @@
 
 <description>Wrap a short shell script in an Alfred workflow to reset app icons rewritten on updates.</description>
 
-<pubDate>Fri, 10 Jun 2016 00:00:00 +0200</pubDate>
+<pubDate>Fri, 10 Jun 2016 00:00:00 -0400</pubDate>
 <link>http://tinaja.computer/2016/06/10/app-icon-alfred-workflow.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/06/10/app-icon-alfred-workflow.html</guid>
 </item>
@@ -79,7 +90,7 @@
 <description>
 </description>
 
-<pubDate>Thu, 09 Jun 2016 00:00:00 +0200</pubDate>
+<pubDate>Thu, 09 Jun 2016 00:00:00 -0400</pubDate>
 <link>http://tinaja.computer/2016/06/09/meteorology-data-twitter.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/06/09/meteorology-data-twitter.html</guid>
 </item>
@@ -90,7 +101,7 @@
 
 <description>Derek Yu’s development post-mortem on his game Spelunky provides a sensitive, insightful take on working on large, long-term projects as in individual or small team.</description>
 
-<pubDate>Sat, 21 May 2016 00:00:00 +0200</pubDate>
+<pubDate>Sat, 21 May 2016 00:00:00 -0400</pubDate>
 <link>http://tinaja.computer/2016/05/21/spelunky.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/05/21/spelunky.html</guid>
 </item>
@@ -101,20 +112,9 @@
 
 <description>Financial crises, early modern travel writing, free culture, fantasy and sci-fi, etc. all in a big catchup of cataloging my recent reading</description>
 
-<pubDate>Sun, 15 May 2016 00:00:00 +0200</pubDate>
+<pubDate>Sun, 15 May 2016 00:00:00 -0400</pubDate>
 <link>http://tinaja.computer/2016/05/15/reading-grabbag.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/05/15/reading-grabbag.html</guid>
-</item>
-
-<item>
-<title>Videogames on Vinyl</title>
-
-
-<description>A list of labels releasing videogame soundtracks on vinyl</description>
-
-<pubDate>Tue, 26 Apr 2016 00:00:00 +0200</pubDate>
-<link>http://tinaja.computer/2016/04/26/videogames-on-vinyl.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/04/26/videogames-on-vinyl.html</guid>
 </item>
 
 </channel>
