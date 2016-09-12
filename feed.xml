@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Mailing Lists</title>
+
+
+<description>A list of mailing lists</description>
+
+<pubDate>Mon, 12 Sep 2016 06:15:12 -0400</pubDate>
+<link>http://tinaja.computer/2016/09/12/mailing-lists.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/09/12/mailing-lists.html</guid>
+</item>
+
+<item>
 <title>Recent Reading: Failure, Responsive Design, and Flavors</title>
 
 
@@ -104,17 +115,6 @@
 <pubDate>Sat, 21 May 2016 00:00:00 -0400</pubDate>
 <link>http://tinaja.computer/2016/05/21/spelunky.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/05/21/spelunky.html</guid>
-</item>
-
-<item>
-<title>Catching Up with Reading Lists</title>
-
-
-<description>Financial crises, early modern travel writing, free culture, fantasy and sci-fi, etc. all in a big catchup of cataloging my recent reading</description>
-
-<pubDate>Sun, 15 May 2016 00:00:00 -0400</pubDate>
-<link>http://tinaja.computer/2016/05/15/reading-grabbag.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/05/15/reading-grabbag.html</guid>
 </item>
 
 </channel>
