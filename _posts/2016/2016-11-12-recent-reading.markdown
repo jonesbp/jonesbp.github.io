@@ -1,9 +1,9 @@
 ---
 layout: reading_list
-title:
-excerpt:
+title: 'Recent Reading: Coconuts and Memory Palaces'
+excerpt: 'My recent reading included genre fiction, good and bad, and Pacific islands.'
 type: reading_list
-date: 2016-11-12T06:43:50-05:00
+date: 2016-11-12T12:05:50-05:00
 books:
   - id: kracht-imperium
     note: >
