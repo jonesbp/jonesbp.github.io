@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Recent Reading: Coconuts and Memory Palaces</title>
+
+
+<description>My recent reading included genre fiction, good and bad, and Pacific islands.</description>
+
+<pubDate>Sat, 12 Nov 2016 12:05:50 -0500</pubDate>
+<link>http://tinaja.computer/2016/11/12/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/11/12/recent-reading.html</guid>
+</item>
+
+<item>
 <title>Mailing Lists</title>
 
 
@@ -104,17 +115,6 @@
 <pubDate>Thu, 09 Jun 2016 00:00:00 -0400</pubDate>
 <link>http://tinaja.computer/2016/06/09/meteorology-data-twitter.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/06/09/meteorology-data-twitter.html</guid>
-</item>
-
-<item>
-<title>Derek Yu’s Spelunky</title>
-
-
-<description>Derek Yu’s development post-mortem on his game Spelunky provides a sensitive, insightful take on working on large, long-term projects as in individual or small team.</description>
-
-<pubDate>Sat, 21 May 2016 00:00:00 -0400</pubDate>
-<link>http://tinaja.computer/2016/05/21/spelunky.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/05/21/spelunky.html</guid>
 </item>
 
 </channel>
