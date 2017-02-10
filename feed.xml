@@ -7,6 +7,17 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Recent Reading: Cyberpunk and Sea Slugs</title>
+
+
+<description>My recent reading has included murders in art museums, sea slug geometry, and cyberpunk reality television.</description>
+
+<pubDate>Fri, 10 Feb 2017 15:48:49 -0500</pubDate>
+<link>http://tinaja.computer/2017/02/10/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/02/10/recent-reading.html</guid>
+</item>
+
+<item>
 <title>Recent Reading: Texas Cooking and Corals in Paris</title>
 
 
@@ -103,17 +114,6 @@
 <pubDate>Thu, 16 Jun 2016 00:00:00 -0400</pubDate>
 <link>http://tinaja.computer/2016/06/16/copenhagen-psych-fest.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2016/06/16/copenhagen-psych-fest.html</guid>
-</item>
-
-<item>
-<title>Alfred Workflow for Updating App Icons</title>
-
-
-<description>Wrap a short shell script in an Alfred workflow to reset app icons rewritten on updates.</description>
-
-<pubDate>Fri, 10 Jun 2016 00:00:00 -0400</pubDate>
-<link>http://tinaja.computer/2016/06/10/app-icon-alfred-workflow.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/06/10/app-icon-alfred-workflow.html</guid>
 </item>
 
 </channel>
