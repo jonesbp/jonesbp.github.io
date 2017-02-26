@@ -1,8 +1,14 @@
 {% if post.books.size > 0 %}
+  {% assign books = post.books %}
+{% elsif page.books.size > 0 %}
+  {% assign books = page.books %}
+{% endif %}
+
+{% if books.size > 0 %}
   <div class="clear-block"></div>
   <h3>Books</h3>
   <ul class="reading-list">
-    {% for book in post.books %}
+    {% for book in books %}
       <li>
         {% include books/citation.html book_id=book.id %}
         {% if book.note %}
