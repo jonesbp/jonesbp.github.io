@@ -3,117 +3,1093 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://localhost:4000</link>
+<link>http://tinaja.computer</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
 <title>Screenscraping Wikipedia with Python</title>
 
+<description>
+    <![CDATA[
+    <p>Yesterday I did a very quick screen-scraping and text-manipulation project with a Wikipedia page that I thought I would write up as an example of using scripting for small ephemeral or one-off tasks. I used Python 3 with the <a href="http://docs.python-requests.org/en/master/">Requests</a> and <a href="https://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a>.</p>
 
-<description>A walk through building a quick script to scrape data from a Wikipedia page</description>
+<p>I recently had occasion to compile a corpus of river names for use as throwaway names for an in-house project. I’ve also been thinking a lot about lists and how they can be used and their makers over the last year and have tried (mostly unsuccessfully) to get in the habit of capturing ephemeral lists of things to this site.</p>
 
+<p>While collecting my river names from Wikipedia, I came across a nice, well-encapsulated list of the longest rivers in Europe, so I thought I’d <a href="http://tinaja.computer/2017/02/17/longest-european-rivers.html">grab it</a> for one of these infrequent list posts.</p>
+
+<hr />
+
+<p>First, I import the two libraries I need. Requests will just make grabbing the Wikipedia page super-easy. BeautifulSoup will help me drill through the HTML I pull from Wikipedia to isolate just the pieces of the page that I’m interested in.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+</code></pre>
+</div>
+
+<p>The list I wanted to isolate was on the <a href="https://en.wikipedia.org/wiki/List_of_rivers_of_Europe">List of rivers of Europe</a> page on Wikipedia. It’s for rivers with a length longer than 250km, and it’s displayed in a separate 4 column table with a header row at the top. The first column of each row following the header has a name of the river with a link to its page on Wikipedia. I want to take all of those names and URLs and output them as a Markdown-formatted list of links. I’m not interested in the contents of any of the other columns.</p>
+
+<p>First, I needed to do a little bit of poking around to find where in the page this table fell and what its markup looked like. I could have done this with the DOM inspector in a web browser, but instead I decided to just start from code. I knew it was in a table, so I first just grabbed the contents of the web page, asked BeautifulSoup to give me only the table elements in the page, and printed each of them out.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://en.wikipedia.org/wiki/List_of_rivers_of_Europe'</span><span class="p">)</span>
+
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'table'</span><span class="p">):</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Scrolling through my output, I verify that the table I’m interested in is the second table on the page. I don’t care about being able to reuse this code again later, so I it’s fine with me just to hardcode this value in.</p>
+
+<p>Also looking at the output, I confirm that I’m not interested in the first row of the table (it’s just header information), and that the markup of the interesting rows is very straightforward:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;tr&gt;</span>
+<span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/wiki/Volga_River"</span> <span class="na">title=</span><span class="s">"Volga River"</span><span class="nt">&gt;</span>Volga<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
+<span class="nt">&lt;td&gt;</span>3,692<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;td&gt;</span>2,294<span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/wiki/Caspian_Sea"</span> <span class="na">title=</span><span class="s">"Caspian Sea"</span><span class="nt">&gt;</span>Caspian Sea<span class="nt">&lt;/a&gt;&lt;sup</span> <span class="na">class=</span><span class="s">"reference"</span> <span class="na">id=</span><span class="s">"cite_ref-1"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#cite_note-1"</span><span class="nt">&gt;</span>[1]<span class="nt">&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+</code></pre>
+</div>
+
+<p>From this code, I can see that I’m interested in the first <code class="highlighter-rouge">td</code> cell of each row of the table, and I want the URL in the <code class="highlighter-rouge">href</code> attribute and the text contents of the link in that cell. As a run through the rows of the table, I will take these two elements and combine them as a Markdown-formatted link and append this link as a new list item to a string that will be output at the end of the script.</p>
+
+<hr />
+
+<p>So, to build the final script, I do my imports, grab the text I’m working with, and set up the HTML parser and the variable to start my final output.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://en.wikipedia.org/wiki/List_of_rivers_of_Europe'</span><span class="p">)</span>
+
+<span class="c"># Give the text of the Wikipedia page to BeautifulSoup and have it</span>
+<span class="c"># parse the HTML into a structured object</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
+
+<span class="c"># I will append a new line for each river to this variable and </span>
+<span class="c"># output all at once at the end</span>
+<span class="n">output</span> <span class="o">=</span> <span class="s">""</span>
+</code></pre>
+</div>
+
+<p>I then grab the second table in the page, get a handle for the first row from that table, and use that handle to get a handle to the following row using <code class="highlighter-rouge">find_next_sibling()</code>. This will be the second row in the table—the first row of data I’m interested in.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># The Longest Rivers list is the second table on the page</span>
+<span class="n">long_rivers_table</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'table'</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">first_row</span> <span class="o">=</span> <span class="n">long_rivers_table</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'tr'</span><span class="p">)</span>
+
+<span class="c"># Skip the first row of the table…</span>
+<span class="n">row</span> <span class="o">=</span> <span class="n">first_row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<p>I will use a <code class="highlighter-rouge">while</code> loop to step through the remaining rows of the table. While my <code class="highlighter-rouge">row</code> variable is not <code class="highlighter-rouge">None</code>, I’ll look for the first link in the first cell of the row and grab the information I’m interested in.</p>
+
+<p>After I’ve output that information in my desired format, I set my <code class="highlighter-rouge">row</code> variable to its next sibling. If it has one, the loop will continue. If it does not, <code class="highlighter-rouge">row</code> will be <code class="highlighter-rouge">None</code> and my loop will end.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># …and step through the remaining rows</span>
+<span class="k">while</span> <span class="n">row</span><span class="p">:</span>
+    <span class="n">first_cell</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'td'</span><span class="p">)</span>
+    <span class="n">link</span> <span class="o">=</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'a'</span><span class="p">)</span>
+    
+    <span class="c"># Wikipedia uses relative URLs so I need to put the right</span>
+    <span class="c"># stem on them for them to work as absolute URLs.</span>
+    <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+  
+    <span class="c"># Append a new line to my output with a new list item formatted</span>
+    <span class="c"># as a Markdown link</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- [{}]({})</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
+    
+    <span class="n">row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<p>At the end of this loop, I now have a string of Markdown-formatted text of my list of rivers as a unordered list of links stored in <code class="highlighter-rouge">output</code>. I just print that to the screen to be copy-and-pasted where I like, and I’m done.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<hr />
+
+<p>There was a problem with this approach, however. I wasn’t looking carefully when I first defined my problem, and there are actually a few cells in this table where the contents are not simply a single link. There are few rows that list multiple rivers together in orographic order with separate links; there are also a few rows that list a plain text alternative name for the primary name of the river contained in the link.</p>
+
+<p>So this section of my code from above was a bit too naïve:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code>  <span class="n">link</span> <span class="o">=</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'a'</span><span class="p">)</span>
+    
+  <span class="c"># Wikipedia uses relative URLs so I need to put the right</span>
+    <span class="c"># stem on them for them to work as absolute URLs.</span>
+    <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+  
+    <span class="c"># Append a new line to my output with a new list item formatted</span>
+    <span class="c"># as a Markdown link</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- [{}]({})</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>I still want Markdown-formatted output, so I can’t just copy over the contents of the cell directly.</p>
+
+<p>BeautifulSoup gives me what I need here. I can use the <code class="highlighter-rouge">contents</code> property of the first cell of the table. It is a list of the nodes contained in that cell, which in this case will be 1-n elements that are either links or plain text.</p>
+
+<p>So now for each step through my loop, I will have an intermediate output variable <code class="highlighter-rouge">row_output</code> to use in constructing the output just for that individual row. As I step through the contents of that row, I will do one of two things depending on whether I’m dealing with plain text or a link. If I have plain text, I will copy it directly over to the output variable. If I a link, I will generate a Markdown-formatted version of that link and append it to the intermediate variable. Finally I will append a new list item to my <code class="highlighter-rouge">output</code> variable based on the contents of this intermediate variable and check whether I have another row to look at as before.</p>
+
+<p>Now each run through my loop looks like this:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">row_output</span> <span class="o">=</span> <span class="s">""</span> <span class="c"># Reset row_output</span>
+    
+<span class="n">first_cell</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'td'</span><span class="p">)</span>
+    
+<span class="c"># Step through the contents of the first cell</span>
+<span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">contents</span><span class="p">:</span>
+    <span class="c"># Check to see whether this element of the list is a string instance</span>
+    <span class="c"># in order to determine whether we’re dealing with plain text or a link</span>
+    
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span> <span class="c"># This node of the document is just plain text</span>
+        <span class="c"># Append the text directly to row_output</span>
+        <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="n">el</span>
+        
+    <span class="k">else</span><span class="p">:</span> <span class="c"># This node of the document is a link</span>
+        <span class="c"># Wikipedia uses relative URLs so I need to put the right</span>
+        <span class="c"># stem on them for them to work as absolute URLs.</span>
+        <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="n">el</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+
+        <span class="c"># Append a Markdown-formatted link to row_output</span>
+        <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="s">"[{}]({})"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
+
+<span class="c"># Append the compiled output for this row to the final output for the script</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- {}</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">row_output</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>It’s a little more complicated, but much more robust in handling the few unusual elements in the list. This list wasn’t necessarily long enough that I absolutely needed to automate handling this small handful of exceptions, but with a larger corpus it would have been helpful and at least this way I know I won’t miss any while editing manually.</p>
+
+<p>The complete source for the script follows (and is available as a <a href="https://gist.github.com/jonesbp/f9ffa3ec93bb8c8ec655a7403ea96b66">gist</a>).</p>
+
+<hr />
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://en.wikipedia.org/wiki/List_of_rivers_of_Europe'</span><span class="p">)</span>
+
+<span class="c"># Give the text of the Wikipedia page to BeautifulSoup and have it</span>
+<span class="c"># parse the HTML into a structured object</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
+
+<span class="c"># I will append a new line for each river to this variable and </span>
+<span class="c"># output all at once at the end</span>
+<span class="n">output</span> <span class="o">=</span> <span class="s">""</span>
+
+<span class="c"># The Longest Rivers list is the second table on the page</span>
+<span class="n">long_rivers_table</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'table'</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">first_row</span> <span class="o">=</span> <span class="n">long_rivers_table</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'tr'</span><span class="p">)</span>
+
+<span class="c"># Skip the first row of the table…</span>
+<span class="n">row</span> <span class="o">=</span> <span class="n">first_row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
+
+<span class="c"># …and step through the remaining rows</span>
+<span class="k">while</span> <span class="n">row</span><span class="p">:</span>
+    <span class="n">row_output</span> <span class="o">=</span> <span class="s">""</span> <span class="c"># Reset row_output</span>
+    
+    <span class="n">first_cell</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'td'</span><span class="p">)</span>
+    
+    <span class="c"># Step through the contents of the first cell</span>
+    <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">contents</span><span class="p">:</span>
+        <span class="c"># Check to see whether this element of the list is a string instance</span>
+        <span class="c"># in order to determine whether we’re dealing with plain text or a link</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span> <span class="c"># This node of the document is just plain text</span>
+            <span class="c"># Append the text directly to row_output</span>
+            <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="n">el</span>
+            
+        <span class="k">else</span><span class="p">:</span> <span class="c"># This node of the document is a link</span>
+            <span class="c"># Wikipedia uses relative URLs so I need to put the right</span>
+            <span class="c"># stem on them for them to work as absolute URLs.</span>
+            <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="n">el</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+            
+            <span class="c"># Append a Markdown-formatted link to row_output</span>
+            <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="s">"[{}]({})"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
+        
+    <span class="c"># Append the compiled output for this row to the final output for the script</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- {}</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">row_output</span><span class="p">)</span>
+    
+    <span class="c"># Get the next row if it exists</span>
+    <span class="n">row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</code></pre>
+</div>
+
+
+    
+    ]]>
+</description>
 <pubDate>Sat, 18 Feb 2017 00:00:00 -0500</pubDate>
-<link>http://localhost:4000/2017/02/18/screenscraping-wikipedia.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/02/18/screenscraping-wikipedia.html</guid>
+<link>http://tinaja.computer/2017/02/18/screenscraping-wikipedia.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/02/18/screenscraping-wikipedia.html</guid>
 </item>
 
 <item>
 <title>Longest Rivers in Europe</title>
 
+<description>
+    <![CDATA[
+    <p>Playing with list-making and naming bodies of water recently for a couple projects.</p>
 
-<description>A list of the longest rivers in Europe</description>
+<p>These are the rivers in Europe longer than 250km, sorted in descending length.</p>
 
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Volga_River">Volga</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Danube">Danube</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Ural_River">Ural</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Dnieper_River">Dnieper</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Don_River_(Russia)">Don</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Pechora_River">Pechora</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Kama_River">Kama</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Northern_Dvina_River">Northern Dvina</a>–<a href="https://en.wikipedia.org/wiki/Vychegda_River">Vychegda</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Oka_River">Oka</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Belaya_River_(Kama)">Belaya</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Dniester">Dniester</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Rhine">Rhine</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Elbe">Elbe</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Donets_River">Donets</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Vistula_River">Vistula</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Tagus">Tagus</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Daugava_River">Daugava</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Loire_(river)">Loire</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Tisza">Tisza</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Prut_River">Prut</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Sava">Sava</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Neman_River">Neman</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Meuse_(river)">Meuse</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Ebro">Ebro</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Douro">Douro</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Kuban_River">Kuban</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Mezen_River">Mezen</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Oder">Oder</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Rh%C3%B4ne">Rhône</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Warta">Warta</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Mure%C8%99_River">Mureș</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Seine">Seine</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Bug_River">Bug</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/G%C3%B6ta_%C3%A4lv">Göta älv</a>-<a href="https://en.wikipedia.org/wiki/Klar%C3%A4lven">Klarälven</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Drava">Drava</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Guadiana">Guadiana</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Siret_River">Siret</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Po_(river)">Po</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Guadalquivir">Guadalquivir</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Glomma">Glomma</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Olt_River">Olt</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Garonne">Garonne</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Neva_River">Neva</a>–<a href="https://en.wikipedia.org/wiki/Svir_River">Svir</a>–<a href="https://en.wikipedia.org/wiki/Suna_River">Suna</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Kemijoki">Kemijoki</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Moselle_(river)">Moselle</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Dal_River">Dal River</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Torne">Torne</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Neris">Neris</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Narew">Narew</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Maritsa">Maritsa</a>/Evros</li>
+  <li><a href="https://en.wikipedia.org/wiki/Mur_(river)">Mur</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Ume_River">Ume River</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/%C3%85ngerman_River">Ångerman River</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Lule_River">Lule River</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Kalix_River">Kalix River</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Vindel_River">Vindel River</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Gauja">Gauja</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/San_(river)">San</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Ljusnan">Ljusnan</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Skellefte_River">Skellefte River</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Indal_River">Indal River</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Vltava">Vltava</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Ialomi%C8%9Ba_River">Ialomița</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Struma_(river)">Struma</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Adige">Adige</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Tiber">Tiber</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/V%C3%A1h">Váh</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Pite_River">Pite River</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Fax%C3%A4lven">Faxälven</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Ljungan">Ljungan</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/R%C3%A1ba">Rába</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Vardar">Vardar</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Some%C8%99_River">Someș</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Paatsjoki">Paatsjoki</a>–<a href="https://en.wikipedia.org/wiki/Ivalo_(river)">Ivalojoki</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Muonionjoki">Muonionjoki</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Iijoki">Iijoki</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Iskar_(river)">Iskar</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/River_Shannon">River Shannon</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Numedalsl%C3%A5gen">Numedalslågen</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Vorma">Vorma</a>–<a href="https://en.wikipedia.org/wiki/Gudbrandsdalsl%C3%A5gen">Gudbrandsdalslågen</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Morava_(river)">Morava</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/River_Severn">River Severn</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Arge%C8%99_River">Argeș</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Tundzha">Tundzha</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Tana_(Norway)">Tana</a>–<a href="https://en.wikipedia.org/wiki/Anarjohka">Anarjohka</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Thames">Thames</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Drina">Drina</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Venta">Venta</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Minho">Minho</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Jiu_River">Jiu</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Timi%C8%99_River">Timiș</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Drin_(river)">Drin</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Haliacmon">Haliacmon</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/V%C3%A4sterdal_River">Västerdal River</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/West_Morava">West Morava</a>/(Zapadna Morava)</li>
+  <li><a href="https://en.wikipedia.org/wiki/Drammenselva">Drammenselva</a>–<a href="https://en.wikipedia.org/wiki/Begna_(river)">Begna</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Norrstr%C3%B6m">Norrström</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Buz%C4%83u_River">Buzău</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Ounasjoki">Ounasjoki</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/%C5%A0e%C5%A1up%C4%97">Šešupė</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Kupa">Kupa</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/South_Morava">South Morava</a>/(Južna Morava)</li>
+  <li><a href="https://en.wikipedia.org/wiki/D%C3%A2mbovi%C8%9Ba_River">Dâmbovița</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Yantra_(river)">Yantra</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Motala_str%C3%B6m">Motala ström</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Bistri%C8%9Ba_River_(Siret)">Bistrița</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Jijia_River_(Prut)">Jijia</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Vjos%C3%AB">Vjosë</a>/Aoos</li>
+  <li><a href="https://en.wikipedia.org/wiki/River_Bosna">Bosna</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Skiensvassdraget">Skiensvassdraget</a></li>
+  <li><a href="https://en.wikipedia.org/w/index.php?title=Fj%C3%A4llsj%C3%B6%C3%A4lven&amp;action=edit&amp;redlink=1">Fjällsjöälven</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Lainio_River">Lainio River</a></li>
+  <li><a href="https://en.wikipedia.org/w/index.php?title=Snarumselva&amp;action=edit&amp;redlink=1">Snarumselva</a>–<a href="https://en.wikipedia.org/wiki/Hallingdalselva">Hallingdalselva</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Bega_River,_Romania_and_Serbia">Bega</a></li>
+</ul>
+
+<p><em><strong>Source:</strong> <a href="https://en.wikipedia.org/wiki/List_of_rivers_of_Europe">Wikipedia</a></em></p>
+
+    
+    ]]>
+</description>
 <pubDate>Fri, 17 Feb 2017 00:00:00 -0500</pubDate>
-<link>http://localhost:4000/2017/02/17/longest-european-rivers.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/02/17/longest-european-rivers.html</guid>
+<link>http://tinaja.computer/2017/02/17/longest-european-rivers.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/02/17/longest-european-rivers.html</guid>
 </item>
 
 <item>
 <title>Recent Reading: Cyberpunk and Sea Slugs</title>
 
+<description>
+    <![CDATA[
+    <h3 id="links">Links</h3>
 
-<description>My recent reading has included murders in art museums, sea slug geometry, and cyberpunk reality television.</description>
+<ul>
+  <li><a href="https://aeon.co/essays/theres-more-maths-in-slugs-and-corals-than-we-can-think-of"><strong>How to Play Mathematics—Aeon—Margaret Wertheim</strong></a>: Wertheim takes the hyperbolic geometry of sea slugs as a point of departure for a fascinating exploration of the experiential, tangible, and whimsical possibilities of mathematics.</li>
+</ul>
 
+
+    
+        
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1400076099/ref=nosim/latin031-20">P.D. James. <i>The Murder Room</i>. New York: A.A. Knopf, 2003.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>This is the first of the Adam Dalgliesh mysteries I’ve ever read, and I intend to read more. All of the comfortable and satisfying elements of a mystery novel are there, but James is a better writer and a keener social observer than most.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/53070196">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1400076099/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01L9W8AHC/ref=nosim/latin031-20">Leigh Alexander. <i>Monitor</i>. Roseville, MN: Fantasy Flight, Games, 2016.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>Alexander’s novella is set in the cyberpunk universe of the Android: Netrunner collectible card game. Alexander is a good writer and has done interesting work as a critic of games and online communities and experiences, so I found this experiment with a sort of ‘sanctioned fan fiction’ intriguing. I probably needed to know more about the card game to get more out of it from that perspective, but the story itself is a timely exploration of the overlapping modern media and surveillance environments.</p>
+</span>
+        
+        
+    <span class="links">
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01L9W8AHC/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01G9D1BOK/ref=nosim/latin031-20">Kate Leth, Brittney L. Williams, Natasha Allegri, and Megan Wilson. <i>Patsy Walker, a.k.a. Hellcat! Vol. 1, Hooked On a Feline</i>. New York: Marvel Enterprises, 2016.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>Fun Marvel superhero stuff focusing on low-stakes, personal conflict with a great, bright color palette and light humorous voice.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/928614317">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01G9D1BOK/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
 <pubDate>Fri, 10 Feb 2017 15:48:49 -0500</pubDate>
-<link>http://localhost:4000/2017/02/10/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/02/10/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/02/10/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/02/10/recent-reading.html</guid>
 </item>
 
 <item>
 <title>Recent Reading: Texas Cooking and Corals in Paris</title>
 
+<description>
+    <![CDATA[
+    
+    
+        
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0451228731/ref=nosim/latin031-20">Daniel Suarez. <i>Daemon</i>. New York: Dutton, 2009.</a>
+      
+    </span>
 
-<description>My recent reading included thrillers about runaway computer networks and stolen coral and a cookbook about Texas.</description>
+        
+          <span class="note"><p><em>Daemon</em> received a lot of attention about ten years ago from tech industry folks and computer programmers as a sort of “hard” techno-thriller in which computer technology served the plot according to an internal logic and with respect for actual computational and networking limitations in ways that fiction, film, and television so frequently get laughably wrong. The plot centers on a genius computer programmer and game development CEO with libertarian delusions of grandeur. The current political discussion around Silicon Valley arrogance made for an interesting juxtaposition for reading this novel a decade on from its initial publication.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/233548994">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0451228731/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
 
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0848745809/ref=nosim/latin031-20">Jessica Dupuy. <i>United Tastes of Texas: Authentic Recipes from All Corners of the Lone Star State</i>. New York: Oxmoor House, 2016.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>This cookbook does a solid job of collecting the various regional influences of Texas cooking including the Southern-inspired food of East Texas, German and Czech influence in Central Texas, the seafood of the Gulf Coast, and the Tex-Mex of South Texas. There’s a good balance between more opinionated recipes adapted from individual chefs and interpretations of classic home-cooking recipes. Not every take on a traditional classic is my favorite example of that dish, but everything here is good and conveniences for home cooks have been taken into account without ruining the important parts.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/911070339">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0848745809/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0385531486/ref=nosim/latin031-20">Rebecca Stott. <i>The Coral Thief</i>. New York: Spiegel & Grau, 2009.</a>
+      
+    </span>
+
+        
+          <span class="note"><p><em>The Coral Thief</em> evokes the time and place of early nineteenth-century Paris wonderfully and is clearly the result of engaged research into the history of the era’s natural historians, naturalists, and their rivalries. In all, it was an enjoyable read. However, the execution of the setting was sufficiently engaging that it threw into relief some of the deficiencies in characterization—the two main characters are almost entirely flat on the one hand and fantastically complicated to a fantastical and incredible degree on the other—and plotting—in a final heist requiring silence characters who have worked together for years carry on expository conversations relating their shared personal histories to one another. In a pulpier thriller, I would not have noticed. Having bought into this setting completely, however, the moments that stretched credulity felt all the more jarring.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/297147171">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0385531486/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
 <pubDate>Fri, 16 Dec 2016 07:00:00 -0500</pubDate>
-<link>http://localhost:4000/2016/12/16/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2016/12/16/recent-reading.html</guid>
+<link>http://tinaja.computer/2016/12/16/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/12/16/recent-reading.html</guid>
 </item>
 
 <item>
 <title>Recent Reading: Coconuts and Memory Palaces</title>
 
+<description>
+    <![CDATA[
+    <p>The move back to the States and a recent house purchase and move have killed all of my reading aside from the lightest leisure reading. Here’s a clearing of the decks from the last couple of months with the hopes that I’ll be picking up new titles at a slightly quicker rate soon…</p>
 
-<description>My recent reading included genre fiction, good and bad, and Pacific islands.</description>
+    
+        
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1250097479/ref=nosim/latin031-20">Christian Kracht. <i>Imperium: A Fiction of the South Seas</i>. Translated by Daniel James Bowles. New York: Farrar, Straus and Giroux, 2015.</a>
+      
+    </span>
 
+        
+          <span class="note"><p>Sometimes lightly ironic, sometimes sardonic, this novel loosely based on the life of August Engelhardt and his failed utopia in German New Guinea is an entertaining satire of early 20th century European, and particularly German, enthusiasms for empire and esoterica.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/893317035">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1250097479/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B0087GZ8ME/ref=nosim/latin031-20">Nancy Kress. <i>After the Fall, Before the Fall, During the Fall</i>. San Francisco, CA: Tachyon, 2012.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>A quick, tight novella that weaves three separate timelines in a post-apocalyptic climate change parable.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/757472336">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B0087GZ8ME/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0989988015/ref=nosim/latin031-20">Elin Barnes. <i>Justification for Murder</i>. Darcy Lynch Series, Book 1. Paperless Reads, 2013.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>I’ve been experimenting with Kindle-only self-published and small press genre fiction out of curiosity. The writing here is not the strongest, but things moved forward quickly enough that I stuck with it. I was waiting for the Silicon Valley setting to pay off more than it did.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/898190211">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0989988015/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0140080988/ref=nosim/latin031-20">Jonathan D. Spence. <i>The Memory Palace of Matteo Ricci</i>. New York: Viking Penguin, 1984.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>I’ve been on a bit of a hiatus from work-related history reading and have been trying to pick up some readable classics to stay at least minimally engaged. Both a biography of a Ricci and a multi-themed global history connecting Counter-Reformation Europe and China, it’s a beautiful book and one that I will return to with a more critical eye once I get back into proper work.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/10915089">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0140080988/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B00TMA922Q/ref=nosim/latin031-20">David Locke Hall. <i>CRACK99: The Takedown of a $100 Million Chinese Software Pirate</i>. New York: W.W. Norton & Company, 2015.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>This account by a retired Delaware US Attorney of uncovering, luring, and apprehending the Chinese operator of a cracked software service provides an interesting window into the US law enforcement response to software piracy. Unfortunately, the details of how things worked on the other side of the coin are relatively limited and obscured by the author’s tough-guy style. I was expecting analysis of the mechanics of a contraband software operation and got an autohagiography.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/902661368">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B00TMA922Q/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
 <pubDate>Sat, 12 Nov 2016 12:05:50 -0500</pubDate>
-<link>http://localhost:4000/2016/11/12/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2016/11/12/recent-reading.html</guid>
+<link>http://tinaja.computer/2016/11/12/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/11/12/recent-reading.html</guid>
 </item>
 
 <item>
 <title>Mailing Lists</title>
 
+<description>
+    <![CDATA[
+    <p>Robin Sloan started his <a href="http://tinyletter.com/primes">PRIMES</a> mailing list up again this month, so I thought I’d take the occasion to share a list of mailing lists I’ve been trying to follow.</p>
 
-<description>A list of mailing lists</description>
+<ul>
+  <li><a href="http://tinyletter.com/aworkinglibrary"><strong>A Working Library</strong></a> <em>(<a href="https://twitter.com/aworkinglibrary">Mandy Brown</a>)</em></li>
+  <li><a href="http://emojiwrap.com"><strong>Emoji Wrap</strong></a> <em>(<a href="https://twitter.com/jeremyburge">Jeremy Burge</a>)</em></li>
+  <li><a href="http://tinyletter.com/metafoundry"><strong>Metafoundry</strong></a> <em>(<a href="https://twitter.com/debcha">Deb Chachra</a>)</em></li>
+  <li><a href="http://orbitaloperations.com"><strong>Orbital Operations</strong></a> <em>(<a href="https://twitter.com/warrenellis">Warren Ellis</a>)</em></li>
+  <li><a href="http://www.virtuouscode.com/newsletter/"><strong>SIGAVDI</strong></a> <em>(<a href="https://twitter.com/avdi">Avdi Grimm</a>)</em></li>
+  <li><a href="http://tinyletter.com/vruba"><strong>6</strong></a> <em>(<a href="https://twitter.com/vruba">Charlie Loyd</a>)</em></li>
+  <li><a href="http://tinyletter.com/realfuture"><strong>Real Future</strong></a> <em>(<a href="https://twitter.com/alexismadrigal">Alexis Madrigal</a>)</em></li>
+  <li><a href="http://tinyletter.com/rebeccaonion"><strong>This Week’s Work</strong></a> <em>(<a href="https://twitter.com/rebeccaonion">Rebecca Onion</a>)</em></li>
+  <li><a href="http://tinyletter.com/ejslgr"><strong>Subscape</strong></a> <em>(<a href="https://twitter.com/EmmaSlager">Emma Slager</a>)</em></li>
+  <li><a href="http://tinyletter.com/primes"><strong>PRIMES</strong></a> <em>(<a href="https://twitter.com/robinsloan">Robin Sloan</a>)</em></li>
+  <li><a href="https://tinyletter.com/interdome"><strong>Interdome Bi-Monthly Reports</strong></a> <em>(<a href="https://twitter.com/interdome">Adam Rothstein</a>)</em></li>
+  <li><a href="http://stratechery.com"><strong>Stratechery</strong></a> <em>(<a href="https://twitter.com/benthompson">Ben Thompson</a>)</em></li>
+  <li><a href="http://postlight.us11.list-manage.com/subscribe"><strong>Track Changes</strong></a></li>
+</ul>
 
+    
+    ]]>
+</description>
 <pubDate>Mon, 12 Sep 2016 06:15:12 -0400</pubDate>
-<link>http://localhost:4000/2016/09/12/mailing-lists.html</link>
-<guid isPermaLink="true">http://localhost:4000/2016/09/12/mailing-lists.html</guid>
+<link>http://tinaja.computer/2016/09/12/mailing-lists.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/09/12/mailing-lists.html</guid>
 </item>
 
 <item>
 <title>Recent Reading: Failure, Responsive Design, and Flavors</title>
 
+<description>
+    <![CDATA[
+    <h3 id="links">Links</h3>
 
-<description>Notes on recent reading include failure in Silicon Valley and David Chang on flavor.</description>
+<ul>
+  <li><a href="http://www.wired.com/2016/07/chef-david-chang-on-deliciousness/"><strong>The Unified Theory of Deliciousness—Wired—David Chang</strong></a>: If you read past the ‘unlocking secret knowledge’ bluster of Wired’s packaging, this essay from David Chang struck me as some of the most sensitive food writing I’ve read in a while. Deconstructing essential recipes not just for deconstruction’s sake, but to rebuild them in a new image in order to create cross-cultural links and to tap personal nostalgia from superficially alien ingredients feels like an essential thing that food can do. Framing these ideas with the concept of ‘<a href="http://www.amazon.com/exec/obidos/asin/0465026567/ref=nosim/latin031-20">strange loops</a>’ was a great idea that I was had been developed more deeply. On a simpler note, his insight that the perfect seasoning for a dish cycles between impressions of being both too salty and not salty enough captures perfectly the flavor of Jeni’s Salted Caramel ice cream that I have never been able to describe (and that I happened to be eating as I read).</li>
+</ul>
 
+    
+        
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0143127896/ref=nosim/latin031-20">Jim Dwyer. <i>More Awesome than Money: Four Boys and Their Quest to Save the World from Facebook</i>. New York: Viking, 2014.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>Where Rosenberg’s <a href="http://tinaja.computer/2016/07/20/recent-reading.html"><em>Dreaming in Code</em></a> addressed failure in software development from the perspective of the problems of software design and project management, Dwyer follows the ill-fated Diaspora project and explores failure from the perspective of business realities in Silicon Valley: missed opportunities, the difficulty of transitioning from hacker to businessman, and finding a product/market fit. Like Rosenberg, Dwyer had access to the team as an observer for the bulk of the period he narrates, and his account benefits from the immediate reactions of his subjects that might otherwise have been smoothed over by hindsight.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/870919617">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0143127896/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1937557162/ref=nosim/latin031-20">Scott Jehl. <i>Responsible Responsive Design</i>. New York: A Book Apart, 2014.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>More than some others of the Book Apart series, this title is thick with specific how-to demonstration material and references to specific libraries, shims, etc. to implement the recommended techniques. To go as deep as Jehl does with some of this is not in the budget on most of my client work, but it is still helpful to see full spectrum available in order to pick some techniques that can be easily inserted in smaller budget projects. I also look forward to experimenting with it for personal projects.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/900281753">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1937557162/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
 <pubDate>Mon, 29 Aug 2016 06:53:53 -0400</pubDate>
-<link>http://localhost:4000/2016/08/29/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2016/08/29/recent-reading.html</guid>
+<link>http://tinaja.computer/2016/08/29/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/08/29/recent-reading.html</guid>
 </item>
 
 <item>
 <title>PDF Preview Problem on El Capitán</title>
 
+<description>
+    <![CDATA[
+    <p>I recently had problems with PDFs opening in Preview on OS X El Capitán. After weeks of thinking it was a problem with Preview, I eventually realized it was happening at a system level with PDF files generally. It’s pretty difficult to find helpful information by searching variations on ‘os x pdf preview not opening’, but I eventually found a <a href="https://discussions.apple.com/message/28953108#28953108">thread</a> that led me in the right direction.</p>
 
-<description>I recently had problems with PDFs opening in Preview on OS X El Capitán.</description>
+<p>I first noticed that saving as a PDF from the print window and choosing to open in Preview did nothing. I could still save PDFs to Evernote or to Yoink so I mostly didn’t worry about it. Around the same time I noticed that the default application for PDFs on my system had become Acrobat Reader (a choice I would never have made of my own volition).</p>
 
+<p>When trying to open PDFs with Preview by using a contextual menu in Finder and selecting Preview from the <code class="highlighter-rouge">Open with…</code> menu, I’d be presented with a file dialog when Preview launched rather than the file I had selected, and re-selecting the file to open in that dialog (or any other PDF for that matter) would fail silently. Annoying, but I just started using other PDF viewers.</p>
+
+<p>Then I noticed that PDFs on my Desktop had changed to completely blank icons. Not any additional inconvenience, but increasingly troubling.</p>
+
+<p>Finally, planning for an upcoming trip, I dropped a PDF of my itinerary into Notes and saw that the new note had an image attached, but my PDF did not display inline in Notes. I realized then that my problem was with PDFs, not with Preview. Turns out Quick Look for PDFs was also not working, etc. etc.</p>
+
+<p>I eventually found the thread I mentioned in the intro and went from there to find this <a href="http://ohanaware.com/support/index.php?article=how-not-to-break-preview.html">support writeup on the Ohanaware website</a> about an incompatibility between one of their apps and El Capitán that corrupted the launch services database and interfered with Preview’s ability to open PDFs. They have released an app called Preview Reset to fix the problem that you can find from the same page. I had never used any of Ohanaware’s software, but their Preview Reset application rats on whichever application was the culprit on your system. In my case, Notability had caused the problem.</p>
+
+<p>So if you have a problem with losing PDF support in Preview or other system-level features in Finder (Quick Look), Notes (inline preview), etc.—particularly if you have been running Shine from Ohanaware or Notability, but it sounds like there are several applications that have caused this problem—try <a href="http://ohanaware.com/support/index.php?article=how-not-to-break-preview.html">Preview Reset</a> from Ohanaware and see if that fixes things.</p>
+
+    
+    ]]>
+</description>
 <pubDate>Mon, 25 Jul 2016 01:37:48 -0400</pubDate>
-<link>http://localhost:4000/2016/07/25/preview-pdf-problem.html</link>
-<guid isPermaLink="true">http://localhost:4000/2016/07/25/preview-pdf-problem.html</guid>
+<link>http://tinaja.computer/2016/07/25/preview-pdf-problem.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/07/25/preview-pdf-problem.html</guid>
 </item>
 
 <item>
 <title>Recent Reading: Roguelikes, Runners, and Triremes</title>
 
+<description>
+    <![CDATA[
+    
 
-<description>My reading the last couple of weeks has included ancient Mediterranean seafaring, early roguelikes, and Kenyan marathons.</description>
+    
+        
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0801851300/ref=nosim/latin031-20">Lionel Casson. <i>Ships and Seamanship in the Ancient World</i>. Princeton, N.J.: Princeton University Press, 1971.</a>
+      
+    </span>
 
+        
+          <span class="note"><p>A good reference work for understanding a broad overview of ship and boat designs as they evolved in the ancient Mediterranean world (and persisted into the medieval). Casson is a classicist rather than a maritime historian, so the material is very much oriented towards reading and interpreting texts over detailed analysis of the technical aspects of ship designs, but this skill set is far more important for pulling data and inference out of the limited sources. Given the limited sources available, it would not seem possible to have a work on Mediterranean antiquity similar to that I read by <a href="/2016/07/05/recent-reading.html">Ferreiro</a> recently.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/141594">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0801851300/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://worldcat.org/oclc/804911308">Thomas Fuchs. <i>Retinafy Your Web Sites & Apps</i>. Philadelphia, PA: Thomas Fuchs, 2012.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>I <a href="http://retinafy.me">bought</a> this self-published e-book when it came out in 2012, but a recent revised edition encouraged me to revisit it to see what more I might get out of it now that so much of this has become second nature. Still a good reference resource.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/804911308">WorldCat &raquo;</a>
+      
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0345528808/ref=nosim/latin031-20">Adharanand Finn. <i>Running with the Kenyans: Passion, Adventure, and the Secrets of the Fastest People on Earth</i>. New YorK: Ballantine Books, 2012.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>Entertaining memoir of a British runner who moved to Kenya to train with Kenyan marathon runners. Provides interesting insight into the different approaches to conditioning, nutrition, and training regimes employed by Kenyan athletes and their coaches as well as the role athletics plays in contemporary Kenyan culture generally. Does a better job of avoiding the temptation to declare a single, magical explanation for recent Kenyan successes in long-distance running than I had expected.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/753624865">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0345528808/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1400082471/ref=nosim/latin031-20">Scott Rosenberg. <i>Dreaming in Code: Two Dozen Programmers, Three Years, 4,732 Bugs, and One Quest for Transcendent Software</i>. New York: Crown Publishers, 2007.</a>
+      
+    </span>
+
+        
+          <span class="note"><ul>
+  <li>Scott Rosenberg takes his opportunity to observe Mitch Kapor’s Open Source Applications Foundation in its (frustrated) development of the failed Chandler personal information manager software package to explore the myriad problems that contribute to developing software. The play-by-play of Chandler development itself is interesting, but Rosenberg’s work historicizing against the backdrop of the evolution of project management and the computer sciences over the second half of the twentieth century provides incredibly valuable context and is incredibly well-done popular history writing.</li>
+</ul>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/70174970">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1400082471/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B012QP0Z7O/ref=nosim/latin031-20">David L. Craddock. <i>Dungeon Hacks: How NetHack, Angband, and Other Roguelikes Changed the Course of Video Games</i>. Canton, OH: Press Start Press, 2015.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>Craddock selects several representative early Roguelikes (NetHack, Moria, Angband, etc.) and relates the circumstances of their development and the design motivations of their several creators. The focus very much favors constructing a unified narrative out of interviews with the creators of the games. What analytical perspective there is oriented much more towards issues of game design than to historical perspective. One notable exception comes in his presentation of the independent (and to some degree simultaneous) development of Beneath Apple Manor, Sword of Fargoal, and Rogue—three games with similar design goals and mechanics, though only Rogue would become the namesake for the genre.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/922716859">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B012QP0Z7O/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
 <pubDate>Wed, 20 Jul 2016 04:20:08 -0400</pubDate>
-<link>http://localhost:4000/2016/07/20/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2016/07/20/recent-reading.html</guid>
+<link>http://tinaja.computer/2016/07/20/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/07/20/recent-reading.html</guid>
 </item>
 
 <item>
 <title>Recent Reading: Apocryphal Geography, Maps, and JavaScript</title>
 
+<description>
+    <![CDATA[
+    <h3 id="links">Links</h3>
 
-<description>My recent reading includes British exploration in the Pacific, scripting maps, and programming in JavaScript.</description>
+<ul>
+  <li>
+    <p><a href="http://www.nytimes.com/2016/07/03/us/politics/obama-after-dark-the-precious-hours-alone.html"><strong>Obama After Dark: The Precious Hours Alone—The New York Times—Michael D. Shear</strong></a>: Great profile of Barack Obama and his nighttime work routine. Nice to be reminded that as children grow older, even the president can find more personal time to set aside for work.</p>
+  </li>
+  <li>
+    <p><a href="http://a16z.com/2016/06/17/stickers/"><strong>The Elements of Stickers—A16Z Blog—Connie Chan</strong></a>: Many of these points have been made elsewhere in bits and pieces, but this is a great synthesis of both the business and the expressive possibilities of stickers in messaging.</p>
+  </li>
+  <li>
+    <p><a href="http://www.theatlantic.com/technology/archive/2016/06/everyday-is-bloomsday/487313/"><strong>Ulysses and the Lie of Technological Progress—The Atlantic—Ian Bogost</strong></a>: I remember seeing the Twitter bots that Bogost describes here and being enthralled by the idea. I don’t remember if I saw them in their first year; it was probably not until 2008. I may also not yet have been familiar with Bogost’s work at that time even though now he’s one of my favorite writers. Regardless, a nice juxtaposition of the technological flexibility and rigidity of print and digital publishing, respectively.</p>
+  </li>
+</ul>
 
+
+    
+        
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0860789675/ref=nosim/latin031-20">Glyndwr Williams. <i>Buccaneers, Explorers and Settlers: British Enterprise and Encounters in the Pacific, 1670-1800</i>. Burlington, VT: Ashgate, 2005.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>This collection was a great way to catch up with Williams’s working, collecting articles across roughly forty years of his career. There is, of course, a heavy focus on the Cook voyages, but of particular use for me were some essays on British reactions to the apocrypha around the Fonte and Maldonado voyages in connection with hypothesizing a Northwest Passage.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/57493645">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0860789675/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1593272715/ref=nosim/latin031-20">Adam DuVander. <i>Map Scripting 101: An Example-Driven Guide to Building Interactive Maps with Bing, Yahoo!, and Google Maps</i>. San Francisco, CA: No Starch Press, 2010.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>This book was published in 2010, so many of the specifics of technical implementation (e.g., <a href="https://en.wikipedia.org/wiki/Yahoo!_Pipes">Yahoo! Pipes</a>) are now out of date; however, quickly reading through its recipe-based format at a higher level still provides a great overview of the kinds of techniques available in web mapping APIs and what they might be used for. Provided some good focus for going into the Austin music mapping project…</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/679603831">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1593272715/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1593275846/ref=nosim/latin031-20">Marijn Haverbeke. <i>Eloquent JavaScript: A Modern Introduction to Programming</i>. Second Edition. San Francisco, CA: No Starch Press, 2015.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>This is one of the best programming books I’ve read. So much material on JavaScript is motivated by providing quick snippets and recipes for augmenting web pages, but the bulk of Haverbeke’s book is a real exercise in programming theory that happens to be delivered in JavaScript.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/927290894">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1593275846/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
 <pubDate>Tue, 05 Jul 2016 00:21:16 -0400</pubDate>
-<link>http://localhost:4000/2016/07/05/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2016/07/05/recent-reading.html</guid>
+<link>http://tinaja.computer/2016/07/05/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2016/07/05/recent-reading.html</guid>
 </item>
 
 </channel>
