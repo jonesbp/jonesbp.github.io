@@ -3,7 +3,7 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://tinaja.computer</link>
+<link>http://localhost:4000</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
@@ -233,8 +233,8 @@
     ]]>
 </description>
 <pubDate>Sat, 18 Feb 2017 00:00:00 -0500</pubDate>
-<link>http://tinaja.computer/2017/02/18/screenscraping-wikipedia.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/02/18/screenscraping-wikipedia.html</guid>
+<link>http://localhost:4000/2017/02/18/screenscraping-wikipedia.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/02/18/screenscraping-wikipedia.html</guid>
 </item>
 
 <item>
@@ -369,8 +369,8 @@
     ]]>
 </description>
 <pubDate>Fri, 17 Feb 2017 00:00:00 -0500</pubDate>
-<link>http://tinaja.computer/2017/02/17/longest-european-rivers.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/02/17/longest-european-rivers.html</guid>
+<link>http://localhost:4000/2017/02/17/longest-european-rivers.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/02/17/longest-european-rivers.html</guid>
 </item>
 
 <item>
@@ -387,6 +387,8 @@
 
     
         
+
+
   <div class="clear-block"></div>
   <h3>Books</h3>
   <ul class="reading-list">
@@ -467,8 +469,8 @@
     ]]>
 </description>
 <pubDate>Fri, 10 Feb 2017 15:48:49 -0500</pubDate>
-<link>http://tinaja.computer/2017/02/10/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/02/10/recent-reading.html</guid>
+<link>http://localhost:4000/2017/02/10/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/02/10/recent-reading.html</guid>
 </item>
 
 <item>
@@ -479,6 +481,8 @@
     
     
         
+
+
   <div class="clear-block"></div>
   <h3>Books</h3>
   <ul class="reading-list">
@@ -561,8 +565,8 @@
     ]]>
 </description>
 <pubDate>Fri, 16 Dec 2016 07:00:00 -0500</pubDate>
-<link>http://tinaja.computer/2016/12/16/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/12/16/recent-reading.html</guid>
+<link>http://localhost:4000/2016/12/16/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2016/12/16/recent-reading.html</guid>
 </item>
 
 <item>
@@ -574,6 +578,8 @@
 
     
         
+
+
   <div class="clear-block"></div>
   <h3>Books</h3>
   <ul class="reading-list">
@@ -704,8 +710,8 @@
     ]]>
 </description>
 <pubDate>Sat, 12 Nov 2016 12:05:50 -0500</pubDate>
-<link>http://tinaja.computer/2016/11/12/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/11/12/recent-reading.html</guid>
+<link>http://localhost:4000/2016/11/12/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2016/11/12/recent-reading.html</guid>
 </item>
 
 <item>
@@ -735,8 +741,8 @@
     ]]>
 </description>
 <pubDate>Mon, 12 Sep 2016 06:15:12 -0400</pubDate>
-<link>http://tinaja.computer/2016/09/12/mailing-lists.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/09/12/mailing-lists.html</guid>
+<link>http://localhost:4000/2016/09/12/mailing-lists.html</link>
+<guid isPermaLink="true">http://localhost:4000/2016/09/12/mailing-lists.html</guid>
 </item>
 
 <item>
@@ -752,6 +758,8 @@
 
     
         
+
+
   <div class="clear-block"></div>
   <h3>Books</h3>
   <ul class="reading-list">
@@ -810,8 +818,8 @@
     ]]>
 </description>
 <pubDate>Mon, 29 Aug 2016 06:53:53 -0400</pubDate>
-<link>http://tinaja.computer/2016/08/29/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/08/29/recent-reading.html</guid>
+<link>http://localhost:4000/2016/08/29/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2016/08/29/recent-reading.html</guid>
 </item>
 
 <item>
@@ -837,8 +845,8 @@
     ]]>
 </description>
 <pubDate>Mon, 25 Jul 2016 01:37:48 -0400</pubDate>
-<link>http://tinaja.computer/2016/07/25/preview-pdf-problem.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/07/25/preview-pdf-problem.html</guid>
+<link>http://localhost:4000/2016/07/25/preview-pdf-problem.html</link>
+<guid isPermaLink="true">http://localhost:4000/2016/07/25/preview-pdf-problem.html</guid>
 </item>
 
 <item>
@@ -850,6 +858,8 @@
 
     
         
+
+
   <div class="clear-block"></div>
   <h3>Books</h3>
   <ul class="reading-list">
@@ -980,8 +990,8 @@
     ]]>
 </description>
 <pubDate>Wed, 20 Jul 2016 04:20:08 -0400</pubDate>
-<link>http://tinaja.computer/2016/07/20/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/07/20/recent-reading.html</guid>
+<link>http://localhost:4000/2016/07/20/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2016/07/20/recent-reading.html</guid>
 </item>
 
 <item>
@@ -1006,6 +1016,8 @@
 
     
         
+
+
   <div class="clear-block"></div>
   <h3>Books</h3>
   <ul class="reading-list">
@@ -1088,8 +1100,8 @@
     ]]>
 </description>
 <pubDate>Tue, 05 Jul 2016 00:21:16 -0400</pubDate>
-<link>http://tinaja.computer/2016/07/05/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2016/07/05/recent-reading.html</guid>
+<link>http://localhost:4000/2016/07/05/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2016/07/05/recent-reading.html</guid>
 </item>
 
 </channel>
