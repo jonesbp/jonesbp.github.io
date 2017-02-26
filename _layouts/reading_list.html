@@ -7,19 +7,5 @@ layout: default
 <div class="post reading_list">
   {{ content }}
 
-  {% if page.books.size > 0 %}
-    <div class="clear-block"></div>
-    <h3>Books</h3>
-    <ul class="reading-list">
-      {% for book in page.books %}
-        <li>
-          {% include books/citation.html book_id=book.id %}
-          {% if book.note %}
-            <span class="note">{{ book.note | markdownify }}</span>
-          {% endif -%}
-          {% include books/links.html book_id=book.id %}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+  {% include reading_list.html %}
 </div>
