@@ -1,15 +1,22 @@
 ---
 layout: default
 ---
-{% if page.type == "tech_note" %}
-  <h2><span class="indicator icon-note"></span>{{ page.title }}</h2>
-{% elsif page.type == "list" %}
-  <h2><span class="indicator icon-list"></span>{{ page.title }}</h2>
+{% if page.type == "quotation" %}
 {% else %}
-  <h2>{{ page.title }}</h2>
+  {% if page.type == "tech_note" %}
+    <h2><span class="indicator icon-note"></span>{{ page.title }}</h2>
+  {% elsif page.type == "list" %}
+    <h2><span class="indicator icon-list"></span>{{ page.title }}</h2>
+  {% else %}
+    <h2>{{ page.title }}</h2>
+  {% endif %}
+  <p class="meta">{{ page.date | date_to_string }}</p>
 {% endif %}
-<p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post {{ page.type }}">
 {{ content }}
 </div>
+
+{% if page.type == "quotation" %}
+  <p class="meta">{{ page.date | date_to_string }}</p>
+{% endif %}

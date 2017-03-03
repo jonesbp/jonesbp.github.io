@@ -20,7 +20,7 @@ span.invisible-text {
   display: none;
 }
 
-i, em {
+i, em, cite {
   font-style: italic;
 }
 
@@ -156,6 +156,27 @@ img {
     }
   }
 
+  blockquote {
+    border: {
+      color: $mediumHighlight;
+      style: dotted;
+      width: 0 0 0 2px;
+    }
+
+    padding-left: 1em;
+  }
+
+  hr {
+    border-width: 0;
+    margin: 1.5em 0 3em 0;
+    text-align: center;
+
+    &:after {
+      border-width: 0;
+      color: $mediumHighlight;
+      content: "❊ ❊ ❊";
+    }
+  }
 }
 
 // Site //
