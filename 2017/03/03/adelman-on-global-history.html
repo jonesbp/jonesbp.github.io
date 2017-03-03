@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-          <title>Testing Hazel Rule Notifications ≫ La Tinaja</title>
+          <title>Jeremy Adelman on Global History ≫ La Tinaja</title>
         
 
         <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         
-          <meta name="description" content="Add a version number to messages when testing Hazel notifications.">
+          <meta name="description" content="  Going deeper into the stories of Others afar and Strangers at home means dispensing with the idea that global integration was like an electric circuit, bringing light to the connected. Becoming inter-dependent is not just messier than drawing a wiring diagram. It means reckoning with dimensions of networks and circuits that global historians – and possibly all narratives of cosmopolitan convergence – leave out of the story: lighting up corners of the earth leaves others in the dark.  The story of the globalists illuminates some at the expense of others, the left behind, the ones who cannot move, and those who become immobilised because the light no longer shines on them.  – Jeremy Adelman, What is Global History Now?">
         
 
         <!-- Custom CSS -->
@@ -48,23 +48,19 @@
           </div>
 
           
-  
-    <h2><span class="indicator icon-note"></span>Testing Hazel Rule Notifications</h2>
-  
-  <p class="meta">14 Jan 2016</p>
 
 
-<div class="post tech_note">
-<p>Today I was working on a new <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> rule that uses a JavaScript action. Never having used the JavaScript support in Hazel, I was using notifications to give me some debugging messages. (JavaScript fails silently in Hazel—nice for avoiding annoyance in daily use, but bad for testing.)</p>
+<div class="post quotation">
+<blockquote>
+  <p>Going deeper into the stories of Others afar and Strangers at home means dispensing with the idea that global integration was like an electric circuit, bringing light to the connected. Becoming inter-dependent is not just messier than drawing a wiring diagram. It means reckoning with dimensions of networks and circuits that global historians – and possibly all narratives of cosmopolitan convergence – leave out of the story: lighting up corners of the earth leaves others in the dark.  The story of the globalists illuminates some at the expense of others, the left behind, the ones who cannot move, and those who become immobilised because the light no longer shines on them.</p>
 
-<p>The problem was I thought I was seeing really inconsistent results based on the notifications I was getting and not getting. My mistake was assuming that when I wasn’t getting notifications it was because the JavaScript had failed and the notification step of my Hazel rule hadn’t executed.</p>
-
-<p>What was happening instead was that Notification Center was suppressing duplicate notification messages made under a certain time threshold. Notifications that I assumed weren’t displaying because the rule was terminated before they were triggered were in fact not displaying because they duplicated a recent notification.</p>
-
-<p>My solution was simply to add a <code class="highlighter-rouge">v1</code>, <code class="highlighter-rouge">v2</code>, <code class="highlighter-rouge">v3</code>, etc. versioning tag to my notification messages as I tested new steps to force the messages to be unique.</p>
+  <p>– <cite>Jeremy Adelman, <a href="https://aeon.co/essays/is-global-history-still-possible-or-has-it-had-its-moment">What is Global History Now?</a></cite></p>
+</blockquote>
 
 </div>
 
+
+  <p class="meta">03 Mar 2017</p>
 
 
 

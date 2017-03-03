@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-          <title>Testing Hazel Rule Notifications ≫ La Tinaja</title>
+          <title>La Tinaja</title>
         
 
         <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         
-          <meta name="description" content="Add a version number to messages when testing Hazel notifications.">
+          <meta name="description" content="My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.">
         
 
         <!-- Custom CSS -->
@@ -47,26 +47,29 @@
             </div>
           </div>
 
-          
-  
-    <h2><span class="indicator icon-note"></span>Testing Hazel Rule Notifications</h2>
-  
-  <p class="meta">14 Jan 2016</p>
+          <div id="home">
+  <ul class="posts">
+    
+      
+        <li class="long-post">
+          <a class="list-title" href="/2014/10/21/sublime-text-syntax-for-double-extensions.html">Setting the Syntax for Files with Multiple Extensions in Sublime Text</a> 
+          <p>
+            <span class="excerpt">I’ve been frustrated with Sublime Text syntax highlighting defaults on files with multiple name extensions that I finally spent 15 minutes figuring out how to fix them.</span> <span class="details"><a class="detail" href="/2014/10/21/sublime-text-syntax-for-double-extensions.html">Read more &raquo;</a> <a class="detail" href="/2014/10/21/sublime-text-syntax-for-double-extensions.html">21 Oct 2014</a></span>
+          </p>
+          <!-- <hr> -->
+        </li>
+      
+    
+  </ul>
 
-
-<div class="post tech_note">
-<p>Today I was working on a new <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> rule that uses a JavaScript action. Never having used the JavaScript support in Hazel, I was using notifications to give me some debugging messages. (JavaScript fails silently in Hazel—nice for avoiding annoyance in daily use, but bad for testing.)</p>
-
-<p>The problem was I thought I was seeing really inconsistent results based on the notifications I was getting and not getting. My mistake was assuming that when I wasn’t getting notifications it was because the JavaScript had failed and the notification step of my Hazel rule hadn’t executed.</p>
-
-<p>What was happening instead was that Notification Center was suppressing duplicate notification messages made under a certain time threshold. Notifications that I assumed weren’t displaying because the rule was terminated before they were triggered were in fact not displaying because they duplicated a recent notification.</p>
-
-<p>My solution was simply to add a <code class="highlighter-rouge">v1</code>, <code class="highlighter-rouge">v2</code>, <code class="highlighter-rouge">v3</code>, etc. versioning tag to my notification messages as I tested new steps to force the messages to be unique.</p>
-
+  <div class="pagination">
+    
+      <a href="/page4" class="previous">≪ Previous</a>
+    
+    <span class="page-number">5 of 5</span>
+    
+  </div>
 </div>
-
-
-
 
           <div class="footer">
             <div class="contact">

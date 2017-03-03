@@ -110,7 +110,7 @@ body {
 span.invisible-text {
   display: none; }
 
-i, em {
+i, em, cite {
   font-style: italic; }
 
 b, strong {
@@ -193,6 +193,19 @@ img {
         text-decoration: none; }
         .posts li p span.details a.detail:hover {
           text-decoration: underline; }
+  .posts li blockquote {
+    border-color: #FCC884;
+    border-style: dotted;
+    border-width: 0 0 0 2px;
+    padding-left: 1em; }
+  .posts li hr {
+    border-width: 0;
+    margin: 1.5em 0 3em 0;
+    text-align: center; }
+    .posts li hr:after {
+      border-width: 0;
+      color: #FCC884;
+      content: "❊ ❊ ❊"; }
 
 .site {
   max-width: 42em;
