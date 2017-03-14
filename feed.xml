@@ -7,6 +7,72 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Recent Reading: Alibaba, Vegetarian History, and 90’s Dystopia</title>
+
+<description>
+    <![CDATA[
+    
+    
+        
+
+
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        
+        
+          <span class="note"><p>Duncan Clark is a former analyst with Morgan Stanley, and his background is readily apparent for better and worse in his approach to this book. His personal experience in the early days of the Internet business in China, including with Alibaba itself, means he has keen insights into the formation of Alibaba that is frequently elided with cliché and comparisons to Amazon in other accounts. However, the granularity of detail and lack of synthesis can make the account drag from time-to-time, particularly in the middle to late stages.  I’m glad I’ve read this, but would also be interested in a more analytical account.</p>
+</span>
+        
+        
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1250006252/ref=nosim/latin031-20">The Moosewood Collective and Jim Scherer. <i>Moosewood Restaurant Favorites: The 250 Most-Requested Naturally Delicious Recipes from One of America’s Best-Loved Restaurants</i>. New York: St. Martin’s Griffin, 2013.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>The organizing principal of this Moosewood cookbook was to collect the recipes that for which employees hear the most requests from patrons which makes it a good single stop for those not ready to work through the dozen or so other books they’ve put out. Published in 2013, it is a fortieth anniversary commemoration of sorts for the restaurant and includes some nice front-matter on the history of the restaurant, its role in promoting vegetarian diets and healthful eating, and how the food industry has changed in the United States in the last 40 years.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/886578768">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1250006252/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+        
+          <span class="note"><p>This one from Gibson strikes me as all setting and world-building around a pretty tight, but shallow, thriller plot. There is only limited exploration of the sociological and technological consequences of the world he builds relative to some of his other work, but lots of interesting bits to pick out of the setting nonetheless.</p>
+</span>
+        
+        
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
+<pubDate>Tue, 14 Mar 2017 15:13:00 -0400</pubDate>
+<link>http://localhost:4000/2017/03/14/moosewood-alibaba-virtual-light.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/03/14/moosewood-alibaba-virtual-light.html</guid>
+</item>
+
+<item>
 <title>Jeremy Adelman on Global History</title>
 
 <description>
@@ -912,33 +978,6 @@
 <pubDate>Mon, 29 Aug 2016 06:53:53 -0400</pubDate>
 <link>http://localhost:4000/2016/08/29/recent-reading.html</link>
 <guid isPermaLink="true">http://localhost:4000/2016/08/29/recent-reading.html</guid>
-</item>
-
-<item>
-<title>PDF Preview Problem on El Capitán</title>
-
-<description>
-    <![CDATA[
-    <p>I recently had problems with PDFs opening in Preview on OS X El Capitán. After weeks of thinking it was a problem with Preview, I eventually realized it was happening at a system level with PDF files generally. It’s pretty difficult to find helpful information by searching variations on ‘os x pdf preview not opening’, but I eventually found a <a href="https://discussions.apple.com/message/28953108#28953108">thread</a> that led me in the right direction.</p>
-
-<p>I first noticed that saving as a PDF from the print window and choosing to open in Preview did nothing. I could still save PDFs to Evernote or to Yoink so I mostly didn’t worry about it. Around the same time I noticed that the default application for PDFs on my system had become Acrobat Reader (a choice I would never have made of my own volition).</p>
-
-<p>When trying to open PDFs with Preview by using a contextual menu in Finder and selecting Preview from the <code class="highlighter-rouge">Open with…</code> menu, I’d be presented with a file dialog when Preview launched rather than the file I had selected, and re-selecting the file to open in that dialog (or any other PDF for that matter) would fail silently. Annoying, but I just started using other PDF viewers.</p>
-
-<p>Then I noticed that PDFs on my Desktop had changed to completely blank icons. Not any additional inconvenience, but increasingly troubling.</p>
-
-<p>Finally, planning for an upcoming trip, I dropped a PDF of my itinerary into Notes and saw that the new note had an image attached, but my PDF did not display inline in Notes. I realized then that my problem was with PDFs, not with Preview. Turns out Quick Look for PDFs was also not working, etc. etc.</p>
-
-<p>I eventually found the thread I mentioned in the intro and went from there to find this <a href="http://ohanaware.com/support/index.php?article=how-not-to-break-preview.html">support writeup on the Ohanaware website</a> about an incompatibility between one of their apps and El Capitán that corrupted the launch services database and interfered with Preview’s ability to open PDFs. They have released an app called Preview Reset to fix the problem that you can find from the same page. I had never used any of Ohanaware’s software, but their Preview Reset application rats on whichever application was the culprit on your system. In my case, Notability had caused the problem.</p>
-
-<p>So if you have a problem with losing PDF support in Preview or other system-level features in Finder (Quick Look), Notes (inline preview), etc.—particularly if you have been running Shine from Ohanaware or Notability, but it sounds like there are several applications that have caused this problem—try <a href="http://ohanaware.com/support/index.php?article=how-not-to-break-preview.html">Preview Reset</a> from Ohanaware and see if that fixes things.</p>
-
-    
-    ]]>
-</description>
-<pubDate>Mon, 25 Jul 2016 01:37:48 -0400</pubDate>
-<link>http://localhost:4000/2016/07/25/preview-pdf-problem.html</link>
-<guid isPermaLink="true">http://localhost:4000/2016/07/25/preview-pdf-problem.html</guid>
 </item>
 
 </channel>
