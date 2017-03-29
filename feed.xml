@@ -7,6 +7,25 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Ben Thompson on Specialized AI</title>
+
+<description>
+    <![CDATA[
+    <blockquote>
+  <p>What is kind of amusing — and telling — is that as John McCarthy, who invented the name “Artificial Intelligence”, <a href="http://cacm.acm.org/magazines/2012/1/144824-artificial-intelligence-past-and-future/fulltext">noted</a>, the definition of specialized AI is changing all of the time. Specifically, once a task formerly thought to characterize artificial intelligence becomes routine — like the aforementioned chess-playing, or Go, or a myriad of other taken-for-granted computer abilities — we no longer call it artificial intelligence.</p>
+
+  <p>– <cite>Ben Thompson, <a href="https://stratechery.com/2017/the-arrival-of-artificial-intelligence/">The Arrival of Artificial Intelligence</a></cite></p>
+</blockquote>
+
+    
+    ]]>
+</description>
+<pubDate>Wed, 29 Mar 2017 14:20:01 -0400</pubDate>
+<link>http://localhost:4000/2017/03/29/thomspon-on-specialized-ai.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/03/29/thomspon-on-specialized-ai.html</guid>
+</item>
+
+<item>
 <title>Recent Reading: Alibaba, Vegetarian History, and 90’s Dystopia</title>
 
 <description>
@@ -901,83 +920,6 @@
 <pubDate>Mon, 12 Sep 2016 06:15:12 -0400</pubDate>
 <link>http://localhost:4000/2016/09/12/mailing-lists.html</link>
 <guid isPermaLink="true">http://localhost:4000/2016/09/12/mailing-lists.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Failure, Responsive Design, and Flavors</title>
-
-<description>
-    <![CDATA[
-    <h3 id="links">Links</h3>
-
-<ul>
-  <li><a href="http://www.wired.com/2016/07/chef-david-chang-on-deliciousness/"><strong>The Unified Theory of Deliciousness—Wired—David Chang</strong></a>: If you read past the ‘unlocking secret knowledge’ bluster of Wired’s packaging, this essay from David Chang struck me as some of the most sensitive food writing I’ve read in a while. Deconstructing essential recipes not just for deconstruction’s sake, but to rebuild them in a new image in order to create cross-cultural links and to tap personal nostalgia from superficially alien ingredients feels like an essential thing that food can do. Framing these ideas with the concept of ‘<a href="http://www.amazon.com/exec/obidos/asin/0465026567/ref=nosim/latin031-20">strange loops</a>’ was a great idea that I was had been developed more deeply. On a simpler note, his insight that the perfect seasoning for a dish cycles between impressions of being both too salty and not salty enough captures perfectly the flavor of Jeni’s Salted Caramel ice cream that I have never been able to describe (and that I happened to be eating as I read).</li>
-</ul>
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0143127896/ref=nosim/latin031-20">Jim Dwyer. <i>More Awesome than Money: Four Boys and Their Quest to Save the World from Facebook</i>. New York: Viking, 2014.</a>
-      
-    </span>
-
-        
-          <span class="note"><p>Where Rosenberg’s <a href="http://tinaja.computer/2016/07/20/recent-reading.html"><em>Dreaming in Code</em></a> addressed failure in software development from the perspective of the problems of software design and project management, Dwyer follows the ill-fated Diaspora project and explores failure from the perspective of business realities in Silicon Valley: missed opportunities, the difficulty of transitioning from hacker to businessman, and finding a product/market fit. Like Rosenberg, Dwyer had access to the team as an observer for the bulk of the period he narrates, and his account benefits from the immediate reactions of his subjects that might otherwise have been smoothed over by hindsight.</p>
-</span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/870919617">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0143127896/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
-
-      </li>
-    
-      <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/1937557162/ref=nosim/latin031-20">Scott Jehl. <i>Responsible Responsive Design</i>. New York: A Book Apart, 2014.</a>
-      
-    </span>
-
-        
-          <span class="note"><p>More than some others of the Book Apart series, this title is thick with specific how-to demonstration material and references to specific libraries, shims, etc. to implement the recommended techniques. To go as deep as Jehl does with some of this is not in the budget on most of my client work, but it is still helpful to see full spectrum available in order to pick some techniques that can be easily inserted in smaller budget projects. I also look forward to experimenting with it for personal projects.</p>
-</span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/900281753">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/1937557162/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Mon, 29 Aug 2016 06:53:53 -0400</pubDate>
-<link>http://localhost:4000/2016/08/29/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2016/08/29/recent-reading.html</guid>
 </item>
 
 </channel>
