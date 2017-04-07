@@ -7,6 +7,127 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Recent Reading: Disrupted and Blitzed</title>
+
+<description>
+    <![CDATA[
+    
+
+    
+        
+
+
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0316306096/ref=nosim/latin031-20">Dan Lyons. <i>Disrupted: My Misadventure in the Start-Up Bubble</i>. New York: Hachette Books, 2016.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>Dan Lyons’s memoir of his time as a conspicuously older employee in the twenty-something culture of HubSpot is a readable and entertaining evisceration of both the obvious and some of the more insidious poisonous aspects of Silicon Valley workplace culture. His experience as a tech journalist at <em>Newsweek</em> and elsewhere means that he also from time to time has some interesting insights into the strengths (and more often weaknesses) of HubSpot’s business which makes more edifying reading than a simple tour through a horror show.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/917344238">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0316306096/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1416507787/ref=nosim/latin031-20">Clifford Stoll. <i>The Cuckoo’s Egg: Tracking a Spy Through the Maze of Computer Espionage</i>. New York: Pocket Books, 2005.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>I love post-mortem and process reading. <em>The Cuckoo’s Egg</em> is essentially a narrativization of Cliff Stoll’s logbook of a months-long surveillance of a hacker on his Berkeley computer lab’s Unix systems, and I found the sincere, guileless enthusiasm and detail with which he chronicled his work fascinating. From a historical perspective, the different level of infosec expectations at relatively sensitive sites on this early Internet compared versus basic consumer security expectations more than thirty years later is striking.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/804817769">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1416507787/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1937557383/ref=nosim/latin031-20">David Demaree. <i>Git for Humans</i>. New York: A Book Apart, 2016.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>I use Git all day every day but, probably like most, only barely scratch the surface of its functionality. From a practical standpoint, Demaree’s book also does not go particularly deep into esoteric features of the software; I might have learned one or two practical tips and tricks. The book is instead a concise, accessible encapsulation of Git’s design perspective meant to help people engage with it on its own terms. As with many of the books in the <a href="https://abookapart.com/">A Book Apart</a> series, its strength comes in the tightness and directness of its purpose. It’s difficult to point to a single insight that I have not yet encountered elsewhere or stumbled upon on my own, but I nonetheless have a better sense of what to expect from Git from encountering all of these ideas together, organized in this way, and articulated this clearly and succinctly.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/946886836">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1937557383/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1328663795/ref=nosim/latin031-20">Norman Ohler. <i>Blitzed: Drugs in the Third Reich</i>. Translated by Shaun Whiteside. Boston: Houghton Mifflin Harcourt, 2017.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>Having spent last year in Berlin (and returning this year for the summer), I’ve been getting back into reading twentieth century European for the first time in roughly twenty years. Having heard about <em>Blitzed</em> on the <a href="http://dobyfriday.com/19">Do By Friday</a> podcast, I thought it would introduce a lighter vein to that area of my reading. Ohler is not as historiographically disciplined as a writer trained as a historian might be, but his account is nonetheless at least very suggestive and is certainly entertaining and disturbing. Sometimes the account—particularly in its riffs on the relationship between Hitler and his private physician—may indulge a little too much in the salacious for my tastes, but Ohler’s central conceit that the story of Hitler’s dependency and perhaps addictions is essential for its subversion of Nazism’s claim to moral purity is convincing.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/965781501">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1328663795/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
+<pubDate>Fri, 07 Apr 2017 16:30:01 -0400</pubDate>
+<link>http://localhost:4000/2017/04/07/disrupted-and-blitzed.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/04/07/disrupted-and-blitzed.html</guid>
+</item>
+
+<item>
 <title>Ben Thompson on Specialized AI</title>
 
 <description>
@@ -41,11 +162,26 @@
     
       <li>
         
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0062413406/ref=nosim/latin031-20">Duncan Clark. <i>Alibaba: The House that Jack Ma Built</i>. New York: Ecco, 2016.</a>
+      
+    </span>
+
         
           <span class="note"><p>Duncan Clark is a former analyst with Morgan Stanley, and his background is readily apparent for better and worse in his approach to this book. His personal experience in the early days of the Internet business in China, including with Alibaba itself, means he has keen insights into the formation of Alibaba that is frequently elided with cliché and comparisons to Amazon in other accounts. However, the granularity of detail and lack of synthesis can make the account drag from time-to-time, particularly in the middle to late stages.  I’m glad I’ve read this, but would also be interested in a more analytical account.</p>
 </span>
         
         
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/952386514">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0062413406/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
       </li>
     
       <li>
@@ -74,11 +210,26 @@
     
       <li>
         
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0553566067/ref=nosim/latin031-20">William Gibson. <i>Virtual Light</i>. New York: Bantam Books, 1993.</a>
+      
+    </span>
+
         
           <span class="note"><p>This one from Gibson strikes me as all setting and world-building around a pretty tight, but shallow, thriller plot. There is only limited exploration of the sociological and technological consequences of the world he builds relative to some of his other work, but lots of interesting bits to pick out of the setting nonetheless.</p>
 </span>
         
         
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/271481154">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0553566067/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
       </li>
     
   </ul>
@@ -889,37 +1040,6 @@
 <pubDate>Sat, 12 Nov 2016 12:05:50 -0500</pubDate>
 <link>http://localhost:4000/2016/11/12/recent-reading.html</link>
 <guid isPermaLink="true">http://localhost:4000/2016/11/12/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Mailing Lists</title>
-
-<description>
-    <![CDATA[
-    <p>Robin Sloan started his <a href="http://tinyletter.com/primes">PRIMES</a> mailing list up again this month, so I thought I’d take the occasion to share a list of mailing lists I’ve been trying to follow.</p>
-
-<ul>
-  <li><a href="http://tinyletter.com/aworkinglibrary"><strong>A Working Library</strong></a> <em>(<a href="https://twitter.com/aworkinglibrary">Mandy Brown</a>)</em></li>
-  <li><a href="http://emojiwrap.com"><strong>Emoji Wrap</strong></a> <em>(<a href="https://twitter.com/jeremyburge">Jeremy Burge</a>)</em></li>
-  <li><a href="http://tinyletter.com/metafoundry"><strong>Metafoundry</strong></a> <em>(<a href="https://twitter.com/debcha">Deb Chachra</a>)</em></li>
-  <li><a href="http://orbitaloperations.com"><strong>Orbital Operations</strong></a> <em>(<a href="https://twitter.com/warrenellis">Warren Ellis</a>)</em></li>
-  <li><a href="http://www.virtuouscode.com/newsletter/"><strong>SIGAVDI</strong></a> <em>(<a href="https://twitter.com/avdi">Avdi Grimm</a>)</em></li>
-  <li><a href="http://tinyletter.com/vruba"><strong>6</strong></a> <em>(<a href="https://twitter.com/vruba">Charlie Loyd</a>)</em></li>
-  <li><a href="http://tinyletter.com/realfuture"><strong>Real Future</strong></a> <em>(<a href="https://twitter.com/alexismadrigal">Alexis Madrigal</a>)</em></li>
-  <li><a href="http://tinyletter.com/rebeccaonion"><strong>This Week’s Work</strong></a> <em>(<a href="https://twitter.com/rebeccaonion">Rebecca Onion</a>)</em></li>
-  <li><a href="http://tinyletter.com/ejslgr"><strong>Subscape</strong></a> <em>(<a href="https://twitter.com/EmmaSlager">Emma Slager</a>)</em></li>
-  <li><a href="http://tinyletter.com/primes"><strong>PRIMES</strong></a> <em>(<a href="https://twitter.com/robinsloan">Robin Sloan</a>)</em></li>
-  <li><a href="https://tinyletter.com/interdome"><strong>Interdome Bi-Monthly Reports</strong></a> <em>(<a href="https://twitter.com/interdome">Adam Rothstein</a>)</em></li>
-  <li><a href="http://stratechery.com"><strong>Stratechery</strong></a> <em>(<a href="https://twitter.com/benthompson">Ben Thompson</a>)</em></li>
-  <li><a href="http://postlight.us11.list-manage.com/subscribe"><strong>Track Changes</strong></a></li>
-</ul>
-
-    
-    ]]>
-</description>
-<pubDate>Mon, 12 Sep 2016 06:15:12 -0400</pubDate>
-<link>http://localhost:4000/2016/09/12/mailing-lists.html</link>
-<guid isPermaLink="true">http://localhost:4000/2016/09/12/mailing-lists.html</guid>
 </item>
 
 </channel>
