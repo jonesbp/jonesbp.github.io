@@ -146,6 +146,9 @@ h3 {
 p {
   margin-bottom: 1em; }
 
+ol {
+  list-style-type: decimal; }
+
 span.indicator {
   display: inline-block;
   float: left;
