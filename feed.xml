@@ -7,6 +7,27 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>New Projects</title>
+
+<description>
+    <![CDATA[
+    <p>Last night I started a new side project for the first time in over a year. I installed Django, I initialized a Git repository, and I created an app.</p>
+
+<p>For the last several months, I have been putting pressure on myself to study and learn some new skills. I have made some progress, but also find myself going for long periods without working with these materials.</p>
+
+<p>The feeling of having a project, for me, makes things different. I have a bucket to put this learning into and a scaffolding on which to try out some of these ideas. I have somewhere to go and do something when I find myself with a free 30 minutes.</p>
+
+<p>I’m excited to feel this way again.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Wed, 26 Apr 2017 10:44:00 -0400</pubDate>
+<link>http://localhost:4000/2017/04/26/new-projects.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/04/26/new-projects.html</guid>
+</item>
+
+<item>
 <title>Mapping Caps Lock to Escape in macOS Sierra</title>
 
 <description>
@@ -825,102 +846,6 @@
 <pubDate>Fri, 10 Feb 2017 15:48:49 -0500</pubDate>
 <link>http://localhost:4000/2017/02/10/recent-reading.html</link>
 <guid isPermaLink="true">http://localhost:4000/2017/02/10/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Texas Cooking and Corals in Paris</title>
-
-<description>
-    <![CDATA[
-    
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0451228731/ref=nosim/latin031-20">Daniel Suarez. <i>Daemon</i>. New York: Dutton, 2009.</a>
-      
-    </span>
-
-        
-          <span class="note"><p><em>Daemon</em> received a lot of attention about ten years ago from tech industry folks and computer programmers as a sort of “hard” techno-thriller in which computer technology served the plot according to an internal logic and with respect for actual computational and networking limitations in ways that fiction, film, and television so frequently get laughably wrong. The plot centers on a genius computer programmer and game development CEO with libertarian delusions of grandeur. The current political discussion around Silicon Valley arrogance made for an interesting juxtaposition for reading this novel a decade on from its initial publication.</p>
-</span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/233548994">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0451228731/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
-
-      </li>
-    
-      <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0848745809/ref=nosim/latin031-20">Jessica Dupuy. <i>United Tastes of Texas: Authentic Recipes from All Corners of the Lone Star State</i>. New York: Oxmoor House, 2016.</a>
-      
-    </span>
-
-        
-          <span class="note"><p>This cookbook does a solid job of collecting the various regional influences of Texas cooking including the Southern-inspired food of East Texas, German and Czech influence in Central Texas, the seafood of the Gulf Coast, and the Tex-Mex of South Texas. There’s a good balance between more opinionated recipes adapted from individual chefs and interpretations of classic home-cooking recipes. Not every take on a traditional classic is my favorite example of that dish, but everything here is good and conveniences for home cooks have been taken into account without ruining the important parts.</p>
-</span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/911070339">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0848745809/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
-
-      </li>
-    
-      <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0385531486/ref=nosim/latin031-20">Rebecca Stott. <i>The Coral Thief</i>. New York: Spiegel & Grau, 2009.</a>
-      
-    </span>
-
-        
-          <span class="note"><p><em>The Coral Thief</em> evokes the time and place of early nineteenth-century Paris wonderfully and is clearly the result of engaged research into the history of the era’s natural historians, naturalists, and their rivalries. In all, it was an enjoyable read. However, the execution of the setting was sufficiently engaging that it threw into relief some of the deficiencies in characterization—the two main characters are almost entirely flat on the one hand and fantastically complicated to a fantastical and incredible degree on the other—and plotting—in a final heist requiring silence characters who have worked together for years carry on expository conversations relating their shared personal histories to one another. In a pulpier thriller, I would not have noticed. Having bought into this setting completely, however, the moments that stretched credulity felt all the more jarring.</p>
-</span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/297147171">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0385531486/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Fri, 16 Dec 2016 07:00:00 -0500</pubDate>
-<link>http://localhost:4000/2016/12/16/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2016/12/16/recent-reading.html</guid>
 </item>
 
 </channel>
