@@ -3,8 +3,133 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://localhost:4000</link>
+<link>http://tinaja.computer</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Recent Reading: Bohemian Grove, Post-Scarcity Utopia, and Web Apps</title>
+
+<description>
+    <![CDATA[
+    <h3 id="links">Links</h3>
+
+<ul>
+  <li><a href="http://www.newyorker.com/magazine/2017/05/15/richard-russells-xl-recordings-empire?mbid=nl_170512_Daily"><strong>Richard Russell’s XL Recording Empire—The New Yorker—Matthew Trammell</strong></a>: Part personal profile and part business analysis, this recent magazine piece from <em>The New Yorker</em> was most interesting for me in its treatment of the important role Russell’s taste and opinionated selectivity has played in making XL a success. Being particular does not necessarily need to mean niche.</li>
+  <li><a href="https://www.theverge.com/2017/5/22/15673712/anker-battery-charger-amazon-empire-steven-yang-interview"><strong>How Anker is Beating Apple and Samsung at Their Own Accessory Game—The Verge—Nick Statt</strong></a>: This interview and profile of Anker founder Steven Yang makes a nice complement to the Russell piece. Anker’s current challenge is to grow out of a niche to a more general product company while maintaining their reputation for quality.</li>
+</ul>
+
+
+    
+        
+
+
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B00U5MMZ2E/ref=nosim/latin031-20">Tracy Osborn. <i>Hello Web App: Learn How to Build a Web App</i>. San Jose, CA: Self-published, 2015.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>Osborn selects an interesting framing for her <em>Hello Web App</em> books: sharing only the minimum necessary information to get a web application up and running in a browser with limited programming experience and essentially no computer science fundamentals. The first of these two books provides a kind of paint-by-numbers template for building a simple Django CRUD application in Python.  Having learned by this sort of trial and error herself, Osborn has a good sense of what is necessary and in what order for the beginner to get a satisfying, tangible project up and running as quickly as possible. However, Osborn necessarily makes some assumptions in how she will limit her scope in order to keep things beginner-friendly, and it will take a certain kind of learner to feel free in breaking those assumptions and making their own experimentations when it comes time to grow beyond this template.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/957188874">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B00U5MMZ2E/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01LXOO7UQ/ref=nosim/latin031-20">Jon Ronson. <i>The Elephant in the Room: A Journey into the Trump Campaign and the “Alt-Right”</i>. Seattle, WA: Amazon Kindle Single, 2016.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>I bought this Kindle Single a couple of weeks after the election last fall, but have only now gotten around to reading it. I’ve always had something of a <a href="https://twitter.com/jonesbp/status/860151673637011458">soft spot</a> for Alex Jones despite his becoming a less benign force in the world these days—perhaps he never was benign after all—and Jones’s career-making Bohemian Grove documentary was actually the result of a lark proposed by Ronson. As a result, Ronson’s more personal, and even sympathetic, treatment of Jones as both a person and character appeals to me as being truer than the wholesale condemnation that is more typical of this moment. It also means that Ronson was able to get access to some backstage conversations between Jones, his crew, and associates like Roger Stone that are batshit crazy and fascinating.</p>
+</span>
+        
+        
+    <span class="links">
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01LXOO7UQ/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01774NMEW/ref=nosim/latin031-20">Tracy Osborn. <i>Hello Web App: Intermediate Concepts</i>. San Jose, CA: Self-published, 2015.</a>
+      
+    </span>
+
+        
+          <span class="note"><p><em>Hello Web App: Intermediate Concepts</em> is the second in a series of books introducing novice developers to building a web app with Django. Where the first installment provides a walkthrough for building a CRUD app from start to finish, the second book is more of a recipe book for specific features: a messaging system or Stripe integration, for example. The examples are helpful and include functionality that almost any web app project will require, but the shift in approach will mean that true novices should spend some time working on whatever they’ve based on their time with the first book before looking to this one for features to add. There is not enough to the demonstration project in the first book to support adding most of these features as anything other than demonstrations.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/952566688">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01774NMEW/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01FQQ47OC/ref=nosim/latin031-20">Cory Doctorow. <i>Walkaway: A Novel</i>. New York: Tom Doherty Associates, 2017.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>Most Cory Doctorow novels work better for me as ‘idea novels’ than as stories in themselves. His tendency to have characters break into multi-paragraph monologues outlining the political ramifications of some aspect of maker culture or copy protection almost never serves the pacing of his plots well. However, I read all of them and am always compelled by at least some part of them to think about something new. <em>Walkaway</em> was perhaps the most Doctorow-ish of novels in both these good and bad senses. I read it relatively quickly and mostly enjoyed myself most of the time, but having finished I may remember my ambivalence above another sensation of reading it.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/975270622">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01FQQ47OC/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
+<pubDate>Wed, 24 May 2017 10:03:00 -0400</pubDate>
+<link>http://tinaja.computer/2017/05/24/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/05/24/recent-reading.html</guid>
+</item>
 
 <item>
 <title>Recent Reading: Uber, Airbnb, and Murder</title>
@@ -75,8 +200,8 @@
     ]]>
 </description>
 <pubDate>Mon, 01 May 2017 13:19:00 -0400</pubDate>
-<link>http://localhost:4000/2017/05/01/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/05/01/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/05/01/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/05/01/recent-reading.html</guid>
 </item>
 
 <item>
@@ -96,8 +221,8 @@
     ]]>
 </description>
 <pubDate>Wed, 26 Apr 2017 10:44:00 -0400</pubDate>
-<link>http://localhost:4000/2017/04/26/new-projects.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/04/26/new-projects.html</guid>
+<link>http://tinaja.computer/2017/04/26/new-projects.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/04/26/new-projects.html</guid>
 </item>
 
 <item>
@@ -122,8 +247,8 @@
     ]]>
 </description>
 <pubDate>Wed, 12 Apr 2017 00:00:00 -0400</pubDate>
-<link>http://localhost:4000/2017/04/12/caps-lock-to-escape.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/04/12/caps-lock-to-escape.html</guid>
+<link>http://tinaja.computer/2017/04/12/caps-lock-to-escape.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/04/12/caps-lock-to-escape.html</guid>
 </item>
 
 <item>
@@ -243,8 +368,8 @@
     ]]>
 </description>
 <pubDate>Fri, 07 Apr 2017 16:30:01 -0400</pubDate>
-<link>http://localhost:4000/2017/04/07/disrupted-and-blitzed.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/04/07/disrupted-and-blitzed.html</guid>
+<link>http://tinaja.computer/2017/04/07/disrupted-and-blitzed.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/04/07/disrupted-and-blitzed.html</guid>
 </item>
 
 <item>
@@ -262,8 +387,8 @@
     ]]>
 </description>
 <pubDate>Wed, 29 Mar 2017 14:20:01 -0400</pubDate>
-<link>http://localhost:4000/2017/03/29/thomspon-on-specialized-ai.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/03/29/thomspon-on-specialized-ai.html</guid>
+<link>http://tinaja.computer/2017/03/29/thomspon-on-specialized-ai.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/03/29/thomspon-on-specialized-ai.html</guid>
 </item>
 
 <item>
@@ -358,8 +483,8 @@
     ]]>
 </description>
 <pubDate>Tue, 14 Mar 2017 15:13:00 -0400</pubDate>
-<link>http://localhost:4000/2017/03/14/moosewood-alibaba-virtual-light.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/03/14/moosewood-alibaba-virtual-light.html</guid>
+<link>http://tinaja.computer/2017/03/14/moosewood-alibaba-virtual-light.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/03/14/moosewood-alibaba-virtual-light.html</guid>
 </item>
 
 <item>
@@ -377,8 +502,8 @@
     ]]>
 </description>
 <pubDate>Fri, 03 Mar 2017 14:46:01 -0500</pubDate>
-<link>http://localhost:4000/2017/03/03/adelman-on-global-history.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/03/03/adelman-on-global-history.html</guid>
+<link>http://tinaja.computer/2017/03/03/adelman-on-global-history.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/03/03/adelman-on-global-history.html</guid>
 </item>
 
 <item>
@@ -450,8 +575,8 @@
     ]]>
 </description>
 <pubDate>Mon, 27 Feb 2017 20:21:03 -0500</pubDate>
-<link>http://localhost:4000/2017/02/27/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/02/27/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/02/27/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/02/27/recent-reading.html</guid>
 </item>
 
 <item>
@@ -681,144 +806,8 @@
     ]]>
 </description>
 <pubDate>Sat, 18 Feb 2017 00:00:00 -0500</pubDate>
-<link>http://localhost:4000/2017/02/18/screenscraping-wikipedia.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/02/18/screenscraping-wikipedia.html</guid>
-</item>
-
-<item>
-<title>Longest Rivers in Europe</title>
-
-<description>
-    <![CDATA[
-    <p>Playing with list-making and naming bodies of water recently for a couple projects.</p>
-
-<p>These are the rivers in Europe longer than 250km, sorted in descending length.</p>
-
-<ul>
-  <li><a href="https://en.wikipedia.org/wiki/Volga_River">Volga</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Danube">Danube</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Ural_River">Ural</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Dnieper_River">Dnieper</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Don_River_(Russia)">Don</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Pechora_River">Pechora</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Kama_River">Kama</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Northern_Dvina_River">Northern Dvina</a>–<a href="https://en.wikipedia.org/wiki/Vychegda_River">Vychegda</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Oka_River">Oka</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Belaya_River_(Kama)">Belaya</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Dniester">Dniester</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Rhine">Rhine</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Elbe">Elbe</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Donets_River">Donets</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Vistula_River">Vistula</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Tagus">Tagus</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Daugava_River">Daugava</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Loire_(river)">Loire</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Tisza">Tisza</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Prut_River">Prut</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Sava">Sava</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Neman_River">Neman</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Meuse_(river)">Meuse</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Ebro">Ebro</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Douro">Douro</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Kuban_River">Kuban</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Mezen_River">Mezen</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Oder">Oder</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Rh%C3%B4ne">Rhône</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Warta">Warta</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Mure%C8%99_River">Mureș</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Seine">Seine</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Bug_River">Bug</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/G%C3%B6ta_%C3%A4lv">Göta älv</a>-<a href="https://en.wikipedia.org/wiki/Klar%C3%A4lven">Klarälven</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Drava">Drava</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Guadiana">Guadiana</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Siret_River">Siret</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Po_(river)">Po</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Guadalquivir">Guadalquivir</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Glomma">Glomma</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Olt_River">Olt</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Garonne">Garonne</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Neva_River">Neva</a>–<a href="https://en.wikipedia.org/wiki/Svir_River">Svir</a>–<a href="https://en.wikipedia.org/wiki/Suna_River">Suna</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Kemijoki">Kemijoki</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Moselle_(river)">Moselle</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Dal_River">Dal River</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Torne">Torne</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Neris">Neris</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Narew">Narew</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Maritsa">Maritsa</a>/Evros</li>
-  <li><a href="https://en.wikipedia.org/wiki/Mur_(river)">Mur</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Ume_River">Ume River</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/%C3%85ngerman_River">Ångerman River</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Lule_River">Lule River</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Kalix_River">Kalix River</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Vindel_River">Vindel River</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Gauja">Gauja</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/San_(river)">San</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Ljusnan">Ljusnan</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Skellefte_River">Skellefte River</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Indal_River">Indal River</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Vltava">Vltava</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Ialomi%C8%9Ba_River">Ialomița</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Struma_(river)">Struma</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Adige">Adige</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Tiber">Tiber</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/V%C3%A1h">Váh</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Pite_River">Pite River</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Fax%C3%A4lven">Faxälven</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Ljungan">Ljungan</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/R%C3%A1ba">Rába</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Vardar">Vardar</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Some%C8%99_River">Someș</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Paatsjoki">Paatsjoki</a>–<a href="https://en.wikipedia.org/wiki/Ivalo_(river)">Ivalojoki</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Muonionjoki">Muonionjoki</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Iijoki">Iijoki</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Iskar_(river)">Iskar</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/River_Shannon">River Shannon</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Numedalsl%C3%A5gen">Numedalslågen</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Vorma">Vorma</a>–<a href="https://en.wikipedia.org/wiki/Gudbrandsdalsl%C3%A5gen">Gudbrandsdalslågen</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Morava_(river)">Morava</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/River_Severn">River Severn</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Arge%C8%99_River">Argeș</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Tundzha">Tundzha</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Tana_(Norway)">Tana</a>–<a href="https://en.wikipedia.org/wiki/Anarjohka">Anarjohka</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Thames">Thames</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Drina">Drina</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Venta">Venta</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Minho">Minho</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Jiu_River">Jiu</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Timi%C8%99_River">Timiș</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Drin_(river)">Drin</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Haliacmon">Haliacmon</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/V%C3%A4sterdal_River">Västerdal River</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/West_Morava">West Morava</a>/(Zapadna Morava)</li>
-  <li><a href="https://en.wikipedia.org/wiki/Drammenselva">Drammenselva</a>–<a href="https://en.wikipedia.org/wiki/Begna_(river)">Begna</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Norrstr%C3%B6m">Norrström</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Buz%C4%83u_River">Buzău</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Ounasjoki">Ounasjoki</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/%C5%A0e%C5%A1up%C4%97">Šešupė</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Kupa">Kupa</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/South_Morava">South Morava</a>/(Južna Morava)</li>
-  <li><a href="https://en.wikipedia.org/wiki/D%C3%A2mbovi%C8%9Ba_River">Dâmbovița</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Yantra_(river)">Yantra</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Motala_str%C3%B6m">Motala ström</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Bistri%C8%9Ba_River_(Siret)">Bistrița</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Jijia_River_(Prut)">Jijia</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Vjos%C3%AB">Vjosë</a>/Aoos</li>
-  <li><a href="https://en.wikipedia.org/wiki/River_Bosna">Bosna</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Skiensvassdraget">Skiensvassdraget</a></li>
-  <li><a href="https://en.wikipedia.org/w/index.php?title=Fj%C3%A4llsj%C3%B6%C3%A4lven&amp;action=edit&amp;redlink=1">Fjällsjöälven</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Lainio_River">Lainio River</a></li>
-  <li><a href="https://en.wikipedia.org/w/index.php?title=Snarumselva&amp;action=edit&amp;redlink=1">Snarumselva</a>–<a href="https://en.wikipedia.org/wiki/Hallingdalselva">Hallingdalselva</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Bega_River,_Romania_and_Serbia">Bega</a></li>
-</ul>
-
-<p><em><strong>Source:</strong> <a href="https://en.wikipedia.org/wiki/List_of_rivers_of_Europe">Wikipedia</a></em></p>
-
-    
-    ]]>
-</description>
-<pubDate>Fri, 17 Feb 2017 00:00:00 -0500</pubDate>
-<link>http://localhost:4000/2017/02/17/longest-european-rivers.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/02/17/longest-european-rivers.html</guid>
+<link>http://tinaja.computer/2017/02/18/screenscraping-wikipedia.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/02/18/screenscraping-wikipedia.html</guid>
 </item>
 
 </channel>
