@@ -3,8 +3,27 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://tinaja.computer</link>
+<link>http://localhost:4000</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Rebecca Solnit on Privilege and Obliviousness</title>
+
+<description>
+    <![CDATA[
+    <blockquote>
+  <p>This is why I always pair privilege with obliviousness; obliviousness is privilege’s form of deprivation. When you don’t hear others, you don’t imagine them, they become unreal, and you are left in the wasteland of a world with only yourself in it, and that surely makes you starving, though you know not for what, if you have ceased to imagine others exist in any true deep way that matters. This is about a need for which we hardly have language or at least not a familiar conversation.</p>
+
+  <p>– <cite>Rebecca Solnit, <a href="http://lithub.com/rebecca-solnit-the-loneliness-of-donald-trump/">The Loneliness of Donald Trump</a></cite></p>
+</blockquote>
+
+    
+    ]]>
+</description>
+<pubDate>Wed, 31 May 2017 07:23:01 +0200</pubDate>
+<link>http://localhost:4000/2017/05/31/solnit-on-privilege.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/05/31/solnit-on-privilege.html</guid>
+</item>
 
 <item>
 <title>Recent Reading: Bohemian Grove, Post-Scarcity Utopia, and Web Apps</title>
@@ -126,9 +145,9 @@
     
     ]]>
 </description>
-<pubDate>Wed, 24 May 2017 09:53:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/05/24/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/05/24/recent-reading.html</guid>
+<pubDate>Wed, 24 May 2017 09:53:00 +0200</pubDate>
+<link>http://localhost:4000/2017/05/24/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/05/24/recent-reading.html</guid>
 </item>
 
 <item>
@@ -199,9 +218,9 @@
     
     ]]>
 </description>
-<pubDate>Mon, 01 May 2017 13:19:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/05/01/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/05/01/recent-reading.html</guid>
+<pubDate>Mon, 01 May 2017 13:19:00 +0200</pubDate>
+<link>http://localhost:4000/2017/05/01/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/05/01/recent-reading.html</guid>
 </item>
 
 <item>
@@ -220,9 +239,9 @@
     
     ]]>
 </description>
-<pubDate>Wed, 26 Apr 2017 10:44:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/04/26/new-projects.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/04/26/new-projects.html</guid>
+<pubDate>Wed, 26 Apr 2017 16:44:00 +0200</pubDate>
+<link>http://localhost:4000/2017/04/26/new-projects.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/04/26/new-projects.html</guid>
 </item>
 
 <item>
@@ -246,9 +265,9 @@
     
     ]]>
 </description>
-<pubDate>Wed, 12 Apr 2017 00:00:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/04/12/caps-lock-to-escape.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/04/12/caps-lock-to-escape.html</guid>
+<pubDate>Wed, 12 Apr 2017 00:00:00 +0200</pubDate>
+<link>http://localhost:4000/2017/04/12/caps-lock-to-escape.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/04/12/caps-lock-to-escape.html</guid>
 </item>
 
 <item>
@@ -367,9 +386,9 @@
     
     ]]>
 </description>
-<pubDate>Fri, 07 Apr 2017 16:30:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/04/07/disrupted-and-blitzed.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/04/07/disrupted-and-blitzed.html</guid>
+<pubDate>Fri, 07 Apr 2017 22:30:01 +0200</pubDate>
+<link>http://localhost:4000/2017/04/07/disrupted-and-blitzed.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/04/07/disrupted-and-blitzed.html</guid>
 </item>
 
 <item>
@@ -386,9 +405,9 @@
     
     ]]>
 </description>
-<pubDate>Wed, 29 Mar 2017 14:20:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/03/29/thomspon-on-specialized-ai.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/03/29/thomspon-on-specialized-ai.html</guid>
+<pubDate>Wed, 29 Mar 2017 20:20:01 +0200</pubDate>
+<link>http://localhost:4000/2017/03/29/thomspon-on-specialized-ai.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/03/29/thomspon-on-specialized-ai.html</guid>
 </item>
 
 <item>
@@ -482,9 +501,9 @@
     
     ]]>
 </description>
-<pubDate>Tue, 14 Mar 2017 15:13:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/03/14/moosewood-alibaba-virtual-light.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/03/14/moosewood-alibaba-virtual-light.html</guid>
+<pubDate>Tue, 14 Mar 2017 20:13:00 +0100</pubDate>
+<link>http://localhost:4000/2017/03/14/moosewood-alibaba-virtual-light.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/03/14/moosewood-alibaba-virtual-light.html</guid>
 </item>
 
 <item>
@@ -501,9 +520,9 @@
     
     ]]>
 </description>
-<pubDate>Fri, 03 Mar 2017 14:46:01 -0500</pubDate>
-<link>http://tinaja.computer/2017/03/03/adelman-on-global-history.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/03/03/adelman-on-global-history.html</guid>
+<pubDate>Fri, 03 Mar 2017 20:46:01 +0100</pubDate>
+<link>http://localhost:4000/2017/03/03/adelman-on-global-history.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/03/03/adelman-on-global-history.html</guid>
 </item>
 
 <item>
@@ -574,240 +593,9 @@
     
     ]]>
 </description>
-<pubDate>Mon, 27 Feb 2017 20:21:03 -0500</pubDate>
-<link>http://tinaja.computer/2017/02/27/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/02/27/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Screenscraping Wikipedia with Python</title>
-
-<description>
-    <![CDATA[
-    <p>Yesterday I did a very quick screen-scraping and text-manipulation project with a Wikipedia page that I thought I would write up as an example of using scripting for small ephemeral or one-off tasks. I used Python 3 with the <a href="http://docs.python-requests.org/en/master/">Requests</a> and <a href="https://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a>.</p>
-
-<p>I recently had occasion to compile a corpus of river names for use as throwaway names for an in-house project. I’ve also been thinking a lot about lists and how they can be used and their makers over the last year and have tried (mostly unsuccessfully) to get in the habit of capturing ephemeral lists of things to this site.</p>
-
-<p>While collecting my river names from Wikipedia, I came across a nice, well-encapsulated list of the longest rivers in Europe, so I thought I’d <a href="http://tinaja.computer/2017/02/17/longest-european-rivers.html">grab it</a> for one of these infrequent list posts.</p>
-
-<hr />
-
-<p>First, I import the two libraries I need. Requests will just make grabbing the Wikipedia page super-easy. BeautifulSoup will help me drill through the HTML I pull from Wikipedia to isolate just the pieces of the page that I’m interested in.</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
-<span class="kn">import</span> <span class="nn">requests</span>
-</code></pre>
-</div>
-
-<p>The list I wanted to isolate was on the <a href="https://en.wikipedia.org/wiki/List_of_rivers_of_Europe">List of rivers of Europe</a> page on Wikipedia. It’s for rivers with a length longer than 250km, and it’s displayed in a separate 4 column table with a header row at the top. The first column of each row following the header has a name of the river with a link to its page on Wikipedia. I want to take all of those names and URLs and output them as a Markdown-formatted list of links. I’m not interested in the contents of any of the other columns.</p>
-
-<p>First, I needed to do a little bit of poking around to find where in the page this table fell and what its markup looked like. I could have done this with the DOM inspector in a web browser, but instead I decided to just start from code. I knew it was in a table, so I first just grabbed the contents of the web page, asked BeautifulSoup to give me only the table elements in the page, and printed each of them out.</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://en.wikipedia.org/wiki/List_of_rivers_of_Europe'</span><span class="p">)</span>
-
-<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'table'</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
-</code></pre>
-</div>
-
-<p>Scrolling through my output, I verify that the table I’m interested in is the second table on the page. I don’t care about being able to reuse this code again later, so I it’s fine with me just to hardcode this value in.</p>
-
-<p>Also looking at the output, I confirm that I’m not interested in the first row of the table (it’s just header information), and that the markup of the interesting rows is very straightforward:</p>
-
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;tr&gt;</span>
-<span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/wiki/Volga_River"</span> <span class="na">title=</span><span class="s">"Volga River"</span><span class="nt">&gt;</span>Volga<span class="nt">&lt;/a&gt;&lt;/td&gt;</span>
-<span class="nt">&lt;td&gt;</span>3,692<span class="nt">&lt;/td&gt;</span>
-<span class="nt">&lt;td&gt;</span>2,294<span class="nt">&lt;/td&gt;</span>
-<span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/wiki/Caspian_Sea"</span> <span class="na">title=</span><span class="s">"Caspian Sea"</span><span class="nt">&gt;</span>Caspian Sea<span class="nt">&lt;/a&gt;&lt;sup</span> <span class="na">class=</span><span class="s">"reference"</span> <span class="na">id=</span><span class="s">"cite_ref-1"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#cite_note-1"</span><span class="nt">&gt;</span>[1]<span class="nt">&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;</span>
-<span class="nt">&lt;/tr&gt;</span>
-</code></pre>
-</div>
-
-<p>From this code, I can see that I’m interested in the first <code class="highlighter-rouge">td</code> cell of each row of the table, and I want the URL in the <code class="highlighter-rouge">href</code> attribute and the text contents of the link in that cell. As a run through the rows of the table, I will take these two elements and combine them as a Markdown-formatted link and append this link as a new list item to a string that will be output at the end of the script.</p>
-
-<hr />
-
-<p>So, to build the final script, I do my imports, grab the text I’m working with, and set up the HTML parser and the variable to start my final output.</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
-<span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://en.wikipedia.org/wiki/List_of_rivers_of_Europe'</span><span class="p">)</span>
-
-<span class="c"># Give the text of the Wikipedia page to BeautifulSoup and have it</span>
-<span class="c"># parse the HTML into a structured object</span>
-<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
-
-<span class="c"># I will append a new line for each river to this variable and </span>
-<span class="c"># output all at once at the end</span>
-<span class="n">output</span> <span class="o">=</span> <span class="s">""</span>
-</code></pre>
-</div>
-
-<p>I then grab the second table in the page, get a handle for the first row from that table, and use that handle to get a handle to the following row using <code class="highlighter-rouge">find_next_sibling()</code>. This will be the second row in the table—the first row of data I’m interested in.</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># The Longest Rivers list is the second table on the page</span>
-<span class="n">long_rivers_table</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'table'</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-
-<span class="n">first_row</span> <span class="o">=</span> <span class="n">long_rivers_table</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'tr'</span><span class="p">)</span>
-
-<span class="c"># Skip the first row of the table…</span>
-<span class="n">row</span> <span class="o">=</span> <span class="n">first_row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
-</code></pre>
-</div>
-
-<p>I will use a <code class="highlighter-rouge">while</code> loop to step through the remaining rows of the table. While my <code class="highlighter-rouge">row</code> variable is not <code class="highlighter-rouge">None</code>, I’ll look for the first link in the first cell of the row and grab the information I’m interested in.</p>
-
-<p>After I’ve output that information in my desired format, I set my <code class="highlighter-rouge">row</code> variable to its next sibling. If it has one, the loop will continue. If it does not, <code class="highlighter-rouge">row</code> will be <code class="highlighter-rouge">None</code> and my loop will end.</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># …and step through the remaining rows</span>
-<span class="k">while</span> <span class="n">row</span><span class="p">:</span>
-    <span class="n">first_cell</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'td'</span><span class="p">)</span>
-    <span class="n">link</span> <span class="o">=</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'a'</span><span class="p">)</span>
-    
-    <span class="c"># Wikipedia uses relative URLs so I need to put the right</span>
-    <span class="c"># stem on them for them to work as absolute URLs.</span>
-    <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
-    <span class="n">label</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
-  
-    <span class="c"># Append a new line to my output with a new list item formatted</span>
-    <span class="c"># as a Markdown link</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- [{}]({})</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
-    
-    <span class="n">row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
-</code></pre>
-</div>
-
-<p>At the end of this loop, I now have a string of Markdown-formatted text of my list of rivers as a unordered list of links stored in <code class="highlighter-rouge">output</code>. I just print that to the screen to be copy-and-pasted where I like, and I’m done.</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
-</code></pre>
-</div>
-
-<hr />
-
-<p>There was a problem with this approach, however. I wasn’t looking carefully when I first defined my problem, and there are actually a few cells in this table where the contents are not simply a single link. There are few rows that list multiple rivers together in orographic order with separate links; there are also a few rows that list a plain text alternative name for the primary name of the river contained in the link.</p>
-
-<p>So this section of my code from above was a bit too naïve:</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code>  <span class="n">link</span> <span class="o">=</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'a'</span><span class="p">)</span>
-    
-  <span class="c"># Wikipedia uses relative URLs so I need to put the right</span>
-    <span class="c"># stem on them for them to work as absolute URLs.</span>
-    <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
-    <span class="n">label</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
-  
-    <span class="c"># Append a new line to my output with a new list item formatted</span>
-    <span class="c"># as a Markdown link</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- [{}]({})</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
-</code></pre>
-</div>
-
-<p>I still want Markdown-formatted output, so I can’t just copy over the contents of the cell directly.</p>
-
-<p>BeautifulSoup gives me what I need here. I can use the <code class="highlighter-rouge">contents</code> property of the first cell of the table. It is a list of the nodes contained in that cell, which in this case will be 1-n elements that are either links or plain text.</p>
-
-<p>So now for each step through my loop, I will have an intermediate output variable <code class="highlighter-rouge">row_output</code> to use in constructing the output just for that individual row. As I step through the contents of that row, I will do one of two things depending on whether I’m dealing with plain text or a link. If I have plain text, I will copy it directly over to the output variable. If I a link, I will generate a Markdown-formatted version of that link and append it to the intermediate variable. Finally I will append a new list item to my <code class="highlighter-rouge">output</code> variable based on the contents of this intermediate variable and check whether I have another row to look at as before.</p>
-
-<p>Now each run through my loop looks like this:</p>
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">row_output</span> <span class="o">=</span> <span class="s">""</span> <span class="c"># Reset row_output</span>
-    
-<span class="n">first_cell</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'td'</span><span class="p">)</span>
-    
-<span class="c"># Step through the contents of the first cell</span>
-<span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">contents</span><span class="p">:</span>
-    <span class="c"># Check to see whether this element of the list is a string instance</span>
-    <span class="c"># in order to determine whether we’re dealing with plain text or a link</span>
-    
-    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span> <span class="c"># This node of the document is just plain text</span>
-        <span class="c"># Append the text directly to row_output</span>
-        <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="n">el</span>
-        
-    <span class="k">else</span><span class="p">:</span> <span class="c"># This node of the document is a link</span>
-        <span class="c"># Wikipedia uses relative URLs so I need to put the right</span>
-        <span class="c"># stem on them for them to work as absolute URLs.</span>
-        <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
-        <span class="n">label</span> <span class="o">=</span> <span class="n">el</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
-
-        <span class="c"># Append a Markdown-formatted link to row_output</span>
-        <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="s">"[{}]({})"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
-
-<span class="c"># Append the compiled output for this row to the final output for the script</span>
-<span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- {}</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">row_output</span><span class="p">)</span>
-</code></pre>
-</div>
-
-<p>It’s a little more complicated, but much more robust in handling the few unusual elements in the list. This list wasn’t necessarily long enough that I absolutely needed to automate handling this small handful of exceptions, but with a larger corpus it would have been helpful and at least this way I know I won’t miss any while editing manually.</p>
-
-<p>The complete source for the script follows (and is available as a <a href="https://gist.github.com/jonesbp/f9ffa3ec93bb8c8ec655a7403ea96b66">gist</a>).</p>
-
-<hr />
-
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
-<span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://en.wikipedia.org/wiki/List_of_rivers_of_Europe'</span><span class="p">)</span>
-
-<span class="c"># Give the text of the Wikipedia page to BeautifulSoup and have it</span>
-<span class="c"># parse the HTML into a structured object</span>
-<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
-
-<span class="c"># I will append a new line for each river to this variable and </span>
-<span class="c"># output all at once at the end</span>
-<span class="n">output</span> <span class="o">=</span> <span class="s">""</span>
-
-<span class="c"># The Longest Rivers list is the second table on the page</span>
-<span class="n">long_rivers_table</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'table'</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-
-<span class="n">first_row</span> <span class="o">=</span> <span class="n">long_rivers_table</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'tr'</span><span class="p">)</span>
-
-<span class="c"># Skip the first row of the table…</span>
-<span class="n">row</span> <span class="o">=</span> <span class="n">first_row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
-
-<span class="c"># …and step through the remaining rows</span>
-<span class="k">while</span> <span class="n">row</span><span class="p">:</span>
-    <span class="n">row_output</span> <span class="o">=</span> <span class="s">""</span> <span class="c"># Reset row_output</span>
-    
-    <span class="n">first_cell</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'td'</span><span class="p">)</span>
-    
-    <span class="c"># Step through the contents of the first cell</span>
-    <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">contents</span><span class="p">:</span>
-        <span class="c"># Check to see whether this element of the list is a string instance</span>
-        <span class="c"># in order to determine whether we’re dealing with plain text or a link</span>
-
-        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span> <span class="c"># This node of the document is just plain text</span>
-            <span class="c"># Append the text directly to row_output</span>
-            <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="n">el</span>
-            
-        <span class="k">else</span><span class="p">:</span> <span class="c"># This node of the document is a link</span>
-            <span class="c"># Wikipedia uses relative URLs so I need to put the right</span>
-            <span class="c"># stem on them for them to work as absolute URLs.</span>
-            <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
-            <span class="n">label</span> <span class="o">=</span> <span class="n">el</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
-            
-            <span class="c"># Append a Markdown-formatted link to row_output</span>
-            <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="s">"[{}]({})"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
-        
-    <span class="c"># Append the compiled output for this row to the final output for the script</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- {}</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">row_output</span><span class="p">)</span>
-    
-    <span class="c"># Get the next row if it exists</span>
-    <span class="n">row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
-</code></pre>
-</div>
-
-
-    
-    ]]>
-</description>
-<pubDate>Sat, 18 Feb 2017 00:00:00 -0500</pubDate>
-<link>http://tinaja.computer/2017/02/18/screenscraping-wikipedia.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/02/18/screenscraping-wikipedia.html</guid>
+<pubDate>Tue, 28 Feb 2017 02:21:03 +0100</pubDate>
+<link>http://localhost:4000/2017/02/28/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/02/28/recent-reading.html</guid>
 </item>
 
 </channel>
