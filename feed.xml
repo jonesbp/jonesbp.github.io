@@ -3,8 +3,127 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://localhost:4000</link>
+<link>http://tinaja.computer</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Recent Reading: Mario, Garbage, and Computational Abundance</title>
+
+<description>
+    <![CDATA[
+    
+
+    
+        
+
+
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01H2KDZ7A/ref=nosim/latin031-20">Alyse Knorr. <i>Super Mario Bros. 3</i>. Los Angeles, CA: Boss Fight Books, 2016.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>This is another entry in the Boss Fight Books series that is as much personal memoir as exploration of the game itself. Knorr interrogates gamer nostalgia through a thorough analysis of the game mechanics and level design of Super Mario Bros. 3 in the context of the widely held consensus that is a great, if not the greatest, platform game ever made. Along the way, her own nostalgia for childhood family interactions around the game adds an additional layer to the contingent nature of media experience.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/951476372">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01H2KDZ7A/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B011JAV030/ref=nosim/latin031-20">Sarah Jeong. <i>The Internet of Garbage</i>. New York: Forbes Media, 2015.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>Jeong has done a great job making the case both for the importance of community moderation online and in explaining how that work is much more nuanced than blocking, deleting, and banning.</p>
+</span>
+        
+        
+    <span class="links">
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B011JAV030/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B00D97HPQI/ref=nosim/latin031-20">Erik Brynjolfsson and Andrew McAfee. <i>The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies</i>. New York: W.W. Norton & Company, 2014.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>In this readable account, Brynjolfsson and McAfee outline some of the tensions between conventional economic wisdom and new realities of labor and markets in an age of computational abundance. While not discounting the looming hardships for many workers, they are generally sanguine about the continued need for human labor provided that training is geared to maximizing those human strengths for which machines can serve only as complements, rather than substitutes. As with so many business books, the historical foundations of some of their arguments make their shallow approach to historiography a bit disappointing. The work’s strength comes from the pair’s clear explication of policy prescriptions from their analysis.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/960056027">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B00D97HPQI/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1118987241/ref=nosim/latin031-20">Brad Williams, David Damstra, and Hal Stern. <i>Professional WordPress: Design and Development</i>. Indianapolis, IN: Wrox, 2015.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>Having never done more than hacked together limited rough-and-ready custom one-off changes to WordPress themes, I felt like I need a good A-Z overview of the world of WordPress development as a foundation for a project I’m working on. Spending a week or so with this book following a single path orchestrated by a constant and consistent author saved me a lot of the time and confusion I’ve been wasting on abortive strolls through developer blogs and howtos over the last few months.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/913971983">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/1118987241/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
+<pubDate>Wed, 21 Jun 2017 15:15:00 +0200</pubDate>
+<link>http://tinaja.computer/2017/06/21/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/06/21/recent-reading.html</guid>
+</item>
 
 <item>
 <title>Rebecca Solnit on Privilege and Obliviousness</title>
@@ -21,8 +140,8 @@
     ]]>
 </description>
 <pubDate>Wed, 31 May 2017 07:23:01 +0200</pubDate>
-<link>http://localhost:4000/2017/05/31/solnit-on-privilege.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/05/31/solnit-on-privilege.html</guid>
+<link>http://tinaja.computer/2017/05/31/solnit-on-privilege.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/05/31/solnit-on-privilege.html</guid>
 </item>
 
 <item>
@@ -146,8 +265,8 @@
     ]]>
 </description>
 <pubDate>Wed, 24 May 2017 09:53:00 +0200</pubDate>
-<link>http://localhost:4000/2017/05/24/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/05/24/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/05/24/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/05/24/recent-reading.html</guid>
 </item>
 
 <item>
@@ -219,8 +338,8 @@
     ]]>
 </description>
 <pubDate>Mon, 01 May 2017 13:19:00 +0200</pubDate>
-<link>http://localhost:4000/2017/05/01/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/05/01/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/05/01/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/05/01/recent-reading.html</guid>
 </item>
 
 <item>
@@ -240,8 +359,8 @@
     ]]>
 </description>
 <pubDate>Wed, 26 Apr 2017 16:44:00 +0200</pubDate>
-<link>http://localhost:4000/2017/04/26/new-projects.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/04/26/new-projects.html</guid>
+<link>http://tinaja.computer/2017/04/26/new-projects.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/04/26/new-projects.html</guid>
 </item>
 
 <item>
@@ -266,8 +385,8 @@
     ]]>
 </description>
 <pubDate>Wed, 12 Apr 2017 00:00:00 +0200</pubDate>
-<link>http://localhost:4000/2017/04/12/caps-lock-to-escape.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/04/12/caps-lock-to-escape.html</guid>
+<link>http://tinaja.computer/2017/04/12/caps-lock-to-escape.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/04/12/caps-lock-to-escape.html</guid>
 </item>
 
 <item>
@@ -387,8 +506,8 @@
     ]]>
 </description>
 <pubDate>Fri, 07 Apr 2017 22:30:01 +0200</pubDate>
-<link>http://localhost:4000/2017/04/07/disrupted-and-blitzed.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/04/07/disrupted-and-blitzed.html</guid>
+<link>http://tinaja.computer/2017/04/07/disrupted-and-blitzed.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/04/07/disrupted-and-blitzed.html</guid>
 </item>
 
 <item>
@@ -406,8 +525,8 @@
     ]]>
 </description>
 <pubDate>Wed, 29 Mar 2017 20:20:01 +0200</pubDate>
-<link>http://localhost:4000/2017/03/29/thomspon-on-specialized-ai.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/03/29/thomspon-on-specialized-ai.html</guid>
+<link>http://tinaja.computer/2017/03/29/thomspon-on-specialized-ai.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/03/29/thomspon-on-specialized-ai.html</guid>
 </item>
 
 <item>
@@ -502,8 +621,8 @@
     ]]>
 </description>
 <pubDate>Tue, 14 Mar 2017 20:13:00 +0100</pubDate>
-<link>http://localhost:4000/2017/03/14/moosewood-alibaba-virtual-light.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/03/14/moosewood-alibaba-virtual-light.html</guid>
+<link>http://tinaja.computer/2017/03/14/moosewood-alibaba-virtual-light.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/03/14/moosewood-alibaba-virtual-light.html</guid>
 </item>
 
 <item>
@@ -521,81 +640,8 @@
     ]]>
 </description>
 <pubDate>Fri, 03 Mar 2017 20:46:01 +0100</pubDate>
-<link>http://localhost:4000/2017/03/03/adelman-on-global-history.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/03/03/adelman-on-global-history.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Futurists and Brotzeit</title>
-
-<description>
-    <![CDATA[
-    
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0374534977/ref=nosim/latin031-20">Warren Ellis. <i>Normal</i>. New York: Farrar, Straus and Giroux, 2016.</a>
-      
-    </span>
-
-        
-          <span class="note"><p>I discovered today that, mostly by accident, I have read Warren Ellis more than any other author since I started making these posts a couple of years ago. <em>Normal</em> provides more of what I’ve been enjoying from him: sardonic humor, compact writing, and interesting critique—in this case of surveillance culture, futurism, and technological solutionism. Originally published as an e-book serial, I read it in print in a single volume. I might have preferred to read it serially; the disjointed, episodic rhythm accentuated the unstable setting.</p>
-</span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/952277013">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0374534977/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
-
-      </li>
-    
-      <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/1452128065/ref=nosim/latin031-20">Jeremy Nolen and Jessica Nolen. <i>New German Cooking: Recipes for Classics Revisited</i>. San Francisco, CA: Chronicle Books, 2015.</a>
-      
-    </span>
-
-        
-          <span class="note"><p>This book does a great job of introducing some nice, light-handed twists on German classics. While we were living in Berlin a lot of my favorite stuff were the vegetable dishes we don’t see a lot of in the States, and one of the Nolens’ hobby horses is that Americans stop associating the German kitchen only with sausage and beer. Not everything in the book is the friendliest for home-cooks (the pickling and charcuterie recipes, for example, tend to be for fairly large quantities), but the book is lovely nonetheless. The authors are the executive and pastry chefs at Brauhaus Schmitz in Philadelphia which I now am excited to try on our next visit.</p>
-</span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/910968956">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/1452128065/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Tue, 28 Feb 2017 02:21:03 +0100</pubDate>
-<link>http://localhost:4000/2017/02/28/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/02/28/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/03/03/adelman-on-global-history.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/03/03/adelman-on-global-history.html</guid>
 </item>
 
 </channel>
