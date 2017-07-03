@@ -337,6 +337,10 @@ img {
 .post ul {
   list-style-type: circle; }
 
+.post li ul, .post li ol {
+  margin-top: .25em;
+  margin-bottom: .25em; }
+
 .post hr {
   border-width: 0;
   margin: 1.5em 0 3em 0;

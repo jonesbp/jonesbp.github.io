@@ -3,8 +3,115 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://tinaja.computer</link>
+<link>http://localhost:4000</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Extracting Substrings from URLs with Alfred Workflows</title>
+
+<description>
+    <![CDATA[
+    <p>I frequently find myself needing to extract a predictable piece of data from a URL, like a product id, for pasting into a file or database as metadata that might be used to contact an API or construct cleaned-up URLs in the future. The predictable formatting of the part of the URL that I care about makes this the kind of task that perfectly lends itself to simple automation, saving me the small friction of manually editing these URLs in place.</p>
+
+<p><a href="https://www.alfredapp.com/workflows/">Alfred workflows</a> are a quick way to run this category of automation. Because the data is in a URL, I’m typically copying the URL from my web browser to the clipboard and pasting it into a text editor or field. With an Alfred workflow, I can run a script on the text from the clipboard and put my desired result back on the clipboard, cleaned up and ready to paste wherever I’d like.</p>
+
+<p>I have several workflows that fit this general use case, and my interaction with all of them follows the following pattern:</p>
+
+<ul>
+  <li><strong>Me:</strong> Copy my starting text to the clipboard</li>
+  <li><strong>Me:</strong> Invoke the workflow with an Alfred keyword
+    <ul>
+      <li><strong>Alfred:</strong> Grab the contents of the clipboard</li>
+      <li><strong>Alfred:</strong> Run a short Python script on that data</li>
+      <li><strong>Alfred:</strong> Copy the result of the script back to the clipboard</li>
+      <li><em>(optionally)</em> <strong>Alfred:</strong> Paste the result of the script to the currently active window</li>
+    </ul>
+  </li>
+  <li><strong>Me:</strong> Paste the text now in the clipboard where I want it if I haven’t already allowed Alfred to do it for me</li>
+</ul>
+
+<p>To take a specific example, we can walk through building a workflow to extract the OCLC number for an edition of a book from a <a href="http://worldcat.org">Worldcat.org</a> URL.</p>
+
+<hr />
+
+<p>A typical URL for a book on Worldcat.org reached through their onsite search might look like the following:</p>
+
+<p><code class="highlighter-rouge">http://www.worldcat.org/title/history-and-gis-epistemologies-considerations-and-reflections/oclc/910980341&amp;referer=brief_results</code></p>
+
+<p>The only part I care about are the numerals between <code class="highlighter-rouge">/oclc/</code> and the <code class="highlighter-rouge">&amp;</code> (in this case, <code class="highlighter-rouge">910980341</code>). With that unique identifier I can construct my own tidier Worldcat.org URLs later or use their API in a script.</p>
+
+<hr />
+
+<p><img src="/images/2017/OCLC-workflow-overview.jpg" alt="Complete Alfred Workflow Screenshot" /></p>
+
+<p>The screenshot above shows the final layout of the workflow. Assuming we have the URL on the clipboard, the workflow performs the following actions:</p>
+
+<ol>
+  <li>Launch when invoked with the keyword <code class="highlighter-rouge">oclc</code> from Alfred</li>
+  <li>Grab the clipboard contents with a bash script</li>
+  <li>Take those contents and match them against a simple regular expression (in this case in a Python script)</li>
+  <li>Copy to the clipboard and paste in the front most app</li>
+</ol>
+
+<h3 id="1-launch">1. Launch</h3>
+
+<p><img src="/images/2017/OCLC-1-launch.jpg" alt="Launch Settings" /></p>
+
+<p>In the Alfred workflow editor, create a new ‘Input’ of the ‘Keyword’ type, select the keyword you would like to use to invoke your workflow, and give it a descriptive title.</p>
+
+<h3 id="2-grab-clipboard">2. Grab Clipboard</h3>
+
+<p>Link your ‘Keyword’ input to a new ’Action’ of type ’Run Script’. You can leave all of the sets for this script alone; the default language choice, <code class="highlighter-rouge">/bin/bash</code>, is what we want in this case. Our script will be a single bash command to grab the contents of the clipboard.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pbpaste
+</code></pre>
+</div>
+
+<h3 id="3-find-oclc">3. Find OCLC</h3>
+
+<p>Link your <code class="highlighter-rouge">/bin/bash</code> ‘Run Script’ action to a new ’Action’ of type ’Run Script’. This time we will want to change our settings for the Language to <code class="highlighter-rouge">/usr/bin/python</code>. (All we’re doing is matching a regular expression which would be possible using any of the language options. I just like Python.)</p>
+
+<p>The script is simple. We take the input from our bash script that grabbed the clipboard contents and we match it against a regular expression that essentially says “Give me the run of numerals that follow the string <code class="highlighter-rouge">/oclc/</code> in the provided text.” Finally, we write our result to standard output which is how our next Alfred action will receive it.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s">"{query}"</span>
+
+<span class="n">matchObj</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">r'/oclc/([0-9]*)'</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">matchObj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p>A couple of things to note:</p>
+
+<ol>
+  <li><code class="highlighter-rouge"><span class="p">{</span><span class="err">query</span><span class="p">}</span></code> is a placeholder Alfred looks for in our script in order to insert whatever string of data is coming from the previous action in our workflow. It is not a standard piece of Python syntax.</li>
+  <li>A ‘regular expression’ is a string of characters that defines a pattern of text. In the case of the above script, it is the part that reads <code class="highlighter-rouge">/oclc/([0-9]*)</code>, but they can be far more complex. For a good introduction to using regular expressions, you can look at the Google lesson on <a href="https://developers.google.com/edu/python/regular-expressions">Python Regular Expressions</a>.</li>
+</ol>
+
+<h3 id="4-output">4. Output</h3>
+
+<p><img src="/images/2017/OCLC-4-output.jpg" alt="Output Settings" /></p>
+
+<p>Finally, we just want to link a new ‘Output’ of type ‘Copy to Clipboard’ and use the default content which is just to pass through the input from our Python script. Depending on the context, we could do additional formatting here by editing the text around <code class="highlighter-rouge"><span class="p">{</span><span class="err">query</span><span class="p">}</span></code>.</p>
+
+<p>In this case, I have also checked the box to ‘Automatically paste to front most app’ because that matches my needs the vast majority of the time I’m using this particular workflow, but in some cases it may be preferable to leave the result on the clipboard without automatically pasting.</p>
+
+<hr />
+
+<p>That’s it. This approach can be repeated for any number of small extraction tasks—to take ASIN numbers from Amazon.com product links in order to construct affiliate links, for example.</p>
+
+<p>Any single instance of this task would be trivial to perform manually, but Alfred’s ability to combine interaction with the clipboard and access to a scripting language with nice regular expression support triggered through a quick-launch command kills the tedious friction of repeat manual editing and becomes second nature.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Mon, 03 Jul 2017 11:15:00 +0200</pubDate>
+<link>http://localhost:4000/2017/07/03/URL-substring-alfred-workflows.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/07/03/URL-substring-alfred-workflows.html</guid>
+</item>
 
 <item>
 <title>Recent Reading: Zodiacs, Hackers, and Geography</title>
@@ -99,8 +206,8 @@
     ]]>
 </description>
 <pubDate>Sat, 01 Jul 2017 10:15:00 +0200</pubDate>
-<link>http://tinaja.computer/2017/07/01/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/07/01/recent-reading.html</guid>
+<link>http://localhost:4000/2017/07/01/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/07/01/recent-reading.html</guid>
 </item>
 
 <item>
@@ -118,8 +225,8 @@
     ]]>
 </description>
 <pubDate>Mon, 26 Jun 2017 22:13:01 +0200</pubDate>
-<link>http://tinaja.computer/2017/06/26/roberts-on-materiality-of-books.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/06/26/roberts-on-materiality-of-books.html</guid>
+<link>http://localhost:4000/2017/06/26/roberts-on-materiality-of-books.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/06/26/roberts-on-materiality-of-books.html</guid>
 </item>
 
 <item>
@@ -237,8 +344,8 @@
     ]]>
 </description>
 <pubDate>Wed, 21 Jun 2017 15:15:00 +0200</pubDate>
-<link>http://tinaja.computer/2017/06/21/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/06/21/recent-reading.html</guid>
+<link>http://localhost:4000/2017/06/21/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/06/21/recent-reading.html</guid>
 </item>
 
 <item>
@@ -256,8 +363,8 @@
     ]]>
 </description>
 <pubDate>Wed, 31 May 2017 07:23:01 +0200</pubDate>
-<link>http://tinaja.computer/2017/05/31/solnit-on-privilege.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/05/31/solnit-on-privilege.html</guid>
+<link>http://localhost:4000/2017/05/31/solnit-on-privilege.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/05/31/solnit-on-privilege.html</guid>
 </item>
 
 <item>
@@ -381,8 +488,8 @@
     ]]>
 </description>
 <pubDate>Wed, 24 May 2017 09:53:00 +0200</pubDate>
-<link>http://tinaja.computer/2017/05/24/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/05/24/recent-reading.html</guid>
+<link>http://localhost:4000/2017/05/24/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/05/24/recent-reading.html</guid>
 </item>
 
 <item>
@@ -454,8 +561,8 @@
     ]]>
 </description>
 <pubDate>Mon, 01 May 2017 13:19:00 +0200</pubDate>
-<link>http://tinaja.computer/2017/05/01/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/05/01/recent-reading.html</guid>
+<link>http://localhost:4000/2017/05/01/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/05/01/recent-reading.html</guid>
 </item>
 
 <item>
@@ -475,8 +582,8 @@
     ]]>
 </description>
 <pubDate>Wed, 26 Apr 2017 16:44:00 +0200</pubDate>
-<link>http://tinaja.computer/2017/04/26/new-projects.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/04/26/new-projects.html</guid>
+<link>http://localhost:4000/2017/04/26/new-projects.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/04/26/new-projects.html</guid>
 </item>
 
 <item>
@@ -501,8 +608,8 @@
     ]]>
 </description>
 <pubDate>Wed, 12 Apr 2017 00:00:00 +0200</pubDate>
-<link>http://tinaja.computer/2017/04/12/caps-lock-to-escape.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/04/12/caps-lock-to-escape.html</guid>
+<link>http://localhost:4000/2017/04/12/caps-lock-to-escape.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/04/12/caps-lock-to-escape.html</guid>
 </item>
 
 <item>
@@ -622,27 +729,8 @@
     ]]>
 </description>
 <pubDate>Fri, 07 Apr 2017 22:30:01 +0200</pubDate>
-<link>http://tinaja.computer/2017/04/07/disrupted-and-blitzed.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/04/07/disrupted-and-blitzed.html</guid>
-</item>
-
-<item>
-<title>Ben Thompson on Specialized AI</title>
-
-<description>
-    <![CDATA[
-    <blockquote>
-  <p>What is kind of amusing — and telling — is that as John McCarthy, who invented the name “Artificial Intelligence”, <a href="http://cacm.acm.org/magazines/2012/1/144824-artificial-intelligence-past-and-future/fulltext">noted</a>, the definition of specialized AI is changing all of the time. Specifically, once a task formerly thought to characterize artificial intelligence becomes routine — like the aforementioned chess-playing, or Go, or a myriad of other taken-for-granted computer abilities — we no longer call it artificial intelligence.</p>
-
-  <p>– <cite>Ben Thompson, <a href="https://stratechery.com/2017/the-arrival-of-artificial-intelligence/">The Arrival of Artificial Intelligence</a></cite></p>
-</blockquote>
-
-    
-    ]]>
-</description>
-<pubDate>Wed, 29 Mar 2017 20:20:01 +0200</pubDate>
-<link>http://tinaja.computer/2017/03/29/thomspon-on-specialized-ai.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/03/29/thomspon-on-specialized-ai.html</guid>
+<link>http://localhost:4000/2017/04/07/disrupted-and-blitzed.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/04/07/disrupted-and-blitzed.html</guid>
 </item>
 
 </channel>
