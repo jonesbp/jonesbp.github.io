@@ -3,8 +3,153 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://localhost:4000</link>
+<link>http://tinaja.computer</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Recent Reading: Bitcoin, Spider Jerusalem, and API Design</title>
+
+<description>
+    <![CDATA[
+    
+
+    
+        
+
+
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01D8KFX9Q/ref=nosim/latin031-20">Nathaniel Popper. <i>Digital Gold: Bitcoin and the Inside Story of the Misfits and Millionaires Trying to Reinvent Money</i>. New York: Harper, 2015.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>Listened to this as an audiobook over an incredibly long time in small, disjointed pieces, so I am not certain that I have the most fair impression of it. Some interesting detail here and there on early Bitcoin ventures, but a lot on the Silk Road felt like it had been done elsewhere and in general it felt like there was a lack of much analytical value. Helpful as a descriptive timeline for readers looking for that detail, but my impression was that wasn’t much of a point of view here.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/953442959">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B01D8KFX9Q/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CRW/ref=nosim/latin031-20">J. Michael Orenduff. <i>The Pot Thief Who Studied Einstein</i>. The Pot Thief Mysteries, no. 3. New York: Open Road, 2011.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>The third installment in this light, easy-reading cozy mystery series. More of the same, really, but I continue to enjoy the Albuquerque setting while reading from Berlin.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/889943664">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CRW/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0692232699/ref=nosim/latin031-20">Phil Sturgeon. <i>Build APIs You Won’t Hate: Everyone and Their Dog Wants an API, So You Should Probably Learn How to Build Them</i>. Self-published, 2015.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>The earlier chapters of this book focus more on design and theory and were very helpful for someone coming to API design without a lot of confidence that they even know the right questions to ask. Just having read these three or four early chapters would have been sufficient for me to be more comfortable venturing off on my own. The demonstration code in the more practically-oriented ermainder of the book is in PHP and assumes some of the author’s own libraries for which there are not necessarily ready equivalents in other languages, but it is nonetheless clearly written enough that it should be helpful demonstration for any reader.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/990938288">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/0692232699/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B009POHIE8/ref=nosim/latin031-20">Warren Ellis. <i>Transmetropolitan, Vol. 1: Back on the Street</i>. New York: DC Comics, 2009.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>I have read so much other Warren Ellis and have never read his most famous series. This first volume was a blast and coincidentally fell nicely in line with my accidental streak of reading late 80s and 90s stuff counter culture and hacker culture stuff recently. Interesting unexpected resonances with today’s media and political climate two decades later.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/772553475">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B009POHIE8/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+      <li>
+        
+    <span class="citation">
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B0087ORPFO/ref=nosim/latin031-20">John Sandford. <i>The Empress File</i>. New York: Berkley Books, 1991.</a>
+      
+    </span>
+
+        
+          <span class="note"><p>The second installment in a late 80s and early 90s thriller series about a computer penetration specialist and painter, this time running a con on a political cabal in a small Southern city. More tightly written than the <a href="/2017/07/14/recent-reading.html">first one</a>, but there was less emphasis on the computer exploits that provided some of the nostalgic interest of the first one.</p>
+</span>
+        
+        
+    <span class="links">
+      
+        <a href="http://worldcat.org/oclc/229231956">WorldCat &raquo;</a>
+      
+      
+        <a href="http://www.amazon.com/exec/obidos/asin/B0087ORPFO/ref=nosim/latin031-20">Amazon &raquo;</a>
+      
+    </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
+<pubDate>Wed, 26 Jul 2017 14:27:00 +0200</pubDate>
+<link>http://tinaja.computer/2017/07/26/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/07/26/recent-reading.html</guid>
+</item>
 
 <item>
 <title>Recent Reading: Crowdsourcing, Pots, and GIS</title>
@@ -147,8 +292,8 @@
     ]]>
 </description>
 <pubDate>Fri, 14 Jul 2017 11:34:00 +0200</pubDate>
-<link>http://localhost:4000/2017/07/14/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/07/14/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/07/14/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/07/14/recent-reading.html</guid>
 </item>
 
 <item>
@@ -254,8 +399,8 @@
     ]]>
 </description>
 <pubDate>Mon, 03 Jul 2017 11:15:00 +0200</pubDate>
-<link>http://localhost:4000/2017/07/03/URL-substring-alfred-workflows.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/07/03/URL-substring-alfred-workflows.html</guid>
+<link>http://tinaja.computer/2017/07/03/URL-substring-alfred-workflows.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/07/03/URL-substring-alfred-workflows.html</guid>
 </item>
 
 <item>
@@ -351,8 +496,8 @@
     ]]>
 </description>
 <pubDate>Sat, 01 Jul 2017 10:15:00 +0200</pubDate>
-<link>http://localhost:4000/2017/07/01/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/07/01/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/07/01/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/07/01/recent-reading.html</guid>
 </item>
 
 <item>
@@ -370,8 +515,8 @@
     ]]>
 </description>
 <pubDate>Mon, 26 Jun 2017 22:13:01 +0200</pubDate>
-<link>http://localhost:4000/2017/06/26/roberts-on-materiality-of-books.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/06/26/roberts-on-materiality-of-books.html</guid>
+<link>http://tinaja.computer/2017/06/26/roberts-on-materiality-of-books.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/06/26/roberts-on-materiality-of-books.html</guid>
 </item>
 
 <item>
@@ -489,8 +634,8 @@
     ]]>
 </description>
 <pubDate>Wed, 21 Jun 2017 15:15:00 +0200</pubDate>
-<link>http://localhost:4000/2017/06/21/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/06/21/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/06/21/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/06/21/recent-reading.html</guid>
 </item>
 
 <item>
@@ -508,8 +653,8 @@
     ]]>
 </description>
 <pubDate>Wed, 31 May 2017 07:23:01 +0200</pubDate>
-<link>http://localhost:4000/2017/05/31/solnit-on-privilege.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/05/31/solnit-on-privilege.html</guid>
+<link>http://tinaja.computer/2017/05/31/solnit-on-privilege.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/05/31/solnit-on-privilege.html</guid>
 </item>
 
 <item>
@@ -633,8 +778,8 @@
     ]]>
 </description>
 <pubDate>Wed, 24 May 2017 09:53:00 +0200</pubDate>
-<link>http://localhost:4000/2017/05/24/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/05/24/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/05/24/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/05/24/recent-reading.html</guid>
 </item>
 
 <item>
@@ -706,8 +851,8 @@
     ]]>
 </description>
 <pubDate>Mon, 01 May 2017 13:19:00 +0200</pubDate>
-<link>http://localhost:4000/2017/05/01/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/05/01/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/05/01/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/05/01/recent-reading.html</guid>
 </item>
 
 <item>
@@ -727,34 +872,8 @@
     ]]>
 </description>
 <pubDate>Wed, 26 Apr 2017 16:44:00 +0200</pubDate>
-<link>http://localhost:4000/2017/04/26/new-projects.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/04/26/new-projects.html</guid>
-</item>
-
-<item>
-<title>Mapping Caps Lock to Escape in macOS Sierra</title>
-
-<description>
-    <![CDATA[
-    <p>I use Vim and command mode in any GUI editors that support it, so I’m hitting the Esc key hundreds of times a day. I’ve always been curious about mapping my Caps Lock key to escape to cut down on the distance I have to reach, but it used to require <a href="http://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x#8437594">quite a bit of complexity</a>.</p>
-
-<p>I recently moved to a new MacBook Pro with a Touch Bar and a virtual Esc key, so I decided to look into it again.</p>
-
-<p>As of macOS Sierra 10.12.1, it’s incredibly simple.</p>
-
-<ol>
-  <li>Open System Preferences</li>
-  <li>Go to the Keyboard pane and select the Keyboard tab</li>
-  <li>Click the Modifier Keys… button on the bottom right</li>
-  <li>From the popup menu to the right of “Caps Lock (⇪) Key”, select “⎋ Escape”</li>
-</ol>
-
-    
-    ]]>
-</description>
-<pubDate>Wed, 12 Apr 2017 00:00:00 +0200</pubDate>
-<link>http://localhost:4000/2017/04/12/caps-lock-to-escape.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/04/12/caps-lock-to-escape.html</guid>
+<link>http://tinaja.computer/2017/04/26/new-projects.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/04/26/new-projects.html</guid>
 </item>
 
 </channel>
