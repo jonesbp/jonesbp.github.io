@@ -7,6 +7,56 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Mac Apps I Use</title>
+
+<description>
+    <![CDATA[
+    <p>This week I kept a running list of the applications I used on my Mac at least once.</p>
+
+<ul>
+  <li><a href="https://flyingmeat.com/acorn/">Acorn 6</a></li>
+  <li><a href="http://alfredapp.com">Alfred 3</a></li>
+  <li><a href="https://atom.io">Atom</a></li>
+  <li><a href="http://bear-writer.com">Bear</a></li>
+  <li><a href="https://www.busymac.com/busycal/">BusyCal</a></li>
+  <li><a href="https://www.google.com/chrome/browser/desktop/index.html">Chrome</a></li>
+  <li><a href="http://www.devontechnologies.com/products/devonthink/devonthink-pro-office.html">DEVONthink Pro Office</a></li>
+  <li><a href="https://products.office.com/en-US/excel">Excel</a></li>
+  <li><a href="https://flexibits.com/fantastical">Fantastical 2</a></li>
+  <li><a href="https://www.mozilla.org/en-US/firefox">Firefox</a></li>
+  <li><a href="https://gitkraken.com">GitKraken</a></li>
+  <li><a href="http://gitup.co">GitUp</a></li>
+  <li><a href="https://hyper.is">Hyper</a></li>
+  <li><a href="https://www.apple.com/itunes/download/">iTunes</a></li>
+  <li><a href="https://www.kaleidoscopeapp.com">Kaleidoscope</a></li>
+  <li><a href="https://www.amazon.com/kindle-dbs/fd/kcp">Kindle</a></li>
+  <li><a href="https://freron.com">MailMate</a></li>
+  <li><a href="https://www.mamp.info/en/mamp-pro/">MAMP Pro</a></li>
+  <li><a href="https://manytricks.com/moom/">Moom</a></li>
+  <li><a href="http://noteplan.co">NotePlan</a></li>
+  <li><a href="https://www.omnigroup.com/omnifocus">OmniFocus 2</a></li>
+  <li><a href="https://www.omnigroup.com/omnioutliner">OmniOutliner 5</a></li>
+  <li><a href="https://www.kickstarter.com/projects/1548768604/twitterrific-for-mac-project-phoenix">Phoenix</a></li>
+  <li><a href="http://matthewpalmer.net/rocket/">Rocket</a></li>
+  <li><a href="https://www.apple.com/safari/">Safari</a></li>
+  <li><a href="https://slack.com">Slack</a></li>
+  <li><a href="http://www.acqualia.com/soulver/">Soulver</a></li>
+  <li><a href="https://bananafishsoftware.com/products/spillo/">Spillo</a></li>
+  <li><a href="https://panic.com/transmit/">Transmit 5</a></li>
+  <li><a href="https://typora.io">Typora</a></li>
+  <li><a href="http://tableflipapp.com">TableFlip</a></li>
+  <li><a href="https://eternalstorms.at/yoink/Yoink_-_Simplify_and_Improve_Drag_and_Drop_on_your_Mac/Yoink_-_Simplify_drag_and_drop_on_your_Mac.html">Yoink</a></li>
+</ul>
+
+    
+    ]]>
+</description>
+<pubDate>Thu, 31 Aug 2017 00:00:00 -0400</pubDate>
+<link>http://tinaja.computer/2017/08/31/mac-apps.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/08/31/mac-apps.html</guid>
+</item>
+
+<item>
 <title>Recent Reading: Bitcoin, Spider Jerusalem, and API Design</title>
 
 <description>
@@ -22,122 +72,77 @@
   <ul class="reading-list">
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B01D8KFX9Q/ref=nosim/latin031-20">Nathaniel Popper. <i>Digital Gold: Bitcoin and the Inside Story of the Misfits and Millionaires Trying to Reinvent Money</i>. New York: Harper, 2015.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B01D8KFX9Q/ref=nosim/latin031-20">Nathaniel Popper. <i>Digital Gold: Bitcoin and the Inside Story of the Misfits and Millionaires Trying to Reinvent Money</i>. New York: Harper, 2015.</a>
+      </span>
 
         
           <span class="note"><p>Listened to this as an audiobook over an incredibly long time in small, disjointed pieces, so I am not certain that I have the most fair impression of it. Some interesting detail here and there on early Bitcoin ventures, but a lot on the Silk Road felt like it had been done elsewhere and in general it felt like there was a lack of much analytical value. Helpful as a descriptive timeline for readers looking for that detail, but my impression was that wasn’t much of a point of view here.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/953442959">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B01D8KFX9Q/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/953442959">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B01D8KFX9Q/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CRW/ref=nosim/latin031-20">J. Michael Orenduff. <i>The Pot Thief Who Studied Einstein</i>. The Pot Thief Mysteries, no. 3. New York: Open Road, 2011.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CRW/ref=nosim/latin031-20">J. Michael Orenduff. <i>The Pot Thief Who Studied Einstein</i>. The Pot Thief Mysteries, no. 3. New York: Open Road, 2011.</a>
+      </span>
 
         
           <span class="note"><p>The third installment in this light, easy-reading cozy mystery series. More of the same, really, but I continue to enjoy the Albuquerque setting while reading from Berlin.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/889943664">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CRW/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/889943664">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CRW/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0692232699/ref=nosim/latin031-20">Phil Sturgeon. <i>Build APIs You Won’t Hate: Everyone and Their Dog Wants an API, So You Should Probably Learn How to Build Them</i>. Self-published, 2015.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0692232699/ref=nosim/latin031-20">Phil Sturgeon. <i>Build APIs You Won’t Hate: Everyone and Their Dog Wants an API, So You Should Probably Learn How to Build Them</i>. Self-published, 2015.</a>
+      </span>
 
         
           <span class="note"><p>The earlier chapters of this book focus more on design and theory and were very helpful for someone coming to API design without a lot of confidence that they even know the right questions to ask. Just having read these three or four early chapters would have been sufficient for me to be more comfortable venturing off on my own. The demonstration code in the more practically-oriented ermainder of the book is in PHP and assumes some of the author’s own libraries for which there are not necessarily ready equivalents in other languages, but it is nonetheless clearly written enough that it should be helpful demonstration for any reader.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/990938288">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0692232699/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/990938288">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0692232699/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B009POHIE8/ref=nosim/latin031-20">Warren Ellis. <i>Transmetropolitan, Vol. 1: Back on the Street</i>. New York: DC Comics, 2009.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B009POHIE8/ref=nosim/latin031-20">Warren Ellis. <i>Transmetropolitan, Vol. 1: Back on the Street</i>. New York: DC Comics, 2009.</a>
+      </span>
 
         
           <span class="note"><p>I have read so much other Warren Ellis and have never read his most famous series. This first volume was a blast and coincidentally fell nicely in line with my accidental streak of reading late 80s and 90s stuff counter culture and hacker culture stuff recently. Interesting unexpected resonances with today’s media and political climate two decades later.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/772553475">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B009POHIE8/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/772553475">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B009POHIE8/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B0087ORPFO/ref=nosim/latin031-20">John Sandford. <i>The Empress File</i>. New York: Berkley Books, 1991.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B0087ORPFO/ref=nosim/latin031-20">John Sandford. <i>The Empress File</i>. New York: Berkley Books, 1991.</a>
+      </span>
 
         
           <span class="note"><p>The second installment in a late 80s and early 90s thriller series about a computer penetration specialist and painter, this time running a con on a political cabal in a small Southern city. More tightly written than the <a href="/2017/07/14/recent-reading.html">first one</a>, but there was less emphasis on the computer exploits that provided some of the nostalgic interest of the first one.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/229231956">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B0087ORPFO/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/229231956">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B0087ORPFO/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
@@ -146,7 +151,7 @@
     
     ]]>
 </description>
-<pubDate>Wed, 26 Jul 2017 14:27:00 +0200</pubDate>
+<pubDate>Wed, 26 Jul 2017 14:27:00 -0400</pubDate>
 <link>http://tinaja.computer/2017/07/26/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2017/07/26/recent-reading.html</guid>
 </item>
@@ -167,122 +172,77 @@
   <ul class="reading-list">
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B01M1NPEUM/ref=nosim/latin031-20">Christine Koh and Asha Dornfest. <i>Minimalist Parenting: Enjoy Modern Family Life More by Doing Less</i>. Brookline, MA: Bibliomotion, 2013.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B01M1NPEUM/ref=nosim/latin031-20">Christine Koh and Asha Dornfest. <i>Minimalist Parenting: Enjoy Modern Family Life More by Doing Less</i>. Brookline, MA: Bibliomotion, 2013.</a>
+      </span>
 
         
           <span class="note"><p>Relatively cruft-free as far as self-help/parenting books go, provides both some useful framing for approaching decisions around just how much one wants to do to run a household and discrete practical ‘tips and tricks’ for pursuing it. The “minimalist” framing frequently feels shoehorned into sections to maintain a consistent language to match the marketing-friendly title, but not to the extent of distracting from the book’s usefulness.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/823472877">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B01M1NPEUM/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/823472877">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B01M1NPEUM/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CTK/ref=nosim/latin031-20">J. Michael Orenduff. <i>The Pot Thief Who Studied Pythagoras</i>. The Pot Thief Mysteries, no. 1. New York: Open Road, 2009.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CTK/ref=nosim/latin031-20">J. Michael Orenduff. <i>The Pot Thief Who Studied Pythagoras</i>. The Pot Thief Mysteries, no. 1. New York: Open Road, 2009.</a>
+      </span>
 
         
           <span class="note"><p>This is the first installment in a series of <a href="https://en.wikipedia.org/wiki/Cozy_mystery">cozy mysteries</a> about a ceramics shop owner in Albuquerque who stumbles through a series of mix-ups involving murder and contraband artifacts. The author has a political hobby horse with regards to cultural heritage policy that results in some unpleasant monologues from the protagonist from time to time, but the Albuquerque setting and light mood make it enjoyable reading. There are some first book jitters here in the writing and plotting that fortunately shake out in the second one.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/889943723">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CTK/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/889943723">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CTK/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CSQ/ref=nosim/latin031-20">J. Michael Orenduff. <i>The Pot Thief Who Studied Ptolemy</i>. The Pot Thief Mysteries, no. 2. New York: Open Road, 2010.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CSQ/ref=nosim/latin031-20">J. Michael Orenduff. <i>The Pot Thief Who Studied Ptolemy</i>. The Pot Thief Mysteries, no. 2. New York: Open Road, 2010.</a>
+      </span>
 
         
           <span class="note"><p>The second installment in this cozy mystery series set in Albuquerque cleans up some of the first book rough edges from <em>The Pot Thief Who Studied Pythagoras</em>. This one develops the appealing Albuquerque setting a bit more and presents some humorous caricature of academia.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/889943657">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CSQ/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/889943657">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CSQ/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/9400750080/ref=nosim/latin031-20">Alexander von Lünen and Charles Travis, eds. <i>History and GIS: Epistemologies, Considerations and Reflections</i>. Dordrecht: Springer Netherlands, 2013.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/9400750080/ref=nosim/latin031-20">Alexander von Lünen and Charles Travis, eds. <i>History and GIS: Epistemologies, Considerations and Reflections</i>. Dordrecht: Springer Netherlands, 2013.</a>
+      </span>
 
         
           <span class="note"><p>The organizing principle of this collection of interviews and essays is to encourage historians to consider the epistemological consequences of GIS as tool of inquiry and an exploratory methodology, rather than as a piece of the production process useful only for creating static maps as ‘end products’. The Gunnar Olsson and David Staley interviews and von Lünen’s concluding essay were of particular interest in helping to consider the boundaries of what geographical inquiry (and GIS in particular) can do to expand the questions available to historians.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/829432729">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/9400750080/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/829432729">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/9400750080/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B00CHQRJ3G/ref=nosim/latin031-20">Daren C. Brabham. <i>Crowdsourcing</i>. The MIT Press Essential Knowledge Series. Cambridge, MA: The MIT Press, 2013.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B00CHQRJ3G/ref=nosim/latin031-20">Daren C. Brabham. <i>Crowdsourcing</i>. The MIT Press Essential Knowledge Series. Cambridge, MA: The MIT Press, 2013.</a>
+      </span>
 
         
           <span class="note"><p>This short book presents a synthesis of academic research on crowdsourcing across a variety of academic disciplines including computer science, business, and the social sciences. It provides a useful working definition of what constitutes ‘crowdsourcing’ (and what it is not) and runs through both positive indications for its future as a tool in a variety of fields and ethical and political problems it presents that must be addressed. A quick read and useful for shaping design considerations for possible online projects that would include collaborative peer contributions (though, per the reading, not necessarily ‘crowdsourcing’).</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/813540906">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B00CHQRJ3G/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/813540906">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B00CHQRJ3G/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
@@ -291,7 +251,7 @@
     
     ]]>
 </description>
-<pubDate>Fri, 14 Jul 2017 11:34:00 +0200</pubDate>
+<pubDate>Fri, 14 Jul 2017 05:34:00 -0400</pubDate>
 <link>http://tinaja.computer/2017/07/14/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2017/07/14/recent-reading.html</guid>
 </item>
@@ -398,7 +358,7 @@
     
     ]]>
 </description>
-<pubDate>Mon, 03 Jul 2017 11:15:00 +0200</pubDate>
+<pubDate>Mon, 03 Jul 2017 05:15:00 -0400</pubDate>
 <link>http://tinaja.computer/2017/07/03/URL-substring-alfred-workflows.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2017/07/03/URL-substring-alfred-workflows.html</guid>
 </item>
@@ -419,74 +379,47 @@
   <ul class="reading-list">
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B004IATCES/ref=nosim/latin031-20">John Sandford. <i>The Fool’s Run</i>. New York: Berkley Books, 1989.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B004IATCES/ref=nosim/latin031-20">John Sandford. <i>The Fool’s Run</i>. New York: Berkley Books, 1989.</a>
+      </span>
 
         
           <span class="note"><p>A late 80s techno-thriller with a painter-hacker protagonist who has to explain personal computing fundamentals to his partners on a corporate espionage gig. A decent page-turner that is the first in a series on which I plan to follow through.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/988526544">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B004IATCES/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/988526544">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B004IATCES/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0674066480/ref=nosim/latin031-20">Sean Roberts. <i>Printing a Mediterranean World: Florence, Constantinople, and the Renaissance of Geography</i>. Cambridge, MA: Harvard University Press, 2013.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0674066480/ref=nosim/latin031-20">Sean Roberts. <i>Printing a Mediterranean World: Florence, Constantinople, and the Renaissance of Geography</i>. Cambridge, MA: Harvard University Press, 2013.</a>
+      </span>
 
         
           <span class="note"><p>Roberts uses the gift of a printed edition of a late fifteenth-century Florentine geography to two Ottoman rulers as a jumping off point to explore the ‘rediscovery’ of geography and the materiality of knowledge and exchange in the late medieval and early modern Mediterranean world. He expands on the existing trend in complicating the supposedly transformative and modernizing effects taof the reintroduction of Ptolemy’s <em>Geography</em> into European intellectual life, but his primary contribution is in exploring the specific material characteristics of the book in question to identify the local peculiarities of commerce, geopolitics, and religion that shaped a Mediterranean world traditionally presumed to be aggressively transnational and multicultural.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/900039945">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0674066480/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/900039945">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0674066480/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B008UX8SNU/ref=nosim/latin031-20">Neal Stephenson. <i>Zodiac</i>. New York: Bantam Books, 1988.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B008UX8SNU/ref=nosim/latin031-20">Neal Stephenson. <i>Zodiac</i>. New York: Bantam Books, 1988.</a>
+      </span>
 
         
           <span class="note"><p><em>Zodiac</em> was only Stephenson’s second novel, and it is interesting to read something with his voice in which some of his more idiosyncratic qualities (long technical digressions, large-scale world-building at the expense of plotting, etc.) have yet to develop. It’s a relatively short and tight thriller about corporate corruption and ecopolitics with a late 80s Generation-X-y tone that is evocative of the era.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/678839423">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B008UX8SNU/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/678839423">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B008UX8SNU/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
@@ -495,7 +428,7 @@
     
     ]]>
 </description>
-<pubDate>Sat, 01 Jul 2017 10:15:00 +0200</pubDate>
+<pubDate>Sat, 01 Jul 2017 04:15:00 -0400</pubDate>
 <link>http://tinaja.computer/2017/07/01/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2017/07/01/recent-reading.html</guid>
 </item>
@@ -514,7 +447,7 @@
     
     ]]>
 </description>
-<pubDate>Mon, 26 Jun 2017 22:13:01 +0200</pubDate>
+<pubDate>Mon, 26 Jun 2017 16:13:01 -0400</pubDate>
 <link>http://tinaja.computer/2017/06/26/roberts-on-materiality-of-books.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2017/06/26/roberts-on-materiality-of-books.html</guid>
 </item>
@@ -535,96 +468,61 @@
   <ul class="reading-list">
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B01H2KDZ7A/ref=nosim/latin031-20">Alyse Knorr. <i>Super Mario Bros. 3</i>. Los Angeles, CA: Boss Fight Books, 2016.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B01H2KDZ7A/ref=nosim/latin031-20">Alyse Knorr. <i>Super Mario Bros. 3</i>. Los Angeles, CA: Boss Fight Books, 2016.</a>
+      </span>
 
         
           <span class="note"><p>This is another entry in the Boss Fight Books series that is as much personal memoir as exploration of the game itself. Knorr interrogates gamer nostalgia through a thorough analysis of the game mechanics and level design of Super Mario Bros. 3 in the context of the widely held consensus that is a great, if not the greatest, platform game ever made. Along the way, her own nostalgia for childhood family interactions around the game adds an additional layer to the contingent nature of media experience.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/951476372">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B01H2KDZ7A/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/951476372">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B01H2KDZ7A/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B011JAV030/ref=nosim/latin031-20">Sarah Jeong. <i>The Internet of Garbage</i>. New York: Forbes Media, 2015.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B011JAV030/ref=nosim/latin031-20">Sarah Jeong. <i>The Internet of Garbage</i>. New York: Forbes Media, 2015.</a>
+      </span>
 
         
           <span class="note"><p>Jeong has done a great job making the case both for the importance of community moderation online and in explaining how that work is much more nuanced than blocking, deleting, and banning.</p>
 </span>
-        
-        
-    <span class="links">
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B011JAV030/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://www.amazon.com/exec/obidos/asin/B011JAV030/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B00D97HPQI/ref=nosim/latin031-20">Erik Brynjolfsson and Andrew McAfee. <i>The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies</i>. New York: W.W. Norton & Company, 2014.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B00D97HPQI/ref=nosim/latin031-20">Erik Brynjolfsson and Andrew McAfee. <i>The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies</i>. New York: W.W. Norton & Company, 2014.</a>
+      </span>
 
         
           <span class="note"><p>In this readable account, Brynjolfsson and McAfee outline some of the tensions between conventional economic wisdom and new realities of labor and markets in an age of computational abundance. While not discounting the looming hardships for many workers, they are generally sanguine about the continued need for human labor provided that training is geared to maximizing those human strengths for which machines can serve only as complements, rather than substitutes. As with so many business books, the historical foundations of some of their arguments make their shallow approach to historiography a bit disappointing. The work’s strength comes from the pair’s clear explication of policy prescriptions from their analysis.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/960056027">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B00D97HPQI/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/960056027">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B00D97HPQI/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/1118987241/ref=nosim/latin031-20">Brad Williams, David Damstra, and Hal Stern. <i>Professional WordPress: Design and Development</i>. Indianapolis, IN: Wrox, 2015.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/1118987241/ref=nosim/latin031-20">Brad Williams, David Damstra, and Hal Stern. <i>Professional WordPress: Design and Development</i>. Indianapolis, IN: Wrox, 2015.</a>
+      </span>
 
         
           <span class="note"><p>Having never done more than hacked together limited rough-and-ready custom one-off changes to WordPress themes, I felt like I need a good A-Z overview of the world of WordPress development as a foundation for a project I’m working on. Spending a week or so with this book following a single path orchestrated by a constant and consistent author saved me a lot of the time and confusion I’ve been wasting on abortive strolls through developer blogs and howtos over the last few months.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/913971983">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/1118987241/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/913971983">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/1118987241/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
@@ -633,7 +531,7 @@
     
     ]]>
 </description>
-<pubDate>Wed, 21 Jun 2017 15:15:00 +0200</pubDate>
+<pubDate>Wed, 21 Jun 2017 09:15:00 -0400</pubDate>
 <link>http://tinaja.computer/2017/06/21/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2017/06/21/recent-reading.html</guid>
 </item>
@@ -652,7 +550,7 @@
     
     ]]>
 </description>
-<pubDate>Wed, 31 May 2017 07:23:01 +0200</pubDate>
+<pubDate>Wed, 31 May 2017 01:23:01 -0400</pubDate>
 <link>http://tinaja.computer/2017/05/31/solnit-on-privilege.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2017/05/31/solnit-on-privilege.html</guid>
 </item>
@@ -679,96 +577,61 @@
   <ul class="reading-list">
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B00U5MMZ2E/ref=nosim/latin031-20">Tracy Osborn. <i>Hello Web App: Learn How to Build a Web App</i>. San Jose, CA: Self-published, 2015.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B00U5MMZ2E/ref=nosim/latin031-20">Tracy Osborn. <i>Hello Web App: Learn How to Build a Web App</i>. San Jose, CA: Self-published, 2015.</a>
+      </span>
 
         
           <span class="note"><p>Osborn selects an interesting framing for her <em>Hello Web App</em> books: sharing only the minimum necessary information to get a web application up and running in a browser with limited programming experience and essentially no computer science fundamentals. The first of these two books provides a kind of paint-by-numbers template for building a simple Django CRUD application in Python.  Having learned by this sort of trial and error herself, Osborn has a good sense of what is necessary and in what order for the beginner to get a satisfying, tangible project up and running as quickly as possible. However, Osborn necessarily makes some assumptions in how she will limit her scope in order to keep things beginner-friendly, and it will take a certain kind of learner to feel free in breaking those assumptions and making their own experimentations when it comes time to grow beyond this template.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/957188874">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B00U5MMZ2E/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/957188874">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B00U5MMZ2E/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B01LXOO7UQ/ref=nosim/latin031-20">Jon Ronson. <i>The Elephant in the Room: A Journey into the Trump Campaign and the “Alt-Right”</i>. Seattle, WA: Amazon Kindle Single, 2016.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B01LXOO7UQ/ref=nosim/latin031-20">Jon Ronson. <i>The Elephant in the Room: A Journey into the Trump Campaign and the “Alt-Right”</i>. Seattle, WA: Amazon Kindle Single, 2016.</a>
+      </span>
 
         
           <span class="note"><p>I bought this Kindle Single a couple of weeks after the election last fall, but have only now gotten around to reading it. I’ve always had something of a <a href="https://twitter.com/jonesbp/status/860151673637011458">soft spot</a> for Alex Jones despite his becoming a less benign force in the world these days—perhaps he never was benign after all—and Jones’s career-making Bohemian Grove documentary was actually the result of a lark proposed by Ronson. As a result, Ronson’s more personal, and even sympathetic, treatment of Jones as both a person and character appeals to me as being truer than the wholesale condemnation that is more typical of this moment. It also means that Ronson was able to get access to some backstage conversations between Jones, his crew, and associates like Roger Stone that are batshit crazy and fascinating.</p>
 </span>
-        
-        
-    <span class="links">
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B01LXOO7UQ/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://www.amazon.com/exec/obidos/asin/B01LXOO7UQ/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B01774NMEW/ref=nosim/latin031-20">Tracy Osborn. <i>Hello Web App: Intermediate Concepts</i>. San Jose, CA: Self-published, 2015.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B01774NMEW/ref=nosim/latin031-20">Tracy Osborn. <i>Hello Web App: Intermediate Concepts</i>. San Jose, CA: Self-published, 2015.</a>
+      </span>
 
         
           <span class="note"><p><em>Hello Web App: Intermediate Concepts</em> is the second in a series of books introducing novice developers to building a web app with Django. Where the first installment provides a walkthrough for building a CRUD app from start to finish, the second book is more of a recipe book for specific features: a messaging system or Stripe integration, for example. The examples are helpful and include functionality that almost any web app project will require, but the shift in approach will mean that true novices should spend some time working on whatever they’ve based on their time with the first book before looking to this one for features to add. There is not enough to the demonstration project in the first book to support adding most of these features as anything other than demonstrations.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/952566688">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B01774NMEW/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/952566688">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B01774NMEW/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B01FQQ47OC/ref=nosim/latin031-20">Cory Doctorow. <i>Walkaway: A Novel</i>. New York: Tom Doherty Associates, 2017.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B01FQQ47OC/ref=nosim/latin031-20">Cory Doctorow. <i>Walkaway: A Novel</i>. New York: Tom Doherty Associates, 2017.</a>
+      </span>
 
         
           <span class="note"><p>Most Cory Doctorow novels work better for me as ‘idea novels’ than as stories in themselves. His tendency to have characters break into multi-paragraph monologues outlining the political ramifications of some aspect of maker culture or copy protection almost never serves the pacing of his plots well. However, I read all of them and am always compelled by at least some part of them to think about something new. <em>Walkaway</em> was perhaps the most Doctorow-ish of novels in both these good and bad senses. I read it relatively quickly and mostly enjoyed myself most of the time, but having finished I may remember my ambivalence above another sensation of reading it.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/975270622">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/B01FQQ47OC/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/975270622">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B01FQQ47OC/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
@@ -777,7 +640,7 @@
     
     ]]>
 </description>
-<pubDate>Wed, 24 May 2017 09:53:00 +0200</pubDate>
+<pubDate>Wed, 24 May 2017 09:53:00 -0400</pubDate>
 <link>http://tinaja.computer/2017/05/24/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2017/05/24/recent-reading.html</guid>
 </item>
@@ -798,50 +661,32 @@
   <ul class="reading-list">
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0062341650/ref=nosim/latin031-20">Dorothy L. Sayers. <i>Murder Must Advertise</i>. New York: Bourbon Street Books, 2014 [1933].</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0062341650/ref=nosim/latin031-20">Dorothy L. Sayers. <i>Murder Must Advertise</i>. New York: Bourbon Street Books, 2014 [1933].</a>
+      </span>
 
         
           <span class="note"><p>The first of the Lord Wolsey mysteries I’ve read—this one has him undercover as a copy writer to investigate a suspicious death at an advertising firm. There are clear Wodehousian influences in Sayers’s treatment of her protagonist, and the mystery itself unfolded nicely. From a historical perspective the social commentary on advertising, recreational drug use, and consumerism was interesting.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/902745527">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0062341650/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/902745527">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0062341650/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
       <li>
-        
-    <span class="citation">
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0316388394/ref=nosim/latin031-20">Brad Stone. <i>The Upstarts: How Uber, Airbnb and the Killer Companies of the New Silicon Valley are Changing the World</i>. New York: Little, Brown and Company, 2017.</a>
-      
-    </span>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0316388394/ref=nosim/latin031-20">Brad Stone. <i>The Upstarts: How Uber, Airbnb and the Killer Companies of the New Silicon Valley are Changing the World</i>. New York: Little, Brown and Company, 2017.</a>
+      </span>
 
         
           <span class="note"><p>It can be easy to get into patterns of knee jerk rejection of these businesses, particularly Uber, with the stories in the news about the labor and housing problems caused by these business models. I think Stone is fundamentally more sympathetic to the goals of these two businesses than I am, but generally he provides an even-handed account that saves room for critique. I agree that these businesses are likely signals of a new economy, but I don’t know hat I am quite as enthusiastic about that possibility as Stone is. It will be interesting to see what happens when these business models become sufficiently common that they don’t require a connection to messianic founders to be viable.</p>
 </span>
-        
-        
-    <span class="links">
-      
-        <a href="http://worldcat.org/oclc/973280358">WorldCat &raquo;</a>
-      
-      
-        <a href="http://www.amazon.com/exec/obidos/asin/0316388394/ref=nosim/latin031-20">Amazon &raquo;</a>
-      
-    </span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/973280358">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0316388394/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
 
       </li>
     
@@ -850,30 +695,9 @@
     
     ]]>
 </description>
-<pubDate>Mon, 01 May 2017 13:19:00 +0200</pubDate>
+<pubDate>Mon, 01 May 2017 13:19:00 -0400</pubDate>
 <link>http://tinaja.computer/2017/05/01/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2017/05/01/recent-reading.html</guid>
-</item>
-
-<item>
-<title>New Projects</title>
-
-<description>
-    <![CDATA[
-    <p>Last night I started a new side project for the first time in over a year. I installed Django, I initialized a Git repository, and I created an app.</p>
-
-<p>For the last several months, I have been putting pressure on myself to study and learn some new skills. I have made some progress, but also find myself going for long periods without working with these materials.</p>
-
-<p>The feeling of having a project, for me, makes things different. I have a bucket to put this learning into and a scaffolding on which to try out some of these ideas. I have somewhere to go and do something when I find myself with a free 30 minutes.</p>
-
-<p>I’m excited to feel this way again.</p>
-
-    
-    ]]>
-</description>
-<pubDate>Wed, 26 Apr 2017 16:44:00 +0200</pubDate>
-<link>http://tinaja.computer/2017/04/26/new-projects.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/04/26/new-projects.html</guid>
 </item>
 
 </channel>
