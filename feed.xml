@@ -3,8 +3,36 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://tinaja.computer</link>
+<link>http://localhost:4000</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>The Sound of the Belgian Underground</title>
+
+<description>
+    <![CDATA[
+    <p>Subbacultcha is curating a festival at Ancienne Belgique next year called ‘The Sound of the Belgian Underground’. This is a list of participants.</p>
+
+<ul>
+  <li><a href="https://soundcloud.com/halogenmusicgroup/afia-fuck">Afia</a></li>
+  <li><a href="https://www.youtube.com/watch?v=WkInnXlNMjk">AIR LQD</a></li>
+  <li><a href="https://www.youtube.com/watch?v=A-ys3sRKGd0">Crowd Of Chairs</a></li>
+  <li><a href="https://www.youtube.com/watch?v=4cNZ4Ca5o1A">Le77</a></li>
+  <li><a href="https://www.youtube.com/watch?v=1FFbtHaqhWM">Sale Gosse</a></li>
+  <li><a href="https://soundcloud.com/midlifemusic/kassett-u-01-b277-w-samuelspaniel">Kassett</a></li>
+  <li><a href="https://www.youtube.com/watch?v=vW-OsP6vAXA">Vaal</a></li>
+  <li><a href="https://soundcloud.com/christine-denamur">Christine Denamur</a></li>
+  <li><a href="https://www.youtube.com/watch?v=vzGa94YCl68">Wolvennest</a></li>
+  <li><a href="https://soundcloud.com/1000amen/kassett-charme-ft-rin">Golin</a></li>
+</ul>
+
+    
+    ]]>
+</description>
+<pubDate>Thu, 21 Sep 2017 09:15:01 -0400</pubDate>
+<link>http://localhost:4000/2017/09/21/sound-of-the-belgian-underground.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/21/sound-of-the-belgian-underground.html</guid>
+</item>
 
 <item>
 <title>Dave Winer on Misunderstanding and Design</title>
@@ -21,8 +49,8 @@
     ]]>
 </description>
 <pubDate>Thu, 14 Sep 2017 15:13:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/14/winer-on-misunderstanding.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/14/winer-on-misunderstanding.html</guid>
+<link>http://localhost:4000/2017/09/14/winer-on-misunderstanding.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/14/winer-on-misunderstanding.html</guid>
 </item>
 
 <item>
@@ -121,8 +149,8 @@
     ]]>
 </description>
 <pubDate>Mon, 11 Sep 2017 15:37:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/11/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/11/recent-reading.html</guid>
+<link>http://localhost:4000/2017/09/11/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/11/recent-reading.html</guid>
 </item>
 
 <item>
@@ -171,8 +199,8 @@
     ]]>
 </description>
 <pubDate>Thu, 31 Aug 2017 00:00:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/08/31/mac-apps.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/08/31/mac-apps.html</guid>
+<link>http://localhost:4000/2017/08/31/mac-apps.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/08/31/mac-apps.html</guid>
 </item>
 
 <item>
@@ -271,8 +299,8 @@
     ]]>
 </description>
 <pubDate>Wed, 26 Jul 2017 14:27:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/07/26/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/07/26/recent-reading.html</guid>
+<link>http://localhost:4000/2017/07/26/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/07/26/recent-reading.html</guid>
 </item>
 
 <item>
@@ -371,8 +399,8 @@
     ]]>
 </description>
 <pubDate>Fri, 14 Jul 2017 05:34:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/07/14/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/07/14/recent-reading.html</guid>
+<link>http://localhost:4000/2017/07/14/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/07/14/recent-reading.html</guid>
 </item>
 
 <item>
@@ -478,8 +506,8 @@
     ]]>
 </description>
 <pubDate>Mon, 03 Jul 2017 05:15:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/07/03/URL-substring-alfred-workflows.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/07/03/URL-substring-alfred-workflows.html</guid>
+<link>http://localhost:4000/2017/07/03/URL-substring-alfred-workflows.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/07/03/URL-substring-alfred-workflows.html</guid>
 </item>
 
 <item>
@@ -548,8 +576,8 @@
     ]]>
 </description>
 <pubDate>Sat, 01 Jul 2017 04:15:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/07/01/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/07/01/recent-reading.html</guid>
+<link>http://localhost:4000/2017/07/01/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/07/01/recent-reading.html</guid>
 </item>
 
 <item>
@@ -567,8 +595,8 @@
     ]]>
 </description>
 <pubDate>Mon, 26 Jun 2017 16:13:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/06/26/roberts-on-materiality-of-books.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/06/26/roberts-on-materiality-of-books.html</guid>
+<link>http://localhost:4000/2017/06/26/roberts-on-materiality-of-books.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/06/26/roberts-on-materiality-of-books.html</guid>
 </item>
 
 <item>
@@ -651,27 +679,8 @@
     ]]>
 </description>
 <pubDate>Wed, 21 Jun 2017 09:15:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/06/21/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/06/21/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Rebecca Solnit on Privilege and Obliviousness</title>
-
-<description>
-    <![CDATA[
-    <blockquote>
-  <p>This is why I always pair privilege with obliviousness; obliviousness is privilege’s form of deprivation. When you don’t hear others, you don’t imagine them, they become unreal, and you are left in the wasteland of a world with only yourself in it, and that surely makes you starving, though you know not for what, if you have ceased to imagine others exist in any true deep way that matters. This is about a need for which we hardly have language or at least not a familiar conversation.</p>
-
-  <p>– <cite>Rebecca Solnit, <a href="http://lithub.com/rebecca-solnit-the-loneliness-of-donald-trump/">The Loneliness of Donald Trump</a></cite></p>
-</blockquote>
-
-    
-    ]]>
-</description>
-<pubDate>Wed, 31 May 2017 01:23:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/05/31/solnit-on-privilege.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/05/31/solnit-on-privilege.html</guid>
+<link>http://localhost:4000/2017/06/21/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/06/21/recent-reading.html</guid>
 </item>
 
 </channel>
