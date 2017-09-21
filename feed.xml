@@ -3,8 +3,32 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://localhost:4000</link>
+<link>http://tinaja.computer</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Columbus Podcasts</title>
+
+<description>
+    <![CDATA[
+    <p>A list of podcasts associated with Columbus, OH that participated in the 2017 Independents’ Day Festival</p>
+
+<ul>
+  <li>Columbus! Something New</li>
+  <li>ACES Radio</li>
+  <li>Idea Foundry</li>
+  <li>The Sounds of Bustown</li>
+  <li>The Confluence Cast</li>
+  <li>What’s The Deal With Creativity</li>
+</ul>
+
+    
+    ]]>
+</description>
+<pubDate>Thu, 21 Sep 2017 10:40:01 -0400</pubDate>
+<link>http://tinaja.computer/2017/09/21/columbus-podcasts.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/21/columbus-podcasts.html</guid>
+</item>
 
 <item>
 <title>The Sound of the Belgian Underground</title>
@@ -30,8 +54,8 @@
     ]]>
 </description>
 <pubDate>Thu, 21 Sep 2017 09:15:01 -0400</pubDate>
-<link>http://localhost:4000/2017/09/21/sound-of-the-belgian-underground.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/21/sound-of-the-belgian-underground.html</guid>
+<link>http://tinaja.computer/2017/09/21/sound-of-the-belgian-underground.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/21/sound-of-the-belgian-underground.html</guid>
 </item>
 
 <item>
@@ -49,8 +73,8 @@
     ]]>
 </description>
 <pubDate>Thu, 14 Sep 2017 15:13:01 -0400</pubDate>
-<link>http://localhost:4000/2017/09/14/winer-on-misunderstanding.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/14/winer-on-misunderstanding.html</guid>
+<link>http://tinaja.computer/2017/09/14/winer-on-misunderstanding.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/14/winer-on-misunderstanding.html</guid>
 </item>
 
 <item>
@@ -149,8 +173,8 @@
     ]]>
 </description>
 <pubDate>Mon, 11 Sep 2017 15:37:00 -0400</pubDate>
-<link>http://localhost:4000/2017/09/11/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/11/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/09/11/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/11/recent-reading.html</guid>
 </item>
 
 <item>
@@ -199,8 +223,8 @@
     ]]>
 </description>
 <pubDate>Thu, 31 Aug 2017 00:00:00 -0400</pubDate>
-<link>http://localhost:4000/2017/08/31/mac-apps.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/08/31/mac-apps.html</guid>
+<link>http://tinaja.computer/2017/08/31/mac-apps.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/08/31/mac-apps.html</guid>
 </item>
 
 <item>
@@ -299,8 +323,8 @@
     ]]>
 </description>
 <pubDate>Wed, 26 Jul 2017 14:27:00 -0400</pubDate>
-<link>http://localhost:4000/2017/07/26/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/07/26/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/07/26/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/07/26/recent-reading.html</guid>
 </item>
 
 <item>
@@ -399,8 +423,8 @@
     ]]>
 </description>
 <pubDate>Fri, 14 Jul 2017 05:34:00 -0400</pubDate>
-<link>http://localhost:4000/2017/07/14/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/07/14/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/07/14/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/07/14/recent-reading.html</guid>
 </item>
 
 <item>
@@ -506,8 +530,8 @@
     ]]>
 </description>
 <pubDate>Mon, 03 Jul 2017 05:15:00 -0400</pubDate>
-<link>http://localhost:4000/2017/07/03/URL-substring-alfred-workflows.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/07/03/URL-substring-alfred-workflows.html</guid>
+<link>http://tinaja.computer/2017/07/03/URL-substring-alfred-workflows.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/07/03/URL-substring-alfred-workflows.html</guid>
 </item>
 
 <item>
@@ -576,8 +600,8 @@
     ]]>
 </description>
 <pubDate>Sat, 01 Jul 2017 04:15:00 -0400</pubDate>
-<link>http://localhost:4000/2017/07/01/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/07/01/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/07/01/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/07/01/recent-reading.html</guid>
 </item>
 
 <item>
@@ -595,92 +619,8 @@
     ]]>
 </description>
 <pubDate>Mon, 26 Jun 2017 16:13:01 -0400</pubDate>
-<link>http://localhost:4000/2017/06/26/roberts-on-materiality-of-books.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/06/26/roberts-on-materiality-of-books.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Mario, Garbage, and Computational Abundance</title>
-
-<description>
-    <![CDATA[
-    
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B01H2KDZ7A/ref=nosim/latin031-20">Alyse Knorr. <i>Super Mario Bros. 3</i>. Los Angeles, CA: Boss Fight Books, 2016.</a>
-      </span>
-
-        
-          <span class="note"><p>This is another entry in the Boss Fight Books series that is as much personal memoir as exploration of the game itself. Knorr interrogates gamer nostalgia through a thorough analysis of the game mechanics and level design of Super Mario Bros. 3 in the context of the widely held consensus that is a great, if not the greatest, platform game ever made. Along the way, her own nostalgia for childhood family interactions around the game adds an additional layer to the contingent nature of media experience.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/951476372">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B01H2KDZ7A/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B011JAV030/ref=nosim/latin031-20">Sarah Jeong. <i>The Internet of Garbage</i>. New York: Forbes Media, 2015.</a>
-      </span>
-
-        
-          <span class="note"><p>Jeong has done a great job making the case both for the importance of community moderation online and in explaining how that work is much more nuanced than blocking, deleting, and banning.</p>
-</span>
-        <span class="links">
-      <a href="http://www.amazon.com/exec/obidos/asin/B011JAV030/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B00D97HPQI/ref=nosim/latin031-20">Erik Brynjolfsson and Andrew McAfee. <i>The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies</i>. New York: W.W. Norton & Company, 2014.</a>
-      </span>
-
-        
-          <span class="note"><p>In this readable account, Brynjolfsson and McAfee outline some of the tensions between conventional economic wisdom and new realities of labor and markets in an age of computational abundance. While not discounting the looming hardships for many workers, they are generally sanguine about the continued need for human labor provided that training is geared to maximizing those human strengths for which machines can serve only as complements, rather than substitutes. As with so many business books, the historical foundations of some of their arguments make their shallow approach to historiography a bit disappointing. The work’s strength comes from the pair’s clear explication of policy prescriptions from their analysis.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/960056027">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B00D97HPQI/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/1118987241/ref=nosim/latin031-20">Brad Williams, David Damstra, and Hal Stern. <i>Professional WordPress: Design and Development</i>. Indianapolis, IN: Wrox, 2015.</a>
-      </span>
-
-        
-          <span class="note"><p>Having never done more than hacked together limited rough-and-ready custom one-off changes to WordPress themes, I felt like I need a good A-Z overview of the world of WordPress development as a foundation for a project I’m working on. Spending a week or so with this book following a single path orchestrated by a constant and consistent author saved me a lot of the time and confusion I’ve been wasting on abortive strolls through developer blogs and howtos over the last few months.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/913971983">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/1118987241/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Wed, 21 Jun 2017 09:15:00 -0400</pubDate>
-<link>http://localhost:4000/2017/06/21/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/06/21/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/06/26/roberts-on-materiality-of-books.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/06/26/roberts-on-materiality-of-books.html</guid>
 </item>
 
 </channel>
