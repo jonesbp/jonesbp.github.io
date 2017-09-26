@@ -3,8 +3,34 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://tinaja.computer</link>
+<link>http://localhost:4000</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Famous Tex-Mex Quesos</title>
+
+<description>
+    <![CDATA[
+    <p>I pre-ordered <a href="http://www.homesicktexan.com">Lisa Fain</a>’s new <a href="http://amzn.to/2y67xqu"><em>Queso!</em></a> cookbook months ago when I heard about it and it arrived today. I opened it to this list of five notable Tex-Mex restaurant quesos.</p>
+
+<p>This list is correct. I am enthusiastic about the book.</p>
+
+<ul>
+  <li><strong>Bob Armstrong Dip</strong> – Matt’s El Rancho – Austin, TX</li>
+  <li><strong>Felix Queso</strong> – Felix’s (and El Patio) – Houston, TX</li>
+  <li><strong>José’s Dip</strong> – Molina’s - Houston, TX</li>
+  <li><strong>Kerbey Queso</strong> – Kerbey Lane – Austin, TX</li>
+  <li><strong>Mag Mud</strong> – Magnolia Cafe – Austin, TX</li>
+</ul>
+
+
+    
+    ]]>
+</description>
+<pubDate>Tue, 26 Sep 2017 16:37:01 -0400</pubDate>
+<link>http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</guid>
+</item>
 
 <item>
 <title>Recent Reading: September 23, 2017</title>
@@ -77,8 +103,8 @@
     ]]>
 </description>
 <pubDate>Sat, 23 Sep 2017 18:10:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/23/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/23/recent-reading.html</guid>
+<link>http://localhost:4000/2017/09/23/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/23/recent-reading.html</guid>
 </item>
 
 <item>
@@ -101,8 +127,8 @@
     ]]>
 </description>
 <pubDate>Thu, 21 Sep 2017 10:40:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/21/columbus-podcasts.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/21/columbus-podcasts.html</guid>
+<link>http://localhost:4000/2017/09/21/columbus-podcasts.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/21/columbus-podcasts.html</guid>
 </item>
 
 <item>
@@ -129,8 +155,8 @@
     ]]>
 </description>
 <pubDate>Thu, 21 Sep 2017 09:15:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/21/sound-of-the-belgian-underground.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/21/sound-of-the-belgian-underground.html</guid>
+<link>http://localhost:4000/2017/09/21/sound-of-the-belgian-underground.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/21/sound-of-the-belgian-underground.html</guid>
 </item>
 
 <item>
@@ -148,8 +174,8 @@
     ]]>
 </description>
 <pubDate>Thu, 14 Sep 2017 15:13:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/14/winer-on-misunderstanding.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/14/winer-on-misunderstanding.html</guid>
+<link>http://localhost:4000/2017/09/14/winer-on-misunderstanding.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/14/winer-on-misunderstanding.html</guid>
 </item>
 
 <item>
@@ -248,8 +274,8 @@
     ]]>
 </description>
 <pubDate>Mon, 11 Sep 2017 15:37:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/11/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/11/recent-reading.html</guid>
+<link>http://localhost:4000/2017/09/11/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/11/recent-reading.html</guid>
 </item>
 
 <item>
@@ -298,8 +324,8 @@
     ]]>
 </description>
 <pubDate>Thu, 31 Aug 2017 00:00:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/08/31/mac-apps.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/08/31/mac-apps.html</guid>
+<link>http://localhost:4000/2017/08/31/mac-apps.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/08/31/mac-apps.html</guid>
 </item>
 
 <item>
@@ -398,8 +424,8 @@
     ]]>
 </description>
 <pubDate>Wed, 26 Jul 2017 14:27:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/07/26/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/07/26/recent-reading.html</guid>
+<link>http://localhost:4000/2017/07/26/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/07/26/recent-reading.html</guid>
 </item>
 
 <item>
@@ -498,8 +524,8 @@
     ]]>
 </description>
 <pubDate>Fri, 14 Jul 2017 05:34:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/07/14/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/07/14/recent-reading.html</guid>
+<link>http://localhost:4000/2017/07/14/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/07/14/recent-reading.html</guid>
 </item>
 
 <item>
@@ -605,78 +631,8 @@
     ]]>
 </description>
 <pubDate>Mon, 03 Jul 2017 05:15:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/07/03/URL-substring-alfred-workflows.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/07/03/URL-substring-alfred-workflows.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Zodiacs, Hackers, and Geography</title>
-
-<description>
-    <![CDATA[
-    
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B004IATCES/ref=nosim/latin031-20">John Sandford. <i>The Fool’s Run</i>. New York: Berkley Books, 1989.</a>
-      </span>
-
-        
-          <span class="note"><p>A late 80s techno-thriller with a painter-hacker protagonist who has to explain personal computing fundamentals to his partners on a corporate espionage gig. A decent page-turner that is the first in a series on which I plan to follow through.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/988526544">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B004IATCES/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/0674066480/ref=nosim/latin031-20">Sean Roberts. <i>Printing a Mediterranean World: Florence, Constantinople, and the Renaissance of Geography</i>. Cambridge, MA: Harvard University Press, 2013.</a>
-      </span>
-
-        
-          <span class="note"><p>Roberts uses the gift of a printed edition of a late fifteenth-century Florentine geography to two Ottoman rulers as a jumping off point to explore the ‘rediscovery’ of geography and the materiality of knowledge and exchange in the late medieval and early modern Mediterranean world. He expands on the existing trend in complicating the supposedly transformative and modernizing effects taof the reintroduction of Ptolemy’s <em>Geography</em> into European intellectual life, but his primary contribution is in exploring the specific material characteristics of the book in question to identify the local peculiarities of commerce, geopolitics, and religion that shaped a Mediterranean world traditionally presumed to be aggressively transnational and multicultural.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/900039945">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/0674066480/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B008UX8SNU/ref=nosim/latin031-20">Neal Stephenson. <i>Zodiac</i>. New York: Bantam Books, 1988.</a>
-      </span>
-
-        
-          <span class="note"><p><em>Zodiac</em> was only Stephenson’s second novel, and it is interesting to read something with his voice in which some of his more idiosyncratic qualities (long technical digressions, large-scale world-building at the expense of plotting, etc.) have yet to develop. It’s a relatively short and tight thriller about corporate corruption and ecopolitics with a late 80s Generation-X-y tone that is evocative of the era.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/678839423">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B008UX8SNU/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Sat, 01 Jul 2017 04:15:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/07/01/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/07/01/recent-reading.html</guid>
+<link>http://localhost:4000/2017/07/03/URL-substring-alfred-workflows.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/07/03/URL-substring-alfred-workflows.html</guid>
 </item>
 
 </channel>
