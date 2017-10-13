@@ -7,9 +7,9 @@ layout: default
     {% for post in paginator.posts %}
       {% if post.type == "long" %}
         <li class="long-post">
-          <a class="list-title" href="{{ post.url }}">{{ post.title }}</a> 
+          <a class="list-title" href="{{ post.url }}">{{ post.title | raw }}</a>
           <p>
-            <span class="excerpt">{{ post.excerpt }}</span> <span class="details"><a class="detail" href="{{ post.url }}">Read more &raquo;</a> <a class="detail" href="{{ post.url }}">{{ post.date | date_to_string }}</a></span>
+            <span class="excerpt">{{ post.excerpt | raw }}</span> <span class="details"><a class="detail" href="{{ post.url }}">Read more &raquo;</a> <a class="detail" href="{{ post.url }}">{{ post.date | date_to_string }}</a></span>
           </p>
           <!-- <hr> -->
         </li>
@@ -29,7 +29,7 @@ layout: default
             {% elsif post.type == "list" %}
               <span class="indicator icon-list"></span>
             {% endif %}
-            <a class="list-title" href="{{ post.url }}">{{ post.title }} &raquo;</a>
+            <a class="list-title" href="{{ post.url }}">{{ post.title | raw }} &raquo;</a>
             <p>
               <span class="details"><a class="detail" href="{{ post.url }}">{{ post.date | date_to_string }}</a></span>
             </p>

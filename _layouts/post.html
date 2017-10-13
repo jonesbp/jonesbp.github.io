@@ -4,11 +4,11 @@ layout: default
 {% if page.type == "quotation" %}
 {% else %}
   {% if page.type == "tech_note" %}
-    <h2><span class="indicator icon-note"></span>{{ page.title }}</h2>
+    <h2><span class="indicator icon-note"></span>{{ page.title | raw }}</h2>
   {% elsif page.type == "list" %}
-    <h2><span class="indicator icon-list"></span>{{ page.title }}</h2>
+    <h2><span class="indicator icon-list"></span>{{ page.title | raw }}</h2>
   {% else %}
-    <h2>{{ page.title }}</h2>
+    <h2>{{ page.title | raw }}</h2>
   {% endif %}
   <p class="meta">{{ page.date | date_to_string }}</p>
 {% endif %}
