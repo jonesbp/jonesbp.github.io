@@ -3,8 +3,92 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://localhost:4000</link>
+<link>http://tinaja.computer</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Recent Reading: October 19, 2017</title>
+
+<description>
+    <![CDATA[
+    
+
+    
+        
+
+
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B074TJ8M94/ref=nosim/latin031-20">Eva Holland. <i>Mussolini’s Arctic Airship</i>. Seattle, WA: Amazon Kindle Singles, 2017.</a>
+      </span>
+
+        
+          <span class="note"><p>Holland centers the story of the wreck of the airship <em>Italia</em> over the Arctic on the Norwegian explorer Roald Amundsen and the path that put him on the rescue mission that ended his life. Produced as a Kindle Single, the work is compact, but alternates capably between the long historical trajectory of Amundsen’s career, the European geopolitics of the interwar period, and experience of the wrecked crew of the <em>Italia</em>. In particular, the narrative of the wreck provides a good example of creating narrative tension in moments of peril from relatively limited and contradictory primary sources.</p>
+</span>
+        <span class="links">
+      <a href="http://www.amazon.com/exec/obidos/asin/B074TJ8M94/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/1302900536/ref=nosim/latin031-20">Ta-Nehisi Coates and Brian Stelfreeze. <i>Black Panther: A Nation Under Our Feet, vol. 1</i>. New York: Marvel, 2016.</a>
+      </span>
+
+        
+          <span class="note"><p>This opening volume of Ta-Nehisi Coates’s take on Black Panther was both impressive and a bit difficult to get into. It took me until the final issue of this collection to feel like I was on firm footing with the several storylines (and their different scales) going on. The story is very much embedded in our current historical moment of re-examination of our history of racial conflict, populist discontent, and armed conflict with non-state actors while also being engaged with comic book history in its skepticism with regard to the singular hero. From a packaging standpoint, including early appearances of Black Panther is a nice touch, and I hope that continues in future collections.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/968293730">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/1302900536/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/1302900544/ref=nosim/latin031-20">Ta-Nehisi Coates and Chris Sprouse. <i>Black Panther: A Nation Under Our Feet, vol. 2.</i> New York: Marvel, 2017.</a>
+      </span>
+
+        
+          <span class="note"><p>I read this second volume straight on from the first, and much of my reaction to this second installment is the same. The main change is the inclusion of ‘The Crew’ comprised of Storm, Luke Cage, Manifold, and Misty Knight which provides some opportunity for some lighter dialogue to break up the heavy monologuing of the first volume of stories.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/951950785">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/1302900544/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0143127438/ref=nosim/latin031-20">Paul Greenberg. <i>American Catch: The Fight for Our Local Seafood</i>. New York: The Penguin Press, 2014.</a>
+      </span>
+
+        
+          <span class="note"><p>Paul Greenberg takes three sea creatures—the Eastern Oyster, the Gulf Shrimp, and the Alaskan Salmon—that typify North Americans’ historical engagement with seafood and uses them as a lens on the problems posed for maintaining seafood resources in the twenty-first century. Each serves as a different cautionary tale: the Eastern Oyster for over-development of our coastlines, the Gulf Shrimp for competition from globalized commodity markets built on aquaculture, and the Alaskan Salmon for American ignorance of the source of their seafood. The book is brisk and readable despite the bleak picture it paints and touches on a wide array of subjects including global labor markets, climate change, urban planning, and consumer tastes. Greenberg concludes in outlining some possibilities for progress and makes the case that positive change has already begun, but the changes are still small and the road ahead seems very, very long.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/921934890">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0143127438/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
+<pubDate>Thu, 19 Oct 2017 10:10:00 -0400</pubDate>
+<link>http://tinaja.computer/2017/10/19/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/10/19/recent-reading.html</guid>
+</item>
 
 <item>
 <title>Expedience in Sourdough</title>
@@ -29,8 +113,8 @@
     ]]>
 </description>
 <pubDate>Fri, 13 Oct 2017 13:05:01 -0400</pubDate>
-<link>http://localhost:4000/2017/10/13/expedience.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/10/13/expedience.html</guid>
+<link>http://tinaja.computer/2017/10/13/expedience.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/10/13/expedience.html</guid>
 </item>
 
 <item>
@@ -55,8 +139,8 @@
     ]]>
 </description>
 <pubDate>Tue, 26 Sep 2017 16:37:01 -0400</pubDate>
-<link>http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</guid>
+<link>http://tinaja.computer/2017/09/26/famous-tex-mex-quesos.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/26/famous-tex-mex-quesos.html</guid>
 </item>
 
 <item>
@@ -130,8 +214,8 @@
     ]]>
 </description>
 <pubDate>Sat, 23 Sep 2017 18:10:00 -0400</pubDate>
-<link>http://localhost:4000/2017/09/23/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/23/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/09/23/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/23/recent-reading.html</guid>
 </item>
 
 <item>
@@ -154,8 +238,8 @@
     ]]>
 </description>
 <pubDate>Thu, 21 Sep 2017 10:40:01 -0400</pubDate>
-<link>http://localhost:4000/2017/09/21/columbus-podcasts.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/21/columbus-podcasts.html</guid>
+<link>http://tinaja.computer/2017/09/21/columbus-podcasts.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/21/columbus-podcasts.html</guid>
 </item>
 
 <item>
@@ -182,8 +266,8 @@
     ]]>
 </description>
 <pubDate>Thu, 21 Sep 2017 09:15:01 -0400</pubDate>
-<link>http://localhost:4000/2017/09/21/sound-of-the-belgian-underground.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/21/sound-of-the-belgian-underground.html</guid>
+<link>http://tinaja.computer/2017/09/21/sound-of-the-belgian-underground.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/21/sound-of-the-belgian-underground.html</guid>
 </item>
 
 <item>
@@ -201,8 +285,8 @@
     ]]>
 </description>
 <pubDate>Thu, 14 Sep 2017 15:13:01 -0400</pubDate>
-<link>http://localhost:4000/2017/09/14/winer-on-misunderstanding.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/14/winer-on-misunderstanding.html</guid>
+<link>http://tinaja.computer/2017/09/14/winer-on-misunderstanding.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/14/winer-on-misunderstanding.html</guid>
 </item>
 
 <item>
@@ -301,8 +385,8 @@
     ]]>
 </description>
 <pubDate>Mon, 11 Sep 2017 15:37:00 -0400</pubDate>
-<link>http://localhost:4000/2017/09/11/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/11/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/09/11/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/11/recent-reading.html</guid>
 </item>
 
 <item>
@@ -351,8 +435,8 @@
     ]]>
 </description>
 <pubDate>Thu, 31 Aug 2017 00:00:00 -0400</pubDate>
-<link>http://localhost:4000/2017/08/31/mac-apps.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/08/31/mac-apps.html</guid>
+<link>http://tinaja.computer/2017/08/31/mac-apps.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/08/31/mac-apps.html</guid>
 </item>
 
 <item>
@@ -451,108 +535,8 @@
     ]]>
 </description>
 <pubDate>Wed, 26 Jul 2017 14:27:00 -0400</pubDate>
-<link>http://localhost:4000/2017/07/26/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/07/26/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Crowdsourcing, Pots, and GIS</title>
-
-<description>
-    <![CDATA[
-    
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B01M1NPEUM/ref=nosim/latin031-20">Christine Koh and Asha Dornfest. <i>Minimalist Parenting: Enjoy Modern Family Life More by Doing Less</i>. Brookline, MA: Bibliomotion, 2013.</a>
-      </span>
-
-        
-          <span class="note"><p>Relatively cruft-free as far as self-help/parenting books go, provides both some useful framing for approaching decisions around just how much one wants to do to run a household and discrete practical ‘tips and tricks’ for pursuing it. The “minimalist” framing frequently feels shoehorned into sections to maintain a consistent language to match the marketing-friendly title, but not to the extent of distracting from the book’s usefulness.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/823472877">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B01M1NPEUM/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CTK/ref=nosim/latin031-20">J. Michael Orenduff. <i>The Pot Thief Who Studied Pythagoras</i>. The Pot Thief Mysteries, no. 1. New York: Open Road, 2009.</a>
-      </span>
-
-        
-          <span class="note"><p>This is the first installment in a series of <a href="https://en.wikipedia.org/wiki/Cozy_mystery">cozy mysteries</a> about a ceramics shop owner in Albuquerque who stumbles through a series of mix-ups involving murder and contraband artifacts. The author has a political hobby horse with regards to cultural heritage policy that results in some unpleasant monologues from the protagonist from time to time, but the Albuquerque setting and light mood make it enjoyable reading. There are some first book jitters here in the writing and plotting that fortunately shake out in the second one.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/889943723">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CTK/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CSQ/ref=nosim/latin031-20">J. Michael Orenduff. <i>The Pot Thief Who Studied Ptolemy</i>. The Pot Thief Mysteries, no. 2. New York: Open Road, 2010.</a>
-      </span>
-
-        
-          <span class="note"><p>The second installment in this cozy mystery series set in Albuquerque cleans up some of the first book rough edges from <em>The Pot Thief Who Studied Pythagoras</em>. This one develops the appealing Albuquerque setting a bit more and presents some humorous caricature of academia.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/889943657">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B00HO12CSQ/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/9400750080/ref=nosim/latin031-20">Alexander von Lünen and Charles Travis, eds. <i>History and GIS: Epistemologies, Considerations and Reflections</i>. Dordrecht: Springer Netherlands, 2013.</a>
-      </span>
-
-        
-          <span class="note"><p>The organizing principle of this collection of interviews and essays is to encourage historians to consider the epistemological consequences of GIS as tool of inquiry and an exploratory methodology, rather than as a piece of the production process useful only for creating static maps as ‘end products’. The Gunnar Olsson and David Staley interviews and von Lünen’s concluding essay were of particular interest in helping to consider the boundaries of what geographical inquiry (and GIS in particular) can do to expand the questions available to historians.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/829432729">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/9400750080/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B00CHQRJ3G/ref=nosim/latin031-20">Daren C. Brabham. <i>Crowdsourcing</i>. The MIT Press Essential Knowledge Series. Cambridge, MA: The MIT Press, 2013.</a>
-      </span>
-
-        
-          <span class="note"><p>This short book presents a synthesis of academic research on crowdsourcing across a variety of academic disciplines including computer science, business, and the social sciences. It provides a useful working definition of what constitutes ‘crowdsourcing’ (and what it is not) and runs through both positive indications for its future as a tool in a variety of fields and ethical and political problems it presents that must be addressed. A quick read and useful for shaping design considerations for possible online projects that would include collaborative peer contributions (though, per the reading, not necessarily ‘crowdsourcing’).</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/813540906">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B00CHQRJ3G/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Fri, 14 Jul 2017 05:34:00 -0400</pubDate>
-<link>http://localhost:4000/2017/07/14/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/07/14/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/07/26/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/07/26/recent-reading.html</guid>
 </item>
 
 </channel>
