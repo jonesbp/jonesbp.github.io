@@ -77,7 +77,7 @@
 
 <p>If you haven’t already created a <code class="highlighter-rouge">staging</code> branch on your local Git repo, make sure to do that and merge over your active <code class="highlighter-rouge">development</code> branch (or whatever other branch you want to see in your staging environment):</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout -b staging
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout <span class="nt">-b</span> staging
 git merge development</code></pre></figure>
 
 <p>Here’s a special case when dealing with Heroku. Its Git-based deployment approach assumes that the <code class="highlighter-rouge">master</code> branch is the branch that will be deployed. When we’re using a Heroku application as a staging environment, we’ll almost certainly be pushing a branch named something other than <code class="highlighter-rouge">master</code> (<code class="highlighter-rouge">staging</code> if you’re following these instructions, of course), so we’ll need to make a slight variation to our usual <code class="highlighter-rouge">git push</code> command:</p>
@@ -88,21 +88,21 @@ git merge development</code></pre></figure>
 
 <p>You’ll need to run your migrations against the database you’ve set up on the staging app:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">heroku run rake db:migrate --app your-staging-app-name</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">heroku run rake db:migrate <span class="nt">--app</span> your-staging-app-name</code></pre></figure>
 
 <p>You may have your own way to seed data on the new staging environment, but a quick and easy way to get data into your staging app is to copy it over from the production environment. You can repeat this process from time-to-time if you’d like to keep your data in the two environments relatively closely tied. First, add the pgbackups add-on to both your production and staging apps if you haven’t already:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">heroku addons:add pgbackups --app your-staging-app-name
-heroku addons:add pgbackups --app your-production-app-name</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">heroku addons:add pgbackups <span class="nt">--app</span> your-staging-app-name
+heroku addons:add pgbackups <span class="nt">--app</span> your-production-app-name</code></pre></figure>
 
 <p>Then, create a new backup of the data on your production app and copy that backup to your staging app. You’ll want to verify what level of database you’re using on the Settings page of your staging app. For this example, I’m using the free Blue tier:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">heroku pgbackups:capture --expire --app your-production-app-name
-heroku pgbackups:restore HEROKU_POSTGRESQL_BLUE --app your-staging-app-name <span class="sb">`</span>heroku pgbackups:url --app your-production-app-name<span class="sb">`</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">heroku pgbackups:capture <span class="nt">--expire</span> <span class="nt">--app</span> your-production-app-name
+heroku pgbackups:restore HEROKU_POSTGRESQL_BLUE <span class="nt">--app</span> your-staging-app-name <span class="sb">`</span>heroku pgbackups:url <span class="nt">--app</span> your-production-app-name<span class="sb">`</span></code></pre></figure>
 
 <p>Finally, you’ll want to set up environment variables on your new Heroku staging app so that you can use settings specific to the staging environment when necessary:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">heroku config:add <span class="nv">RACK_ENV</span><span class="o">=</span>staging <span class="nv">RAILS_ENV</span><span class="o">=</span>staging --app your-staging-app-name</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">heroku config:add <span class="nv">RACK_ENV</span><span class="o">=</span>staging <span class="nv">RAILS_ENV</span><span class="o">=</span>staging <span class="nt">--app</span> your-staging-app-name</code></pre></figure>
 
 <p>Now you can add a new environment configuration file for the staging environment to your Rails app at <code class="highlighter-rouge">/config/environments/staging.rb</code>. Just as in <code class="highlighter-rouge">development.rb</code> or <code class="highlighter-rouge">production.rb</code>, you’ll add staging-specific settings here. As an example, we can set up basic HTTP authentication to keep casual passers-by away from seeing our in-progress work at staging. We can use our new staging configuration file to save the username and password.<sup id="fnref:password"><a href="#fn:password" class="footnote">2</a></sup> Then we’ll put a simple <code class="highlighter-rouge">authenticate</code> method in our application controller along with a <code class="highlighter-rouge">before_filter</code> to call that method when we’re running in the staging environment.</p>
 

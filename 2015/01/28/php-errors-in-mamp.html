@@ -59,23 +59,21 @@
 
 <p>MAMP uses its own PHP instead of your default system installation, so you need to find the configuration specific to the version it’s running. You’ll find the (possibly several) versions of PHP MAMP has installed inside of the MAMP application bundle, so head there and list the contents of the <code class="highlighter-rouge">config</code> directory. You are most likely running the version of PHP with the highest version number. In my case, right now, it’s 5.4.10:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span><span class="nb">cd</span> /Applications/MAMP/conf
-<span class="gp">$ </span>ls
-<span class="gp">$ </span><span class="nb">cd </span>php5.4.10</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /Applications/MAMP/conf
+<span class="nv">$ </span><span class="nb">ls</span>
+<span class="nv">$ </span><span class="nb">cd </span>php5.4.10</code></pre></figure>
 
 <p>And open <code class="highlighter-rouge">php.ini</code> using your text editor of choice, and look for the section headed <code class="highlighter-rouge">Error handling and logging</code>. There are several settings to adjust here, but the basic one is <code class="highlighter-rouge">error_reporting</code>. The relevant line will be commented out by default, so you’ll remove the leading <code class="highlighter-rouge">;</code> to activate the setting.</p>
 
 <p>From this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>;error_reporting  =  E_ALL
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>;error_reporting  =  E_ALL
+</code></pre></div></div>
 
 <p>to this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>error_reporting  =  E_ALL
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>error_reporting  =  E_ALL
+</code></pre></div></div>
 
 <p>You may want to adjust the neighboring settings based on your needs, but this is sufficient to get some error feedback without losing the convenience of MAMP.</p>
 

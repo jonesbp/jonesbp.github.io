@@ -107,9 +107,8 @@
 
 <p>Link your ‘Keyword’ input to a new ’Action’ of type ’Run Script’. You can leave all of the sets for this script alone; the default language choice, <code class="highlighter-rouge">/bin/bash</code>, is what we want in this case. Our script will be a single bash command to grab the contents of the clipboard.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pbpaste
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pbpaste
+</code></pre></div></div>
 
 <h3 id="3-find-oclc">3. Find OCLC</h3>
 
@@ -117,7 +116,7 @@
 
 <p>The script is simple. We take the input from our bash script that grabbed the clipboard contents and we match it against a regular expression that essentially says “Give me the run of numerals that follow the string <code class="highlighter-rouge">/oclc/</code> in the provided text.” Finally, we write our result to standard output which is how our next Alfred action will receive it.</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">re</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">re</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 
 <span class="n">url</span> <span class="o">=</span> <span class="s">"{query}"</span>
@@ -125,13 +124,12 @@
 <span class="n">matchObj</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">r'/oclc/([0-9]*)'</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
 
 <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">matchObj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>A couple of things to note:</p>
 
 <ol>
-  <li><code class="highlighter-rouge"><span class="p">{</span><span class="err">query</span><span class="p">}</span></code> is a placeholder Alfred looks for in our script in order to insert whatever string of data is coming from the previous action in our workflow. It is not a standard piece of Python syntax.</li>
+  <li><code class="highlighter-rouge">{query}</code> is a placeholder Alfred looks for in our script in order to insert whatever string of data is coming from the previous action in our workflow. It is not a standard piece of Python syntax.</li>
   <li>A ‘regular expression’ is a string of characters that defines a pattern of text. In the case of the above script, it is the part that reads <code class="highlighter-rouge">/oclc/([0-9]*)</code>, but they can be far more complex. For a good introduction to using regular expressions, you can look at the Google lesson on <a href="https://developers.google.com/edu/python/regular-expressions">Python Regular Expressions</a>.</li>
 </ol>
 
@@ -139,7 +137,7 @@
 
 <p><img src="/images/2017/OCLC-4-output.jpg" alt="Output Settings" /></p>
 
-<p>Finally, we just want to link a new ‘Output’ of type ‘Copy to Clipboard’ and use the default content which is just to pass through the input from our Python script. Depending on the context, we could do additional formatting here by editing the text around <code class="highlighter-rouge"><span class="p">{</span><span class="err">query</span><span class="p">}</span></code>.</p>
+<p>Finally, we just want to link a new ‘Output’ of type ‘Copy to Clipboard’ and use the default content which is just to pass through the input from our Python script. Depending on the context, we could do additional formatting here by editing the text around <code class="highlighter-rouge">{query}</code>.</p>
 
 <p>In this case, I have also checked the box to ‘Automatically paste to front most app’ because that matches my needs the vast majority of the time I’m using this particular workflow, but in some cases it may be preferable to leave the result on the clipboard without automatically pasting.</p>
 

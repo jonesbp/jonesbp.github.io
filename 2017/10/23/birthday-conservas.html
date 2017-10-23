@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-          <title>Duplicate Nodes in Osmosis Update ≫ La Tinaja</title>
+          <title>Birthday Conservas ≫ La Tinaja</title>
         
 
         <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         
-          <meta name="description" content="Quick fix for an error I ran into while updating OpenStreetMap’s self-hosted geocoding server">
+          <meta name="description" content="I got some cans of Lucas conservas from Portugal for my birthday.">
         
 
         <!-- Custom CSS -->
@@ -49,35 +49,26 @@
 
           
   
-    <h2><span class="indicator icon-note"></span>Duplicate Nodes in Osmosis Update</h2>
+    <h2><span class="indicator icon-list"></span>Birthday Conservas</h2>
   
-  <p class="meta">05 Feb 2015</p>
+  <p class="meta">23 Oct 2017</p>
 
 
-<div class="post tech_note">
-<p>Today I had cause to set a server running OpenStreetMap’s <a href="http://wiki.openstreetmap.org/wiki/Nominatim">Nominatim</a> to run periodic automatic updates. The server is set up with the complete <code class="highlighter-rouge">planet.osm</code> file, and I wanted to run the updates using <a href="http://wiki.openstreetmap.org/wiki/Osmosis">Osmosis</a>. During testing, I had no problem running continuous updates using:</p>
+<div class="post list">
+<p>My parents were in Porto recently and got me some conservas from Lucas for my birthday. I love the packaging.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./utils/update.php --import-osmosis-all --no-npi
-</code></pre></div></div>
-
-<p>but for production I wanted to scale back the updates to run every 20 minutes with a cron job. So the first time I ran the one-time osmosis import:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./utils/update.php --import-osmosis --no-npi
-</code></pre></div></div>
-
-<p>It worked fine and the ‘Last Updated’ datetime stamp on the web interface for the server updated. I came back an hour later to see that the datetime stamp hadn’t updated again. There should have been three more updates in the time I’d left things alone, but something had gone wrong. I looked for <code class="highlighter-rouge">cron</code> in the log files:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep CRON /var/log/syslog
-</code></pre></div></div>
-
-<p>and found that my script had been executing right on time. So I tried to run the update myself again and received the following error:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>insert_node failed: ERROR: duplicate key value violates unique constraint planet_osm_nodes_pkey
-</code></pre></div></div>
-
-<p>I tried manually grabbing the most recent <code class="highlighter-rouge">state.txt</code> file with <code class="highlighter-rouge">wget</code>, but that didn’t make a difference. I re-indexed and afterwards ran the update successfully. When I tried to run the update again, same problem.</p>
-
-<p>Finally, I updated my version of <code class="highlighter-rouge">osm2pgsql</code> to make sure that I had a 64-bit capable version. Turns out, I did not. The updates have been firing successfully every 20 minutes ever since.</p>
+<ul>
+  <li>Filetes de atum em azeite de oliveira
+<img src="/images/2017/conservas-atum.jpg" alt="Filetes de atum" /></li>
+  <li>Filetes de chaputa em escabeche
+<img src="/images/2017/conservas-chaputa.jpg" alt="Filetes de chaputa" /></li>
+  <li>Peixe espada preto em filetes em azeite de oliveira
+<img src="/images/2017/conservas-peixe-espada.jpg" alt="Peixe espada" /></li>
+  <li>Sardinhas portuguesas em azeite de oliveira e piri-piri
+<img src="/images/2017/conservas-sardinhas-piri-piri.jpg" alt="Sardinhas em azeite de oliveira piri-piri" /></li>
+  <li>Sardinhas portuguesas em azeite de oliveira e pimento verde
+<img src="/images/2017/conservas-sardinhas.jpg" alt="Sardinhas em azeite de oliveira e pimento verde" /></li>
+</ul>
 
 </div>
 
