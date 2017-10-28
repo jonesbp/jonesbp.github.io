@@ -404,6 +404,10 @@ hr {
 }
 
 div.adjacent-posts {
+  border-top: 4px solid $lightHighlight;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
   div.link {
     float: left;
     width: 50%;
@@ -411,6 +415,16 @@ div.adjacent-posts {
     &.next {
       text-align: right;
     }
+  }
+}
+
+div.other-posts {
+  border-top: 4px solid $lightHighlight;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  h3 {
+    margin-top: 0;
   }
 }
 
@@ -616,6 +630,14 @@ table.books {
       &.next {
         text-align: center;
       }
+    }
+  }
+
+  div.other-posts {
+    text-align: center;
+
+    li {
+      margin-bottom: 1em;
     }
   }
 }
