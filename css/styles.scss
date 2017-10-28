@@ -95,6 +95,10 @@ span.indicator {
   }
 }
 
+span.small {
+  font-size: .8em;
+}
+
 img {
   max-width: 100%;
   width: 100%;
@@ -172,18 +176,6 @@ img {
     }
 
     padding-left: 1em;
-  }
-
-  hr {
-    border-width: 0;
-    margin: 1.5em 0 3em 0;
-    text-align: center;
-
-    &:after {
-      border-width: 0;
-      color: $mediumHighlight;
-      content: "❊ ❊ ❊";
-    }
   }
 }
 
@@ -323,6 +315,18 @@ img {
 
 // Posts //
 
+hr {
+  border-width: 0;
+  margin: 1.5em 0 3em 0;
+  text-align: center;
+
+  &:after {
+    border-width: 0;
+    color: $mediumHighlight;
+    content: "❊ ❊ ❊";
+  }
+}
+
 /* standard */
 .post p {
   line-height: 167%;
@@ -375,18 +379,6 @@ img {
   margin-bottom: .25em;
 }
 
-.post hr {
-  border-width: 0;
-  margin: 1.5em 0 3em 0;
-  text-align: center;
-
-  &:after {
-    border-width: 0;
-    color: $mediumHighlight;
-    content: "❊ ❊ ❊";
-  }
-}
-
 .post.reading_list ul {
   margin-bottom: 3em;
 }
@@ -407,6 +399,17 @@ img {
   &:last-child {
     &:after {
       content: "";
+    }
+  }
+}
+
+div.adjacent-posts {
+  div.link {
+    float: left;
+    width: 50%;
+
+    &.next {
+      text-align: right;
     }
   }
 }
@@ -597,6 +600,22 @@ table.books {
 
     a.button:first-child {
       margin-left: 0;
+    }
+  }
+
+  div.adjacent-posts {
+    div.link {
+      float: none;
+      margin-bottom: 1em;
+      width: 100%;
+
+      &.previous {
+        text-align: center;
+      }
+
+      &.next {
+        text-align: center;
+      }
     }
   }
 }
