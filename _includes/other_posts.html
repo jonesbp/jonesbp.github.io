@@ -1,0 +1,19 @@
+<div class="other-posts">
+    <hr>
+    <h3>{{ include.label }}</h3>
+    <ul>
+    {% assign link_counter = 0 %}
+    {% for link in site.posts %}
+        {% if link.type == page.type and link != page %}
+            <li>
+                <a href="{{ link.url }}">{{ link.title }}</a><br>
+                <span class="small">{{ link.date | date_to_string }}</span>
+            </li>
+            {% assign link_counter = link_counter | plus: 1 %}
+        {% endif %}
+        {% if link_counter >= 3 %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>

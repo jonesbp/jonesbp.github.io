@@ -22,3 +22,13 @@ layout: default
 {% endif %}
 
 {% include adjacent_posts.html %}
+
+{% if page.type == "quotation" %}
+    {% include other_posts.html label="Other Quotations" %}
+{% elsif page.type == "tech_note" %}
+    {% include other_posts.html label="Other Tech Notes" %}
+{% elsif page.type == "list" %}
+    {% include other_posts.html label="Other Lists" %}
+{% else %}
+    {% include other_posts.html label="Other Posts" %}
+{% endif %}
