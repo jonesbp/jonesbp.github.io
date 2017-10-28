@@ -1,0 +1,24 @@
+{% if page.previous or page.next %}
+    <div class="adjacent-posts">
+        <hr>
+
+        {% if page.previous %}
+            <div class="link previous">
+                <a href="{{ page.previous.url }}">
+                    &laquo; {{ page.previous.title }}
+                </a><br>
+                <span class="small">{{ page.previous.date | date_to_string }}</span>
+            </div>
+        {% endif %}
+
+        {% if page.next %}
+            <div class="link next">
+                <a href="{{ page.next.url }}">
+                    {{ page.next.title }} &raquo;
+                </a><br>
+                <span class="small">{{ page.next.date | date_to_string }}</span>
+            </div>
+        {% endif %}
+        <div class="clear-block"></div>
+    </div>
+{% endif %}
