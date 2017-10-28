@@ -3,8 +3,27 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://tinaja.computer</link>
+<link>http://localhost:4000</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Athanasius Kircher’s Cat Piano</title>
+
+<description>
+    <![CDATA[
+    <blockquote>
+  <p>Not so long ago, in order to dispel the melancholy of some great prince, a noted and ingenious actor constructed an instrument such as this. He took live cats all of different sizes, and shut them up in a kind of box especially made for this business, so that their tails, stuck through the holes, were inserted tightly into certain channels. Under these he put keys fitted with the sharpest points instead of mallets. Then he arranged the cats tonally according to their different sizes, so that each key corresponded to the tail of one cat, and he put the instrument prepared for the relaxation of the prince in a suitable place. Then when it was played, it produced such music as the voices of cats can produce. For when the keys, depressed by the fingers of the organist, pricked the tails of the cats with their points, they, driven to a rage, with miserable voices, howling now low, now high, produced such music made of the voices of the cat as would move men to laughter and even arouse shrews to dance.</p>
+
+  <p>– <cite>Athanasius Kircher in <em>Musurgia Universalis</em> (1650), as translated by Frederick Baron Crane, as printed on the insert in the last <a href="https://publicdomainreview.org/support/">postcard pack from <em>Public Domain Review</em></a></cite></p>
+</blockquote>
+
+    
+    ]]>
+</description>
+<pubDate>Sat, 28 Oct 2017 06:46:01 -0400</pubDate>
+<link>http://localhost:4000/2017/10/28/cat-piano.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/10/28/cat-piano.html</guid>
+</item>
 
 <item>
 <title>Connecting to Google Sheets with Python</title>
@@ -132,8 +151,8 @@
     ]]>
 </description>
 <pubDate>Fri, 27 Oct 2017 11:02:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/10/27/gspread.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/10/27/gspread.html</guid>
+<link>http://localhost:4000/2017/10/27/gspread.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/10/27/gspread.html</guid>
 </item>
 
 <item>
@@ -160,8 +179,8 @@
     ]]>
 </description>
 <pubDate>Mon, 23 Oct 2017 16:51:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/10/23/birthday-conservas.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/10/23/birthday-conservas.html</guid>
+<link>http://localhost:4000/2017/10/23/birthday-conservas.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/10/23/birthday-conservas.html</guid>
 </item>
 
 <item>
@@ -244,8 +263,8 @@
     ]]>
 </description>
 <pubDate>Thu, 19 Oct 2017 10:10:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/10/19/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/10/19/recent-reading.html</guid>
+<link>http://localhost:4000/2017/10/19/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/10/19/recent-reading.html</guid>
 </item>
 
 <item>
@@ -271,8 +290,8 @@
     ]]>
 </description>
 <pubDate>Fri, 13 Oct 2017 13:05:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/10/13/expedience.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/10/13/expedience.html</guid>
+<link>http://localhost:4000/2017/10/13/expedience.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/10/13/expedience.html</guid>
 </item>
 
 <item>
@@ -297,8 +316,8 @@
     ]]>
 </description>
 <pubDate>Tue, 26 Sep 2017 16:37:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/26/famous-tex-mex-quesos.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/26/famous-tex-mex-quesos.html</guid>
+<link>http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</guid>
 </item>
 
 <item>
@@ -372,8 +391,8 @@
     ]]>
 </description>
 <pubDate>Sat, 23 Sep 2017 18:10:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/23/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/23/recent-reading.html</guid>
+<link>http://localhost:4000/2017/09/23/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/23/recent-reading.html</guid>
 </item>
 
 <item>
@@ -396,8 +415,8 @@
     ]]>
 </description>
 <pubDate>Thu, 21 Sep 2017 10:40:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/21/columbus-podcasts.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/21/columbus-podcasts.html</guid>
+<link>http://localhost:4000/2017/09/21/columbus-podcasts.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/21/columbus-podcasts.html</guid>
 </item>
 
 <item>
@@ -424,8 +443,8 @@
     ]]>
 </description>
 <pubDate>Thu, 21 Sep 2017 09:15:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/21/sound-of-the-belgian-underground.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/21/sound-of-the-belgian-underground.html</guid>
+<link>http://localhost:4000/2017/09/21/sound-of-the-belgian-underground.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/21/sound-of-the-belgian-underground.html</guid>
 </item>
 
 <item>
@@ -443,108 +462,8 @@
     ]]>
 </description>
 <pubDate>Thu, 14 Sep 2017 15:13:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/14/winer-on-misunderstanding.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/14/winer-on-misunderstanding.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Superheroes, Pilates, and Autotune</title>
-
-<description>
-    <![CDATA[
-    
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B00DG292XK/ref=nosim/latin031-20">Sean Howe. <i>Marvel Comics: The Untold Story</i>. New York: Harper Perennial, 2013.</a>
-      </span>
-
-        
-          <span class="note"><p>I’ve always been interested in having a greater understanding of the long trajectory of both the history of the Marvel story universe and of Marvel as a business, having followed comic books for only about a year as a teenager but enjoyed being generally aware of the current set of ”important” books in recent years. This chronicle is incredibly detailed which made it a little slow going when I didn’t have any outside familiarity with the material, but it was well done and interesting. I’m glad to have read it and enjoyed it, even when I moved slowly through some eras.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/963603235">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B00DG292XK/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B01N43SQER/ref=nosim/latin031-20">Harri Angell. <i>Pilates for Runners</i>. London: Bloomsbury Sport, 2017.</a>
-      </span>
-
-        
-          <span class="note"><p>There’s just enough theory here to make the reading worthwhile, but the main focus of the book is clear descriptions of mat Pilates exercises and sample routines targeted at runners’ strength and flexibility needs.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/957021150">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B01N43SQER/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B019CBM636/ref=nosim/latin031-20">Jayce Clayton. <i>Uproot: Travels in Twenty-First-Century Music and Global Digital Culture</i>. New York: Farrar Straus & Giroux, 2016.</a>
-      </span>
-
-        
-          <span class="note"><p><em>Uproot</em> is an incredibly compelling blend of artist memoir, cultural criticism, and music and travel writing that does an amazing job of addressing the influence of digital media formats, recording and production tools, broadcasting and performance technologies, and more on listening, performance, and composition in music today. I share Clayton’s affinity for some of the regional styles he explores and am completely unaware of others, so I look forward to following through on those.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/953157396">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B019CBM636/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B010ZXKDBC/ref=nosim/latin031-20">Andie Mitchell. <i>Eating in the Middle: A Mostly Wholesome Cookbook</i>. New York: Clarkson Potter, 2016.</a>
-      </span>
-
-        
-          <span class="note"><p>The organizing principle of this book is to find ways to adjust cooking techniques and substitute ingredients in comfort foods to make them a bit more healthful while still being satisfying. Many of the recipes themselves are good, but the biggest help for me was as an exercise in finding ways to make adjustments to lower calories in other recipes.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/991055834">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B010ZXKDBC/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B002VUFKDY/ref=nosim/latin031-20">Daniel Suarez. <i>Freedom</i>. New York: Signet, 2010.</a>
-      </span>
-
-        
-          <span class="note"><p>I enjoy this series, but continue to wish there was more focus on world building and less on action. I was struck reading this by how it prefigures some of the ideas Cory Doctorow explored in <a href="http://tinaja.computer/2017/05/24/recent-reading.html"><em>Walkaway</em></a> although without the same degree of rigorous analysis. It makes for more of a page-turner, but also it is fundamentally a less ambitious work.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/617551227">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B002VUFKDY/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Mon, 11 Sep 2017 15:37:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/11/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/11/recent-reading.html</guid>
+<link>http://localhost:4000/2017/09/14/winer-on-misunderstanding.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/14/winer-on-misunderstanding.html</guid>
 </item>
 
 </channel>

@@ -112,6 +112,8 @@ span.invisible-text {
 
 i, em, cite {
   font-style: italic; }
+  i > i, i em, i cite, em > i, em em, em cite, cite > i, cite em, cite cite {
+    font-style: normal; }
 
 b, strong {
   font-weight: 500; }
