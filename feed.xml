@@ -3,7 +3,7 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://localhost:4000</link>
+<link>http://tinaja.computer</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
@@ -21,8 +21,8 @@
     ]]>
 </description>
 <pubDate>Sat, 28 Oct 2017 06:46:01 -0400</pubDate>
-<link>http://localhost:4000/2017/10/28/cat-piano.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/10/28/cat-piano.html</guid>
+<link>http://tinaja.computer/2017/10/28/cat-piano.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/10/28/cat-piano.html</guid>
 </item>
 
 <item>
@@ -151,8 +151,8 @@
     ]]>
 </description>
 <pubDate>Fri, 27 Oct 2017 11:02:01 -0400</pubDate>
-<link>http://localhost:4000/2017/10/27/gspread.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/10/27/gspread.html</guid>
+<link>http://tinaja.computer/2017/10/27/gspread.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/10/27/gspread.html</guid>
 </item>
 
 <item>
@@ -179,8 +179,8 @@
     ]]>
 </description>
 <pubDate>Mon, 23 Oct 2017 16:51:01 -0400</pubDate>
-<link>http://localhost:4000/2017/10/23/birthday-conservas.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/10/23/birthday-conservas.html</guid>
+<link>http://tinaja.computer/2017/10/23/birthday-conservas.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/10/23/birthday-conservas.html</guid>
 </item>
 
 <item>
@@ -263,8 +263,8 @@
     ]]>
 </description>
 <pubDate>Thu, 19 Oct 2017 10:10:00 -0400</pubDate>
-<link>http://localhost:4000/2017/10/19/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/10/19/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/10/19/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/10/19/recent-reading.html</guid>
 </item>
 
 <item>
@@ -290,8 +290,8 @@
     ]]>
 </description>
 <pubDate>Fri, 13 Oct 2017 13:05:01 -0400</pubDate>
-<link>http://localhost:4000/2017/10/13/expedience.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/10/13/expedience.html</guid>
+<link>http://tinaja.computer/2017/10/13/expedience.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/10/13/expedience.html</guid>
 </item>
 
 <item>
@@ -316,8 +316,8 @@
     ]]>
 </description>
 <pubDate>Tue, 26 Sep 2017 16:37:01 -0400</pubDate>
-<link>http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</guid>
+<link>http://tinaja.computer/2017/09/26/famous-tex-mex-quesos.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/26/famous-tex-mex-quesos.html</guid>
 </item>
 
 <item>
@@ -391,8 +391,8 @@
     ]]>
 </description>
 <pubDate>Sat, 23 Sep 2017 18:10:00 -0400</pubDate>
-<link>http://localhost:4000/2017/09/23/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/23/recent-reading.html</guid>
+<link>http://tinaja.computer/2017/09/23/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/23/recent-reading.html</guid>
 </item>
 
 <item>
@@ -415,8 +415,8 @@
     ]]>
 </description>
 <pubDate>Thu, 21 Sep 2017 10:40:01 -0400</pubDate>
-<link>http://localhost:4000/2017/09/21/columbus-podcasts.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/21/columbus-podcasts.html</guid>
+<link>http://tinaja.computer/2017/09/21/columbus-podcasts.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/21/columbus-podcasts.html</guid>
 </item>
 
 <item>
@@ -443,8 +443,8 @@
     ]]>
 </description>
 <pubDate>Thu, 21 Sep 2017 09:15:01 -0400</pubDate>
-<link>http://localhost:4000/2017/09/21/sound-of-the-belgian-underground.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/21/sound-of-the-belgian-underground.html</guid>
+<link>http://tinaja.computer/2017/09/21/sound-of-the-belgian-underground.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/21/sound-of-the-belgian-underground.html</guid>
 </item>
 
 <item>
@@ -462,8 +462,8 @@
     ]]>
 </description>
 <pubDate>Thu, 14 Sep 2017 15:13:01 -0400</pubDate>
-<link>http://localhost:4000/2017/09/14/winer-on-misunderstanding.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/14/winer-on-misunderstanding.html</guid>
+<link>http://tinaja.computer/2017/09/14/winer-on-misunderstanding.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/09/14/winer-on-misunderstanding.html</guid>
 </item>
 
 </channel>

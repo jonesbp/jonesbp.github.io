@@ -156,6 +156,9 @@ span.indicator {
   float: left;
   margin-left: -1.5em; }
 
+span.small {
+  font-size: .8em; }
+
 img {
   max-width: 100%;
   width: 100%; }
@@ -203,14 +206,6 @@ img {
     border-style: dotted;
     border-width: 0 0 0 2px;
     padding-left: 1em; }
-  .posts li hr {
-    border-width: 0;
-    margin: 1.5em 0 3em 0;
-    text-align: center; }
-    .posts li hr:after {
-      border-width: 0;
-      color: #FCC884;
-      content: "❊ ❊ ❊"; }
 
 .site {
   max-width: 42em;
@@ -261,6 +256,7 @@ img {
   .pagination .page-number {
     margin: 0 1em; }
   .pagination a {
+    margin: 0 1em;
     text-decoration: none; }
     .pagination a:hover {
       text-decoration: underline; }
@@ -306,6 +302,15 @@ img {
 .footer .rss img {
   border: 0; }
 
+hr {
+  border-width: 0;
+  margin: 1.5em 0 3em 0;
+  text-align: center; }
+  hr:after {
+    border-width: 0;
+    color: #FCC884;
+    content: "❊ ❊ ❊"; }
+
 /* standard */
 .post p {
   line-height: 167%; }
@@ -343,15 +348,6 @@ img {
   margin-top: .25em;
   margin-bottom: .25em; }
 
-.post hr {
-  border-width: 0;
-  margin: 1.5em 0 3em 0;
-  text-align: center; }
-  .post hr:after {
-    border-width: 0;
-    color: #FCC884;
-    content: "❊ ❊ ❊"; }
-
 .post.reading_list ul {
   margin-bottom: 3em; }
 
@@ -367,6 +363,23 @@ img {
     text-align: center; }
   .post.reading_list li:last-child:after {
     content: ""; }
+
+div.adjacent-posts {
+  border-top: 4px solid #FFF7C9;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  div.adjacent-posts div.link {
+    float: left;
+    width: 50%; }
+    div.adjacent-posts div.link.next {
+      text-align: right; }
+
+div.other-posts {
+  border-top: 4px solid #FFF7C9;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  div.other-posts h3 {
+    margin-top: 0; }
 
 table.books tr {
   border-color: #FFF7C9;
@@ -482,4 +495,18 @@ table.books td {
     float: none;
     padding-bottom: .5em; }
     .header div.buttons a.button:first-child {
-      margin-left: 0; } }
+      margin-left: 0; }
+
+  div.adjacent-posts div.link {
+    float: none;
+    margin-bottom: 1em;
+    width: 100%; }
+    div.adjacent-posts div.link.previous {
+      text-align: center; }
+    div.adjacent-posts div.link.next {
+      text-align: center; }
+
+  div.other-posts {
+    text-align: center; }
+    div.other-posts li {
+      margin-bottom: 1em; } }
