@@ -22,6 +22,10 @@ span.invisible-text {
 
 i, em, cite {
   font-style: italic;
+
+  & > i, em, cite {
+    font-style: normal;
+  }
 }
 
 b, strong {
