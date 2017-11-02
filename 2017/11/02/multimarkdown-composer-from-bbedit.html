@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-          <title>Mapping Caps Lock to Escape in macOS Sierra ≫ La Tinaja</title>
+          <title>Open a File in MultiMarkdown Composer from BBEdit ≫ La Tinaja</title>
         
 
         <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         
-          <meta name="description" content="It’s now really easy to map caps lock to escape.">
+          <meta name="description" content="A very simple AppleScript for opening the frontmost BBEdit file in MultiMarkdown Composer">
         
 
         <!-- Custom CSS -->
@@ -49,24 +49,29 @@
 
           
   
-    <h2><span class="indicator icon-note"></span>Mapping Caps Lock to Escape in macOS Sierra</h2>
+    <h2><span class="indicator icon-note"></span>Open a File in MultiMarkdown Composer from BBEdit</h2>
   
-  <p class="meta">12 Apr 2017</p>
+  <p class="meta">02 Nov 2017</p>
 
 
 <div class="post tech_note">
-<p>I use Vim and command mode in any GUI editors that support it, so I’m hitting the Esc key hundreds of times a day. I’ve always been curious about mapping my Caps Lock key to escape to cut down on the distance I have to reach, but it used to require <a href="http://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x#8437594">quite a bit of complexity</a>.</p>
+<p>Sometimes I find myself doing more extensive writing in a Markdown file in BBEdit than I had anticipated and want to switch to a more focused environment. My preferred Markdown editing environment for longer writing sessions is MultiMarkdown Composer, so I’ve added an AppleScript to BBEdit’s scripts menu to open whatever file I’m currently working on in with that. The script follows and, as you will see, can be easily edited to work with any other text editor you prefer.</p>
 
-<p>I recently moved to a new MacBook Pro with a Touch Bar and a virtual Esc key, so I decided to look into it again.</p>
+<div class="language-applescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">tell</span><span class="w"> </span><span class="nb">application</span><span class="w"> </span><span class="s2">"BBEdit"</span><span class="w">
+    </span><span class="k">set</span><span class="w"> </span><span class="nv">markdownFile</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="nv">file</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nb">front</span><span class="w"> </span><span class="na">window</span><span class="w">
+</span><span class="k">end</span><span class="w"> </span><span class="k">tell</span><span class="w">
 
-<p>As of macOS Sierra 10.12.1, it’s incredibly simple.</p>
+</span><span class="k">tell</span><span class="w"> </span><span class="nb">application</span><span class="w"> </span><span class="s2">"MultiMarkdown Composer"</span><span class="w">
+    </span><span class="nb">open</span><span class="w"> </span><span class="nv">markdownFile</span><span class="w">
+    </span><span class="nb">activate</span><span class="w">
+</span><span class="k">end</span><span class="w"> </span><span class="k">tell</span><span class="w">
+</span></code></pre></div></div>
 
-<ol>
-  <li>Open System Preferences</li>
-  <li>Go to the Keyboard pane and select the Keyboard tab</li>
-  <li>Click the Modifier Keys… button on the bottom right</li>
-  <li>From the popup menu to the right of “Caps Lock (⇪) Key”, select “⎋ Escape”</li>
-</ol>
+<p>That’s it.</p>
+
+<p>Save the file in <code class="highlighter-rouge">~/Library/Application Support/BBEdit/Scripts</code>. You can get to this folder from the Finder by holding the ‘Option’ key while selecting the ‘Go’ menu in order to expose the ‘Library’ item which is usually hidden. A new item with the name of whatever you’ve named your script file will now appear in BBEdit’s script menu (identified by the AppleScript paper scroll icon).</p>
+
+<p>You can add another layer of convenience by adding a keyboard shortcut for this action using the ‘Keyboard’ pane in the System Preferences application. Having opened the ‘Keyboard’ pane, go to the ‘Shortcuts’ tab and select ‘App Shortcuts’ from the sidebar. Click the ‘+’ button below the list on the right side and select ‘BBEdit’ as the Application, type your menu’s title exactly as it appears in the application, and set your keyboard shortcut. I use <code class="highlighter-rouge">Shift+Cmd+M</code>.</p>
 
 </div>
 
@@ -76,20 +81,13 @@
     <div class="adjacent-posts">
         
             <div class="link previous">
-                <a href="/2017/04/07/disrupted-and-blitzed.html">
-                    &laquo; Recent Reading: Disrupted and Blitzed
+                <a href="/2017/10/28/cat-piano.html">
+                    &laquo; Athanasius Kircher’s Cat Piano
                 </a><br>
-                <span class="small">07 Apr 2017</span>
+                <span class="small">28 Oct 2017</span>
             </div>
         
 
-        
-            <div class="link next">
-                <a href="/2017/04/26/new-projects.html">
-                    New Projects &raquo;
-                </a><br>
-                <span class="small">26 Apr 2017</span>
-            </div>
         
         <div class="clear-block"></div>
     </div>
@@ -103,80 +101,80 @@
     
     
         
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
             <li>
-                <a href="/2017/11/02/multimarkdown-composer-from-bbedit.html">Open a File in MultiMarkdown Composer from BBEdit</a><br>
-                <span class="small">02 Nov 2017</span>
+                <a href="/2017/04/12/caps-lock-to-escape.html">Mapping Caps Lock to Escape in macOS Sierra</a><br>
+                <span class="small">12 Apr 2017</span>
             </li>
             
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
         
         
     
