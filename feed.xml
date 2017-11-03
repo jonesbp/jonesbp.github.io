@@ -67,9 +67,9 @@
 
 <p>I’m working on a project that catalogs and maps live jazz performances around Austin, TX in the 1920s and 1930s. In these early stages, my partner on the project is doing a lot of the archival research and data collection while I work on developing scripts for processing our data and techniques we’ll use to present it on the web. We may eventually also have a research assistant or two, so having a distributed place to input our first-run archival notes is helpful.</p>
 
-<p>So, we have the problem of wanting a ubiquitous and low-friction place for us to input our data while also needing that data to be well-structured and so that it can be aggregated according to venue, date, performers, etc.</p>
+<p>So, we have the problem of wanting a ubiquitous and low-friction place for us to input our data while also needing that data to be well-structured so that it can be aggregated according to venue, date, performers, etc.</p>
 
-<p>For ubiquity and low friction, we’re using Google Sheets for input. As a web-based tool, it is available anywhere for input, whether at library workstations or our personal machines.. As a simple spreadsheet, data entry  mostly involves typing notes naturally,  within the limits of a few light formatting conventions, rather than futzing with a more structured interface.</p>
+<p>For ubiquity and low friction, we’re using Google Sheets for input. As a web-based tool, it is available anywhere for input, whether at library workstations or our personal machines. As a simple spreadsheet, data entry  mostly involves typing notes naturally,  within the limits of a few light formatting conventions, rather than futzing with a more structured interface.</p>
 
 <p>To be able to use the data, we’ll want it rationalized into some predictably structured JSON files against which I can write scripts that will aggregate, map, and visualize these performance data in different ways.</p>
 
@@ -94,7 +94,7 @@
 
 <h2 id="authorizing">Authorizing</h2>
 
-<p>We’ll need to import <code class="highlighter-rouge">{++g++}{&gt;&gt; - 2017-10-27 10:57:38&lt;&lt;}spread</code> to work with our spreadsheet, and to authorize for access to Google from our script, we’ll need to import <code class="highlighter-rouge">ServiceAccountCredentials</code> from the <code class="highlighter-rouge">oauth2client</code> package.</p>
+<p>We’ll need to import <code class="highlighter-rouge">gspread</code> to work with our spreadsheet, and to authorize for access to Google from our script, we’ll need to import <code class="highlighter-rouge">ServiceAccountCredentials</code> from the <code class="highlighter-rouge">oauth2client</code> package.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">gspread</span>
 <span class="kn">from</span> <span class="nn">oauth2client.service_account</span> <span class="kn">import</span> <span class="n">ServiceAccountCredentials</span>
