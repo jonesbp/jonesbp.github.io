@@ -7,6 +7,25 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Explaining the Obvious</title>
+
+<description>
+    <![CDATA[
+    <blockquote>
+  <p>Be more explicit than you think is necessary, and you’ll nip misunderstandings in the bud. When everyone’s in the same room, it’s easier to notice an errant gesture that shows we’re not all on the same page. A remote team can only know what you say and type, so get everyone to agree that overexplaining won’t be taken as an insult. Don’t let it slip as the project goes on, either. “So what we’re saying is…” should be a common phrase throughout the life of the product.</p>
+
+  <p>– <cite>Drew Bell on <a href="https://trackchanges.postlight.com/five-ways-to-maintain-a-strong-remote-product-team-5d430c164ddf">talking through the “obvious” on remote teams</a></cite></p>
+</blockquote>
+
+    
+    ]]>
+</description>
+<pubDate>Thu, 09 Nov 2017 07:39:01 -0500</pubDate>
+<link>http://tinaja.computer/2017/11/09/explain-the-obvious.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/11/09/explain-the-obvious.html</guid>
+</item>
+
+<item>
 <title>Open a File in MultiMarkdown Composer from BBEdit</title>
 
 <description>
@@ -448,34 +467,6 @@
 <pubDate>Thu, 21 Sep 2017 10:40:01 -0400</pubDate>
 <link>http://tinaja.computer/2017/09/21/columbus-podcasts.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2017/09/21/columbus-podcasts.html</guid>
-</item>
-
-<item>
-<title>The Sound of the Belgian Underground</title>
-
-<description>
-    <![CDATA[
-    <p>Subbacultcha is curating a festival at Ancienne Belgique next year called ‘The Sound of the Belgian Underground’. This is a list of participants.</p>
-
-<ul>
-  <li><a href="https://soundcloud.com/halogenmusicgroup/afia-fuck">Afia</a></li>
-  <li><a href="https://www.youtube.com/watch?v=WkInnXlNMjk">AIR LQD</a></li>
-  <li><a href="https://www.youtube.com/watch?v=A-ys3sRKGd0">Crowd Of Chairs</a></li>
-  <li><a href="https://www.youtube.com/watch?v=4cNZ4Ca5o1A">Le77</a></li>
-  <li><a href="https://www.youtube.com/watch?v=1FFbtHaqhWM">Sale Gosse</a></li>
-  <li><a href="https://soundcloud.com/midlifemusic/kassett-u-01-b277-w-samuelspaniel">Kassett</a></li>
-  <li><a href="https://www.youtube.com/watch?v=vW-OsP6vAXA">Vaal</a></li>
-  <li><a href="https://soundcloud.com/christine-denamur">Christine Denamur</a></li>
-  <li><a href="https://www.youtube.com/watch?v=vzGa94YCl68">Wolvennest</a></li>
-  <li><a href="https://soundcloud.com/1000amen/kassett-charme-ft-rin">Golin</a></li>
-</ul>
-
-    
-    ]]>
-</description>
-<pubDate>Thu, 21 Sep 2017 09:15:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/21/sound-of-the-belgian-underground.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/21/sound-of-the-belgian-underground.html</guid>
 </item>
 
 </channel>
