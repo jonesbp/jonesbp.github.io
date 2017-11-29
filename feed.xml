@@ -3,8 +3,93 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://tinaja.computer</link>
+<link>http://localhost:4000</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Recent Reading: November 29, 2017</title>
+
+<description>
+    <![CDATA[
+    
+
+    
+        
+
+
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0812975243/ref=nosim/latin031-20">Rob Gifford. <i>China Road: A Journey Into the Future of a Rising Power</i>. New York: Random House, 2008.</a>
+      </span>
+
+        
+          <span class="note"><p>Rob Gifford had been an NPR China correspondent for years when he decided to follow Route 312, the transcontinental highway that travels west and north from Shanghai all the way to the border with Uzbekistan, as his farewell to China. <em>China Road</em> is his travelogue organized both chronologically and geographically as he follows the road and thematically as the different people he encounters provide him opportunities to explore the capitalist awakening in China, political repression, internal migration, the colonial and imperial history of China in Tibet and the Uighur territories, the tension between the improved material circumstances of low-income Chinese and accelerating inequality of opportunity, and many other subjects. Written in 2007, it is a particularly interesting read with the benefit of a decade of hindsight on some of the potential trends he identifies.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/938007671">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0812975243/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0062645234/ref=nosim/latin031-20">Anthony Horowitz. <i>Magpie Murders</i>. New York: Harper Perennial, 2017.</a>
+      </span>
+
+        
+          <span class="note"><p>A double-whodunit that wraps a more modern thriller set in the London publishing industry wrapped around a Agatha Christie-esque English countryside cozy mystery. I would not be surprised if there were a lot of genre-insider stuff that I missed, but I was nonetheless impressed by the technical challenge posed by the structure and Horowitz’s success in pulling it off.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/995336235">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0062645234/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/1585675245/ref=nosim/latin031-20">P.G. Wodehouse. <i>Ring for Jeeves</i>. Woodstock, N.Y.: Overlook Press, 2004 [1953].</a>
+      </span>
+
+        
+          <span class="note"><p><em>Ring for Jeeves</em> has Jeeves on loan to the Earl of Rowcester while Bertie Wooster is away at a boarding school for young nobles to learn the basic life skills now necessary given the exigencies of the post-war welfare state. Rowcester’s own financial straits lead him to moonlight as a horse-racing bookmaker with Jeeves as his clerk. They are forced to welsh on a bet, and hilarity ensues through layers of escalating misunderstanding. Falls right in line with format and expectations, but fun stuff.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/55045280">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/1585675245/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/1616951117/ref=nosim/latin031-20">Helene Tursten. <i>Detective Inspector Huss</i>. Translated by Steven T. Murray. New York: Soho Press, 2003.</a>
+      </span>
+
+        
+          <span class="note"><p>This is the first installment in a Swedish series of police procedurals set in Göteborg and written in the 1990s. The whodunit aspects of it were compelling and well-executed and there was enough suggestion of the socially- and politically-aware themes that crime fiction is can be so well-suited to exploring that I intend to continue. It was particularly interesting to read 90s Scandinavian angst over misogyny and white nationalism as the social context for a detective story from a late 2017 U.S. perspective.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/635706658">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/1616951117/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
+<pubDate>Wed, 29 Nov 2017 10:00:01 -0500</pubDate>
+<link>http://localhost:4000/2017/11/29/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/11/29/recent-reading.html</guid>
+</item>
 
 <item>
 <title>Explaining the Obvious</title>
@@ -21,8 +106,8 @@
     ]]>
 </description>
 <pubDate>Thu, 09 Nov 2017 07:39:01 -0500</pubDate>
-<link>http://tinaja.computer/2017/11/09/explain-the-obvious.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/11/09/explain-the-obvious.html</guid>
+<link>http://localhost:4000/2017/11/09/explain-the-obvious.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/11/09/explain-the-obvious.html</guid>
 </item>
 
 <item>
@@ -52,8 +137,8 @@
     ]]>
 </description>
 <pubDate>Thu, 02 Nov 2017 11:46:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/11/02/multimarkdown-composer-from-bbedit.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/11/02/multimarkdown-composer-from-bbedit.html</guid>
+<link>http://localhost:4000/2017/11/02/multimarkdown-composer-from-bbedit.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/11/02/multimarkdown-composer-from-bbedit.html</guid>
 </item>
 
 <item>
@@ -71,8 +156,8 @@
     ]]>
 </description>
 <pubDate>Sat, 28 Oct 2017 06:46:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/10/28/cat-piano.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/10/28/cat-piano.html</guid>
+<link>http://localhost:4000/2017/10/28/cat-piano.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/10/28/cat-piano.html</guid>
 </item>
 
 <item>
@@ -201,8 +286,8 @@
     ]]>
 </description>
 <pubDate>Fri, 27 Oct 2017 11:02:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/10/27/gspread.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/10/27/gspread.html</guid>
+<link>http://localhost:4000/2017/10/27/gspread.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/10/27/gspread.html</guid>
 </item>
 
 <item>
@@ -229,8 +314,8 @@
     ]]>
 </description>
 <pubDate>Mon, 23 Oct 2017 16:51:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/10/23/birthday-conservas.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/10/23/birthday-conservas.html</guid>
+<link>http://localhost:4000/2017/10/23/birthday-conservas.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/10/23/birthday-conservas.html</guid>
 </item>
 
 <item>
@@ -313,8 +398,8 @@
     ]]>
 </description>
 <pubDate>Thu, 19 Oct 2017 10:10:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/10/19/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/10/19/recent-reading.html</guid>
+<link>http://localhost:4000/2017/10/19/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/10/19/recent-reading.html</guid>
 </item>
 
 <item>
@@ -340,8 +425,8 @@
     ]]>
 </description>
 <pubDate>Fri, 13 Oct 2017 13:05:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/10/13/expedience.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/10/13/expedience.html</guid>
+<link>http://localhost:4000/2017/10/13/expedience.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/10/13/expedience.html</guid>
 </item>
 
 <item>
@@ -366,8 +451,8 @@
     ]]>
 </description>
 <pubDate>Tue, 26 Sep 2017 16:37:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/26/famous-tex-mex-quesos.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/26/famous-tex-mex-quesos.html</guid>
+<link>http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</guid>
 </item>
 
 <item>
@@ -441,32 +526,8 @@
     ]]>
 </description>
 <pubDate>Sat, 23 Sep 2017 18:10:00 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/23/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/23/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Columbus Podcasts</title>
-
-<description>
-    <![CDATA[
-    <p>A list of podcasts associated with Columbus, OH that participated in the 2017 Independents’ Day Festival</p>
-
-<ul>
-  <li>Columbus! Something New</li>
-  <li>ACES Radio</li>
-  <li>Idea Foundry</li>
-  <li>The Sounds of Bustown</li>
-  <li>The Confluence Cast</li>
-  <li>What’s The Deal With Creativity</li>
-</ul>
-
-    
-    ]]>
-</description>
-<pubDate>Thu, 21 Sep 2017 10:40:01 -0400</pubDate>
-<link>http://tinaja.computer/2017/09/21/columbus-podcasts.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2017/09/21/columbus-podcasts.html</guid>
+<link>http://localhost:4000/2017/09/23/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/09/23/recent-reading.html</guid>
 </item>
 
 </channel>
