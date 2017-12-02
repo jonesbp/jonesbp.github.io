@@ -545,10 +545,12 @@ table.books {
 }
 
 .post code {
+  background-color: $lightHighlight;
   font: {
     family: "source-code-pro", monospace;
     size: 0.875em;
   }
+  padding: 0 .25em;
 }
 
 .post pre code {
