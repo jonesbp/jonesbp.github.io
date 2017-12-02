@@ -7,6 +7,29 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Sass Variables in CSS calc() Functions</title>
+
+<description>
+    <![CDATA[
+    <p>The most common use cases for variables in Sass allow you to drop variables directly into Sass stylesheets, so it’s easy to forget (or not to know in the first place) that there are certain circumstances where the interpolation syntax is necessary. The one I always forget is to use interpolation inside of CSS functions, like <code class="highlighter-rouge">calc()</code>.</p>
+
+<p>The concept of ‘<a href="https://en.wikipedia.org/wiki/String_interpolation">interpolation</a>’ just refers to the replacement of a placeholder with its literal value, so really in the case of processing Sass to CSS almost all of your references to variables are probably setting up an interpolation. That’s what’s happening when <code class="highlighter-rouge">color: $alertColor;</code> in your Sass gets changed to <code class="highlighter-rouge">color: #f00;</code> in your CSS output.</p>
+
+<p>There are instances, however, in which the Sass preprocessor will not perform this substitution unless you <em>explicitly</em> specify interpolation using the <code class="highlighter-rouge">#{}</code> syntax. The <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#Interpolation_____">Sass documentation</a> explains that the interpolation syntax is necessary when using variables to construct selector and property names and may be used in property values except that it is only necessary in cases where operators next to it should be treated as plain CSS.</p>
+
+<p>There is another case where the interpolation syntax is necessary, however, and it’s the one with which a recent (repeat) stumble inspired me to write up this note. Sass does not by default process the contents of CSS functions, so the line <code class="highlighter-rouge">min-height: calc($headerHeight - 2rem);</code> will be rendered to the CSS output with no change as <code class="highlighter-rouge">min-height: calc($headerHeight - 2rem);</code> (which is not valid CSS).</p>
+
+<p>It is necessary to use interpolation explicitly to get the desire result in this case, so the correct line <code class="highlighter-rouge">min-height: calc(#{$headerHeight} - 2rem);</code> will produce CSS output such as <code class="highlighter-rouge">min-height: calc(50px - 2rem);</code> if the value of <code class="highlighter-rouge">$headerHeight</code> is <code class="highlighter-rouge">50px</code>.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Sat, 02 Dec 2017 06:06:01 -0500</pubDate>
+<link>http://localhost:4000/2017/12/02/sass-interpolation.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/12/02/sass-interpolation.html</guid>
+</item>
+
+<item>
 <title>Recent Reading: November 29, 2017</title>
 
 <description>
@@ -453,81 +476,6 @@
 <pubDate>Tue, 26 Sep 2017 16:37:01 -0400</pubDate>
 <link>http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</link>
 <guid isPermaLink="true">http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: September 23, 2017</title>
-
-<description>
-    <![CDATA[
-    <h3 id="links">Links</h3>
-
-<ul>
-  <li><a href="http://idlewords.com/2017/09/anatomy_of_a_moral_panic.htm"><strong>Anatomy of a Moral Panic—Idle Words—Maciej Ceglowski</strong></a>: Maciej is one of my favorite deflators of tech-industry-related hysterias and enthusiasms. His dissection of <a href="https://www.channel4.com/news/potentially-deadly-bomb-ingredients-on-amazon">this recent story</a> about Amazon shopping algorithms recommending bomb-making materials is a succinct indictment of the consequences of click-bait journalism and tech credulity.</li>
-</ul>
-
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/0785197028/ref=nosim/latin031-20">Ryan North and Erica Henderson. <i>The Unbeatable Squirrel Girl, vol. 1: Squirrel Power</i>. New York: Marvel, 2016.</a>
-      </span>
-
-        
-          <span class="note"><p>I’m glad to have read this after taking a bit of a break from reading comics. The art style and writing tone are well-paired, and leaning into the silliness of the Squirrel Girl character design by having her face off with Galactus of all villains was a great instinct.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/962423243">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/0785197028/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B00AXIZ464/ref=nosim/latin031-20">Tash Aw. <i>Five Star Billionaire: A Novel</i>. New York: Spiegel & Grau, 2014.</a>
-      </span>
-
-        
-          <span class="note"><p>The Shanghai setting is as much a character as any of the five protagonists—all of them Malaysian transplants who followed different paths to China—that circle each other in this novel. The narrative is interspersed with passages from a self-help/business-achievement memoir that tracks the trajectories of each of the main characters and eventually exposes the isolation and dissatisfaction inherent in the lives prescribed by the worldview in these books and in the rapid urbanization and globalization of China. The end felt a bit pat. I would have accepted less wrapping up, but there were a lot of open threads to tie together.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/884930598">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B00AXIZ464/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B06XC41K6G/ref=nosim/latin031-20">Robin Sloan. <i>Sourdough: A Novel</i>. New York: MCD Books, 2017.</a>
-      </span>
-
-        
-          <span class="note"><p>Robin Sloan may be my favorite active novelist. Reading <em>Sourdough</em> has made me want to pick up <a href="/2015/06/28/weekly-reading.html"><em>Mr. Penumbra’s 24-Hour Bookstore</em></a> for a third time. The quirky, questing enthusiasm of his characters and the narrow balance he strikes between small moments of magic tucked into a very recognizable quotidian present hit my pleasure-reading tastes squarely.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/968638708">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B06XC41K6G/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Sat, 23 Sep 2017 18:10:00 -0400</pubDate>
-<link>http://localhost:4000/2017/09/23/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/23/recent-reading.html</guid>
 </item>
 
 </channel>
