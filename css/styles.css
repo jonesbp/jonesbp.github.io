@@ -447,8 +447,10 @@ table.books td {
       text-decoration: none; }
 
 .post code {
+  background-color: #FFF7C9;
   font-family: "source-code-pro", monospace;
-  font-size: 0.875em; }
+  font-size: 0.875em;
+  padding: 0 .25em; }
 
 .post pre code {
   border: none; }
