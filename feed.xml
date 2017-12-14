@@ -7,6 +7,27 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Daniel Cook on ‘comfy games’</title>
+
+<description>
+    <![CDATA[
+    <blockquote>
+  <p>At a recent game designer retreat (Project Horseshoe) we had a working group trying to understand the psychology ‘comfy games’ like <em>Stardew Valley</em> or <em>Animal Crossing</em>. One thing we noticed is that many games focus on the bottom portion of Maslow’s Hierarchy of needs. They deal with survival, food, shelter and physical threats. Comfy games are instead comfortable spaces where you can work on some higher level human needs. You can dabble with self reflection, little social moments and maybe self expression. Games that treat players like higher order humans instead of twitchy, fear-based animals are a super cool thing!</p>
+
+  <p>However, when a design introduces intense lower level needs, it can ruin the atmosphere that makes a comfy game work. <em>Pocket Camp</em> introduces time pressure and responsibility. If you don’t get that stupid sofa crafted before the animal leaves, you’ll miss a chance to progress along the checklist. Even when you do complete the task, it is entirely transactional. What would have been a mysterious quirky nuanced relationship in <em>Animal Crossing</em> is reduced to a meter incrementing so you can earn precious currency.  This is not an environment for self actualization. It is a place of rushed, time sensitive labor. Ugh.</p>
+
+  <p>– <cite><a href="http://www.lostgarden.com/">Daniel Cook</a> on ‘comfy games’ at <a href="">Gamasutra</a></cite></p>
+</blockquote>
+
+    
+    ]]>
+</description>
+<pubDate>Thu, 14 Dec 2017 08:58:01 -0500</pubDate>
+<link>http://localhost:4000/2017/12/14/comfy-games.html</link>
+<guid isPermaLink="true">http://localhost:4000/2017/12/14/comfy-games.html</guid>
+</item>
+
+<item>
 <title>Sass Variables in CSS calc() Functions</title>
 
 <description>
@@ -450,32 +471,6 @@
 <pubDate>Fri, 13 Oct 2017 13:05:01 -0400</pubDate>
 <link>http://localhost:4000/2017/10/13/expedience.html</link>
 <guid isPermaLink="true">http://localhost:4000/2017/10/13/expedience.html</guid>
-</item>
-
-<item>
-<title>Famous Tex-Mex Quesos</title>
-
-<description>
-    <![CDATA[
-    <p>I pre-ordered <a href="http://www.homesicktexan.com">Lisa Fain</a>’s new <a href="http://amzn.to/2y67xqu"><em>Queso!</em></a> cookbook months ago when I heard about it and it arrived today. I opened it to this list of five notable Tex-Mex restaurant quesos.</p>
-
-<p>This list is correct. I am enthusiastic about the book.</p>
-
-<ul>
-  <li><strong>Bob Armstrong Dip</strong> – Matt’s El Rancho – Austin, TX</li>
-  <li><strong>Felix Queso</strong> – Felix’s (and El Patio) – Houston, TX</li>
-  <li><strong>José’s Dip</strong> – Molina’s - Houston, TX</li>
-  <li><strong>Kerbey Queso</strong> – Kerbey Lane – Austin, TX</li>
-  <li><strong>Mag Mud</strong> – Magnolia Cafe – Austin, TX</li>
-</ul>
-
-
-    
-    ]]>
-</description>
-<pubDate>Tue, 26 Sep 2017 16:37:01 -0400</pubDate>
-<link>http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/09/26/famous-tex-mex-quesos.html</guid>
 </item>
 
 </channel>
