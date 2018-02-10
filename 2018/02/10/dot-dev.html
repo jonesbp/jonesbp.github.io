@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-          <title>Mac Apps I Use ≫ La Tinaja</title>
+          <title>Forced HTTPS in Chrome on Local .dev Domains ≫ La Tinaja</title>
         
 
         <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         
-          <meta name="description" content="A list of the macOS apps I used this week">
+          <meta name="description" content="A reminder about why my old .dev domains insist on loading via HTTPS">
         
 
         <!-- Custom CSS -->
@@ -49,48 +49,31 @@
 
           
   
-    <h2><span class="indicator icon-list"></span>Mac Apps I Use</h2>
+    <h2><span class="indicator icon-note"></span>Forced HTTPS in Chrome on Local .dev Domains</h2>
   
-  <p class="meta">31 Aug 2017</p>
+  <p class="meta">10 Feb 2018</p>
 
 
-<div class="post list">
-<p>This week I kept a running list of the applications I used on my Mac at least once.</p>
+<div class="post tech_note">
+<p>I used to use .dev as a domain extension for doing local development using <a href="http://mamp.info">MAMP Pro</a>, but 
+I have had to switch to using .local instead because Safari and Chrome both now force any 
+domain ending in .dev to load over HTTPS which I’m not running for my local development 
+environments.</p>
 
-<ul>
-  <li><a href="https://flyingmeat.com/acorn/">Acorn 6</a></li>
-  <li><a href="http://alfredapp.com">Alfred 3</a></li>
-  <li><a href="https://atom.io">Atom</a></li>
-  <li><a href="http://bear-writer.com">Bear</a></li>
-  <li><a href="https://www.busymac.com/busycal/">BusyCal</a></li>
-  <li><a href="https://www.google.com/chrome/browser/desktop/index.html">Chrome</a></li>
-  <li><a href="http://www.devontechnologies.com/products/devonthink/devonthink-pro-office.html">DEVONthink Pro Office</a></li>
-  <li><a href="https://products.office.com/en-US/excel">Excel</a></li>
-  <li><a href="https://flexibits.com/fantastical">Fantastical 2</a></li>
-  <li><a href="https://www.mozilla.org/en-US/firefox">Firefox</a></li>
-  <li><a href="https://gitkraken.com">GitKraken</a></li>
-  <li><a href="http://gitup.co">GitUp</a></li>
-  <li><a href="https://hyper.is">Hyper</a></li>
-  <li><a href="https://www.apple.com/itunes/download/">iTunes</a></li>
-  <li><a href="https://www.kaleidoscopeapp.com">Kaleidoscope</a></li>
-  <li><a href="https://www.amazon.com/kindle-dbs/fd/kcp">Kindle</a></li>
-  <li><a href="https://freron.com">MailMate</a></li>
-  <li><a href="https://www.mamp.info/en/mamp-pro/">MAMP Pro</a></li>
-  <li><a href="https://manytricks.com/moom/">Moom</a></li>
-  <li><a href="http://noteplan.co">NotePlan</a></li>
-  <li><a href="https://www.omnigroup.com/omnifocus">OmniFocus 2</a></li>
-  <li><a href="https://www.omnigroup.com/omnioutliner">OmniOutliner 5</a></li>
-  <li><a href="https://www.kickstarter.com/projects/1548768604/twitterrific-for-mac-project-phoenix">Phoenix</a></li>
-  <li><a href="http://matthewpalmer.net/rocket/">Rocket</a></li>
-  <li><a href="https://www.apple.com/safari/">Safari</a></li>
-  <li><a href="https://slack.com">Slack</a></li>
-  <li><a href="http://www.acqualia.com/soulver/">Soulver</a></li>
-  <li><a href="https://bananafishsoftware.com/products/spillo/">Spillo</a></li>
-  <li><a href="https://panic.com/transmit/">Transmit 5</a></li>
-  <li><a href="https://typora.io">Typora</a></li>
-  <li><a href="http://tableflipapp.com">TableFlip</a></li>
-  <li><a href="https://eternalstorms.at/yoink/Yoink_-_Simplify_and_Improve_Drag_and_Drop_on_your_Mac/Yoink_-_Simplify_drag_and_drop_on_your_Mac.html">Yoink</a></li>
-</ul>
+<p>Google made this decision (and Apple is following their lead) because Google bought the 
+rights to provide .dev as a publicly available TLD and will be putting them on sale in 
+May of this year. For now the browser-side enforcement of the HTTPS-only policy is 
+inconvenient, but it means making a change that I would need to make regardless to avoid 
+potential collisions in the future.</p>
+
+<p>This is a new enough situation that I still have old projects for which I haven’t changed the 
+settings. When I try to load them, I get the message that the server is unavailable even though 
+I’m looking at MAMP Pro chugging away right in front of me. This happens sufficiently infrequently 
+that it still takes me about five or ten minutes of confusion to remember the cause and 
+change over to a .local domain.</p>
+
+<p>As usual, the hope is that writing up a short note will mean I remember what’s going on 
+next time.</p>
 
 </div>
 
@@ -100,20 +83,13 @@
     <div class="adjacent-posts">
         
             <div class="link previous">
-                <a href="/2017/07/26/recent-reading.html">
-                    &laquo; Recent Reading: Bitcoin, Spider Jerusalem, and API Design
+                <a href="/2018/01/30/recent-reading.html">
+                    &laquo; Recent Reading: Cyber War, Berlin, and Teenage Sleuths
                 </a><br>
-                <span class="small">26 Jul 2017</span>
+                <span class="small">30 Jan 2018</span>
             </div>
         
 
-        
-            <div class="link next">
-                <a href="/2017/09/11/recent-reading.html">
-                    Recent Reading: Superheroes, Pilates, and Autotune &raquo;
-                </a><br>
-                <span class="small">11 Sep 2017</span>
-            </div>
         
         <div class="clear-block"></div>
     </div>
@@ -122,7 +98,7 @@
 
 
     <div class="other-posts">
-    <h3>Other Lists</h3>
+    <h3>Other Tech Notes</h3>
     <ul>
     
     
@@ -142,27 +118,9 @@
         
     
         
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
             <li>
-                <a href="/2017/10/23/birthday-conservas.html">Birthday Conservas</a><br>
-                <span class="small">23 Oct 2017</span>
+                <a href="/2017/12/02/sass-interpolation.html">Sass Variables in CSS calc() Functions</a><br>
+                <span class="small">02 Dec 2017</span>
             </li>
             
         
@@ -176,8 +134,8 @@
     
         
             <li>
-                <a href="/2017/09/26/famous-tex-mex-quesos.html">Famous Tex-Mex Quesos</a><br>
-                <span class="small">26 Sep 2017</span>
+                <a href="/2017/11/02/multimarkdown-composer-from-bbedit.html">Open a File in MultiMarkdown Composer from BBEdit</a><br>
+                <span class="small">02 Nov 2017</span>
             </li>
             
         
@@ -187,9 +145,72 @@
         
     
         
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
             <li>
-                <a href="/2017/09/21/columbus-podcasts.html">Columbus Podcasts</a><br>
-                <span class="small">21 Sep 2017</span>
+                <a href="/2017/04/12/caps-lock-to-escape.html">Mapping Caps Lock to Escape in macOS Sierra</a><br>
+                <span class="small">12 Apr 2017</span>
             </li>
             
         
