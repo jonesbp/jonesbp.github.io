@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-          <title>Setting the Syntax for Files with Multiple Extensions in Sublime Text ≫ La Tinaja</title>
+          <title>HTTPS on Github Pages Custom Domains with Cloudflare ≫ La Tinaja</title>
         
 
         <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         
-          <meta name="description" content="I’ve been frustrated with Sublime Text syntax highlighting defaults on files with multiple name extensions that I finally spent 15 minutes figuring out how to fix them.">
+          <meta name="description" content="A workaround for the lack of HTTPS on Github Pages sites with custom domains">
         
 
         <!-- Custom CSS -->
@@ -49,30 +49,21 @@
 
           
   
-    <h2>Setting the Syntax for Files with Multiple Extensions in Sublime Text</h2>
+    <h2><span class="indicator icon-note"></span>HTTPS on Github Pages Custom Domains with Cloudflare</h2>
   
-  <p class="meta">21 Oct 2014</p>
+  <p class="meta">22 Feb 2018</p>
 
 
-<div class="post long">
-<p>For a while I’ve had the frustration of any files with a <code class="highlighter-rouge">.erb</code> extension opening in Sublime Text with the HTML (Rails) syntax coloring. I have some SASS stylesheets that I’d like to run through the Ruby interpreter, so they need the <code class="highlighter-rouge">.erb</code> extension, but I want the syntax coloring from the <a href="https://sublime.wbond.net/packages/Sass">Sass package</a>.</p>
+<div class="post tech_note">
+<p>I’m hosting our archive site for <a href="https://theappendix.net"><em>The Appendix</em></a> on Github Pages because it’s free and it helps shield me from having to pay for the periodic bandwidth spike when an article or blog post gets popular for a few days on Reddit.</p>
 
-<p>None of the <code class="highlighter-rouge">.sublime-settings</code> files that came with the default install of Sublime Text had file extension patterns for anything but single extensions, but it turns out that the same approach works for any arbitrary string of text following a dot, even if that string includes dots: <code class="highlighter-rouge">css.scss.erb</code> works just as well as <code class="highlighter-rouge">erb</code> would. My extension patterns for Sass and HTML (Rails) syntax coloring now look like the following.</p>
+<p>It has increasingly been bothering me that a  big problem with this solution long-term was the growing movement towards privileging web content served over HTTPS by services like Google as it conflicts with Github Pages inability to serve sites with custom domains over HTTPS. I was listening to the <a href="https://syntax.fm/show/033/large-files-cdns-image-compression-video-hosting-and-big-zips">Syntax podcast</a> yesterday when Wes made an aside that even free-tire <a href="http://cloudflare.com">Cloudflare</a> get served over HTTPS for free. That seemed like a solution to my problem.</p>
 
-<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="err">//</span><span class="w"> </span><span class="err">Sass.sublime-settings</span><span class="w">
-</span><span class="p">{</span><span class="w">
-  </span><span class="s2">"extensions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="s2">"scss.erb"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"scss"</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span></code></pre></figure>
+<p>I signed up for Cloudflare this morning, added the <code class="highlighter-rouge">theappendix.net</code> domain, changed my DNS settings to point to Cloudflare, and checked about 15 minutes later to find the site being served over HTTPS. Done.</p>
 
-<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="err">//</span><span class="w"> </span><span class="err">HTML</span><span class="w"> </span><span class="err">(Rails).sublime-settings</span><span class="w">
-</span><span class="p">{</span><span class="w">
-  </span><span class="s2">"extensions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="s2">"html.erb"</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span></code></pre></figure>
+<p>This site is supposed to be an archive that will hopefully persist with little maintenance for a long, long time. In putting Cloudflare in front of it, I’ve added another layer of dependency. However, Cloudflare sits in front of the hosting. All I have to do to remove my dependency on it if it should disappear is to change my DNS settings again. As long as I’m maintaining the <code class="highlighter-rouge">theappendix.net</code> domain name I’ll be able to support at least that level of maintenance supervision.</p>
+
+<p>One caveat is that Cloudflare’s free certificate is a shared SSL certificate which presents some security concerns. In the context of the problem I am trying to solve—providing a Github Pages-hosted static site over HTTPS—I don’t think those concerns are relevant; however, it will not be the correct approach to security for all situations.</p>
 
 </div>
 
@@ -81,14 +72,14 @@
 
     <div class="adjacent-posts">
         
-
-        
-            <div class="link next">
-                <a href="/2014/10/24/staging-environment-on-heroku.html">
-                    Set Up a Staging Environment for Your Rails App on Heroku &raquo;
+            <div class="link previous">
+                <a href="/2018/02/16/recent-reading.html">
+                    &laquo; Recent Reading: Snakeheads, Weimar, and Marathons
                 </a><br>
-                <span class="small">24 Oct 2014</span>
+                <span class="small">16 Feb 2018</span>
             </div>
+        
+
         
         <div class="clear-block"></div>
     </div>
@@ -97,7 +88,7 @@
 
 
     <div class="other-posts">
-    <h3>Other Posts</h3>
+    <h3>Other Tech Notes</h3>
     <ul>
     
     
@@ -108,15 +99,9 @@
         
     
         
-        
-    
-        
-        
-    
-        
             <li>
-                <a href="/2018/01/21/oyster-tecture.html">Media about Cities and Sea Levels</a><br>
-                <span class="small">21 Jan 2018</span>
+                <a href="/2018/02/10/dot-dev.html">Forced HTTPS in Chrome on Local .dev Domains</a><br>
+                <span class="small">10 Feb 2018</span>
             </li>
             
         
@@ -135,18 +120,9 @@
         
     
         
-        
-    
-        
-        
-    
-        
-        
-    
-        
             <li>
-                <a href="/2017/10/27/gspread.html">Connecting to Google Sheets with Python</a><br>
-                <span class="small">27 Oct 2017</span>
+                <a href="/2017/12/02/sass-interpolation.html">Sass Variables in CSS calc() Functions</a><br>
+                <span class="small">02 Dec 2017</span>
             </li>
             
         
@@ -160,8 +136,8 @@
     
         
             <li>
-                <a href="/2017/10/13/expedience.html">Expedience in <i>Sourdough</i></a><br>
-                <span class="small">13 Oct 2017</span>
+                <a href="/2017/11/02/multimarkdown-composer-from-bbedit.html">Open a File in MultiMarkdown Composer from BBEdit</a><br>
+                <span class="small">02 Nov 2017</span>
             </li>
             
         
