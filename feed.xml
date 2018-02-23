@@ -7,6 +7,27 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Leondardo da Vinci, kitchen manager</title>
+
+<description>
+    <![CDATA[
+    <blockquote>
+  <p>Master Leonardo da Vinci’s kitchen is a bedlam. Lord Ludovico Sforza told me that the effort of the last months had been to economize upon human labor, but now, instead of the twenty cooks the kitchens once employed, there are closer to two hundred persons milling in the area, and none that I could see cooking but all attending to the great devices that crowded up the floors and walls – and none of which seemed behaving in any manner useful or for which it was created. At one end a great waterwheel, driven by a raging waterfall, spewed and spattered forth its waters over all who passed beneath and made the floor a lake. Giant bellows, each twelve feet long, were suspended from the ceilings, hissing and roaring with intent to clear the fire smoke, but all they accoplished was to fan the flames. … And through this stricken area wandered horses and oxen … dragging Master Leondard’s floor-cleaning devices – performing their tasks valiantly, but also followed by another great army of men to clean the horses’ messes.</p>
+
+  <p>– <cite>From a 1482 report describing the Sforza castle kitchen as managed by a 30-year-old Leonard da Vinci, as printed on the insert in the recent food-themed <a href="https://publicdomainreview.org/support/">postcard pack from <em>Public Domain Review</em></a></cite></p>
+</blockquote>
+
+<p>I had the chance to to help fulfill shipments on this most recent round of supporter packs. Consider becoming a <a href="https://publicdomainreview.org/support/">Friend of The Public Domain Review</a> to support the publication and get the next set.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Thu, 22 Feb 2018 21:50:01 -0500</pubDate>
+<link>http://localhost:4000/2018/02/22/da-vinci-kitchen-manager.html</link>
+<guid isPermaLink="true">http://localhost:4000/2018/02/22/da-vinci-kitchen-manager.html</guid>
+</item>
+
+<item>
 <title>HTTPS on Github Pages Custom Domains with Cloudflare</title>
 
 <description>
@@ -494,25 +515,6 @@ next time.</p>
 <pubDate>Wed, 29 Nov 2017 10:00:01 -0500</pubDate>
 <link>http://localhost:4000/2017/11/29/recent-reading.html</link>
 <guid isPermaLink="true">http://localhost:4000/2017/11/29/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Explaining the Obvious</title>
-
-<description>
-    <![CDATA[
-    <blockquote>
-  <p>Be more explicit than you think is necessary, and you’ll nip misunderstandings in the bud. When everyone’s in the same room, it’s easier to notice an errant gesture that shows we’re not all on the same page. A remote team can only know what you say and type, so get everyone to agree that overexplaining won’t be taken as an insult. Don’t let it slip as the project goes on, either. “So what we’re saying is…” should be a common phrase throughout the life of the product.</p>
-
-  <p>– <cite>Drew Bell on <a href="https://trackchanges.postlight.com/five-ways-to-maintain-a-strong-remote-product-team-5d430c164ddf">talking through the “obvious” on remote teams</a></cite></p>
-</blockquote>
-
-    
-    ]]>
-</description>
-<pubDate>Thu, 09 Nov 2017 07:39:01 -0500</pubDate>
-<link>http://localhost:4000/2017/11/09/explain-the-obvious.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/11/09/explain-the-obvious.html</guid>
 </item>
 
 </channel>
