@@ -7,6 +7,25 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Chris Coyier on Complexity in Web Development</title>
+
+<description>
+    <![CDATA[
+    <blockquote>
+  <p>I suspect it doesn’t need any more complexity, and literally nobody is advocating it does. That’s why that <em>the web is a big place</em> sentiment is so useful. We talk about complexity, but it’s all opt-in. A wonderfully useful (and simple) website of a decade ago remains wonderfully useful and simple. Fortunately for all involved, the web, thus far, has taken compatibility quite seriously. Old websites don’t just break.</p>
+
+  <p>– <cite>Chris Coyier on <a href="https://css-tricks.com/complexity/">complexity in web development</a></cite></p>
+</blockquote>
+
+    
+    ]]>
+</description>
+<pubDate>Mon, 26 Feb 2018 09:50:01 -0500</pubDate>
+<link>http://localhost:4000/2018/02/26/complexity.html</link>
+<guid isPermaLink="true">http://localhost:4000/2018/02/26/complexity.html</guid>
+</item>
+
+<item>
 <title>Leondardo da Vinci, kitchen manager</title>
 
 <description>
@@ -430,91 +449,6 @@ next time.</p>
 <pubDate>Sat, 02 Dec 2017 06:33:01 -0500</pubDate>
 <link>http://localhost:4000/2017/12/02/sass-interpolation.html</link>
 <guid isPermaLink="true">http://localhost:4000/2017/12/02/sass-interpolation.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: November 29, 2017</title>
-
-<description>
-    <![CDATA[
-    
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/0812975243/ref=nosim/latin031-20">Rob Gifford. <i>China Road: A Journey Into the Future of a Rising Power</i>. New York: Random House, 2008.</a>
-      </span>
-
-        
-          <span class="note"><p>Rob Gifford had been an NPR China correspondent for years when he decided to follow Route 312, the transcontinental highway that travels west and north from Shanghai all the way to the border with Uzbekistan, as his farewell to China. <em>China Road</em> is his travelogue organized both chronologically and geographically as he follows the road and thematically as the different people he encounters provide him opportunities to explore the capitalist awakening in China, political repression, internal migration, the colonial and imperial history of China in Tibet and the Uighur territories, the tension between the improved material circumstances of low-income Chinese and accelerating inequality of opportunity, and many other subjects. Written in 2007, it is a particularly interesting read with the benefit of a decade of hindsight on some of the potential trends he identifies.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/938007671">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/0812975243/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/0062645234/ref=nosim/latin031-20">Anthony Horowitz. <i>Magpie Murders</i>. New York: Harper Perennial, 2017.</a>
-      </span>
-
-        
-          <span class="note"><p>A double-whodunit that wraps a more modern thriller set in the London publishing industry wrapped around a Agatha Christie-esque English countryside cozy mystery. I would not be surprised if there were a lot of genre-insider stuff that I missed, but I was nonetheless impressed by the technical challenge posed by the structure and Horowitz’s success in pulling it off.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/995336235">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/0062645234/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/1585675245/ref=nosim/latin031-20">P.G. Wodehouse. <i>Ring for Jeeves</i>. Woodstock, N.Y.: Overlook Press, 2004 [1953].</a>
-      </span>
-
-        
-          <span class="note"><p><em>Ring for Jeeves</em> has Jeeves on loan to the Earl of Rowcester while Bertie Wooster is away at a boarding school for young nobles to learn the basic life skills now necessary given the exigencies of the post-war welfare state. Rowcester’s own financial straits lead him to moonlight as a horse-racing bookmaker with Jeeves as his clerk. They are forced to welsh on a bet, and hilarity ensues through layers of escalating misunderstanding. Falls right in line with format and expectations, but fun stuff.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/55045280">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/1585675245/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/1616951117/ref=nosim/latin031-20">Helene Tursten. <i>Detective Inspector Huss</i>. Translated by Steven T. Murray. New York: Soho Press, 2003.</a>
-      </span>
-
-        
-          <span class="note"><p>This is the first installment in a Swedish series of police procedurals set in Göteborg and written in the 1990s. The whodunit aspects of it were compelling and well-executed and there was enough suggestion of the socially- and politically-aware themes that crime fiction is can be so well-suited to exploring that I intend to continue. It was particularly interesting to read 90s Scandinavian angst over misogyny and white nationalism as the social context for a detective story from a late 2017 U.S. perspective.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/635706658">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/1616951117/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Wed, 29 Nov 2017 10:00:01 -0500</pubDate>
-<link>http://localhost:4000/2017/11/29/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/11/29/recent-reading.html</guid>
 </item>
 
 </channel>
