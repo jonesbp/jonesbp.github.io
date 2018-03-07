@@ -3,8 +3,78 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://localhost:4000</link>
+<link>http://tinaja.computer</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Recent Reading: Videogames, Fat, and Galveston</title>
+
+<description>
+    <![CDATA[
+    
+
+    
+        
+
+
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B01NAKSWW1/ref=nosim/latin031-20">Jason Schreier. <i>Blood, Sweat, and Pixels: The Triumphant, Turbulent Stories of How Video Games are Made</i>. New York: Harper Paperbacks, 2017.</a>
+      </span>
+
+        
+          <span class="note"><p>The organizational conceit of this book is to dedicate each chapter to short history of the development of a different videogame, and Schreier does a deft job of teasing a different thematic thread from each one. The unifying frame is the hardships the tension between rigid market schedules and the unpredictability of the medium can put on development teams, but each experience sounds terrible in its own way. Stardew Valley has basically been the entirety of my videogame universe for the past two years, so I was happy to see that represented, but I also found the coverage the AAA blockbuster projects much more interesting than I expected.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/1005468687">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B01NAKSWW1/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/1524762237/ref=nosim/latin031-20">Mark Sisson. <i>The Keto Reset Diet: The Ketogenic Plan to Reboot Your Metablism in 21 Days and Burn Fat Forever</i>. New York: Harmony Books, 2017.</a>
+      </span>
+
+        
+          <span class="note"><p>Ketogenic diets have been popular among tech people I’m aware of on the Internet for a while now, and I’ve been curious but have a difficult time not bouncing off of the voice of most diet books (and really self-help/self-improvement books generally). This author has his own line of “primal” (which as far as I can tell is branded paleo) food products and references them from time to time, but even with that the signal to sales noise ratio here is better than the average book of this sort. Skimming and following his citations to researchers was beneficial and having a prescribed meal plan to help get started with a new dietary regime is useful. This was a useful way to get into understanding what people are trying to accomplish in eating this way while requiring only a minimum amount of nose-holding against the self-promotional parts and references to some of the silly fellow traveler dietary stuff (e.g., “leaky gut syndrome”) that comes along with this topic that seems to have a kernel of non-bullshit at its core.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/1004679044">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/1524762237/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/1439166668/ref=nosim/latin031-20">Nic Pizzolatto. <i>Galveston</i>. New York: Simon and Schuster, 2017.</a>
+      </span>
+
+        
+          <span class="note"><p>I remember seeing this at Books on the Square when I was on a fellowship in Providence, RI when it first came out in 2010, and it’s taken me this long to get around to reading it. In the meantime, Pizzolatto has become famous for <em>True Detective</em>, so I may have gotten around to this regardless, but the book originally drew my attention as an aficionado of Galveston the place rather than interest in Pizzlatto as a writer. Having read it, Pizzolatto the writer is enjoyable. This is a good neo-noir novel with a strong sense of setting and an interesting protagonist. I wish I hadn’t initially been drawn by my love of Galveston the place, though. If it were simply a generic Gulf South setting, everything would be spot on, but whenever Pizzolatto is specific in a way that is supposed to lend verisimilitude, he gets just specific enough to land wrong, for example, describing turning from one street to another into a sunset that wouldn’t be in that direction or taking a highway past an area that would not in fact be visible from the road there. I was not searching for these details, and they don’t really matter, but it was a new experience for me to know a place so well and to have the fictional traversal of the space constantly rubbing up against my mental map of it. I imagine this feeling is a commonplace for people who know LA or New York better than I do.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/1005486647">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/1439166668/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
+<pubDate>Wed, 07 Mar 2018 10:48:01 -0500</pubDate>
+<link>http://tinaja.computer/2018/03/07/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/03/07/recent-reading.html</guid>
+</item>
 
 <item>
 <title>Chris Coyier on Complexity in Web Development</title>
@@ -21,8 +91,8 @@
     ]]>
 </description>
 <pubDate>Mon, 26 Feb 2018 09:50:01 -0500</pubDate>
-<link>http://localhost:4000/2018/02/26/complexity.html</link>
-<guid isPermaLink="true">http://localhost:4000/2018/02/26/complexity.html</guid>
+<link>http://tinaja.computer/2018/02/26/complexity.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/02/26/complexity.html</guid>
 </item>
 
 <item>
@@ -42,8 +112,8 @@
     ]]>
 </description>
 <pubDate>Thu, 22 Feb 2018 21:50:01 -0500</pubDate>
-<link>http://localhost:4000/2018/02/22/da-vinci-kitchen-manager.html</link>
-<guid isPermaLink="true">http://localhost:4000/2018/02/22/da-vinci-kitchen-manager.html</guid>
+<link>http://tinaja.computer/2018/02/22/da-vinci-kitchen-manager.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/02/22/da-vinci-kitchen-manager.html</guid>
 </item>
 
 <item>
@@ -65,8 +135,8 @@
     ]]>
 </description>
 <pubDate>Thu, 22 Feb 2018 10:28:01 -0500</pubDate>
-<link>http://localhost:4000/2018/02/22/cloudflare-github-pages-https.html</link>
-<guid isPermaLink="true">http://localhost:4000/2018/02/22/cloudflare-github-pages-https.html</guid>
+<link>http://tinaja.computer/2018/02/22/cloudflare-github-pages-https.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/02/22/cloudflare-github-pages-https.html</guid>
 </item>
 
 <item>
@@ -135,8 +205,8 @@
     ]]>
 </description>
 <pubDate>Fri, 16 Feb 2018 15:03:01 -0500</pubDate>
-<link>http://localhost:4000/2018/02/16/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2018/02/16/recent-reading.html</guid>
+<link>http://tinaja.computer/2018/02/16/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/02/16/recent-reading.html</guid>
 </item>
 
 <item>
@@ -168,8 +238,8 @@ next time.</p>
     ]]>
 </description>
 <pubDate>Sat, 10 Feb 2018 06:28:01 -0500</pubDate>
-<link>http://localhost:4000/2018/02/10/dot-dev.html</link>
-<guid isPermaLink="true">http://localhost:4000/2018/02/10/dot-dev.html</guid>
+<link>http://tinaja.computer/2018/02/10/dot-dev.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/02/10/dot-dev.html</guid>
 </item>
 
 <item>
@@ -253,8 +323,8 @@ next time.</p>
     ]]>
 </description>
 <pubDate>Tue, 30 Jan 2018 16:54:49 -0500</pubDate>
-<link>http://localhost:4000/2018/01/30/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2018/01/30/recent-reading.html</guid>
+<link>http://tinaja.computer/2018/01/30/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/01/30/recent-reading.html</guid>
 </item>
 
 <item>
@@ -273,8 +343,8 @@ next time.</p>
     ]]>
 </description>
 <pubDate>Sun, 21 Jan 2018 00:00:00 -0500</pubDate>
-<link>http://localhost:4000/2018/01/21/oyster-tecture.html</link>
-<guid isPermaLink="true">http://localhost:4000/2018/01/21/oyster-tecture.html</guid>
+<link>http://tinaja.computer/2018/01/21/oyster-tecture.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/01/21/oyster-tecture.html</guid>
 </item>
 
 <item>
@@ -403,8 +473,8 @@ next time.</p>
     ]]>
 </description>
 <pubDate>Wed, 10 Jan 2018 20:48:49 -0500</pubDate>
-<link>http://localhost:4000/2018/01/10/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2018/01/10/recent-reading.html</guid>
+<link>http://tinaja.computer/2018/01/10/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/01/10/recent-reading.html</guid>
 </item>
 
 <item>
@@ -424,31 +494,8 @@ next time.</p>
     ]]>
 </description>
 <pubDate>Thu, 14 Dec 2017 08:58:01 -0500</pubDate>
-<link>http://localhost:4000/2017/12/14/comfy-games.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/12/14/comfy-games.html</guid>
-</item>
-
-<item>
-<title>Sass Variables in CSS calc() Functions</title>
-
-<description>
-    <![CDATA[
-    <p>The most common use cases for variables in Sass allow you to drop variables directly into Sass stylesheets, so it’s easy to forget (or not to know in the first place) that there are certain circumstances where the interpolation syntax is necessary. The one I always forget is to use interpolation inside of CSS functions, like <code class="highlighter-rouge">calc()</code>.</p>
-
-<p>The concept of ‘<a href="https://en.wikipedia.org/wiki/String_interpolation">interpolation</a>’ just refers to the replacement of a placeholder with its literal value, so really in the case of processing Sass to CSS almost all of your references to variables are probably setting up an interpolation. That’s what’s happening when <code class="highlighter-rouge">color: $alertColor;</code> in your Sass gets changed to <code class="highlighter-rouge">color: #f00;</code> in your CSS output.</p>
-
-<p>There are instances, however, in which the Sass preprocessor will not perform this substitution unless you <em>explicitly</em> specify interpolation using the <code class="highlighter-rouge">#{}</code> syntax. The <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#Interpolation_____">Sass documentation</a> explains that the interpolation syntax is necessary when using variables to construct selector and property names and may be used in property values except that it is only necessary in cases where operators next to it should be treated as plain CSS.</p>
-
-<p>There is another case where the interpolation syntax is necessary, however, and it’s the one with which a recent (repeat) stumble inspired me to write up this note. Sass does not by default process the contents of CSS functions, so the line <code class="highlighter-rouge">min-height: calc($headerHeight - 2rem);</code> will be rendered to the CSS output with no change as <code class="highlighter-rouge">min-height: calc($headerHeight - 2rem);</code> (which is not valid CSS).</p>
-
-<p>It is necessary to use interpolation explicitly to get the desire result in this case, so the correct line <code class="highlighter-rouge">min-height: calc(#{$headerHeight} - 2rem);</code> will produce CSS output such as <code class="highlighter-rouge">min-height: calc(50px - 2rem);</code> if the value of <code class="highlighter-rouge">$headerHeight</code> is <code class="highlighter-rouge">50px</code>.</p>
-
-    
-    ]]>
-</description>
-<pubDate>Sat, 02 Dec 2017 06:33:01 -0500</pubDate>
-<link>http://localhost:4000/2017/12/02/sass-interpolation.html</link>
-<guid isPermaLink="true">http://localhost:4000/2017/12/02/sass-interpolation.html</guid>
+<link>http://tinaja.computer/2017/12/14/comfy-games.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2017/12/14/comfy-games.html</guid>
 </item>
 
 </channel>
