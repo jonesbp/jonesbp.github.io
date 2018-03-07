@@ -1,0 +1,17 @@
+---
+layout: reading_list
+title: "Recent Reading: Videogames, Fat, and Galveston"
+excerpt: "My recent reading included crunch time, weird diets, and Gulf South noir."
+type: reading_list
+date: 2018-03-07T10:48:01-05:00
+books:
+  - id: schreier-pixels
+    note: >
+      The organizational conceit of this book is to dedicate each chapter to short history of the development of a different videogame, and Schreier does a deft job of teasing a different thematic thread from each one. The unifying frame is the hardships the tension between rigid market schedules and the unpredictability of the medium can put on development teams, but each experience sounds terrible in its own way. Stardew Valley has basically been the entirety of my videogame universe for the past two years, so I was happy to see that represented, but I also found the coverage the AAA blockbuster projects much more interesting than I expected.
+  - id: sisson-keto
+    note: >
+        Ketogenic diets have been popular among tech people I’m aware of on the Internet for a while now, and I’ve been curious but have a difficult time not bouncing off of the voice of most diet books (and really self-help/self-improvement books generally). This author has his own line of “primal” (which as far as I can tell is branded paleo) food products and references them from time to time, but even with that the signal to sales noise ratio here is better than the average book of this sort. Skimming and following his citations to researchers was beneficial and having a prescribed meal plan to help get started with a new dietary regime is useful. This was a useful way to get into understanding what people are trying to accomplish in eating this way while requiring only a minimum amount of nose-holding against the self-promotional parts and references to some of the silly fellow traveler dietary stuff (e.g., “leaky gut syndrome”) that comes along with this topic that seems to have a kernel of non-bullshit at its core.
+  - id: pizzolatto-galveston
+    note: >
+        I remember seeing this at Books on the Square when I was on a fellowship in Providence, RI when it first came out in 2010, and it’s taken me this long to get around to reading it. In the meantime, Pizzolatto has become famous for _True Detective_, so I may have gotten around to this regardless, but the book originally drew my attention as an aficionado of Galveston the place rather than interest in Pizzlatto as a writer. Having read it, Pizzolatto the writer is enjoyable. This is a good neo-noir novel with a strong sense of setting and an interesting protagonist. I wish I hadn’t initially been drawn by my love of Galveston the place, though. If it were simply a generic Gulf South setting, everything would be spot on, but whenever Pizzolatto is specific in a way that is supposed to lend verisimilitude, he gets just specific enough to land wrong, for example, describing turning from one street to another into a sunset that wouldn’t be in that direction or taking a highway past an area that would not in fact be visible from the road there. I was not searching for these details, and they don’t really matter, but it was a new experience for me to know a place so well and to have the fictional traversal of the space constantly rubbing up against my mental map of it. I imagine this feeling is a commonplace for people who know LA or New York better than I do.
+---
