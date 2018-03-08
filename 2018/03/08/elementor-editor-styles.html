@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-          <title>Columbus Podcasts ≫ La Tinaja</title>
+          <title>Editor-Only CSS for the Elementor Page Builder ≫ La Tinaja</title>
         
 
         <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         
-          <meta name="description" content="A list of Columbus, OH podcasts">
+          <meta name="description" content="How to add CSS specific to the editor view in the Elementor page builder plugin for WordPress">
         
 
         <!-- Custom CSS -->
@@ -49,22 +49,19 @@
 
           
   
-    <h2><span class="indicator icon-list"></span>Columbus Podcasts</h2>
+    <h2><span class="indicator icon-note"></span>Editor-Only CSS for the Elementor Page Builder</h2>
   
-  <p class="meta">21 Sep 2017</p>
+  <p class="meta">08 Mar 2018</p>
 
 
-<div class="post list">
-<p>A list of podcasts associated with Columbus, OH that participated in the 2017 Independents’ Day Festival</p>
+<div class="post tech_note">
+<p>We’ve been experimenting recently with developing some in-house templates and tools to use on client projects based around WordPress and the <a href="http://elementor.com">Elementor</a> page builder plugin.</p>
 
-<ul>
-  <li>Columbus! Something New</li>
-  <li>ACES Radio</li>
-  <li>Idea Foundry</li>
-  <li>The Sounds of Bustown</li>
-  <li>The Confluence Cast</li>
-  <li>What’s The Deal With Creativity</li>
-</ul>
+<p>One problem that I’ve run into has been to retain the easy copy-editing benefits of using the WP administration panel and Elementor with more advanced interactive elements that might have hidden states on the initial page load. In these cases, the Elementor editor, which uses your theme’s stylesheet to give you WYSIWYG editing, will also hide those elements in the editing view.</p>
+
+<p>I haven’t found this mentioned in the Elementor documentation, but it turns out that it inserts a class <code class="highlighter-rouge">elementor-editor-active</code> on the <code class="highlighter-rouge">&lt;body&gt;</code> tag while in the editor. You can add styles to your stylesheet to show or highlight special layout elements in ways they wouldn’t be displayed on the public site in order to help retain the ability to edit text using the visual editor.</p>
+
+<p>Of course, you’re losing some of the WYSIWYG fidelity of using precisely the same styles as the public site, but some thoughtful presentation choices can minimize that downside.</p>
 
 </div>
 
@@ -74,20 +71,13 @@
     <div class="adjacent-posts">
         
             <div class="link previous">
-                <a href="/2017/09/21/sound-of-the-belgian-underground.html">
-                    &laquo; The Sound of the Belgian Underground
+                <a href="/2018/03/07/recent-reading.html">
+                    &laquo; Recent Reading: Videogames, Fat, and Galveston
                 </a><br>
-                <span class="small">21 Sep 2017</span>
+                <span class="small">07 Mar 2018</span>
             </div>
         
 
-        
-            <div class="link next">
-                <a href="/2017/09/23/recent-reading.html">
-                    Recent Reading: September 23, 2017 &raquo;
-                </a><br>
-                <span class="small">23 Sep 2017</span>
-            </div>
         
         <div class="clear-block"></div>
     </div>
@@ -96,7 +86,7 @@
 
 
     <div class="other-posts">
-    <h3>Other Lists</h3>
+    <h3>Other Tech Notes</h3>
     <ul>
     
     
@@ -113,38 +103,11 @@
         
     
         
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
+            <li>
+                <a href="/2018/02/22/cloudflare-github-pages-https.html">HTTPS on Github Pages Custom Domains with Cloudflare</a><br>
+                <span class="small">22 Feb 2018</span>
+            </li>
+            
         
         
     
@@ -153,8 +116,8 @@
     
         
             <li>
-                <a href="/2017/10/23/birthday-conservas.html">Birthday Conservas</a><br>
-                <span class="small">23 Oct 2017</span>
+                <a href="/2018/02/10/dot-dev.html">Forced HTTPS in Chrome on Local .dev Domains</a><br>
+                <span class="small">10 Feb 2018</span>
             </li>
             
         
@@ -167,15 +130,6 @@
         
     
         
-            <li>
-                <a href="/2017/09/26/famous-tex-mex-quesos.html">Famous Tex-Mex Quesos</a><br>
-                <span class="small">26 Sep 2017</span>
-            </li>
-            
-        
-        
-    
-        
         
     
         
@@ -183,8 +137,8 @@
     
         
             <li>
-                <a href="/2017/09/21/sound-of-the-belgian-underground.html">The Sound of the Belgian Underground</a><br>
-                <span class="small">21 Sep 2017</span>
+                <a href="/2017/12/02/sass-interpolation.html">Sass Variables in CSS calc() Functions</a><br>
+                <span class="small">02 Dec 2017</span>
             </li>
             
         
