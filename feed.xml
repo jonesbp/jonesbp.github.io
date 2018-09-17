@@ -7,6 +7,31 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Coupland on omniscience fatigue</title>
+
+<description>
+    <![CDATA[
+    <blockquote>
+  <p>I’ve noticed that, as we ramp up on our game-building skills and generalized knowledge about Ronald [MacDonald], we’re googling every ten seconds. The problem is, after a week of intense googling, we’ve started to burn out on knowing the answer to everything. God must feel that way all the time. I think people in the year 2020 are going to be nostalgic for the sensation of feeling clueless.</p>
+
+  <p>– <cite>From Douglas Coupland’s 2006 novel <i>JPod</i></cite></p>
+</blockquote>
+
+<p>I read this when it came out, but recently picked it up off the bookshelf where it was left by friends in the house we’re living in in Gent.</p>
+
+<p>I was struck both by the prescience of this insight and how Coupland actually is a bit behind the curve. I feel like the nostalgia for unanswered questions (or a fatigue of relative omniscience?) has already been with us for a few years.</p>
+
+<p>Now, still two years in advance of 2020, knowledge and fact are so cheap our problem is with how many of us have decided they are worthless—a far less blissful ignorance.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Mon, 17 Sep 2018 21:23:01 +0200</pubDate>
+<link>http://tinaja.computer/2018/09/17/googling.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/09/17/googling.html</guid>
+</item>
+
+<item>
 <title>Driftless Recordings</title>
 
 <description>
@@ -545,29 +570,6 @@
 <pubDate>Fri, 23 Feb 2018 03:50:01 +0100</pubDate>
 <link>http://tinaja.computer/2018/02/23/da-vinci-kitchen-manager.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2018/02/23/da-vinci-kitchen-manager.html</guid>
-</item>
-
-<item>
-<title>HTTPS on Github Pages Custom Domains with Cloudflare</title>
-
-<description>
-    <![CDATA[
-    <p>I’m hosting our archive site for <a href="https://theappendix.net"><em>The Appendix</em></a> on Github Pages because it’s free and it helps shield me from having to pay for the periodic bandwidth spike when an article or blog post gets popular for a few days on Reddit.</p>
-
-<p>It has increasingly been bothering me that a  big problem with this solution long-term was the growing movement towards privileging web content served over HTTPS by services like Google as it conflicts with Github Pages inability to serve sites with custom domains over HTTPS. I was listening to the <a href="https://syntax.fm/show/033/large-files-cdns-image-compression-video-hosting-and-big-zips">Syntax podcast</a> yesterday when Wes made an aside that even free-tire <a href="http://cloudflare.com">Cloudflare</a> get served over HTTPS for free. That seemed like a solution to my problem.</p>
-
-<p>I signed up for Cloudflare this morning, added the <code class="highlighter-rouge">theappendix.net</code> domain, changed my DNS settings to point to Cloudflare, and checked about 15 minutes later to find the site being served over HTTPS. Done.</p>
-
-<p>This site is supposed to be an archive that will hopefully persist with little maintenance for a long, long time. In putting Cloudflare in front of it, I’ve added another layer of dependency. However, Cloudflare sits in front of the hosting. All I have to do to remove my dependency on it if it should disappear is to change my DNS settings again. As long as I’m maintaining the <code class="highlighter-rouge">theappendix.net</code> domain name I’ll be able to support at least that level of maintenance supervision.</p>
-
-<p>One caveat is that Cloudflare’s free certificate is a shared SSL certificate which presents some security concerns. In the context of the problem I am trying to solve—providing a Github Pages-hosted static site over HTTPS—I don’t think those concerns are relevant; however, it will not be the correct approach to security for all situations.</p>
-
-    
-    ]]>
-</description>
-<pubDate>Thu, 22 Feb 2018 16:28:01 +0100</pubDate>
-<link>http://tinaja.computer/2018/02/22/cloudflare-github-pages-https.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/02/22/cloudflare-github-pages-https.html</guid>
 </item>
 
 </channel>
