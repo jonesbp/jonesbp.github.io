@@ -7,6 +7,75 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Nap Time</title>
+
+<description>
+    <![CDATA[
+    <p>I like taking naps. I don’t like my phone buzzing while I nap. I want to use my phone’s timer to wake me up from my nap. I don’t want to miss phone calls for days because I forgot to turn Do Not Disturb off on my phone.</p>
+
+<p>iOS 12 came out yesterday, and I wanted to give the new <a href="https://www.macstories.net/stories/ios-12-the-macstories-review/7/#shortcuts">Shortcuts</a> system a whirl. I’ve used Workflow <a href="https://tinaja.computer/2015/07/13/comments-in-workflow.html">in the past</a>, but fell off the wagon when it all felt too fiddly. Workflow always felt like a big pile of (amazing) hacky workarounds; the promise of system-level integration now that it has become Shortcuts has me excited to mess around with it again.</p>
+
+<p>So, today instead of taking a nap, I made a ’Nap Time’ shortcut.</p>
+
+<hr />
+
+<h3 id="problem">Problem</h3>
+
+<p>I want to take a nap for 30 minutes. I want a timer to wake me up after 30 minutes. I want my phone to be on Do Not Disturb during that time. I want Do Not Disturb off once I’m up.</p>
+
+<hr />
+
+<h3 id="do-not-disturb">Do Not Disturb</h3>
+
+<p>There is a Shortcut action called ‘Set Do Not Disturb’ that allows you to turn on Do Not Disturb until it is turned off manually, until a prescribed time, until you leave the location where the action was invoked, the current event on your calendar ends, a Magic Variable, or the input from the previous shortcut action.</p>
+
+<p>There is no option to set Do Not Disturb for a specified duration. So I will use the ‘Until: Time’ option and give it a time 30 minutes in the future from now.</p>
+
+<p>There’s another action called ‘Date’ that allows you to pass either the current date (and time) or one you specify to the next action. There is another action called ‘Adjust Date’ which takes a date/time input and allows you perform a calculation against it. In this case, I will select the current date in ‘Date’ and add 30 minutes to it using ‘Adjust Date’. I now have a date/time value to pass along to ‘Set Do Not Disturb’ as the time until which I would like Do Not Disturb active.</p>
+
+<p><img src="/images/2018/nap-time/shortcuts-date-math.png" style="max-width: 375px" alt="Do Not Disturb settings screenshot" /></p>
+
+<hr />
+
+<h3 id="timer">Timer</h3>
+
+<p>Now I need to set a timer.</p>
+
+<p>Frustratingly, Shortcuts does not have any built-in actions for the Clock app. If I hadn’t listened to a few podcasts over the last couple of months of people using Shortcuts in beta, I would have been stumped.</p>
+
+<p>The way to get timer actions into a shortcut is to use Siri Suggestions. So activate Siri and say “Set a timer for 30 minutes.” Let it run or not. Now go back to the Shortcuts app and select Siri Suggestions in the action list and Siri will suggest to you your recent action you took with the Clock app—in this case “Start a timer for 30 minutes.”</p>
+
+<p>This action can go as the last link your chain. You can choose whether you want to be left in the Clock app with the timer running or not when the shortcut terminates.</p>
+
+<p><img src="/images/2018/nap-time/shortcuts-timer.png" style="max-width: 375px" alt="Timer shortcut screenshot" /></p>
+
+<hr />
+
+<h3 id="configuration">Configuration</h3>
+
+<p>There’s a settings panel for your shortcut if you tap the toggle switch icon in the top right of the screen. There you can give your shortcut a name and icon. You can also record a Siri trigger phrase so that the new shortcut can be invoked by saying “Run ‘Nap Time’” to Siri where ‘Nap Time’ is whatever trigger phrase you’ve chosen.</p>
+
+<p><img src="/images/2018/nap-time/shortcuts-settings.png" style="max-width: 375px" alt="Shortcut settings screenshot" /></p>
+
+<hr />
+
+<h3 id="additions">Additions</h3>
+
+<p>I could also have this play a playlist in Music as well, but what I would really want is for the new <a href="http://www.numerogroup.com/products/environments">Environments</a> app of Irv Teibel field recordings from the Numero Group to start up. Unfortunately it doesn’t appear to have the necessary hooks to work with Shortcuts, so I will have to start it up manually if I want to. I can at least launch the app as the last step in my workflow if I want to.</p>
+
+<hr />
+
+<p>You can <a href="/downloads/nap-time.shortcut">download the shortcut</a> if you would like a head start messing with this stuff. It’s fun.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Tue, 18 Sep 2018 14:29:40 +0200</pubDate>
+<link>http://tinaja.computer/2018/09/18/nap-time.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/09/18/nap-time.html</guid>
+</item>
+
+<item>
 <title>Coupland on omniscience fatigue</title>
 
 <description>
@@ -549,27 +618,6 @@
 <pubDate>Mon, 26 Feb 2018 15:50:01 +0100</pubDate>
 <link>http://tinaja.computer/2018/02/26/complexity.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2018/02/26/complexity.html</guid>
-</item>
-
-<item>
-<title>Leondardo da Vinci, kitchen manager</title>
-
-<description>
-    <![CDATA[
-    <blockquote>
-  <p>Master Leonardo da Vinci’s kitchen is a bedlam. Lord Ludovico Sforza told me that the effort of the last months had been to economize upon human labor, but now, instead of the twenty cooks the kitchens once employed, there are closer to two hundred persons milling in the area, and none that I could see cooking but all attending to the great devices that crowded up the floors and walls – and none of which seemed behaving in any manner useful or for which it was created. At one end a great waterwheel, driven by a raging waterfall, spewed and spattered forth its waters over all who passed beneath and made the floor a lake. Giant bellows, each twelve feet long, were suspended from the ceilings, hissing and roaring with intent to clear the fire smoke, but all they accoplished was to fan the flames. … And through this stricken area wandered horses and oxen … dragging Master Leondard’s floor-cleaning devices – performing their tasks valiantly, but also followed by another great army of men to clean the horses’ messes.</p>
-
-  <p>– <cite>From a 1482 report describing the Sforza castle kitchen as managed by a 30-year-old Leonard da Vinci, as printed on the insert in the recent food-themed <a href="https://publicdomainreview.org/support/">postcard pack from <em>Public Domain Review</em></a></cite></p>
-</blockquote>
-
-<p>I had the chance to to help fulfill shipments on this most recent round of supporter packs. Consider becoming a <a href="https://publicdomainreview.org/support/">Friend of The Public Domain Review</a> to support the publication and get the next set.</p>
-
-    
-    ]]>
-</description>
-<pubDate>Fri, 23 Feb 2018 03:50:01 +0100</pubDate>
-<link>http://tinaja.computer/2018/02/23/da-vinci-kitchen-manager.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/02/23/da-vinci-kitchen-manager.html</guid>
 </item>
 
 </channel>

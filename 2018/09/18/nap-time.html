@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+          <title>Nap Time ≫ La Tinaja</title>
+        
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
+
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+        <meta name="viewport" content="width=device-width">
+
+        <script src="//use.typekit.net/iei2wij.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        
+          <meta name="description" content="Making an iOS 12 shortcut for napping">
+        
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/"><span class="logo icon-tinaja"></span>La Tinaja</a></h1>
+            <div class="links">
+              <a class="extra" href="/">posts</a>
+              <a class="extra" href="/reading">reading</a>
+            </div>
+            <div class="buttons">
+              <a class="button" href="http://brianjon.es" title="About Me">
+                <span class="icon-head"></span>
+                <span class="invisible-text">Foam Garden</span>
+              </a>
+              <a class="button" href="http://foamgarden.com" title="Foam Garden">
+                <span class="icon-fg"></span>
+                <span class="invisible-text">About Me</span>
+              </a>
+            </div>
+          </div>
+
+          
+  
+    <h2>Nap Time</h2>
+  
+  <p class="meta">18 Sep 2018</p>
+
+
+<div class="post long">
+<p>I like taking naps. I don’t like my phone buzzing while I nap. I want to use my phone’s timer to wake me up from my nap. I don’t want to miss phone calls for days because I forgot to turn Do Not Disturb off on my phone.</p>
+
+<p>iOS 12 came out yesterday, and I wanted to give the new <a href="https://www.macstories.net/stories/ios-12-the-macstories-review/7/#shortcuts">Shortcuts</a> system a whirl. I’ve used Workflow <a href="https://tinaja.computer/2015/07/13/comments-in-workflow.html">in the past</a>, but fell off the wagon when it all felt too fiddly. Workflow always felt like a big pile of (amazing) hacky workarounds; the promise of system-level integration now that it has become Shortcuts has me excited to mess around with it again.</p>
+
+<p>So, today instead of taking a nap, I made a ’Nap Time’ shortcut.</p>
+
+<hr />
+
+<h3 id="problem">Problem</h3>
+
+<p>I want to take a nap for 30 minutes. I want a timer to wake me up after 30 minutes. I want my phone to be on Do Not Disturb during that time. I want Do Not Disturb off once I’m up.</p>
+
+<hr />
+
+<h3 id="do-not-disturb">Do Not Disturb</h3>
+
+<p>There is a Shortcut action called ‘Set Do Not Disturb’ that allows you to turn on Do Not Disturb until it is turned off manually, until a prescribed time, until you leave the location where the action was invoked, the current event on your calendar ends, a Magic Variable, or the input from the previous shortcut action.</p>
+
+<p>There is no option to set Do Not Disturb for a specified duration. So I will use the ‘Until: Time’ option and give it a time 30 minutes in the future from now.</p>
+
+<p>There’s another action called ‘Date’ that allows you to pass either the current date (and time) or one you specify to the next action. There is another action called ‘Adjust Date’ which takes a date/time input and allows you perform a calculation against it. In this case, I will select the current date in ‘Date’ and add 30 minutes to it using ‘Adjust Date’. I now have a date/time value to pass along to ‘Set Do Not Disturb’ as the time until which I would like Do Not Disturb active.</p>
+
+<p><img src="/images/2018/nap-time/shortcuts-date-math.png" style="max-width: 375px" alt="Do Not Disturb settings screenshot" /></p>
+
+<hr />
+
+<h3 id="timer">Timer</h3>
+
+<p>Now I need to set a timer.</p>
+
+<p>Frustratingly, Shortcuts does not have any built-in actions for the Clock app. If I hadn’t listened to a few podcasts over the last couple of months of people using Shortcuts in beta, I would have been stumped.</p>
+
+<p>The way to get timer actions into a shortcut is to use Siri Suggestions. So activate Siri and say “Set a timer for 30 minutes.” Let it run or not. Now go back to the Shortcuts app and select Siri Suggestions in the action list and Siri will suggest to you your recent action you took with the Clock app—in this case “Start a timer for 30 minutes.”</p>
+
+<p>This action can go as the last link your chain. You can choose whether you want to be left in the Clock app with the timer running or not when the shortcut terminates.</p>
+
+<p><img src="/images/2018/nap-time/shortcuts-timer.png" style="max-width: 375px" alt="Timer shortcut screenshot" /></p>
+
+<hr />
+
+<h3 id="configuration">Configuration</h3>
+
+<p>There’s a settings panel for your shortcut if you tap the toggle switch icon in the top right of the screen. There you can give your shortcut a name and icon. You can also record a Siri trigger phrase so that the new shortcut can be invoked by saying “Run ‘Nap Time’” to Siri where ‘Nap Time’ is whatever trigger phrase you’ve chosen.</p>
+
+<p><img src="/images/2018/nap-time/shortcuts-settings.png" style="max-width: 375px" alt="Shortcut settings screenshot" /></p>
+
+<hr />
+
+<h3 id="additions">Additions</h3>
+
+<p>I could also have this play a playlist in Music as well, but what I would really want is for the new <a href="http://www.numerogroup.com/products/environments">Environments</a> app of Irv Teibel field recordings from the Numero Group to start up. Unfortunately it doesn’t appear to have the necessary hooks to work with Shortcuts, so I will have to start it up manually if I want to. I can at least launch the app as the last step in my workflow if I want to.</p>
+
+<hr />
+
+<p>You can <a href="/downloads/nap-time.shortcut">download the shortcut</a> if you would like a head start messing with this stuff. It’s fun.</p>
+
+</div>
+
+
+
+
+    <div class="adjacent-posts">
+        
+            <div class="link previous">
+                <a href="/2018/09/17/googling.html">
+                    &laquo; Coupland on omniscience fatigue
+                </a><br>
+                <span class="small">17 Sep 2018</span>
+            </div>
+        
+
+        
+        <div class="clear-block"></div>
+    </div>
+
+
+
+
+    <div class="other-posts">
+    <h3>Other Posts</h3>
+    <ul>
+    
+    
+        
+        
+    
+        
+        
+    
+        
+            <li>
+                <a href="/2018/09/09/driftless-recordings.html">Driftless Recordings</a><br>
+                <span class="small">09 Sep 2018</span>
+            </li>
+            
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+            <li>
+                <a href="/2018/01/21/oyster-tecture.html">Media about Cities and Sea Levels</a><br>
+                <span class="small">21 Jan 2018</span>
+            </li>
+            
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+            <li>
+                <a href="/2017/10/27/gspread.html">Connecting to Google Sheets with Python</a><br>
+                <span class="small">27 Oct 2017</span>
+            </li>
+            
+        
+        
+            
+    </ul>
+</div>
+
+
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                <b>Brian Jones</b><br />
+                <a href="http://brianjon.es">brianjon.es</a><br />
+                <a href="https://twitter.com/jonesbp">twitter.com/jonesbp</a><br />
+                <a href="http://github.com/jonesbp">github.com/jonesbp</a>
+              </p>
+            </div>
+            <div class="contact">
+
+            </div>
+            <div class="contact">
+              <p>
+                <b>Projects</b><br />
+                <a href="http://backlist.cc">Backlist</a><br />
+                <a href="http://foamgarden.com">Foam Garden</a><br />
+                <a href="http://theappendix.net">The Appendix</a>
+              </p>
+            </div>
+            <div>
+              <p class="credits">
+                <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> <a href="/colophon.html">Colophon</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-244154-10', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
