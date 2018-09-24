@@ -7,6 +7,35 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Slow Trailers</title>
+
+<description>
+    <![CDATA[
+    <p>I just came across these <a href="http://relax.thegardensbetween.com">”slow trailers”</a> for The Gardens Between today. They are three 10-15 minutes-long animated short films with ambient scores by <a href="https://timshiel.bandcamp.com/">Tim Shiel</a>.</p>
+
+<p>I’ve found them to be compelling and soothing viewing, and I love the idea of them as promotional items. They upend the expected rhythms of online video consumption in a way that seems to pre-figure some of what players of the game can expect.</p>
+
+<div class="youtube-video">&gt;
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/73yt3T6ULvM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+</div>
+
+<div class="youtube-video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aQZV8vl12_M?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+</div>
+
+<div class="youtube-video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gXxCkGcMNVE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+</div>
+
+    
+    ]]>
+</description>
+<pubDate>Mon, 24 Sep 2018 13:49:40 +0200</pubDate>
+<link>http://tinaja.computer/2018/09/24/slow-trailers.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/09/24/slow-trailers.html</guid>
+</item>
+
+<item>
 <title>Nap Time</title>
 
 <description>
@@ -599,25 +628,6 @@
 <pubDate>Wed, 07 Mar 2018 16:48:01 +0100</pubDate>
 <link>http://tinaja.computer/2018/03/07/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2018/03/07/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Chris Coyier on Complexity in Web Development</title>
-
-<description>
-    <![CDATA[
-    <blockquote>
-  <p>I suspect it doesn’t need any more complexity, and literally nobody is advocating it does. That’s why that <em>the web is a big place</em> sentiment is so useful. We talk about complexity, but it’s all opt-in. A wonderfully useful (and simple) website of a decade ago remains wonderfully useful and simple. Fortunately for all involved, the web, thus far, has taken compatibility quite seriously. Old websites don’t just break.</p>
-
-  <p>– <cite>Chris Coyier on <a href="https://css-tricks.com/complexity/">complexity in web development</a></cite></p>
-</blockquote>
-
-    
-    ]]>
-</description>
-<pubDate>Mon, 26 Feb 2018 15:50:01 +0100</pubDate>
-<link>http://tinaja.computer/2018/02/26/complexity.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/02/26/complexity.html</guid>
 </item>
 
 </channel>
