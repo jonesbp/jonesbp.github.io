@@ -7,6 +7,33 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Using Object Literals in render() in React</title>
+
+<description>
+    <![CDATA[
+    <p>I’ve been reading the <a href="https://www.fullstackreact.com/">Full Stack React</a> book and came across this neat trick that had never occurred to me before for whatever reason.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{{</span>
+    <span class="nl">SAVING</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Saving…'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="nx">disabled</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nx">SUCCESS</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Saved!'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="nx">disabled</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nx">ERROR</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Save Failed - Retry?'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nx">READY</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Submit'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="o">/&gt;</span>
+<span class="p">}[</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">_saveStatus</span><span class="p">]}</span>
+</code></pre></div></div>
+
+<p>There’s a flag set in the state variable <code class="highlighter-rouge">_saveStatus</code> that will have one of the following values: <code class="highlighter-rouge">SAVING</code>, <code class="highlighter-rouge">SUCCESS</code>, <code class="highlighter-rouge">ERROR</code>, or <code class="highlighter-rouge">READY</code>. Define an object literal tieing each of four different pieces of content (in this case Submit buttons in different states) to one of these keys, and then select the appropriate piece of content by grabbing the value from the appropriate key in that object.</p>
+
+<p>This immediately struck me as a succinct and useful technique. It had never occurred to me myself. I love it when that happens.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Wed, 26 Sep 2018 05:19:00 +0200</pubDate>
+<link>http://tinaja.computer/2018/09/26/object-literal-in-react-render.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/09/26/object-literal-in-react-render.html</guid>
+</item>
+
+<item>
 <title>Slow Trailers</title>
 
 <description>
@@ -558,76 +585,6 @@
 <pubDate>Thu, 08 Mar 2018 20:55:01 +0100</pubDate>
 <link>http://tinaja.computer/2018/03/08/elementor-editor-styles.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2018/03/08/elementor-editor-styles.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Videogames, Fat, and Galveston</title>
-
-<description>
-    <![CDATA[
-    
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B01NAKSWW1/ref=nosim/latin031-20">Jason Schreier. <i>Blood, Sweat, and Pixels: The Triumphant, Turbulent Stories of How Video Games are Made</i>. New York: Harper Paperbacks, 2017.</a>
-      </span>
-
-        
-          <span class="note"><p>The organizational conceit of this book is to dedicate each chapter to short history of the development of a different videogame, and Schreier does a deft job of teasing a different thematic thread from each one. The unifying frame is the hardships the tension between rigid market schedules and the unpredictability of the medium can put on development teams, but each experience sounds terrible in its own way. Stardew Valley has basically been the entirety of my videogame universe for the past two years, so I was happy to see that represented, but I also found the coverage the AAA blockbuster projects much more interesting than I expected.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/1005468687">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B01NAKSWW1/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/1524762237/ref=nosim/latin031-20">Mark Sisson. <i>The Keto Reset Diet: The Ketogenic Plan to Reboot Your Metablism in 21 Days and Burn Fat Forever</i>. New York: Harmony Books, 2017.</a>
-      </span>
-
-        
-          <span class="note"><p>Ketogenic diets have been popular among tech people I’m aware of on the Internet for a while now, and I’ve been curious but have a difficult time not bouncing off of the voice of most diet books (and really self-help/self-improvement books generally). This author has his own line of “primal” (which as far as I can tell is branded paleo) food products and references them from time to time, but even with that the signal to sales noise ratio here is better than the average book of this sort. Skimming and following his citations to researchers was beneficial and having a prescribed meal plan to help get started with a new dietary regime is useful. This was a useful way to get into understanding what people are trying to accomplish in eating this way while requiring only a minimum amount of nose-holding against the self-promotional parts and references to some of the silly fellow traveler dietary stuff (e.g., “leaky gut syndrome”) that comes along with this topic that seems to have a kernel of non-bullshit at its core.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/1004679044">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/1524762237/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/1439166668/ref=nosim/latin031-20">Nic Pizzolatto. <i>Galveston</i>. New York: Simon and Schuster, 2017.</a>
-      </span>
-
-        
-          <span class="note"><p>I remember seeing this at Books on the Square when I was on a fellowship in Providence, RI when it first came out in 2010, and it’s taken me this long to get around to reading it. In the meantime, Pizzolatto has become famous for <em>True Detective</em>, so I may have gotten around to this regardless, but the book originally drew my attention as an aficionado of Galveston the place rather than interest in Pizzlatto as a writer. Having read it, Pizzolatto the writer is enjoyable. This is a good neo-noir novel with a strong sense of setting and an interesting protagonist. I wish I hadn’t initially been drawn by my love of Galveston the place, though. If it were simply a generic Gulf South setting, everything would be spot on, but whenever Pizzolatto is specific in a way that is supposed to lend verisimilitude, he gets just specific enough to land wrong, for example, describing turning from one street to another into a sunset that wouldn’t be in that direction or taking a highway past an area that would not in fact be visible from the road there. I was not searching for these details, and they don’t really matter, but it was a new experience for me to know a place so well and to have the fictional traversal of the space constantly rubbing up against my mental map of it. I imagine this feeling is a commonplace for people who know LA or New York better than I do.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/1005486647">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/1439166668/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Wed, 07 Mar 2018 16:48:01 +0100</pubDate>
-<link>http://tinaja.computer/2018/03/07/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/03/07/recent-reading.html</guid>
 </item>
 
 </channel>

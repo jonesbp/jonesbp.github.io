@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-          <title>Alfred Workflow for Updating App Icons ≫ La Tinaja</title>
+          <title>Using Object Literals in render() in React ≫ La Tinaja</title>
         
 
         <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         
-          <meta name="description" content="Wrap a short shell script in an Alfred workflow to reset app icons rewritten on updates.">
+          <meta name="description" content="A quick example using an object literal for selective content display in React">
         
 
         <!-- Custom CSS -->
@@ -49,33 +49,25 @@
 
           
   
-    <h2><span class="indicator icon-note"></span>Alfred Workflow for Updating App Icons</h2>
+    <h2><span class="indicator icon-note"></span>Using Object Literals in render() in React</h2>
   
-  <p class="meta">10 Jun 2016</p>
+  <p class="meta">26 Sep 2018</p>
 
 
 <div class="post tech_note">
-<p>I use <a href="http://sublimetext.com">Sublime Text 3</a> as my primary text editor, but absolutely hate the icon. The wide availability of nice replacement icons for Sublime Text suggests I’m not the only one. Unfortunately, the automated updater for Sublime Text overwrites custom icons, and I eventually gave up on replacing it.</p>
+<p>I’ve been reading the <a href="https://www.fullstackreact.com/">Full Stack React</a> book and came across this neat trick that had never occurred to me before for whatever reason.</p>
 
-<p>I’ve revisited working with Alfred workflows with the recent release of <a href="https://www.alfredapp.com">Alfred 3</a> and realized that a very simple shell script attached to an Alfred keyword would make resetting my Sublime Text icon quick and easy enough that I would do it.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{{</span>
+    <span class="nl">SAVING</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Saving…'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="nx">disabled</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nx">SUCCESS</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Saved!'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="nx">disabled</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nx">ERROR</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Save Failed - Retry?'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nx">READY</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Submit'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="o">/&gt;</span>
+<span class="p">}[</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">_saveStatus</span><span class="p">]}</span>
+</code></pre></div></div>
 
-<p>You’ll need to pick a replacement icon in .icns format and store it in a predictable place.<sup id="fnref:icon"><a href="#fn:icon" class="footnote">1</a></sup> Create a new blank workflow in Alfred and create a new <strong>Keyword</strong> input, giving it a keyword (I use ‘st3icon’) and setting it to take no argument. Connect it to a new <strong>Run Script</strong> action and enter the following bash script:</p>
+<p>There’s a flag set in the state variable <code class="highlighter-rouge">_saveStatus</code> that will have one of the following values: <code class="highlighter-rouge">SAVING</code>, <code class="highlighter-rouge">SUCCESS</code>, <code class="highlighter-rouge">ERROR</code>, or <code class="highlighter-rouge">READY</code>. Define an object literal tieing each of four different pieces of content (in this case Submit buttons in different states) to one of these keys, and then select the appropriate piece of content by grabbing the value from the appropriate key in that object.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">cp /path/to/new-app-icon.icns /Applications/Sublime<span class="se">\ </span>Text.app/Contents/Resources/Sublime<span class="se">\ </span>Text.icns
-touch /Applications/Sublime<span class="se">\ </span>Text.app
-touch /Applications/Sublime<span class="se">\ </span>Text.app/Contents/Info.plist</code></pre></figure>
-
-<p>The first line copies the .icns file you’d like to use as your new icon from wherever you’ve stored it (change <code class="highlighter-rouge">/path/to/new-app-icon.icns</code> accordingly) to the Sublime Text app bundle. The next two lines touch the app bundle and its plist to reset the modification timestamp on the app and trigger the system to reload the app’s icon.</p>
-
-<p>Small adjustments to this script would obviously make it work with other apps, although having a bunch of single-use Alfred workflows each responsible for a different app isn’t the most elegant solution. I may work on a version that supported multiple application ‘profiles’ in a single workflow on some future rainy afternoon.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:icon">
-      <p>I’m partial to <a href="https://dribbble.com/shots/1827488-Final-Sublime-Text-Replacement-Icon">this one</a> by Jannik Siebert. <a href="#fnref:icon" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<p>This immediately struck me as a succinct and useful technique. It had never occurred to me myself. I love it when that happens.</p>
 
 </div>
 
@@ -85,20 +77,13 @@ touch /Applications/Sublime<span class="se">\ </span>Text.app/Contents/Info.plis
     <div class="adjacent-posts">
         
             <div class="link previous">
-                <a href="/2016/06/09/meteorology-data-twitter.html">
-                    &laquo; Recent Reading: Meteorology, Data Surveillance, and Twitter
+                <a href="/2018/09/24/slow-trailers.html">
+                    &laquo; Slow Trailers
                 </a><br>
-                <span class="small">09 Jun 2016</span>
+                <span class="small">24 Sep 2018</span>
             </div>
         
 
-        
-            <div class="link next">
-                <a href="/2016/06/16/copenhagen-psych-fest.html">
-                    Copenhagen Psych Fest 2016 &raquo;
-                </a><br>
-                <span class="small">16 Jun 2016</span>
-            </div>
         
         <div class="clear-block"></div>
     </div>
@@ -111,12 +96,6 @@ touch /Applications/Sublime<span class="se">\ </span>Text.app/Contents/Info.plis
     <ul>
     
     
-        
-            <li>
-                <a href="/2018/09/26/object-literal-in-react-render.html">Using Object Literals in render() in React</a><br>
-                <span class="small">26 Sep 2018</span>
-            </li>
-            
         
         
     
@@ -166,6 +145,18 @@ touch /Applications/Sublime<span class="se">\ </span>Text.app/Contents/Info.plis
             <li>
                 <a href="/2018/02/22/cloudflare-github-pages-https.html">HTTPS on Github Pages Custom Domains with Cloudflare</a><br>
                 <span class="small">22 Feb 2018</span>
+            </li>
+            
+        
+        
+    
+        
+        
+    
+        
+            <li>
+                <a href="/2018/02/10/dot-dev.html">Forced HTTPS in Chrome on Local .dev Domains</a><br>
+                <span class="small">10 Feb 2018</span>
             </li>
             
         
