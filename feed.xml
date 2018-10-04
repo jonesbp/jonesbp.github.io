@@ -7,6 +7,32 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>10 Podcasts You Might Not Listen To</title>
+
+<description>
+    <![CDATA[
+    <ul>
+  <li><a href="http://afropop.org/">Afropop Worldwide</a>: A long-tenured public radio show on music from Africa and across the African diaspora</li>
+  <li><a href="http://cointalk.show">Coin Talk</a>: An irreverent weekly chat between Aaron Lammer and Jay Kang (and sometimes guests) on goings on in the cryptocurrency world</li>
+  <li><a href="http://dankrares.com/">Dank Rares</a>: Interviews with people exploring the possibilities of blockchain technology for market-making in digital art</li>
+  <li><a href="http://foodsafetytalk.com/">Food Safety Talk</a>: Commentary on recent news in food safety policy and research combined with shaggy, rambling chat about an array of other subjects between two food safety academics</li>
+  <li><a href="https://soundcloud.com/gamething">GAMETHING</a>: Small collages of sound, voiceover, and music created in response to video game experiences</li>
+  <li><a href="https://www.southernfoodways.org/gravy-format/gravy-podcast/">Gravy</a>: Tightly produced programs on food and culture topics in the U.S. South from the Southern Foodways Alliance</li>
+  <li><a href="https://the.hobbyhorse.club/">Hobby Horse</a>: Matt Haughey interviews people about a personal interest or hobby outside of their field of expertise</li>
+  <li><a href="https://toomuchnotenough.site">Too Much Not Enough</a>: Chats between Emma Winston and Darius Kazemi in which they take turns introducing each other to topics of obsessive interest</li>
+  <li><a href="https://postlight.com/tag/podcast">Track Changes</a>: Chats between Postlight agency founders Paul Ford and Rich Ziade (and frequently guests) on topics in business and technology</li>
+  <li><a href="https://www.20k.org/">Twenty Thousand Hertz</a>: Like a 99% Invisible for sound design</li>
+</ul>
+
+    
+    ]]>
+</description>
+<pubDate>Thu, 04 Oct 2018 00:00:00 +0200</pubDate>
+<link>http://tinaja.computer/2018/10/04/podcasts.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2018/10/04/podcasts.html</guid>
+</item>
+
+<item>
 <title>Recent Reading: Murder, Coffee, and Austin</title>
 
 <description>
@@ -690,25 +716,6 @@
 <pubDate>Fri, 13 Apr 2018 16:48:01 +0200</pubDate>
 <link>http://tinaja.computer/2018/04/13/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2018/04/13/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Aaron Koblin on art as experimentation</title>
-
-<description>
-    <![CDATA[
-    <blockquote>
-  <p>I do see art as experimentation. It’s fundamentally he process of combining things that have never been combined before. I’m fascinated by the process of translating ideas from one reality into another and ways that systems and structures can influence and guide new creation. To some extent art is an excuse. It’s a word that we use for yet-to-be-defined progress—necessary experiments in thought space which help us define and test limits. These are experiments that allow us to question, reflect, discover, and appreciate.</p>
-
-  <p>– <cite><a href="http://www.aaronkoblin.com/">Aaron Koblin</a> on art as experimentation, as quoted in Arthur Miller’s <a href="http://amzn.to/2FCxfHk"><em>Colliding Worlds</em></a></cite></p>
-</blockquote>
-
-    
-    ]]>
-</description>
-<pubDate>Thu, 15 Mar 2018 15:54:01 +0100</pubDate>
-<link>http://tinaja.computer/2018/03/15/koblin.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/03/15/koblin.html</guid>
 </item>
 
 </channel>
