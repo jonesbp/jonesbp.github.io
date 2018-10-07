@@ -3,8 +3,107 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://tinaja.computer</link>
+<link>http://localhost:4000</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Recent Reading: Shipwrecks, Lafayette, Vancouver</title>
+
+<description>
+    <![CDATA[
+    
+
+    
+        
+
+
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/B00NDTV6W6/ref=nosim/latin031-20">Robert Kurson. <i>Pirate Hunters: Treasure, Obsession, and the Search for a Legendary Pirate Ship</i>. New York: Random House, 2016.</a>
+      </span>
+
+        
+          <span class="note"><p>I listened to the bulk of this as an audiobook while running the Louisville Marathon. It’s perhaps not surprising that I wish there were more attention paid to the history, but what is there is actually pretty well done. The exploration of the specific techniques and practice of treasure diving was very interesting. I was less interested in the macho adventure-hero framing around the lives of the main subjects, but I get why it was there.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/966049184">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/B00NDTV6W6/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://worldcat.org/oclc/941381351">Rachel Andrew. <i>Get Ready for CSS Grid Layout</i>. Briefs, 1. New York: A Book Apart, 2016.</a>
+      </span>
+
+        
+          <span class="note"><p>This is the first of <a href="https://abookapart.com/">A Book Apart’s</a> Briefs collection of e-book-only publications on short-form topics. I bought this when it came out and never got around to reading it. Now that CSS Grid is more of a reality instead of a developing spec, some of it is a bit outdated, but it is still a very concise and useful introduction to the goals and organizing principles of CSS grid. It makes for a great foundation from which to ramp up quickly through personal experimentation or reading examples online.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/941381351">WorldCat &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0307742822/ref=nosim/latin031-20">Guanzhong Chen. <i>The Fat Years</i>. Translated by Michael S. Duke. New York: Anchor Books, 2013.</a>
+      </span>
+
+        
+          <span class="note"><p>This is an interesting satirical speculative fiction story set in very near future China from the perspective of 2011 with some plot elements that give it a little bit of a light science fiction feel. The cultural specificities of the setting necessary to understand the satire would largely have been lost on me without some explanatory notes from the translator responsible for the English language edition. That separation meant it was not always a smooth read, but I am nonetheless glad to have read it.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/976014241">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0307742822/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0743243803/ref=nosim/latin031-20">Sarah Vowell. <i>The Partly Cloudy Patriot</i>. New York: Simon & Schuster, 2002.</a>
+      </span>
+
+        
+          <span class="note"><p>The audiobook productions of Sarah Vowell’s books are all really great. Reading her own words in her very individual voice presents the dry humor in precisely the right tone, and the readers she gets to present the quotations from primary sources all do great readings. As usual Vowell is particularly interested in popular contemporary understanding of history and perceptions of her subjects. This time she takes the Marquis de Lafayette as her central character to elucidate some of the global connections and the contingencies of the American war of independence that are perhaps not part of most contemporary Americans’ basic understanding of their history.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/49649932">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0743243803/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/1596911050/ref=nosim/latin031-20">Douglas Coupland. <i>JPod</i>. Toronto: Random House of Canada, 2006.</a>
+      </span>
+
+        
+          <span class="note"><p>Our friends left this on the shelf of their house where we’re living in Gent this year. I hadn’t read it since it came out, but I’m a sucker for Coupland so I picked it up. I remember enjoying it on my first read, but thinking it was less substantial than his other work or not sufficiently additive as a clear successor to <em>Microserfs</em>. Reading it with another decade or so of hindsight, I actually have a great appreciation for it. I come away with the feeling that its slightness is precisely the point—that the characters’ quippiness as apparent substitutions for character traits rather than expressions of them is a consequence of informational ubiquity. Coupland was responding to a post-Google world, but the cultural and spiritual trajectory he identifies seem only more salient in our world that is both post-Google and post-Facebook.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/745958199">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/1596911050/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
+<pubDate>Sun, 07 Oct 2018 09:09:00 +0200</pubDate>
+<link>http://localhost:4000/2018/10/07/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2018/10/07/recent-reading.html</guid>
+</item>
 
 <item>
 <title>10 Podcasts You Might Not Listen To</title>
@@ -28,8 +127,8 @@
     ]]>
 </description>
 <pubDate>Thu, 04 Oct 2018 00:00:00 +0200</pubDate>
-<link>http://tinaja.computer/2018/10/04/podcasts.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/10/04/podcasts.html</guid>
+<link>http://localhost:4000/2018/10/04/podcasts.html</link>
+<guid isPermaLink="true">http://localhost:4000/2018/10/04/podcasts.html</guid>
 </item>
 
 <item>
@@ -173,8 +272,8 @@
     ]]>
 </description>
 <pubDate>Thu, 27 Sep 2018 09:09:40 +0200</pubDate>
-<link>http://tinaja.computer/2018/09/27/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/09/27/recent-reading.html</guid>
+<link>http://localhost:4000/2018/09/27/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2018/09/27/recent-reading.html</guid>
 </item>
 
 <item>
@@ -200,8 +299,8 @@
     ]]>
 </description>
 <pubDate>Wed, 26 Sep 2018 05:19:00 +0200</pubDate>
-<link>http://tinaja.computer/2018/09/26/object-literal-in-react-render.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/09/26/object-literal-in-react-render.html</guid>
+<link>http://localhost:4000/2018/09/26/object-literal-in-react-render.html</link>
+<guid isPermaLink="true">http://localhost:4000/2018/09/26/object-literal-in-react-render.html</guid>
 </item>
 
 <item>
@@ -229,8 +328,8 @@
     ]]>
 </description>
 <pubDate>Mon, 24 Sep 2018 13:49:40 +0200</pubDate>
-<link>http://tinaja.computer/2018/09/24/slow-trailers.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/09/24/slow-trailers.html</guid>
+<link>http://localhost:4000/2018/09/24/slow-trailers.html</link>
+<guid isPermaLink="true">http://localhost:4000/2018/09/24/slow-trailers.html</guid>
 </item>
 
 <item>
@@ -298,8 +397,8 @@
     ]]>
 </description>
 <pubDate>Tue, 18 Sep 2018 14:29:40 +0200</pubDate>
-<link>http://tinaja.computer/2018/09/18/nap-time.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/09/18/nap-time.html</guid>
+<link>http://localhost:4000/2018/09/18/nap-time.html</link>
+<guid isPermaLink="true">http://localhost:4000/2018/09/18/nap-time.html</guid>
 </item>
 
 <item>
@@ -323,8 +422,8 @@
     ]]>
 </description>
 <pubDate>Mon, 17 Sep 2018 21:23:01 +0200</pubDate>
-<link>http://tinaja.computer/2018/09/17/googling.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/09/17/googling.html</guid>
+<link>http://localhost:4000/2018/09/17/googling.html</link>
+<guid isPermaLink="true">http://localhost:4000/2018/09/17/googling.html</guid>
 </item>
 
 <item>
@@ -369,8 +468,8 @@
     ]]>
 </description>
 <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
-<link>http://tinaja.computer/2018/09/09/driftless-recordings.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/09/09/driftless-recordings.html</guid>
+<link>http://localhost:4000/2018/09/09/driftless-recordings.html</link>
+<guid isPermaLink="true">http://localhost:4000/2018/09/09/driftless-recordings.html</guid>
 </item>
 
 <item>
@@ -514,8 +613,8 @@
     ]]>
 </description>
 <pubDate>Tue, 04 Sep 2018 10:35:40 +0200</pubDate>
-<link>http://tinaja.computer/2018/09/04/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/09/04/recent-reading.html</guid>
+<link>http://localhost:4000/2018/09/04/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2018/09/04/recent-reading.html</guid>
 </item>
 
 <item>
@@ -629,93 +728,8 @@
     ]]>
 </description>
 <pubDate>Sun, 20 May 2018 17:11:01 +0200</pubDate>
-<link>http://tinaja.computer/2018/05/20/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/05/20/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Sci-art, Shipping, and Germany</title>
-
-<description>
-    <![CDATA[
-    
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B00FPT5KJW/ref=nosim/latin031-20">Arthur I. Miller. <i>Colliding Worlds: How Cutting-Edge Science is Redefining Contemporary Art</i>. New York: W.W. Norton, 2014.</a>
-      </span>
-
-        
-          <span class="note"><p>I really enjoyed this. It’s organized around three parts: a short history of shared interests between scientists and the artistic avant-garde, particularly in the early twentieth century; a catalog of recent and contemporary artists organized according to the scientific disciplines from which thy take material, techniques, and inspiration; and a short theoretical discussion of what these connections may mean for the practice of both art and science in the near future.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/995573570">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B00FPT5KJW/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B009LRWJKW/ref=nosim/latin031-20">Rose George. <i>Ninety Percent of Everything: Inside Shipping, the Invisible Industry That Puts Clothes on Your Back, Gas in Your Car and Food on Your Plate</i>. New York: Picador, 2014.</a>
-      </span>
-
-        
-          <span class="note"><p>George uses a trip she takes as a supernumerary on a container ship from the UK to Southeast Asia via the Suez Canal as occasion to explore various angles of the maritime shipping industry: labor, corruption, environmental and economic consequences, etc. It’s all interesting, and the travelogue elements of her own experience on the ship and the lives of the sailors she gets to know are particularly engaging.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/942501172">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B009LRWJKW/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B071DLM6L4/ref=nosim/latin031-20">Robert Harris. <i>Munich</i>. New York: Knopf, 2018.</a>
-      </span>
-
-        
-          <span class="note"><p>This was an enjoyable espionage thriller told from the perspectives of two old Oxford friends who end up on either side of the Munich Conference. I’ve read another one of Harris’s novels and appreciate his sensitivity to historical detail. It’s reminiscent of Le Carré novels where the spycraft and suspense all feel very human-scale.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/1014283429">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B071DLM6L4/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/1606909010/ref=nosim/latin031-20">Warren Ellis and Jason Masters. <i>Ian Fleming’s James Bond 007 Vol. 1: VARGR</i>. Mt. Laurel, N.J.: Dynamite Entertainment, 2016.</a>
-      </span>
-
-        
-          <span class="note"><p>Not surprisingly coming from Ellis, this is a rather sardonic and brutal Bond story even though The Bond character himself is pretty light. It’s a good balance that triangulated a few of the movie Bond types and still feels true to the novels. The recognizable Berlin landscape details in the artwork were fun.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/942710328">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/1606909010/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Fri, 13 Apr 2018 16:48:01 +0200</pubDate>
-<link>http://tinaja.computer/2018/04/13/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/04/13/recent-reading.html</guid>
+<link>http://localhost:4000/2018/05/20/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2018/05/20/recent-reading.html</guid>
 </item>
 
 </channel>
