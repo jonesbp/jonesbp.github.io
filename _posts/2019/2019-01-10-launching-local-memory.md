@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Launching Local Memory"
-excerpt: "This morning I finally linked publicly for a project that’s been under way for two years"
+excerpt: "This morning I finally linked publicly to a project that’s been under way for two years"
 type: long
 ---
 
