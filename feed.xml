@@ -7,6 +7,27 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Mortadella Dürüm and Authenticity</title>
+
+<description>
+    <![CDATA[
+    <p>From <a href="https://www.nytimes.com/2019/01/08/dining/momofuku-bang-bar-review.html">Pete Wells’s review</a> of David Chang’s Bang Bar:</p>
+
+<blockquote>
+  <p>I’ve saved the breakfast mini with mortadella for last, although it’s been the subject of the most rapt online attention. Building logs of mortadella layered with lardo and roasting them on spits is exactly the sort of thing the Momofuku group was put on this earth to do. I am glad this revolving meat torpedo exists. I respect Bang Bar’s cooks — this collaborative effort has no chef, Mr. Chang said in a phone interview — for realizing that the proper garnish for caramelized mortadella shavings is a slice of yellow American cheese and hot mustard. I appreciate the respect the sandwich pays to both fried baloney and Taylor Ham. And if I were in the habit of turning up at Columbus Circle with a hangover in the mornings, I would probably become a regular consumer of mortadella minis with Ssam Sauce. With a clear head and stomach, though, the saltiness can be a little too bracing.</p>
+</blockquote>
+
+<p>This fried-baloney-sandwich-as-mortadella-dürüm sounds amazing and is precisely the kind of thinking high-low, free-associating that makes me to ready to buy pretty much anything David Chang is selling. It’s also a poignant illustration of the possibilities opened by leaving the authenticity trap experienced by so many non-white restaurant owners in the U.S., as <a href="https://ny.eater.com/2019/1/18/18183973/authenticity-yelp-reviews-white-supremacy-trap">argued recently</a> by Sarah Kay.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Sat, 19 Jan 2019 00:00:00 +0100</pubDate>
+<link>http://tinaja.computer/2019/01/19/mortadella-durum.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/01/19/mortadella-durum.html</guid>
+</item>
+
+<item>
 <title>Launching Local Memory</title>
 
 <description>
@@ -541,75 +562,6 @@
 <pubDate>Mon, 24 Sep 2018 13:49:40 +0200</pubDate>
 <link>http://tinaja.computer/2018/09/24/slow-trailers.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2018/09/24/slow-trailers.html</guid>
-</item>
-
-<item>
-<title>Nap Time</title>
-
-<description>
-    <![CDATA[
-    <p>I like taking naps. I don’t like my phone buzzing while I nap. I want to use my phone’s timer to wake me up from my nap. I don’t want to miss phone calls for days because I forgot to turn Do Not Disturb off on my phone.</p>
-
-<p>iOS 12 came out yesterday, and I wanted to give the new <a href="https://www.macstories.net/stories/ios-12-the-macstories-review/7/#shortcuts">Shortcuts</a> system a whirl. I’ve used Workflow <a href="https://tinaja.computer/2015/07/13/comments-in-workflow.html">in the past</a>, but fell off the wagon when it all felt too fiddly. Workflow always felt like a big pile of (amazing) hacky workarounds; the promise of system-level integration now that it has become Shortcuts has me excited to mess around with it again.</p>
-
-<p>So, today instead of taking a nap, I made a ’Nap Time’ shortcut.</p>
-
-<hr />
-
-<h3 id="problem">Problem</h3>
-
-<p>I want to take a nap for 30 minutes. I want a timer to wake me up after 30 minutes. I want my phone to be on Do Not Disturb during that time. I want Do Not Disturb off once I’m up.</p>
-
-<hr />
-
-<h3 id="do-not-disturb">Do Not Disturb</h3>
-
-<p>There is a Shortcut action called ‘Set Do Not Disturb’ that allows you to turn on Do Not Disturb until it is turned off manually, until a prescribed time, until you leave the location where the action was invoked, the current event on your calendar ends, a Magic Variable, or the input from the previous shortcut action.</p>
-
-<p>There is no option to set Do Not Disturb for a specified duration. So I will use the ‘Until: Time’ option and give it a time 30 minutes in the future from now.</p>
-
-<p>There’s another action called ‘Date’ that allows you to pass either the current date (and time) or one you specify to the next action. There is another action called ‘Adjust Date’ which takes a date/time input and allows you perform a calculation against it. In this case, I will select the current date in ‘Date’ and add 30 minutes to it using ‘Adjust Date’. I now have a date/time value to pass along to ‘Set Do Not Disturb’ as the time until which I would like Do Not Disturb active.</p>
-
-<p><img src="/images/2018/nap-time/shortcuts-date-math.png" style="max-width: 375px" alt="Do Not Disturb settings screenshot" /></p>
-
-<hr />
-
-<h3 id="timer">Timer</h3>
-
-<p>Now I need to set a timer.</p>
-
-<p>Frustratingly, Shortcuts does not have any built-in actions for the Clock app. If I hadn’t listened to a few podcasts over the last couple of months of people using Shortcuts in beta, I would have been stumped.</p>
-
-<p>The way to get timer actions into a shortcut is to use Siri Suggestions. So activate Siri and say “Set a timer for 30 minutes.” Let it run or not. Now go back to the Shortcuts app and select Siri Suggestions in the action list and Siri will suggest to you your recent action you took with the Clock app—in this case “Start a timer for 30 minutes.”</p>
-
-<p>This action can go as the last link your chain. You can choose whether you want to be left in the Clock app with the timer running or not when the shortcut terminates.</p>
-
-<p><img src="/images/2018/nap-time/shortcuts-timer.png" style="max-width: 375px" alt="Timer shortcut screenshot" /></p>
-
-<hr />
-
-<h3 id="configuration">Configuration</h3>
-
-<p>There’s a settings panel for your shortcut if you tap the toggle switch icon in the top right of the screen. There you can give your shortcut a name and icon. You can also record a Siri trigger phrase so that the new shortcut can be invoked by saying “Run ‘Nap Time’” to Siri where ‘Nap Time’ is whatever trigger phrase you’ve chosen.</p>
-
-<p><img src="/images/2018/nap-time/shortcuts-settings.png" style="max-width: 375px" alt="Shortcut settings screenshot" /></p>
-
-<hr />
-
-<h3 id="additions">Additions</h3>
-
-<p>I could also have this play a playlist in Music as well, but what I would really want is for the new <a href="http://www.numerogroup.com/products/environments">Environments</a> app of Irv Teibel field recordings from the Numero Group to start up. Unfortunately it doesn’t appear to have the necessary hooks to work with Shortcuts, so I will have to start it up manually if I want to. I can at least launch the app as the last step in my workflow if I want to.</p>
-
-<hr />
-
-<p>You can <a href="/downloads/nap-time.shortcut">download the shortcut</a> if you would like a head start messing with this stuff. It’s fun.</p>
-
-    
-    ]]>
-</description>
-<pubDate>Tue, 18 Sep 2018 14:29:40 +0200</pubDate>
-<link>http://tinaja.computer/2018/09/18/nap-time.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/09/18/nap-time.html</guid>
 </item>
 
 </channel>
