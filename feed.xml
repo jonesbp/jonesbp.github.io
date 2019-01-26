@@ -7,6 +7,27 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Oddments</title>
+
+<description>
+    <![CDATA[
+    <p>I’ve set up a new small web page I’m calling <a href="https://oddments.brianjon.es">Oddments</a> to collect links to and information about projects I’m working on.</p>
+
+<p>I’m hoping that having a place to collect these things will provide some motivation to keep building them.</p>
+
+<p>I keep bouncing back and forth on the value of having hobbies and pursuits that generate ephemeral products. On the one hand it is the case that the pressure to conceive of any freetime pursuit as something to be connected to a larger project or to be productized or otherwise commodified is a powerful trap. On the other, my life at the moment makes for such infrequent moments of freedom to play that having leisure pursuits that produce lasting products is a nice reminder that I do in fact have hobbies.</p>
+
+<p>So here is <a href="https://oddments.brianjone.s">Oddments</a>. Let’s hope it keeps growing.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Sat, 26 Jan 2019 00:00:00 +0100</pubDate>
+<link>http://tinaja.computer/2019/01/26/oddments.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/01/26/oddments.html</guid>
+</item>
+
+<item>
 <title>Recent Reading: Listening, Endurance, and the Inland Empire</title>
 
 <description>
@@ -576,33 +597,6 @@
 <pubDate>Thu, 27 Sep 2018 09:09:40 +0200</pubDate>
 <link>http://tinaja.computer/2018/09/27/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2018/09/27/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Using Object Literals in render() in React</title>
-
-<description>
-    <![CDATA[
-    <p>I’ve been reading the <a href="https://www.fullstackreact.com/">Full Stack React</a> book and came across this neat trick that had never occurred to me before for whatever reason.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{{</span>
-    <span class="nl">SAVING</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Saving…'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="nx">disabled</span> <span class="o">/&gt;</span><span class="p">,</span>
-    <span class="nx">SUCCESS</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Saved!'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="nx">disabled</span> <span class="o">/&gt;</span><span class="p">,</span>
-    <span class="nx">ERROR</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Save Failed - Retry?'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="o">/&gt;</span><span class="p">,</span>
-    <span class="nx">READY</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Submit'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="o">/&gt;</span>
-<span class="p">}[</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">_saveStatus</span><span class="p">]}</span>
-</code></pre></div></div>
-
-<p>There’s a flag set in the state variable <code class="highlighter-rouge">_saveStatus</code> that will have one of the following values: <code class="highlighter-rouge">SAVING</code>, <code class="highlighter-rouge">SUCCESS</code>, <code class="highlighter-rouge">ERROR</code>, or <code class="highlighter-rouge">READY</code>. Define an object literal tieing each of four different pieces of content (in this case Submit buttons in different states) to one of these keys, and then select the appropriate piece of content by grabbing the value from the appropriate key in that object.</p>
-
-<p>This immediately struck me as a succinct and useful technique. It had never occurred to me myself. I love it when that happens.</p>
-
-    
-    ]]>
-</description>
-<pubDate>Wed, 26 Sep 2018 05:19:00 +0200</pubDate>
-<link>http://tinaja.computer/2018/09/26/object-literal-in-react-render.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/09/26/object-literal-in-react-render.html</guid>
 </item>
 
 </channel>
