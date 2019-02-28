@@ -22,7 +22,7 @@ module Jekyll
     end
 
     def self.get_years_for_site(site)
-      return [2018, 2017, 2016, 2015]
+      return [2019, 2018, 2017, 2016, 2015]
     end
 
     def sort_books!
