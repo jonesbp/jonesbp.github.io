@@ -7,6 +7,27 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Escaping on an iPad with no Esc key</title>
+
+<description>
+    <![CDATA[
+    <p>I’ve recently been connecting to a DigitalOcean droplet with the mosh shell using the <a href="https://www.blink.sh">Blink</a> app on my iPad. It’s been a fun way to do some light web development work away from my desk at home without having to lug a lot of gear.</p>
+
+<p>I’m using Apple’s smart folio keyboard for the time-being. It does not have an <code class="highlighter-rouge">Esc</code> key.</p>
+
+<p>I’ve gotten around a lot of my <code class="highlighter-rouge">Esc</code> key muscle memory already (I end up in all caps by accident a lot because <code class="highlighter-rouge">Esc</code> is mapped to <code class="highlighter-rouge">Caps Lock</code> on my Mac), but I found myself in vim on the server this morning and realized I had no idea how to leave insert mode without an <code class="highlighter-rouge">Esc</code> key.</p>
+
+<p>Turns out <code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">[</code> sends the same ASCII code that <code class="highlighter-rouge">Esc</code> does. Now I know.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Thu, 14 Mar 2019 07:31:00 +0000</pubDate>
+<link>http://tinaja.computer/2019/03/14/escape.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/03/14/escape.html</guid>
+</item>
+
+<item>
 <title>Recent Reading: Surfing Cops and Imaginary Places</title>
 
 <description>
@@ -464,105 +485,6 @@
 <pubDate>Sat, 24 Nov 2018 14:19:00 +0000</pubDate>
 <link>http://tinaja.computer/2018/11/24/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2018/11/24/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Shipwrecks, Lafayette, Vancouver</title>
-
-<description>
-    <![CDATA[
-    
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B00NDTV6W6/ref=nosim/latin031-20">Robert Kurson. <i>Pirate Hunters: Treasure, Obsession, and the Search for a Legendary Pirate Ship</i>. New York: Random House, 2016.</a>
-      </span>
-
-        
-          <span class="note"><p>I listened to the bulk of this as an audiobook while running the Louisville Marathon. It’s perhaps not surprising that I wish there were more attention paid to the history, but what is there is actually pretty well done. The exploration of the specific techniques and practice of treasure diving was very interesting. I was less interested in the macho adventure-hero framing around the lives of the main subjects, but I get why it was there.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/966049184">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B00NDTV6W6/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://worldcat.org/oclc/941381351">Rachel Andrew. <i>Get Ready for CSS Grid Layout</i>. Briefs, 1. New York: A Book Apart, 2016.</a>
-      </span>
-
-        
-          <span class="note"><p>This is the first of <a href="https://abookapart.com/">A Book Apart’s</a> Briefs collection of e-book-only publications on short-form topics. I bought this when it came out and never got around to reading it. Now that CSS Grid is more of a reality instead of a developing spec, some of it is a bit outdated, but it is still a very concise and useful introduction to the goals and organizing principles of CSS grid. It makes for a great foundation from which to ramp up quickly through personal experimentation or reading examples online.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/941381351">WorldCat &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/0307742822/ref=nosim/latin031-20">Guanzhong Chen. <i>The Fat Years</i>. Translated by Michael S. Duke. New York: Anchor Books, 2013.</a>
-      </span>
-
-        
-          <span class="note"><p>This is an interesting satirical speculative fiction story set in very near future China from the perspective of 2011 with some plot elements that give it a little bit of a light science fiction feel. The cultural specificities of the setting necessary to understand the satire would largely have been lost on me without some explanatory notes from the translator responsible for the English language edition. That separation meant it was not always a smooth read, but I am nonetheless glad to have read it.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/976014241">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/0307742822/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/0743243803/ref=nosim/latin031-20">Sarah Vowell. <i>The Partly Cloudy Patriot</i>. New York: Simon & Schuster, 2002.</a>
-      </span>
-
-        
-          <span class="note"><p>The audiobook productions of Sarah Vowell’s books are all really great. Reading her own words in her very individual voice presents the dry humor in precisely the right tone, and the readers she gets to present the quotations from primary sources all do great readings. As usual Vowell is particularly interested in popular contemporary understanding of history and perceptions of her subjects. This time she takes the Marquis de Lafayette as her central character to elucidate some of the global connections and the contingencies of the American war of independence that are perhaps not part of most contemporary Americans’ basic understanding of their history.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/49649932">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/0743243803/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/1596911050/ref=nosim/latin031-20">Douglas Coupland. <i>JPod</i>. Toronto: Random House of Canada, 2006.</a>
-      </span>
-
-        
-          <span class="note"><p>Our friends left this on the shelf of their house where we’re living in Gent this year. I hadn’t read it since it came out, but I’m a sucker for Coupland so I picked it up. I remember enjoying it on my first read, but thinking it was less substantial than his other work or not sufficiently additive as a clear successor to <em>Microserfs</em>. Reading it with another decade or so of hindsight, I actually have a great appreciation for it. I come away with the feeling that its slightness is precisely the point—that the characters’ quippiness as apparent substitutions for character traits rather than expressions of them is a consequence of informational ubiquity. Coupland was responding to a post-Google world, but the cultural and spiritual trajectory he identifies seem only more salient in our world that is both post-Google and post-Facebook.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/745958199">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/1596911050/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Sun, 07 Oct 2018 07:09:00 +0000</pubDate>
-<link>http://tinaja.computer/2018/10/07/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/10/07/recent-reading.html</guid>
 </item>
 
 </channel>
