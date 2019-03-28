@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
-          <title>Fix Plex Stuttering on Amazon Fire TV Stick ≫ La Tinaja</title>
+          <title>Just Use a Database ≫ La Tinaja</title>
         
 
         <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         
-          <meta name="description" content="These settings worked to get rid of annoying stuttering in Plex on Amazon Fire TV Stick.">
+          <meta name="description" content="In which I learn one more time to just use a relational database">
         
 
         <!-- Custom CSS -->
@@ -49,30 +49,23 @@
 
           
   
-    <h2><span class="indicator icon-note"></span>Fix Plex Stuttering on Amazon Fire TV Stick</h2>
+    <h2>Just Use a Database</h2>
   
-  <p class="meta">22 Sep 2015</p>
+  <p class="meta">28 Mar 2019</p>
 
 
-<div class="post tech_note">
-<p>I grabbed one of the Amazon Fire TV Sticks when Amazon.com discounted them pre-order last year knowing that we’d be moving to Berlin and that it wouldn’t be a bad thing to have an easily portable way to watch some Netflix here.</p>
+<div class="post long">
+<p>I am in the middle of writing some scripts to migrate a bunch of data stored as JSON into a SQLite database as well as a small front-end application for visualizations and CRUD-style operations on that data.</p>
 
-<p>For streaming services it has worked great, but I also wanted to try to get Plex running on it to watch some of my own video content.</p>
+<p>I started with JSON because we wanted to get moving quickly, and with JSON we could be hand-generating and -correcting data records while we waited for better tools to get developed. My partner on the project is also less technical, and the idea was that a human-readable format would be more likely to make him available for data entry while we waited for me to build better tools (or if those tools never came.)</p>
 
-<p>A month ago I gave up after a few days of fiddling would not solve a <a href="https://forums.plex.tv/discussion/129220/stuttering-on-playback-on-fire-tv-stick">persistent stuttering issue</a>.</p>
+<p>I also thought it would be a good idea to always have our data in a plain text format so that it could be easily archived and shared regardless of the technological state the project was left in. The worry was with an ambitious, but unfunded, side project we would potentially hit a wall at some point, and I did not want to be left with a bunch of work to do to then expose our data to be reusable by someone else.</p>
 
-<p>Yesterday I tried again and eventually distilled a fix to two steps:</p>
+<p>That was a mistake.</p>
 
-<ul>
-  <li>Use a ‘Force Direct Play’ device profile</li>
-  <li>Cap video quality at 2.0 Mbsp 720p video</li>
-</ul>
+<p>Working around the constraints involved in keeping our data in this way has almost certainly added up to more work than was theoretically saved by not building the tools to work with a database. And now I’m building those tools anyways. And in the event that we do stop working on the project, the work involved in coming up with a schema for a set of JSON (or similar) files and the output scripts to generate them would not be so big a deal.</p>
 
-<p>I can live with the compromises I’ve made here because I certainly didn’t buy a $20 HDMI dongle expecting videophile quality. I can actually watch a movie without the video hiccuping every few seconds.</p>
-
-<p>To change the <strong>device profile</strong>, go to <strong>Settings</strong> → <strong>Device media profile</strong> → <strong>Media profile</strong> → <strong>Force Direct Play</strong>.</p>
-
-<p>To change the <strong>video quality</strong>,  go to <strong>Settings</strong> → <strong>Video</strong> → <strong>Quality over local network</strong> → <strong>2.0 Mbps 720p</strong>.</p>
+<p>I’ve learned the lesson again: just use a relational database.</p>
 
 </div>
 
@@ -82,20 +75,13 @@
     <div class="adjacent-posts">
         
             <div class="link previous">
-                <a href="/2015/08/30/weekly-reading.html">
-                    &laquo; Weekly Reading: August 30, 2015
+                <a href="/2019/03/14/escape.html">
+                    &laquo; Escaping on an iPad with no Esc key
                 </a><br>
-                <span class="small">30 Aug 2015</span>
+                <span class="small">14 Mar 2019</span>
             </div>
         
 
-        
-            <div class="link next">
-                <a href="/2015/11/08/weekly-reading.html">
-                    Weekly Reading: November 8, 2015 &raquo;
-                </a><br>
-                <span class="small">08 Nov 2015</span>
-            </div>
         
         <div class="clear-block"></div>
     </div>
@@ -104,7 +90,7 @@
 
 
     <div class="other-posts">
-    <h3>Other Tech Notes</h3>
+    <h3>Other Posts</h3>
     <ul>
     
     
@@ -112,9 +98,18 @@
         
     
         
+        
+    
+        
+        
+    
+        
+        
+    
+        
             <li>
-                <a href="/2019/03/14/escape.html">Escaping on an iPad with no Esc key</a><br>
-                <span class="small">14 Mar 2019</span>
+                <a href="/2019/01/26/oddments.html">Oddments</a><br>
+                <span class="small">26 Jan 2019</span>
             </li>
             
         
@@ -124,48 +119,18 @@
         
     
         
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
             <li>
-                <a href="/2018/12/04/memory-on-self-hosted-mastodon.html">Tuning Memory for a Self-Hosted Mastodon Instance</a><br>
-                <span class="small">04 Dec 2018</span>
+                <a href="/2019/01/19/mortadella-durum.html">Mortadella Dürüm and Authenticity</a><br>
+                <span class="small">19 Jan 2019</span>
             </li>
             
         
         
     
         
-        
-    
-        
-        
-    
-        
-        
-    
-        
-        
-    
-        
             <li>
-                <a href="/2018/09/26/object-literal-in-react-render.html">Using Object Literals in render() in React</a><br>
-                <span class="small">26 Sep 2018</span>
+                <a href="/2019/01/10/launching-local-memory.html">Launching Local Memory</a><br>
+                <span class="small">10 Jan 2019</span>
             </li>
             
         

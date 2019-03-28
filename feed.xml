@@ -7,6 +7,31 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Just Use a Database</title>
+
+<description>
+    <![CDATA[
+    <p>I am in the middle of writing some scripts to migrate a bunch of data stored as JSON into a SQLite database as well as a small front-end application for visualizations and CRUD-style operations on that data.</p>
+
+<p>I started with JSON because we wanted to get moving quickly, and with JSON we could be hand-generating and -correcting data records while we waited for better tools to get developed. My partner on the project is also less technical, and the idea was that a human-readable format would be more likely to make him available for data entry while we waited for me to build better tools (or if those tools never came.)</p>
+
+<p>I also thought it would be a good idea to always have our data in a plain text format so that it could be easily archived and shared regardless of the technological state the project was left in. The worry was with an ambitious, but unfunded, side project we would potentially hit a wall at some point, and I did not want to be left with a bunch of work to do to then expose our data to be reusable by someone else.</p>
+
+<p>That was a mistake.</p>
+
+<p>Working around the constraints involved in keeping our data in this way has almost certainly added up to more work than was theoretically saved by not building the tools to work with a database. And now I’m building those tools anyways. And in the event that we do stop working on the project, the work involved in coming up with a schema for a set of JSON (or similar) files and the output scripts to generate them would not be so big a deal.</p>
+
+<p>I’ve learned the lesson again: just use a relational database.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
+<link>http://tinaja.computer/2019/03/28/just-use-a-database.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/03/28/just-use-a-database.html</guid>
+</item>
+
+<item>
 <title>Escaping on an iPad with no Esc key</title>
 
 <description>
@@ -385,106 +410,6 @@
 <pubDate>Tue, 04 Dec 2018 07:19:00 +0000</pubDate>
 <link>http://tinaja.computer/2018/12/04/memory-on-self-hosted-mastodon.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2018/12/04/memory-on-self-hosted-mastodon.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Spies and Cooking</title>
-
-<description>
-    <![CDATA[
-    
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/0393254151/ref=nosim/latin031-20">David Ignatius. <i>The Quantum Spy: A thriller</i>. New York: W.W. Norton & Company, 2018.</a>
-      </span>
-
-        
-          <span class="note"><p>In theory I like pulpy airport spy thrillers, but am almost always disappointed when I take a chance on one from an unfamiliar author. I don’t feel like I read enough to waste time on ones that aren’t great examples of the form. I listened to an interview with David Ignatius whom I know as a foreign policy journalist. When he revealed he’s also been a spy novelist for most of his career, I decided I should check it out. I will read more. All of the thriller mechanics were solid and engrossing, and the specifics of the world—quantum computing, tech espionage, Big Science bureaucracy—all felt non-stupid.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/985974585">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/0393254151/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B004HYHB48/ref=nosim/latin031-20">David Downing. <i>Zoo Station</i>. New York: SoHo Crime, 2007.</a>
-      </span>
-
-        
-          <span class="note"><p>The protagonist is a British journalist living and working in late 1930s Berlin. I bought the e-book on a promotion primarily out of interest in the setting. Unfortunately the construction of that setting frequently relies more on the name-dropping of streets and locations more than it does on evoking a feeling. However, the very British espionage thriller technique of having someone adjacent to events—a journalist, in this case—thrust into a cloak and dagger world and the mundane mechanics of negotiating the situation saved it for me. It is the first of a series, and I think I will read more. Even though I was a bit disappointed in the world-building, there were passages that suggest to me that future iterations may improve in that regard as well.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/899965461">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B004HYHB48/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/1324002646/ref=nosim/latin031-20">Michael Lewis. <i>The Fifth Risk</i>. New York: W.W. Norton & Company, 2018.</a>
-      </span>
-
-        
-          <span class="note"><p>This is a short book exclusive to Amazon that I listened to as an audio book. Because he is such an efficient storyteller and concise stylist, I find that Michael Lewis’s books work particularly well as audiobooks. This one was an eye-opening analysis of the risks around the Trump administration’s failure to address basic administrative responsibilities across the bureaucracy. Lewis suggests (compellingly) that as abhorrent as the administration’s rhetoric is, the incompetence and lack of interest in basic governance has the potential to be more catastrophic.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/1057554927">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/1324002646/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/006210330X/ref=nosim/latin031-20">Karen Le Billon. <i>French Kids Eat Everything: How Our Family Moved to France, Cured Picky Eating, Banished Snacking, and Discovered 10 Simple Rules for Raising Happy, Healthy Eaters</i>. New York: William Morrow, 2012.</a>
-      </span>
-
-        
-          <span class="note"><p>Another iteration in the genre of ‘fish out of water’ parenting experiences, this one tracks the experiences of a Vancouver-born woman married to a Frenchmen when they moved their family of four to the small village in Brittany where he grew up. It adheres to genre tropes of possibly exagerrated mea culpas around the author’s personal history of feeding her family in comparison to the enlightened ease with which the French around her succeed at the same task. Nonetheless, Le Billon is an engaging writer, so the stories are fun, and her research into French social science on child development and nutrition was very interesting. I found myself wishing that we had a similar experience in our Belgian school as she did with her French school around the centrality of eating properly (as in eating as a behavior or a pursuit, rather than as a means of nutrition) in early education. It has inspired me to try some of her techniques in bringing unfamiliar Belgian dishes into our dinner routine at home; we have a year to see if it will work out.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/937840155">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/006210330X/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B0052RDIGY/ref=nosim/latin031-20">Kathleen Finn. <i>The Kitchen Counter Cooking School: How a Few Simple Lessons Transformed Nine Culinary Novices into Fearless Home Cooks</i>. New York: Penguin Books, 2014.</a>
-      </span>
-
-        
-          <span class="note"><p>Kathleen Finn was already an accomplished food writer when she embarked on the entrepreneurial task of identifying and remedying many American homemakers’ fear of basic cooking skills and difficult relationships with food and feeding families that results. In its specifics, the book is a memoir of teaching a small cooking basics class to a group of volunteer students and, more generally,  an exploration of the practice of cooking as a form of self-care and a path to self-care and a lamentation of the decline of basic food knowledge as a result of postwar processed food marketing. There are recipes and techniques taken from the class which would be of interest to the reader who was a candidate for her class. I appreciated it mostly for the dicussions of the process of building the class and identifying the needs of her students.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/883321324">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B0052RDIGY/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Sat, 24 Nov 2018 14:19:00 +0000</pubDate>
-<link>http://tinaja.computer/2018/11/24/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/11/24/recent-reading.html</guid>
 </item>
 
 </channel>
