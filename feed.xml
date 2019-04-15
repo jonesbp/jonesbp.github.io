@@ -7,6 +7,84 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Recent Reading: Tech Criminals and Dieting</title>
+
+<description>
+    <![CDATA[
+    
+
+    
+        
+
+
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        
+        
+          <span class="note"><p>I heard about this from <a href="https://www.burntfen.com">Richard Littauer’s newsletter</a>. It has the frequent mass-market non-fiction problem of feeling like the concept is being stretched to fill the format, but sometimes there is something to be said for being forced to sit with the repetition of a concept that is intended to be behavior changing. There is a difference between understanding an idea and internalizing it, and I can understand that I may have internalized more of the very straightforward ideas presented here by having them repeated to me than I might have had I allowed myself to skim for the bullet points. That said, it is possible to boil this worldview down to some very basic ideas: choose a single metric (weight) and measure it consistently (daily), eat less, and limit variety as a response to the problems of eating in an age of abundance. The authors’ persepective comes from pursuing pretty aggressive weight loss from a background of relatively poor eating habits. My interest is primarily in maintaining a consistent weight (or perhaps light weight loss). With a relatively aggressive running regimen, I have a history of eating large portions on days of long runs. This way of eating becomes habit during periods of relatively extreme exertion and then persists into lighter phases of my training schedule. The focus here on correlating measurement and observation to restrictions on food quantity I think can be helpful in helping to smooth this pattern out.</p>
+</span>
+        
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/152473165X/ref=nosim/latin031-20">John Carreyrou. <i>Bad Blood: Secrets and Lies in a Silicon Valley Startup</i>. New York: Alfred A. Knopf, 2018.</a>
+      </span>
+
+        
+          <span class="note"><p>I listened to this as an audiobook and found it very interesting. It is (unsurprisingly) the best bit of media I have encountered on the Theranos debacle. I particularly appreciated the matter-of-fact presentation that allows the words and actions of the Theranos leadership to speak for themselves. There’s little benefit to rehashing the general outline of this well-covered story here, but this book is definitely essential reading for anyone with more than a passing interest in the subject.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/1089195731">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/152473165X/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/178108520X/ref=nosim/latin031-20">Antony Johnston. <i>Stealing Life</i>. Oxford: Abaddon Books, 2018.</a>
+      </span>
+
+        
+          <span class="note"><p>It took me a little bit to get interested in this because the setting and characters felt a little generic and shallow, but it becomes clear that the focus is on building tightly constructed thriller. Approached from that angle, this is an engrossing, quick read. You can feel a very strong intentionality in the planning and plotting that I think belies Johnston’s experience as a comics writer.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/1064672356">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/178108520X/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0399590412/ref=nosim/latin031-20">Evan Ratliff. <i>The Mastermind: Drugs, Empire, Murder, Betrayal</i>. New York: Random House, 2019.</a>
+      </span>
+
+        
+          <span class="note"><p>Unfortunately I listened to this as an audiobook while participating in the Rotterdam Marathon which I did not finish, so I had some negative associations with returning to it to finish it up. It’s a very compelling story, and I can identify with Ratliff’s curiosity about Le Roux’s trajectory having also come of age at a similar time in the history of the Internet with a similar interest in computers and a similar distrust of authority. So much of Le Roux’s behavior is horrific, but Ratliff does an admirable job of exploring him as a figure in the context of a particular set of technological, geopolitical, and economic realities rather than simply indulging in a sensational account of his transgressions. Similarly, the epilogue presents the ephemerality of Le Roux’s power and the smallness of his end in tension with the breadth of the fallout for others while avoiding the simplicity of a straightforward tale of a moral comeuppance.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/1048445404">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0399590412/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
+<pubDate>Mon, 15 Apr 2019 08:33:00 +0000</pubDate>
+<link>http://tinaja.computer/2019/04/15/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/04/15/recent-reading.html</guid>
+</item>
+
+<item>
 <title>Just Use a Database</title>
 
 <description>
@@ -391,25 +469,6 @@
 <pubDate>Fri, 21 Dec 2018 04:50:00 +0000</pubDate>
 <link>http://tinaja.computer/2018/12/21/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2018/12/21/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Tuning Memory for a Self-Hosted Mastodon Instance</title>
-
-<description>
-    <![CDATA[
-    <p>I recently started hosting my own <a href="https://masto.brianjon.es/@brian">Mastodon instance</a>, but was having a difficult time getting it to run on the low-end Droplet configuration at DigitalOcean. I was happy to run this experiment at $5/mo, but $10/mo was too much for the long term.</p>
-
-<p>I found <a href="https://github.com/tootsuite/documentation/blob/master/Running-Mastodon/Tuning.md#using-jemalloc">this section</a> in the Mastodon administration docs that recommends running <a href="http://jemalloc.net/">jemalloc</a> to reduce Mastodon’s memory footprint.</p>
-
-<p>It was easy to do and has allowed me to run on the low-end Droplet from DigitalOcean without running out of memory. I still need to upgrade to the next size when I upgrade Mastodon, but then I can size back down for normal operation.</p>
-
-    
-    ]]>
-</description>
-<pubDate>Tue, 04 Dec 2018 07:19:00 +0000</pubDate>
-<link>http://tinaja.computer/2018/12/04/memory-on-self-hosted-mastodon.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2018/12/04/memory-on-self-hosted-mastodon.html</guid>
 </item>
 
 </channel>
