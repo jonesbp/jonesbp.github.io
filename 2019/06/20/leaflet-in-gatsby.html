@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+          <title>Building a Gatsby Site with Leaflet Maps ≫ La Tinaja</title>
+        
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
+
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+        <meta name="viewport" content="width=device-width">
+
+        <script src="//use.typekit.net/iei2wij.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        
+          <meta name="description" content="How to work around Webpack build errors with Leaflet maps in Gatsby">
+        
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/"><span class="logo icon-tinaja"></span>La Tinaja</a></h1>
+            <div class="links">
+              <a class="extra" href="/">posts</a>
+              <a class="extra" href="/reading">reading</a>
+            </div>
+            <div class="buttons">
+              <a class="button" href="http://brianjon.es" title="About Me">
+                <span class="icon-head"></span>
+                <span class="invisible-text">Foam Garden</span>
+              </a>
+              <a class="button" href="http://foamgarden.com" title="Foam Garden">
+                <span class="icon-fg"></span>
+                <span class="invisible-text">About Me</span>
+              </a>
+            </div>
+          </div>
+
+          
+  
+    <h2><span class="indicator icon-note"></span>Building a Gatsby Site with Leaflet Maps</h2>
+  
+  <p class="meta">20 Jun 2019</p>
+
+
+<div class="post tech_note">
+<p>Recently I was working on a custom touring map for <a href="https://local-memory.org/athens-on-the-colorado/narratives/territory-bands">an article on <em>Local Memory</em></a>. The site is built with <a href="https://gatsbyjs.org">Gatsby</a>, and I use <a href="https://leafletjs.com">Leaflet</a> for mapping. I use <a href="https://react-leaflet.js.org">React-Leaflet</a> for some convenience with treating the Leaflet maps as React components.</p>
+
+<p>The problem comes when running <code class="highlighter-rouge">gatsby build</code>. In the Node.js environment, there is no <code class="highlighter-rouge">window</code> object, and Webpack fails to build the first page it encounters where a React-Leaflet <code class="highlighter-rouge">Map</code> component is rendered.</p>
+
+<p>The fix is to make a check against the <code class="highlighter-rouge">window</code> object in the page’s <code class="highlighter-rouge">render()</code> function before using a <code class="highlighter-rouge">Map</code> component:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="s1">'undefined'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapWrapperRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"map-wrapper"</span><span class="o">&gt;</span>
+         <span class="o">&lt;</span><span class="nb">Map</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapRef</span><span class="p">}</span>
+            <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="na">height</span><span class="p">:</span> <span class="s1">'540px'</span><span class="p">}}</span>
+          <span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">TileLayer</span>
+            <span class="nx">url</span><span class="o">=</span><span class="s2">"https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"</span>
+            <span class="nx">attribution</span><span class="o">=</span><span class="s1">'&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;'</span>
+          <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="sr">/Map</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">);</span>
+  <span class="p">}</span>
+  
+  <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This was enough to avoid the Webpack error, but the problem was that the map would intermittently fail to display in the built version.</p>
+
+<p>The problem was returning <code class="highlighter-rouge">null</code> from the <code class="highlighter-rouge">render()</code> function which meant that there was not an element in the DOM to mount the map on when it was ready. Outputting an empty wrapper <code class="highlighter-rouge">&lt;div&gt;</code> rather than nothing at all from the <code class="highlighter-rouge">render()</code> function when not in a browser environment satisfies both conditions.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapWrapperRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"map-wrapper"</span><span class="o">&gt;</span>
+      <span class="p">{(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="s1">'undefined'</span><span class="p">)</span> <span class="p">?</span> <span class="p">(</span>
+         <span class="o">&lt;</span><span class="nb">Map</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapRef</span><span class="p">}</span>
+            <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="na">height</span><span class="p">:</span> <span class="s1">'540px'</span><span class="p">}}</span>
+          <span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">TileLayer</span>
+            <span class="nx">url</span><span class="o">=</span><span class="s2">"https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"</span>
+            <span class="nx">attribution</span><span class="o">=</span><span class="s1">'&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;'</span>
+          <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="sr">/Map</span><span class="err">&gt;
+</span>      <span class="p">)</span> <span class="p">:</span> <span class="kc">null</span><span class="p">}</span>
+    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<p>A related Webpack related build error can be fixed with the following in your <code class="highlighter-rouge">gatsby-node.js</code> so that the build doesn’t fail on pages that import <code class="highlighter-rouge">react-leaflet</code> because of the absence of a browser environment:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">exports</span><span class="p">.</span><span class="nx">onCreateWebpackConfig</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">stage</span><span class="p">,</span> <span class="nx">rules</span><span class="p">,</span> <span class="nx">loaders</span><span class="p">,</span> <span class="nx">actions</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">switch</span> <span class="p">(</span><span class="nx">stage</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="s1">'build-html'</span><span class="p">:</span>
+      <span class="nx">actions</span><span class="p">.</span><span class="nx">setWebpackConfig</span><span class="p">({</span>
+        <span class="na">module</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">rules</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="na">test</span><span class="p">:</span> <span class="sr">/react-leaflet/</span><span class="p">,</span>
+              <span class="na">use</span><span class="p">:</span> <span class="p">[</span><span class="nx">loaders</span><span class="p">.</span><span class="kc">null</span><span class="p">()]</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">}</span>
+      <span class="p">});</span>
+      <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+
+</div>
+
+
+
+
+    <div class="adjacent-posts">
+        
+            <div class="link previous">
+                <a href="/2019/06/05/recent-reading.html">
+                    &laquo; Recent Reading: Wine and Dystopia
+                </a><br>
+                <span class="small">05 Jun 2019</span>
+            </div>
+        
+
+        
+        <div class="clear-block"></div>
+    </div>
+
+
+
+
+    <div class="other-posts">
+    <h3>Other Tech Notes</h3>
+    <ul>
+    
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+            <li>
+                <a href="/2019/03/14/escape.html">Escaping on an iPad with no Esc key</a><br>
+                <span class="small">14 Mar 2019</span>
+            </li>
+            
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+            <li>
+                <a href="/2018/12/04/memory-on-self-hosted-mastodon.html">Tuning Memory for a Self-Hosted Mastodon Instance</a><br>
+                <span class="small">04 Dec 2018</span>
+            </li>
+            
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+            <li>
+                <a href="/2018/09/26/object-literal-in-react-render.html">Using Object Literals in render() in React</a><br>
+                <span class="small">26 Sep 2018</span>
+            </li>
+            
+        
+        
+            
+    </ul>
+</div>
+
+
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                <b>Brian Jones</b><br />
+                <a href="http://brianjon.es">brianjon.es</a><br />
+                <a href="https://twitter.com/jonesbp">twitter.com/jonesbp</a><br />
+                <a href="http://github.com/jonesbp">github.com/jonesbp</a>
+              </p>
+            </div>
+            <div class="contact">
+
+            </div>
+            <div class="contact">
+              <p>
+                <b>Projects</b><br />
+                <a href="http://backlist.cc">Backlist</a><br />
+                <a href="http://foamgarden.com">Foam Garden</a><br />
+                <a href="http://theappendix.net">The Appendix</a>
+              </p>
+            </div>
+            <div>
+              <p class="credits">
+                <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> <a href="/colophon.html">Colophon</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-244154-10', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+        <script async src="https://cdn.simpleanalytics.io/hello.js"></script>
+        <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+    </body>
+</html>

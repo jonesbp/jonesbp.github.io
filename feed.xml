@@ -7,6 +7,90 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Building a Gatsby Site with Leaflet Maps</title>
+
+<description>
+    <![CDATA[
+    <p>Recently I was working on a custom touring map for <a href="https://local-memory.org/athens-on-the-colorado/narratives/territory-bands">an article on <em>Local Memory</em></a>. The site is built with <a href="https://gatsbyjs.org">Gatsby</a>, and I use <a href="https://leafletjs.com">Leaflet</a> for mapping. I use <a href="https://react-leaflet.js.org">React-Leaflet</a> for some convenience with treating the Leaflet maps as React components.</p>
+
+<p>The problem comes when running <code class="highlighter-rouge">gatsby build</code>. In the Node.js environment, there is no <code class="highlighter-rouge">window</code> object, and Webpack fails to build the first page it encounters where a React-Leaflet <code class="highlighter-rouge">Map</code> component is rendered.</p>
+
+<p>The fix is to make a check against the <code class="highlighter-rouge">window</code> object in the page’s <code class="highlighter-rouge">render()</code> function before using a <code class="highlighter-rouge">Map</code> component:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="s1">'undefined'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapWrapperRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"map-wrapper"</span><span class="o">&gt;</span>
+         <span class="o">&lt;</span><span class="nb">Map</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapRef</span><span class="p">}</span>
+            <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="na">height</span><span class="p">:</span> <span class="s1">'540px'</span><span class="p">}}</span>
+          <span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">TileLayer</span>
+            <span class="nx">url</span><span class="o">=</span><span class="s2">"https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"</span>
+            <span class="nx">attribution</span><span class="o">=</span><span class="s1">'&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;'</span>
+          <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="sr">/Map</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">);</span>
+  <span class="p">}</span>
+  
+  <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This was enough to avoid the Webpack error, but the problem was that the map would intermittently fail to display in the built version.</p>
+
+<p>The problem was returning <code class="highlighter-rouge">null</code> from the <code class="highlighter-rouge">render()</code> function which meant that there was not an element in the DOM to mount the map on when it was ready. Outputting an empty wrapper <code class="highlighter-rouge">&lt;div&gt;</code> rather than nothing at all from the <code class="highlighter-rouge">render()</code> function when not in a browser environment satisfies both conditions.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapWrapperRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"map-wrapper"</span><span class="o">&gt;</span>
+      <span class="p">{(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="s1">'undefined'</span><span class="p">)</span> <span class="p">?</span> <span class="p">(</span>
+         <span class="o">&lt;</span><span class="nb">Map</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapRef</span><span class="p">}</span>
+            <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="na">height</span><span class="p">:</span> <span class="s1">'540px'</span><span class="p">}}</span>
+          <span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">TileLayer</span>
+            <span class="nx">url</span><span class="o">=</span><span class="s2">"https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"</span>
+            <span class="nx">attribution</span><span class="o">=</span><span class="s1">'&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;'</span>
+          <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="sr">/Map</span><span class="err">&gt;
+</span>      <span class="p">)</span> <span class="p">:</span> <span class="kc">null</span><span class="p">}</span>
+    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<p>A related Webpack related build error can be fixed with the following in your <code class="highlighter-rouge">gatsby-node.js</code> so that the build doesn’t fail on pages that import <code class="highlighter-rouge">react-leaflet</code> because of the absence of a browser environment:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">exports</span><span class="p">.</span><span class="nx">onCreateWebpackConfig</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">stage</span><span class="p">,</span> <span class="nx">rules</span><span class="p">,</span> <span class="nx">loaders</span><span class="p">,</span> <span class="nx">actions</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">switch</span> <span class="p">(</span><span class="nx">stage</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="s1">'build-html'</span><span class="p">:</span>
+      <span class="nx">actions</span><span class="p">.</span><span class="nx">setWebpackConfig</span><span class="p">({</span>
+        <span class="na">module</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">rules</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="na">test</span><span class="p">:</span> <span class="sr">/react-leaflet/</span><span class="p">,</span>
+              <span class="na">use</span><span class="p">:</span> <span class="p">[</span><span class="nx">loaders</span><span class="p">.</span><span class="kc">null</span><span class="p">()]</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">}</span>
+      <span class="p">});</span>
+      <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+
+    
+    ]]>
+</description>
+<pubDate>Thu, 20 Jun 2019 06:31:00 +0000</pubDate>
+<link>http://tinaja.computer/2019/06/20/leaflet-in-gatsby.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/06/20/leaflet-in-gatsby.html</guid>
+</item>
+
+<item>
 <title>Recent Reading: Wine and Dystopia</title>
 
 <description>
@@ -530,27 +614,6 @@
 <pubDate>Thu, 28 Feb 2019 11:30:00 +0000</pubDate>
 <link>http://tinaja.computer/2019/02/28/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2019/02/28/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Oddments</title>
-
-<description>
-    <![CDATA[
-    <p>I’ve set up a new small web page I’m calling <a href="https://oddments.brianjon.es">Oddments</a> to collect links to and information about projects I’m working on.</p>
-
-<p>I’m hoping that having a place to collect these things will provide some motivation to keep building them.</p>
-
-<p>I keep bouncing back and forth on the value of having hobbies and pursuits that generate ephemeral products. On the one hand it is the case that the pressure to conceive of any freetime pursuit as something to be connected to a larger project or to be productized or otherwise commodified is a powerful trap. On the other, my life at the moment makes for such infrequent moments of freedom to play that having leisure pursuits that produce lasting products is a nice reminder that I do in fact have hobbies.</p>
-
-<p>So here is <a href="https://oddments.brianjone.s">Oddments</a>. Let’s hope it keeps growing.</p>
-
-    
-    ]]>
-</description>
-<pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
-<link>http://tinaja.computer/2019/01/26/oddments.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/01/26/oddments.html</guid>
 </item>
 
 </channel>
