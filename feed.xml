@@ -3,8 +3,29 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://tinaja.computer</link>
+<link>http://localhost:4000</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Coupland on biography and archival abundance</title>
+
+<description>
+    <![CDATA[
+    <blockquote>
+  <p>While I was in Hebden Bridge, I looked out of the window of a coffee shop one Friday at lunchtime, and saw a small crowd of schoolchildren on a climate protest. Sensitized by being in England, it dawned on me that what I was seeing was a rebellion of the natives against the colonizers – the inhabitants of the future marshaling resistance to the colonizing present and to the extraction of the resources that they will need to thrive.</p>
+
+  <p>– <cite>From Deb Chachra’s Metafoundry newsletter, <a href="https://tinyletter.com/metafoundry/letters/metafoundry-72-terraforma-incognita">installment 72</a></cite></p>
+</blockquote>
+
+<p>I haven’t yet decided whether to take this framing literally or metaphorically, but either way it struck me as apt. I am glad that Deb has returned to writing her newsletter after some downtime.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Tue, 25 Jun 2019 10:47:01 +0200</pubDate>
+<link>http://localhost:4000/2019/06/25/climate-protest.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/06/25/climate-protest.html</guid>
+</item>
 
 <item>
 <title>Building a Gatsby Site with Leaflet Maps</title>
@@ -85,9 +106,9 @@
     
     ]]>
 </description>
-<pubDate>Thu, 20 Jun 2019 06:31:00 +0000</pubDate>
-<link>http://tinaja.computer/2019/06/20/leaflet-in-gatsby.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/06/20/leaflet-in-gatsby.html</guid>
+<pubDate>Thu, 20 Jun 2019 08:31:00 +0200</pubDate>
+<link>http://localhost:4000/2019/06/20/leaflet-in-gatsby.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/06/20/leaflet-in-gatsby.html</guid>
 </item>
 
 <item>
@@ -170,9 +191,9 @@
     
     ]]>
 </description>
-<pubDate>Wed, 05 Jun 2019 08:15:00 +0000</pubDate>
-<link>http://tinaja.computer/2019/06/05/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/06/05/recent-reading.html</guid>
+<pubDate>Wed, 05 Jun 2019 10:15:00 +0200</pubDate>
+<link>http://localhost:4000/2019/06/05/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/06/05/recent-reading.html</guid>
 </item>
 
 <item>
@@ -255,9 +276,9 @@
     
     ]]>
 </description>
-<pubDate>Sat, 11 May 2019 03:33:00 +0000</pubDate>
-<link>http://tinaja.computer/2019/05/11/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/05/11/recent-reading.html</guid>
+<pubDate>Sat, 11 May 2019 05:33:00 +0200</pubDate>
+<link>http://localhost:4000/2019/05/11/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/05/11/recent-reading.html</guid>
 </item>
 
 <item>
@@ -320,9 +341,9 @@
     
     ]]>
 </description>
-<pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
-<link>http://tinaja.computer/2019/04/27/ipad-web-dev.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/04/27/ipad-web-dev.html</guid>
+<pubDate>Sat, 27 Apr 2019 00:00:00 +0200</pubDate>
+<link>http://localhost:4000/2019/04/27/ipad-web-dev.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/04/27/ipad-web-dev.html</guid>
 </item>
 
 <item>
@@ -343,9 +364,9 @@
     
     ]]>
 </description>
-<pubDate>Fri, 19 Apr 2019 09:47:01 +0000</pubDate>
-<link>http://tinaja.computer/2019/04/19/biography.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/04/19/biography.html</guid>
+<pubDate>Fri, 19 Apr 2019 11:47:01 +0200</pubDate>
+<link>http://localhost:4000/2019/04/19/biography.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/04/19/biography.html</guid>
 </item>
 
 <item>
@@ -428,9 +449,9 @@
     
     ]]>
 </description>
-<pubDate>Mon, 15 Apr 2019 08:33:00 +0000</pubDate>
-<link>http://tinaja.computer/2019/04/15/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/04/15/recent-reading.html</guid>
+<pubDate>Mon, 15 Apr 2019 10:33:00 +0200</pubDate>
+<link>http://localhost:4000/2019/04/15/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/04/15/recent-reading.html</guid>
 </item>
 
 <item>
@@ -453,9 +474,9 @@
     
     ]]>
 </description>
-<pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
-<link>http://tinaja.computer/2019/03/28/just-use-a-database.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/03/28/just-use-a-database.html</guid>
+<pubDate>Thu, 28 Mar 2019 00:00:00 +0100</pubDate>
+<link>http://localhost:4000/2019/03/28/just-use-a-database.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/03/28/just-use-a-database.html</guid>
 </item>
 
 <item>
@@ -474,9 +495,9 @@
     
     ]]>
 </description>
-<pubDate>Thu, 14 Mar 2019 07:31:00 +0000</pubDate>
-<link>http://tinaja.computer/2019/03/14/escape.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/03/14/escape.html</guid>
+<pubDate>Thu, 14 Mar 2019 08:31:00 +0100</pubDate>
+<link>http://localhost:4000/2019/03/14/escape.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/03/14/escape.html</guid>
 </item>
 
 <item>
@@ -529,91 +550,9 @@
     
     ]]>
 </description>
-<pubDate>Thu, 14 Mar 2019 07:13:00 +0000</pubDate>
-<link>http://tinaja.computer/2019/03/14/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/03/14/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Cartels, Baking, and Kleptocracy</title>
-
-<description>
-    <![CDATA[
-    
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B07FHLQ2DD/ref=nosim/latin031-20">Michael Lewis. <i>The Coming Storm</i>. Audiobook. Seattle, WA: Audible Studios, 2018.</a>
-      </span>
-
-        
-          <span class="note"><p>I appreciate Michael Lewis’s Trump-era focus on the centrality of bureaucratic competence (or lack thereof) to American successes and the unfortunate lack of public awareness of its dysfunction in the shadow of the Trump administrations more sensational failures, embarrassments, and abuses. The primary focus here has the particularly Trumpian theme of kleptocracy at the National Weather Service. It’s material that has now been made available elsewhere, but in this iteration was produced as an Audible-exclusive audiobook. Lewis reads his own work, and his natural storyteller’s gift comes through as well in his voice and delivery as it does in his writing.</p>
-</span>
-        <span class="links">
-      <a href="http://www.amazon.com/exec/obidos/asin/B07FHLQ2DD/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://worldcat.org/oclc/"><i>Full Stack React</i>. San Francisco, CA: Fullstack.io, 2018.</a>
-      </span>
-
-        
-          <span class="note"><p>This e-book is a good, pragmatic walkthrough for building a web app with React, Node.js, and GraphQL. The focus is on React, and the pacing is the best in the sections most-focused on React. To the (limited) extent that there is some more theoretical material explaining the practical examples, this is similarly the most useful in the React sections. Working with this book has been a worthwhile exercise, but the most instructional value here is definitely dedicated to React and the sections on the rest of the stack will probably need to be supplemented from elsewhere</p>
-</span>
-        <span class="links">
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/B07BLGZVZX/ref=nosim/latin031-20">Linda Andersson. <i>Homemade Bread</i>. New York: Skyhorse Publishing, 2018.</a>
-      </span>
-
-        
-          <span class="note"><p>Andersson is a Swedish food journalist who seems to focus on practical home baker oriented recipes. This English translation of her book is very direct in that there are quantities that appear in pretty unusual quantities in terms of imperial measurements. I might have preferred to have the original metric measurements so that I could do conversions myself or not as convenient. The recipes themselves, though, are very useful. Lots of Swedish basics I will enjoy experimenting with and some good practical advice on how to adjust basic recipes to personal tastes. In my experience, baking books either pursue a theoretical that is only useful for relatively advanced bakers or present basic recipes with no elaboration on how they work and how they might be altered. Andersson’s more open approach to instruction at a technical level appropriate to baking simple family-oriented basics has been very useful to me.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/1000049545">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/B07BLGZVZX/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/0525436510/ref=nosim/latin031-20">Don Winslow. <i>The Cartel</i>. New York: Vintage Crime, 2017.</a>
-      </span>
-
-        
-          <span class="note"><p>We received this book as a Christmas gift from a friend who confessed it had wrecked his winter grading schedule. It works on an impressive scale, exploring the fallout of the U.S. war on drugs in Mexico over the course of about 15 years and from Guatemala to Matamoros to San Diego, but with the heart of its narrative in Juaréz at the peak of the violence there. It’s both engrossing and appalling in its action sequences while managing to be mostly sensitive to the horrible human consequences of U.S.-driven anti-drug policy. It is fundamentally an entertainment, but its political engagement feels authentic.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/1008999844">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/0525436510/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Thu, 28 Feb 2019 11:30:00 +0000</pubDate>
-<link>http://tinaja.computer/2019/02/28/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/02/28/recent-reading.html</guid>
+<pubDate>Thu, 14 Mar 2019 08:13:00 +0100</pubDate>
+<link>http://localhost:4000/2019/03/14/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/03/14/recent-reading.html</guid>
 </item>
 
 </channel>
