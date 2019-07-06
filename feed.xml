@@ -3,8 +3,123 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://localhost:4000</link>
+<link>http://tinaja.computer</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Recent Reading: Jews with Swords and Miners Learning JavaScript</title>
+
+<description>
+    <![CDATA[
+    
+
+    
+        
+
+
+  <div class="clear-block"></div>
+  <h3>Books</h3>
+  <ul class="reading-list">
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0307744639/ref=nosim/latin031-20">Martin Walker. <i>Black Diamond</i>. New York: Vintage Books, 2011.</a>
+      </span>
+
+        
+          <span class="note"><p>These are all available to me as e-books through my library, so I’ve made them my summer indulgence reading. In the third installment of the series, the stakes and world of these stories has expanded a bit. On the one hand, I find the engagement with French colonial history in Vietnam and contemporary global economic and political pressures compelling. On the other, I hope the dynamics of the small village atmosphere won’t be disappearing.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/1000505927">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0307744639/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0307744647/ref=nosim/latin031-20">Martin Walker. <i>The Crowded Grave</i>. New York: Vintage Books, 2013.</a>
+      </span>
+
+        
+          <span class="note"><p>This is the fourth installment of the Bruno, Chief of Police series. It is another case of issues of the wider world disrupting village life—international students, Basque separatists, and an international diplomatic summit all feature prominently in the plot—but most of the action feels small in the way that I appreciate about this series. There is a bit of James Bond action at the end that I could do without.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/924409415">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0307744647/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0345804791/ref=nosim/latin031-20">Martin Walker. <i>The Devil’s Cave</i>. New York: Vintage Books, 2014.</a>
+      </span>
+
+        
+          <span class="note"><p>The fifth installment of the Bruno, Chief of Police series shrinks things back down to the village scale, but brings in the occult as the special angle for this episode. You can feel the series settling into the tropes that work. The cast of characters from around the village get reliable face time and play their parts. Bruno’s cooking and interest in food are now familiar. The action stakes continue to be higher than in the earliest installments of the series, but somehow not as elevated as the ending that turned me off a bit in the fourth book. This will continue to be summer reading, and next week I’ll be doing my summer reading in the French Alps.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/855581151">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0345804791/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0735220565/ref=nosim/latin031-20">Clive Thompson. <i>Coders: The Making of a New Tribe and the Remaking of the World</i>. New York: Penguin Press, 2019.</a>
+      </span>
+
+        
+          <span class="note"><p>Thompson has written an ethnography of computer programmers that is very much of this moment. In contrast to, for example, Steven Levy’s <em>Hackers</em> which is now over thirty years old, there is very little celebration or hagiography here. At the same time, it is not a sensational teardown of Silicon Valley culture either. It is more a lamentation of how the participants in the utopian spirit of the 90’s failed to anticipate the pitfalls of what they were creating as a result of the culture created in the spaces (offline and online) where these coders gathered and by the epistemologies that coding practice maps onto the perspective one brings into other parts of life. In this sense, it reminds me of Paul Ford’s <a href="https://www.wired.com/story/why-we-love-tech-defense-difficult-industry/">recent essay</a> in WIRED about his struggle to remain enthusiastic about the tech industry in its hegemonic phase. The book finishes in an exploration of how the vocation of coding is changing—both (fitfully) expanding its ranks but also losing some of its prestige. As it becomes a trade that can secure a position in the middle class, how do we guarantee generalized access? It seems apparent that some of the same bad instincts shape the ‘solutions’ to these problem as have shaped previous eras.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/1097589286">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0735220565/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/1101972149/ref=nosim/latin031-20">David Auerbach. <i>Bitwise: A Life in Code</i>. New York: Pantheon Books, 2018.</a>
+      </span>
+
+        
+          <span class="note"><p>This book lies somewhere between memoir and essay collection and explores both Auerbach’s personal relationship to technology and some cultural history of our relationship to data and algorithmic problem solving in the late twentieth and early twenty first centuries. The idiosyncratic form of the memoir allows Auerbach to make personal juxtapositions between, for example, psychiatric profiles developed in the context of the DSM and character designs and storytelling based on the quantification tables of the Dungeons &amp; Dragons rules set.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/1048357566">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/1101972149/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+      <li>
+        <span class="citation">
+      <a href="http://www.amazon.com/exec/obidos/asin/0345502078/ref=nosim/latin031-20">Michael Chabon. <i>Gentlemen of the Road</i>. New York: Del Rey/Ballantine Books, 2008.</a>
+      </span>
+
+        
+          <span class="note"><p>This was a fun episodic adventure set in the medieval Khazar Khaganate between the Black and Caspian Seas in which two bandits, a Frankish physician and an Abyssinian soldier, become involved in a revenge plot to overthrow a local lord. It was originally published serially in <em>The New York Times Magazine</em> and that format suits its swashbuckling rhythm well. Chabon has clearly read broadly in romantic adventures, and I enjoyed the confidence with which a writer in such control of his tools engaged with the tropes of the genre.</p>
+</span>
+        <span class="links">
+      <a href="http://worldcat.org/oclc/433052954">WorldCat &raquo;</a>
+      <a href="http://www.amazon.com/exec/obidos/asin/0345502078/ref=nosim/latin031-20">Amazon &raquo;</a>
+      </span>
+
+      </li>
+    
+  </ul>
+
+    
+    ]]>
+</description>
+<pubDate>Sat, 06 Jul 2019 08:27:01 +0200</pubDate>
+<link>http://tinaja.computer/2019/07/06/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/07/06/recent-reading.html</guid>
+</item>
 
 <item>
 <title>Coupland on biography and archival abundance</title>
@@ -23,8 +138,8 @@
     ]]>
 </description>
 <pubDate>Tue, 25 Jun 2019 10:47:01 +0200</pubDate>
-<link>http://localhost:4000/2019/06/25/climate-protest.html</link>
-<guid isPermaLink="true">http://localhost:4000/2019/06/25/climate-protest.html</guid>
+<link>http://tinaja.computer/2019/06/25/climate-protest.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/06/25/climate-protest.html</guid>
 </item>
 
 <item>
@@ -107,8 +222,8 @@
     ]]>
 </description>
 <pubDate>Thu, 20 Jun 2019 08:31:00 +0200</pubDate>
-<link>http://localhost:4000/2019/06/20/leaflet-in-gatsby.html</link>
-<guid isPermaLink="true">http://localhost:4000/2019/06/20/leaflet-in-gatsby.html</guid>
+<link>http://tinaja.computer/2019/06/20/leaflet-in-gatsby.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/06/20/leaflet-in-gatsby.html</guid>
 </item>
 
 <item>
@@ -192,8 +307,8 @@
     ]]>
 </description>
 <pubDate>Wed, 05 Jun 2019 10:15:00 +0200</pubDate>
-<link>http://localhost:4000/2019/06/05/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2019/06/05/recent-reading.html</guid>
+<link>http://tinaja.computer/2019/06/05/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/06/05/recent-reading.html</guid>
 </item>
 
 <item>
@@ -277,8 +392,8 @@
     ]]>
 </description>
 <pubDate>Sat, 11 May 2019 05:33:00 +0200</pubDate>
-<link>http://localhost:4000/2019/05/11/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2019/05/11/recent-reading.html</guid>
+<link>http://tinaja.computer/2019/05/11/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/05/11/recent-reading.html</guid>
 </item>
 
 <item>
@@ -342,8 +457,8 @@
     ]]>
 </description>
 <pubDate>Sat, 27 Apr 2019 00:00:00 +0200</pubDate>
-<link>http://localhost:4000/2019/04/27/ipad-web-dev.html</link>
-<guid isPermaLink="true">http://localhost:4000/2019/04/27/ipad-web-dev.html</guid>
+<link>http://tinaja.computer/2019/04/27/ipad-web-dev.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/04/27/ipad-web-dev.html</guid>
 </item>
 
 <item>
@@ -365,8 +480,8 @@
     ]]>
 </description>
 <pubDate>Fri, 19 Apr 2019 11:47:01 +0200</pubDate>
-<link>http://localhost:4000/2019/04/19/biography.html</link>
-<guid isPermaLink="true">http://localhost:4000/2019/04/19/biography.html</guid>
+<link>http://tinaja.computer/2019/04/19/biography.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/04/19/biography.html</guid>
 </item>
 
 <item>
@@ -450,8 +565,8 @@
     ]]>
 </description>
 <pubDate>Mon, 15 Apr 2019 10:33:00 +0200</pubDate>
-<link>http://localhost:4000/2019/04/15/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2019/04/15/recent-reading.html</guid>
+<link>http://tinaja.computer/2019/04/15/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/04/15/recent-reading.html</guid>
 </item>
 
 <item>
@@ -475,8 +590,8 @@
     ]]>
 </description>
 <pubDate>Thu, 28 Mar 2019 00:00:00 +0100</pubDate>
-<link>http://localhost:4000/2019/03/28/just-use-a-database.html</link>
-<guid isPermaLink="true">http://localhost:4000/2019/03/28/just-use-a-database.html</guid>
+<link>http://tinaja.computer/2019/03/28/just-use-a-database.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/03/28/just-use-a-database.html</guid>
 </item>
 
 <item>
@@ -496,63 +611,8 @@
     ]]>
 </description>
 <pubDate>Thu, 14 Mar 2019 08:31:00 +0100</pubDate>
-<link>http://localhost:4000/2019/03/14/escape.html</link>
-<guid isPermaLink="true">http://localhost:4000/2019/03/14/escape.html</guid>
-</item>
-
-<item>
-<title>Recent Reading: Surfing Cops and Imaginary Places</title>
-
-<description>
-    <![CDATA[
-    
-
-    
-        
-
-
-  <div class="clear-block"></div>
-  <h3>Books</h3>
-  <ul class="reading-list">
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/0307953890/ref=nosim/latin031-20">Jay Caspian Kang. <i>The Dead Do Not Improve</i>. New York: Hogarth, 2012.</a>
-      </span>
-
-        
-          <span class="note"><p>I have a particular affinity for California outsider detective characters, so even when I thought that was all that was going on here, I was excited for it. I like Kang’s cynical sense of humor, and we’re of similar ages, tastes, and worldviews as far as I can tell from what I’ve seen of him in media (the book’s title is a Silver Jews reference, after all). I was pleasantly surprised that there is more here than just the detective story. The critiques of Bay Area- and Silicon Valley-facilitated celebrity and attention culture and limp liberalism that today may feel a little obvious were prescient, but no less true, when the book came out. Conversely, the concern with mass violence is very much of its era, but unfortunately no less important today. The book is simultaneously a page-turner and a little bit grotesque, which is an unusual combination.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/802338219">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/0307953890/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-      <li>
-        <span class="citation">
-      <a href="http://www.amazon.com/exec/obidos/asin/1635061539/ref=nosim/latin031-20">Andrew Caldecott. <i>Rotherweird</i>. London: Jo Fletcher Books, 2018.</a>
-      </span>
-
-        
-          <span class="note"><p>I took a very long time to get through this. I probably should have dropped it as it never turned the corner for me, but the premise kept me waiting to be hooked by it. The setting is a town where the study of history and contact with the outside world are prohibited. I kept waiting for more interesting consequences of this tension to be born out and for the cast of strange characters reminiscent of an English countryside mystery to yield more interest, but the resolution comes instead through magical and fantastical conflict that is simply not my taste. I confess it may have been a mistake that I listened to it as an audiobook instead of reading it. It’s possible that some of the detail I was hoping for would have been apparent if I had had time to sit with it and tease it out, rather than being pulled along at the narrator’s pace.</p>
-</span>
-        <span class="links">
-      <a href="http://worldcat.org/oclc/1050443848">WorldCat &raquo;</a>
-      <a href="http://www.amazon.com/exec/obidos/asin/1635061539/ref=nosim/latin031-20">Amazon &raquo;</a>
-      </span>
-
-      </li>
-    
-  </ul>
-
-    
-    ]]>
-</description>
-<pubDate>Thu, 14 Mar 2019 08:13:00 +0100</pubDate>
-<link>http://localhost:4000/2019/03/14/recent-reading.html</link>
-<guid isPermaLink="true">http://localhost:4000/2019/03/14/recent-reading.html</guid>
+<link>http://tinaja.computer/2019/03/14/escape.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/03/14/escape.html</guid>
 </item>
 
 </channel>
