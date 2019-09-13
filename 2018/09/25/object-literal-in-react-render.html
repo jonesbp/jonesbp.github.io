@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+          <title>Using Object Literals in render() in React ≫ La Tinaja</title>
+        
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feed.tinaja.computer">
+
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+        <meta name="viewport" content="width=device-width">
+
+        <script src="//use.typekit.net/iei2wij.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        
+          <meta name="description" content="A quick example using an object literal for selective content display in React">
+        
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/"><span class="logo icon-tinaja"></span>La Tinaja</a></h1>
+            <div class="links">
+              <a class="extra" href="/">posts</a>
+              <a class="extra" href="/reading">reading</a>
+            </div>
+            <div class="buttons">
+              <a class="button" href="http://brianjon.es" title="About Me">
+                <span class="icon-head"></span>
+                <span class="invisible-text">Foam Garden</span>
+              </a>
+              <a class="button" href="http://foamgarden.com" title="Foam Garden">
+                <span class="icon-fg"></span>
+                <span class="invisible-text">About Me</span>
+              </a>
+            </div>
+          </div>
+
+          
+  
+    <h2><span class="indicator icon-note"></span>Using Object Literals in render() in React</h2>
+  
+  <p class="meta">25 Sep 2018</p>
+
+
+<div class="post tech_note">
+<p>I’ve been reading the <a href="https://www.fullstackreact.com/">Full Stack React</a> book and came across this neat trick that had never occurred to me before for whatever reason.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{{</span>
+    <span class="nl">SAVING</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Saving…'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="nx">disabled</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nx">SUCCESS</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Saved!'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="nx">disabled</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nx">ERROR</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Save Failed - Retry?'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nx">READY</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Submit'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="o">/&gt;</span>
+<span class="p">}[</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">_saveStatus</span><span class="p">]}</span>
+</code></pre></div></div>
+
+<p>There’s a flag set in the state variable <code class="highlighter-rouge">_saveStatus</code> that will have one of the following values: <code class="highlighter-rouge">SAVING</code>, <code class="highlighter-rouge">SUCCESS</code>, <code class="highlighter-rouge">ERROR</code>, or <code class="highlighter-rouge">READY</code>. Define an object literal tieing each of four different pieces of content (in this case Submit buttons in different states) to one of these keys, and then select the appropriate piece of content by grabbing the value from the appropriate key in that object.</p>
+
+<p>This immediately struck me as a succinct and useful technique. It had never occurred to me myself. I love it when that happens.</p>
+
+</div>
+
+
+
+
+    <div class="adjacent-posts">
+        
+            <div class="link previous">
+                <a href="/2018/09/24/slow-trailers.html">
+                    &laquo; Slow Trailers
+                </a><br>
+                <span class="small">24 Sep 2018</span>
+            </div>
+        
+
+        
+            <div class="link next">
+                <a href="/2018/09/27/recent-reading.html">
+                    Recent Reading: Murder, Coffee, and Austin &raquo;
+                </a><br>
+                <span class="small">27 Sep 2018</span>
+            </div>
+        
+        <div class="clear-block"></div>
+    </div>
+
+
+
+
+    <div class="other-posts">
+    <h3>Other Tech Notes</h3>
+    <ul>
+    
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+            <li>
+                <a href="/2019/06/20/leaflet-in-gatsby.html">Building a Gatsby Site with Leaflet Maps</a><br>
+                <span class="small">20 Jun 2019</span>
+            </li>
+            
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+            <li>
+                <a href="/2019/03/14/escape.html">Escaping on an iPad with no Esc key</a><br>
+                <span class="small">14 Mar 2019</span>
+            </li>
+            
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+            <li>
+                <a href="/2018/12/04/memory-on-self-hosted-mastodon.html">Tuning Memory for a Self-Hosted Mastodon Instance</a><br>
+                <span class="small">04 Dec 2018</span>
+            </li>
+            
+        
+        
+            
+    </ul>
+</div>
+
+
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                <b>Brian Jones</b><br />
+                <a href="http://brianjon.es">brianjon.es</a><br />
+                <a href="https://twitter.com/jonesbp">twitter.com/jonesbp</a><br />
+                <a href="http://github.com/jonesbp">github.com/jonesbp</a>
+              </p>
+            </div>
+            <div class="contact">
+
+            </div>
+            <div class="contact">
+              <p>
+                <b>Projects</b><br />
+                <a href="http://backlist.cc">Backlist</a><br />
+                <a href="http://foamgarden.com">Foam Garden</a><br />
+                <a href="http://theappendix.net">The Appendix</a>
+              </p>
+            </div>
+            <div>
+              <p class="credits">
+                <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> <a href="/colophon.html">Colophon</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-244154-10', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+        <script async src="https://cdn.simpleanalytics.io/hello.js"></script>
+        <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+    </body>
+</html>
