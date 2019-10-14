@@ -81,7 +81,7 @@
 
 <p>When you open the JSON file, you will see a line that will look something like:</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s2">"client_email"</span><span class="p">:</span> <span class="s2">"test-147@centering-abode-111415.iam.gserviceaccount.com"</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">"</span><span class="s2">client_email</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">test-147@centering-abode-111415.iam.gserviceaccount.com</span><span class="dl">"</span>
 </code></pre></div></div>
 
 <p>You’ll give your new service account access by going to the spreadsheet and using the ‘Share’ button in the upper right to share the spreadsheet with the email address listed on the <code class="highlighter-rouge">"client_email"</code> line.</p>
@@ -123,13 +123,13 @@
         <span class="n">keys</span> <span class="o">=</span> <span class="p">(</span><span class="s">'Artist'</span><span class="p">,</span> <span class="s">'Date'</span><span class="p">,</span> <span class="s">'Venue'</span><span class="p">,</span> <span class="s">'Source'</span><span class="p">,</span>
                 <span class="s">'Notes'</span><span class="p">,</span> <span class="s">'Important'</span><span class="p">,</span> <span class="s">'Ad'</span><span class="p">,</span> <span class="s">'Contributor'</span><span class="p">)</span>
 
-        <span class="c"># Create new Dict with only keys from list (Drop 'Processed')</span>
-        <span class="n">new_row</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">}</span>
+        <span class="c1"># Create new Dict with only keys from list (Drop 'Processed')
+</span>        <span class="n">new_row</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">}</span>
         <span class="n">performances</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_row</span><span class="p">)</span>
 
-        <span class="c"># add 2 to index to skip header row *and* convert from</span>
-        <span class="c"># zero-based indexing to 1-based</span>
-        <span class="n">processed_rows</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="c1"># add 2 to index to skip header row *and* convert from
+</span>        <span class="c1"># zero-based indexing to 1-based
+</span>        <span class="n">processed_rows</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>The <code class="highlighter-rouge">Worksheet</code> model in <code class="highlighter-rouge">gspread</code> has a method <code class="highlighter-rouge">get_all_records()</code> that will give us all of the rows in our sheet. We then iterate through those rows, taking both the row’s index and the data from the row as a <code class="highlighter-rouge">Dict</code> where the keys are the titles of the columns in our spreadsheet.</p>
@@ -142,20 +142,20 @@
 
 <p>First, we output the performance data itself.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Get a timestamp to mark output files uniquely</span>
-<span class="n">ts</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Get a timestamp to mark output files uniquely
+</span><span class="n">ts</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="n">st</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">fromtimestamp</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">Y-</span><span class="si">%</span><span class="s">m-</span><span class="si">%</span><span class="s">d-</span><span class="si">%</span><span class="s">H-</span><span class="si">%</span><span class="s">M-</span><span class="si">%</span><span class="s">S'</span><span class="p">)</span>
 
-<span class="c"># Output JSON for ingested data</span>
-<span class="n">output_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'{}-performances.json'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">st</span><span class="p">),</span> <span class="s">'w'</span><span class="p">)</span>
+<span class="c1"># Output JSON for ingested data
+</span><span class="n">output_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'{}-performances.json'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">st</span><span class="p">),</span> <span class="s">'w'</span><span class="p">)</span>
 <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">performances</span><span class="p">))</span>
 </code></pre></div></div>
 
 <p>And then output the list of row indexes that have been processed in case we need this history to update the Processed status in our spreadsheet manually.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Output row numbers for processed data in case automated</span>
-<span class="c"># spreadsheet update fails</span>
-<span class="n">output_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'{}-processed-rows.json'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">st</span><span class="p">),</span> <span class="s">'w'</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Output row numbers for processed data in case automated
+# spreadsheet update fails
+</span><span class="n">output_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'{}-processed-rows.json'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">st</span><span class="p">),</span> <span class="s">'w'</span><span class="p">)</span>
 <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">processed_rows</span><span class="p">))</span>
 </code></pre></div></div>
 
@@ -205,6 +205,9 @@
     <h3>Other Posts</h3>
     <ul>
     
+    
+        
+        
     
         
         

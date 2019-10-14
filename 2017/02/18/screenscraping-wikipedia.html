@@ -104,43 +104,43 @@
 
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://en.wikipedia.org/wiki/List_of_rivers_of_Europe'</span><span class="p">)</span>
 
-<span class="c"># Give the text of the Wikipedia page to BeautifulSoup and have it</span>
-<span class="c"># parse the HTML into a structured object</span>
-<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
+<span class="c1"># Give the text of the Wikipedia page to BeautifulSoup and have it
+# parse the HTML into a structured object
+</span><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
 
-<span class="c"># I will append a new line for each river to this variable and </span>
-<span class="c"># output all at once at the end</span>
-<span class="n">output</span> <span class="o">=</span> <span class="s">""</span>
+<span class="c1"># I will append a new line for each river to this variable and 
+# output all at once at the end
+</span><span class="n">output</span> <span class="o">=</span> <span class="s">""</span>
 </code></pre></div></div>
 
 <p>I then grab the second table in the page, get a handle for the first row from that table, and use that handle to get a handle to the following row using <code class="highlighter-rouge">find_next_sibling()</code>. This will be the second row in the table—the first row of data I’m interested in.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># The Longest Rivers list is the second table on the page</span>
-<span class="n">long_rivers_table</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'table'</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># The Longest Rivers list is the second table on the page
+</span><span class="n">long_rivers_table</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'table'</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="n">first_row</span> <span class="o">=</span> <span class="n">long_rivers_table</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'tr'</span><span class="p">)</span>
 
-<span class="c"># Skip the first row of the table…</span>
-<span class="n">row</span> <span class="o">=</span> <span class="n">first_row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
+<span class="c1"># Skip the first row of the table…
+</span><span class="n">row</span> <span class="o">=</span> <span class="n">first_row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
 </code></pre></div></div>
 
 <p>I will use a <code class="highlighter-rouge">while</code> loop to step through the remaining rows of the table. While my <code class="highlighter-rouge">row</code> variable is not <code class="highlighter-rouge">None</code>, I’ll look for the first link in the first cell of the row and grab the information I’m interested in.</p>
 
 <p>After I’ve output that information in my desired format, I set my <code class="highlighter-rouge">row</code> variable to its next sibling. If it has one, the loop will continue. If it does not, <code class="highlighter-rouge">row</code> will be <code class="highlighter-rouge">None</code> and my loop will end.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># …and step through the remaining rows</span>
-<span class="k">while</span> <span class="n">row</span><span class="p">:</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># …and step through the remaining rows
+</span><span class="k">while</span> <span class="n">row</span><span class="p">:</span>
     <span class="n">first_cell</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'td'</span><span class="p">)</span>
     <span class="n">link</span> <span class="o">=</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'a'</span><span class="p">)</span>
     
-    <span class="c"># Wikipedia uses relative URLs so I need to put the right</span>
-    <span class="c"># stem on them for them to work as absolute URLs.</span>
-    <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
+    <span class="c1"># Wikipedia uses relative URLs so I need to put the right
+</span>    <span class="c1"># stem on them for them to work as absolute URLs.
+</span>    <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
     <span class="n">label</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
   
-    <span class="c"># Append a new line to my output with a new list item formatted</span>
-    <span class="c"># as a Markdown link</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- [{}]({})</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
+    <span class="c1"># Append a new line to my output with a new list item formatted
+</span>    <span class="c1"># as a Markdown link
+</span>    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- [{}]({})</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
     
     <span class="n">row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
 </code></pre></div></div>
@@ -158,14 +158,14 @@
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">link</span> <span class="o">=</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'a'</span><span class="p">)</span>
     
-  <span class="c"># Wikipedia uses relative URLs so I need to put the right</span>
-    <span class="c"># stem on them for them to work as absolute URLs.</span>
-    <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
+  <span class="c1"># Wikipedia uses relative URLs so I need to put the right
+</span>    <span class="c1"># stem on them for them to work as absolute URLs.
+</span>    <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">link</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
     <span class="n">label</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
   
-    <span class="c"># Append a new line to my output with a new list item formatted</span>
-    <span class="c"># as a Markdown link</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- [{}]({})</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
+    <span class="c1"># Append a new line to my output with a new list item formatted
+</span>    <span class="c1"># as a Markdown link
+</span>    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- [{}]({})</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>I still want Markdown-formatted output, so I can’t just copy over the contents of the cell directly.</p>
@@ -176,30 +176,30 @@
 
 <p>Now each run through my loop looks like this:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">row_output</span> <span class="o">=</span> <span class="s">""</span> <span class="c"># Reset row_output</span>
-    
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">row_output</span> <span class="o">=</span> <span class="s">""</span> <span class="c1"># Reset row_output
+</span>    
 <span class="n">first_cell</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'td'</span><span class="p">)</span>
     
-<span class="c"># Step through the contents of the first cell</span>
-<span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">contents</span><span class="p">:</span>
-    <span class="c"># Check to see whether this element of the list is a string instance</span>
-    <span class="c"># in order to determine whether we’re dealing with plain text or a link</span>
-    
-    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span> <span class="c"># This node of the document is just plain text</span>
-        <span class="c"># Append the text directly to row_output</span>
-        <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="n">el</span>
+<span class="c1"># Step through the contents of the first cell
+</span><span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">contents</span><span class="p">:</span>
+    <span class="c1"># Check to see whether this element of the list is a string instance
+</span>    <span class="c1"># in order to determine whether we’re dealing with plain text or a link
+</span>    
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span> <span class="c1"># This node of the document is just plain text
+</span>        <span class="c1"># Append the text directly to row_output
+</span>        <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="n">el</span>
         
-    <span class="k">else</span><span class="p">:</span> <span class="c"># This node of the document is a link</span>
-        <span class="c"># Wikipedia uses relative URLs so I need to put the right</span>
-        <span class="c"># stem on them for them to work as absolute URLs.</span>
-        <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c1"># This node of the document is a link
+</span>        <span class="c1"># Wikipedia uses relative URLs so I need to put the right
+</span>        <span class="c1"># stem on them for them to work as absolute URLs.
+</span>        <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
         <span class="n">label</span> <span class="o">=</span> <span class="n">el</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
 
-        <span class="c"># Append a Markdown-formatted link to row_output</span>
-        <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="s">"[{}]({})"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
+        <span class="c1"># Append a Markdown-formatted link to row_output
+</span>        <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="s">"[{}]({})"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
 
-<span class="c"># Append the compiled output for this row to the final output for the script</span>
-<span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- {}</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">row_output</span><span class="p">)</span>
+<span class="c1"># Append the compiled output for this row to the final output for the script
+</span><span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- {}</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">row_output</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>It’s a little more complicated, but much more robust in handling the few unusual elements in the list. This list wasn’t necessarily long enough that I absolutely needed to automate handling this small handful of exceptions, but with a larger corpus it would have been helpful and at least this way I know I won’t miss any while editing manually.</p>
@@ -213,51 +213,51 @@
 
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://en.wikipedia.org/wiki/List_of_rivers_of_Europe'</span><span class="p">)</span>
 
-<span class="c"># Give the text of the Wikipedia page to BeautifulSoup and have it</span>
-<span class="c"># parse the HTML into a structured object</span>
-<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
+<span class="c1"># Give the text of the Wikipedia page to BeautifulSoup and have it
+# parse the HTML into a structured object
+</span><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
 
-<span class="c"># I will append a new line for each river to this variable and </span>
-<span class="c"># output all at once at the end</span>
-<span class="n">output</span> <span class="o">=</span> <span class="s">""</span>
+<span class="c1"># I will append a new line for each river to this variable and 
+# output all at once at the end
+</span><span class="n">output</span> <span class="o">=</span> <span class="s">""</span>
 
-<span class="c"># The Longest Rivers list is the second table on the page</span>
-<span class="n">long_rivers_table</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'table'</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+<span class="c1"># The Longest Rivers list is the second table on the page
+</span><span class="n">long_rivers_table</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">'table'</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="n">first_row</span> <span class="o">=</span> <span class="n">long_rivers_table</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'tr'</span><span class="p">)</span>
 
-<span class="c"># Skip the first row of the table…</span>
-<span class="n">row</span> <span class="o">=</span> <span class="n">first_row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
+<span class="c1"># Skip the first row of the table…
+</span><span class="n">row</span> <span class="o">=</span> <span class="n">first_row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
 
-<span class="c"># …and step through the remaining rows</span>
-<span class="k">while</span> <span class="n">row</span><span class="p">:</span>
-    <span class="n">row_output</span> <span class="o">=</span> <span class="s">""</span> <span class="c"># Reset row_output</span>
-    
+<span class="c1"># …and step through the remaining rows
+</span><span class="k">while</span> <span class="n">row</span><span class="p">:</span>
+    <span class="n">row_output</span> <span class="o">=</span> <span class="s">""</span> <span class="c1"># Reset row_output
+</span>    
     <span class="n">first_cell</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">'td'</span><span class="p">)</span>
     
-    <span class="c"># Step through the contents of the first cell</span>
-    <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">contents</span><span class="p">:</span>
-        <span class="c"># Check to see whether this element of the list is a string instance</span>
-        <span class="c"># in order to determine whether we’re dealing with plain text or a link</span>
-
-        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span> <span class="c"># This node of the document is just plain text</span>
-            <span class="c"># Append the text directly to row_output</span>
-            <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="n">el</span>
+    <span class="c1"># Step through the contents of the first cell
+</span>    <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">first_cell</span><span class="o">.</span><span class="n">contents</span><span class="p">:</span>
+        <span class="c1"># Check to see whether this element of the list is a string instance
+</span>        <span class="c1"># in order to determine whether we’re dealing with plain text or a link
+</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span> <span class="c1"># This node of the document is just plain text
+</span>            <span class="c1"># Append the text directly to row_output
+</span>            <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="n">el</span>
             
-        <span class="k">else</span><span class="p">:</span> <span class="c"># This node of the document is a link</span>
-            <span class="c"># Wikipedia uses relative URLs so I need to put the right</span>
-            <span class="c"># stem on them for them to work as absolute URLs.</span>
-            <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span> <span class="c1"># This node of the document is a link
+</span>            <span class="c1"># Wikipedia uses relative URLs so I need to put the right
+</span>            <span class="c1"># stem on them for them to work as absolute URLs.
+</span>            <span class="n">href</span> <span class="o">=</span> <span class="s">"https://en.wikipedia.org{}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'href'</span><span class="p">))</span>
             <span class="n">label</span> <span class="o">=</span> <span class="n">el</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
             
-            <span class="c"># Append a Markdown-formatted link to row_output</span>
-            <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="s">"[{}]({})"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
+            <span class="c1"># Append a Markdown-formatted link to row_output
+</span>            <span class="n">row_output</span> <span class="o">=</span> <span class="n">row_output</span> <span class="o">+</span> <span class="s">"[{}]({})"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
         
-    <span class="c"># Append the compiled output for this row to the final output for the script</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- {}</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">row_output</span><span class="p">)</span>
+    <span class="c1"># Append the compiled output for this row to the final output for the script
+</span>    <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"- {}</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">row_output</span><span class="p">)</span>
     
-    <span class="c"># Get the next row if it exists</span>
-    <span class="n">row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
+    <span class="c1"># Get the next row if it exists
+</span>    <span class="n">row</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">()</span>
 
 <span class="k">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
 </code></pre></div></div>
@@ -280,10 +280,10 @@
 
         
             <div class="link next">
-                <a href="/2017/02/27/recent-reading.html">
+                <a href="/2017/02/28/recent-reading.html">
                     Recent Reading: Futurists and Brotzeit &raquo;
                 </a><br>
-                <span class="small">27 Feb 2017</span>
+                <span class="small">28 Feb 2017</span>
             </div>
         
         <div class="clear-block"></div>
@@ -296,6 +296,9 @@
     <h3>Other Posts</h3>
     <ul>
     
+    
+        
+        
     
         
         

@@ -58,10 +58,10 @@
 <p>I’ve been reading the <a href="https://www.fullstackreact.com/">Full Stack React</a> book and came across this neat trick that had never occurred to me before for whatever reason.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{{</span>
-    <span class="nl">SAVING</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Saving…'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="nx">disabled</span> <span class="o">/&gt;</span><span class="p">,</span>
-    <span class="nx">SUCCESS</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Saved!'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="nx">disabled</span> <span class="o">/&gt;</span><span class="p">,</span>
-    <span class="nx">ERROR</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Save Failed - Retry?'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="o">/&gt;</span><span class="p">,</span>
-    <span class="nx">READY</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="s1">'Submit'</span> <span class="nx">type</span><span class="o">=</span><span class="s1">'submit'</span> <span class="o">/&gt;</span>
+    <span class="nl">SAVING</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="dl">'</span><span class="s1">Saving…</span><span class="dl">'</span> <span class="nx">type</span><span class="o">=</span><span class="dl">'</span><span class="s1">submit</span><span class="dl">'</span> <span class="nx">disabled</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nx">SUCCESS</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="dl">'</span><span class="s1">Saved!</span><span class="dl">'</span> <span class="nx">type</span><span class="o">=</span><span class="dl">'</span><span class="s1">submit</span><span class="dl">'</span> <span class="nx">disabled</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nx">ERROR</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="dl">'</span><span class="s1">Save Failed - Retry?</span><span class="dl">'</span> <span class="nx">type</span><span class="o">=</span><span class="dl">'</span><span class="s1">submit</span><span class="dl">'</span> <span class="o">/&gt;</span><span class="p">,</span>
+    <span class="nx">READY</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="dl">'</span><span class="s1">Submit</span><span class="dl">'</span> <span class="nx">type</span><span class="o">=</span><span class="dl">'</span><span class="s1">submit</span><span class="dl">'</span> <span class="o">/&gt;</span>
 <span class="p">}[</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">_saveStatus</span><span class="p">]}</span>
 </code></pre></div></div>
 
@@ -102,6 +102,12 @@
     <h3>Other Tech Notes</h3>
     <ul>
     
+    
+        
+        
+    
+        
+        
     
         
         

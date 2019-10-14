@@ -62,15 +62,15 @@
 <p>The fix is to make a check against the <code class="highlighter-rouge">window</code> object in the page’s <code class="highlighter-rouge">render()</code> function before using a <code class="highlighter-rouge">Map</code> component:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="s1">'undefined'</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">undefined</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="p">(</span>
-      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapWrapperRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"map-wrapper"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapWrapperRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">map-wrapper</span><span class="dl">"</span><span class="o">&gt;</span>
          <span class="o">&lt;</span><span class="nb">Map</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapRef</span><span class="p">}</span>
-            <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="na">height</span><span class="p">:</span> <span class="s1">'540px'</span><span class="p">}}</span>
+            <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="na">height</span><span class="p">:</span> <span class="dl">'</span><span class="s1">540px</span><span class="dl">'</span><span class="p">}}</span>
           <span class="o">&gt;</span>
           <span class="o">&lt;</span><span class="nx">TileLayer</span>
-            <span class="nx">url</span><span class="o">=</span><span class="s2">"https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"</span>
-            <span class="nx">attribution</span><span class="o">=</span><span class="s1">'&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;'</span>
+            <span class="nx">url</span><span class="o">=</span><span class="dl">"</span><span class="s2">https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png</span><span class="dl">"</span>
+            <span class="nx">attribution</span><span class="o">=</span><span class="dl">'</span><span class="s1">&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;</span><span class="dl">'</span>
           <span class="o">/&gt;</span>
         <span class="o">&lt;</span><span class="sr">/Map</span><span class="err">&gt;
 </span>      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
@@ -87,14 +87,14 @@
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">return</span> <span class="p">(</span>
-    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapWrapperRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"map-wrapper"</span><span class="o">&gt;</span>
-      <span class="p">{(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="s1">'undefined'</span><span class="p">)</span> <span class="p">?</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapWrapperRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">map-wrapper</span><span class="dl">"</span><span class="o">&gt;</span>
+      <span class="p">{(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">undefined</span><span class="dl">'</span><span class="p">)</span> <span class="p">?</span> <span class="p">(</span>
          <span class="o">&lt;</span><span class="nb">Map</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapRef</span><span class="p">}</span>
-            <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="na">height</span><span class="p">:</span> <span class="s1">'540px'</span><span class="p">}}</span>
+            <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="na">height</span><span class="p">:</span> <span class="dl">'</span><span class="s1">540px</span><span class="dl">'</span><span class="p">}}</span>
           <span class="o">&gt;</span>
           <span class="o">&lt;</span><span class="nx">TileLayer</span>
-            <span class="nx">url</span><span class="o">=</span><span class="s2">"https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"</span>
-            <span class="nx">attribution</span><span class="o">=</span><span class="s1">'&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;'</span>
+            <span class="nx">url</span><span class="o">=</span><span class="dl">"</span><span class="s2">https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png</span><span class="dl">"</span>
+            <span class="nx">attribution</span><span class="o">=</span><span class="dl">'</span><span class="s1">&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;</span><span class="dl">'</span>
           <span class="o">/&gt;</span>
         <span class="o">&lt;</span><span class="sr">/Map</span><span class="err">&gt;
 </span>      <span class="p">)</span> <span class="p">:</span> <span class="kc">null</span><span class="p">}</span>
@@ -109,7 +109,7 @@
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">exports</span><span class="p">.</span><span class="nx">onCreateWebpackConfig</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">stage</span><span class="p">,</span> <span class="nx">rules</span><span class="p">,</span> <span class="nx">loaders</span><span class="p">,</span> <span class="nx">actions</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="k">switch</span> <span class="p">(</span><span class="nx">stage</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">case</span> <span class="s1">'build-html'</span><span class="p">:</span>
+    <span class="k">case</span> <span class="dl">'</span><span class="s1">build-html</span><span class="dl">'</span><span class="p">:</span>
       <span class="nx">actions</span><span class="p">.</span><span class="nx">setWebpackConfig</span><span class="p">({</span>
         <span class="na">module</span><span class="p">:</span> <span class="p">{</span>
           <span class="na">rules</span><span class="p">:</span> <span class="p">[</span>
@@ -159,6 +159,9 @@
     <h3>Other Tech Notes</h3>
     <ul>
     
+    
+        
+        
     
         
         
@@ -243,8 +246,8 @@
     
         
             <li>
-                <a href="/2018/09/25/object-literal-in-react-render.html">Using Object Literals in render() in React</a><br>
-                <span class="small">25 Sep 2018</span>
+                <a href="/2018/09/26/object-literal-in-react-render.html">Using Object Literals in render() in React</a><br>
+                <span class="small">26 Sep 2018</span>
             </li>
             
         

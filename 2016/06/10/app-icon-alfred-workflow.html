@@ -61,9 +61,9 @@
 
 <p>You’ll need to pick a replacement icon in .icns format and store it in a predictable place.<sup id="fnref:icon"><a href="#fn:icon" class="footnote">1</a></sup> Create a new blank workflow in Alfred and create a new <strong>Keyword</strong> input, giving it a keyword (I use ‘st3icon’) and setting it to take no argument. Connect it to a new <strong>Run Script</strong> action and enter the following bash script:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">cp /path/to/new-app-icon.icns /Applications/Sublime<span class="se">\ </span>Text.app/Contents/Resources/Sublime<span class="se">\ </span>Text.icns
-touch /Applications/Sublime<span class="se">\ </span>Text.app
-touch /Applications/Sublime<span class="se">\ </span>Text.app/Contents/Info.plist</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cp</span> /path/to/new-app-icon.icns /Applications/Sublime<span class="se">\ </span>Text.app/Contents/Resources/Sublime<span class="se">\ </span>Text.icns
+<span class="nb">touch</span> /Applications/Sublime<span class="se">\ </span>Text.app
+<span class="nb">touch</span> /Applications/Sublime<span class="se">\ </span>Text.app/Contents/Info.plist</code></pre></figure>
 
 <p>The first line copies the .icns file you’d like to use as your new icon from wherever you’ve stored it (change <code class="highlighter-rouge">/path/to/new-app-icon.icns</code> accordingly) to the Sublime Text app bundle. The next two lines touch the app bundle and its plist to reset the modification timestamp on the app and trigger the system to reload the app’s icon.</p>
 
@@ -110,6 +110,9 @@ touch /Applications/Sublime<span class="se">\ </span>Text.app/Contents/Info.plis
     <h3>Other Tech Notes</h3>
     <ul>
     
+    
+        
+        
     
         
         

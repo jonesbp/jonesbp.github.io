@@ -7,6 +7,27 @@
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Sloan on business and authorship</title>
+
+<description>
+    <![CDATA[
+    <blockquote>
+  <p>I mean: I like art! But I’ve found real satisfaction in this work, too, and I think a lot of people would—people who maybe don’t realize it; who got channeled early into things like law or science or tech. There’s a “full-spectrum-ness” to a small business that’s very satisfying; a real sense, as with books, of authorship.</p>
+
+  <p>– <cite>From Robin Sloan’s Year of the Meteor newsletter, <a href="https://desert.glass">installment 42</a></cite></p>
+</blockquote>
+
+<p>This is Robin talking about his experience with running his <a href="https://fat.gold">Fat Gold</a> olive oil business and is a great distillation of my continued attraction to the multi-faceted nature of projects that are businesses over purely academic or creative projects. There’s an accountability—in a material, tangible sense, rather than a moral or intellectual one—that doesn’t frequently come from other categories of projects.</p>
+
+    
+    ]]>
+</description>
+<pubDate>Mon, 14 Oct 2019 13:47:01 +0000</pubDate>
+<link>http://tinaja.computer/2019/10/14/business-and-authorship.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/10/14/business-and-authorship.html</guid>
+</item>
+
+<item>
 <title>Recent Reading: Climate Change, Ultrarunning, and Videogames</title>
 
 <description>
@@ -161,7 +182,7 @@
     
     ]]>
 </description>
-<pubDate>Fri, 13 Sep 2019 16:21:01 -0400</pubDate>
+<pubDate>Fri, 13 Sep 2019 20:21:01 +0000</pubDate>
 <link>http://tinaja.computer/2019/09/13/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2019/09/13/recent-reading.html</guid>
 </item>
@@ -276,7 +297,7 @@
     
     ]]>
 </description>
-<pubDate>Sat, 06 Jul 2019 02:27:01 -0400</pubDate>
+<pubDate>Sat, 06 Jul 2019 06:27:01 +0000</pubDate>
 <link>http://tinaja.computer/2019/07/06/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2019/07/06/recent-reading.html</guid>
 </item>
@@ -297,7 +318,7 @@
     
     ]]>
 </description>
-<pubDate>Tue, 25 Jun 2019 04:47:01 -0400</pubDate>
+<pubDate>Tue, 25 Jun 2019 08:47:01 +0000</pubDate>
 <link>http://tinaja.computer/2019/06/25/climate-protest.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2019/06/25/climate-protest.html</guid>
 </item>
@@ -314,15 +335,15 @@
 <p>The fix is to make a check against the <code class="highlighter-rouge">window</code> object in the page’s <code class="highlighter-rouge">render()</code> function before using a <code class="highlighter-rouge">Map</code> component:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="s1">'undefined'</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">undefined</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="p">(</span>
-      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapWrapperRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"map-wrapper"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapWrapperRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">map-wrapper</span><span class="dl">"</span><span class="o">&gt;</span>
          <span class="o">&lt;</span><span class="nb">Map</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapRef</span><span class="p">}</span>
-            <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="na">height</span><span class="p">:</span> <span class="s1">'540px'</span><span class="p">}}</span>
+            <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="na">height</span><span class="p">:</span> <span class="dl">'</span><span class="s1">540px</span><span class="dl">'</span><span class="p">}}</span>
           <span class="o">&gt;</span>
           <span class="o">&lt;</span><span class="nx">TileLayer</span>
-            <span class="nx">url</span><span class="o">=</span><span class="s2">"https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"</span>
-            <span class="nx">attribution</span><span class="o">=</span><span class="s1">'&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;'</span>
+            <span class="nx">url</span><span class="o">=</span><span class="dl">"</span><span class="s2">https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png</span><span class="dl">"</span>
+            <span class="nx">attribution</span><span class="o">=</span><span class="dl">'</span><span class="s1">&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;</span><span class="dl">'</span>
           <span class="o">/&gt;</span>
         <span class="o">&lt;</span><span class="sr">/Map</span><span class="err">&gt;
 </span>      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
@@ -339,14 +360,14 @@
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">return</span> <span class="p">(</span>
-    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapWrapperRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"map-wrapper"</span><span class="o">&gt;</span>
-      <span class="p">{(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="s1">'undefined'</span><span class="p">)</span> <span class="p">?</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapWrapperRef</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">map-wrapper</span><span class="dl">"</span><span class="o">&gt;</span>
+      <span class="p">{(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">undefined</span><span class="dl">'</span><span class="p">)</span> <span class="p">?</span> <span class="p">(</span>
          <span class="o">&lt;</span><span class="nb">Map</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">mapRef</span><span class="p">}</span>
-            <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="na">height</span><span class="p">:</span> <span class="s1">'540px'</span><span class="p">}}</span>
+            <span class="nx">style</span><span class="o">=</span><span class="p">{{</span><span class="na">height</span><span class="p">:</span> <span class="dl">'</span><span class="s1">540px</span><span class="dl">'</span><span class="p">}}</span>
           <span class="o">&gt;</span>
           <span class="o">&lt;</span><span class="nx">TileLayer</span>
-            <span class="nx">url</span><span class="o">=</span><span class="s2">"https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"</span>
-            <span class="nx">attribution</span><span class="o">=</span><span class="s1">'&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;'</span>
+            <span class="nx">url</span><span class="o">=</span><span class="dl">"</span><span class="s2">https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png</span><span class="dl">"</span>
+            <span class="nx">attribution</span><span class="o">=</span><span class="dl">'</span><span class="s1">&amp;copy; &lt;a href="http://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt;</span><span class="dl">'</span>
           <span class="o">/&gt;</span>
         <span class="o">&lt;</span><span class="sr">/Map</span><span class="err">&gt;
 </span>      <span class="p">)</span> <span class="p">:</span> <span class="kc">null</span><span class="p">}</span>
@@ -361,7 +382,7 @@
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">exports</span><span class="p">.</span><span class="nx">onCreateWebpackConfig</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">stage</span><span class="p">,</span> <span class="nx">rules</span><span class="p">,</span> <span class="nx">loaders</span><span class="p">,</span> <span class="nx">actions</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="k">switch</span> <span class="p">(</span><span class="nx">stage</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">case</span> <span class="s1">'build-html'</span><span class="p">:</span>
+    <span class="k">case</span> <span class="dl">'</span><span class="s1">build-html</span><span class="dl">'</span><span class="p">:</span>
       <span class="nx">actions</span><span class="p">.</span><span class="nx">setWebpackConfig</span><span class="p">({</span>
         <span class="na">module</span><span class="p">:</span> <span class="p">{</span>
           <span class="na">rules</span><span class="p">:</span> <span class="p">[</span>
@@ -381,7 +402,7 @@
     
     ]]>
 </description>
-<pubDate>Thu, 20 Jun 2019 02:31:00 -0400</pubDate>
+<pubDate>Thu, 20 Jun 2019 06:31:00 +0000</pubDate>
 <link>http://tinaja.computer/2019/06/20/leaflet-in-gatsby.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2019/06/20/leaflet-in-gatsby.html</guid>
 </item>
@@ -466,7 +487,7 @@
     
     ]]>
 </description>
-<pubDate>Wed, 05 Jun 2019 04:15:00 -0400</pubDate>
+<pubDate>Wed, 05 Jun 2019 08:15:00 +0000</pubDate>
 <link>http://tinaja.computer/2019/06/05/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2019/06/05/recent-reading.html</guid>
 </item>
@@ -551,9 +572,9 @@
     
     ]]>
 </description>
-<pubDate>Fri, 10 May 2019 23:33:00 -0400</pubDate>
-<link>http://tinaja.computer/2019/05/10/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/05/10/recent-reading.html</guid>
+<pubDate>Sat, 11 May 2019 03:33:00 +0000</pubDate>
+<link>http://tinaja.computer/2019/05/11/recent-reading.html</link>
+<guid isPermaLink="true">http://tinaja.computer/2019/05/11/recent-reading.html</guid>
 </item>
 
 <item>
@@ -616,7 +637,7 @@
     
     ]]>
 </description>
-<pubDate>Sat, 27 Apr 2019 00:00:00 -0400</pubDate>
+<pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
 <link>http://tinaja.computer/2019/04/27/ipad-web-dev.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2019/04/27/ipad-web-dev.html</guid>
 </item>
@@ -639,7 +660,7 @@
     
     ]]>
 </description>
-<pubDate>Fri, 19 Apr 2019 05:47:01 -0400</pubDate>
+<pubDate>Fri, 19 Apr 2019 09:47:01 +0000</pubDate>
 <link>http://tinaja.computer/2019/04/19/biography.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2019/04/19/biography.html</guid>
 </item>
@@ -724,34 +745,9 @@
     
     ]]>
 </description>
-<pubDate>Mon, 15 Apr 2019 04:33:00 -0400</pubDate>
+<pubDate>Mon, 15 Apr 2019 08:33:00 +0000</pubDate>
 <link>http://tinaja.computer/2019/04/15/recent-reading.html</link>
 <guid isPermaLink="true">http://tinaja.computer/2019/04/15/recent-reading.html</guid>
-</item>
-
-<item>
-<title>Just Use a Database</title>
-
-<description>
-    <![CDATA[
-    <p>I am in the middle of writing some scripts to migrate a bunch of data stored as JSON into a SQLite database as well as a small front-end application for visualizations and CRUD-style operations on that data.</p>
-
-<p>I started with JSON because we wanted to get moving quickly, and with JSON we could be hand-generating and -correcting data records while we waited for better tools to get developed. My partner on the project is also less technical, and the idea was that a human-readable format would be more likely to make him available for data entry while we waited for me to build better tools (or if those tools never came.)</p>
-
-<p>I also thought it would be a good idea to always have our data in a plain text format so that it could be easily archived and shared regardless of the technological state the project was left in. The worry was with an ambitious, but unfunded, side project we would potentially hit a wall at some point, and I did not want to be left with a bunch of work to do to then expose our data to be reusable by someone else.</p>
-
-<p>That was a mistake.</p>
-
-<p>Working around the constraints involved in keeping our data in this way has almost certainly added up to more work than was theoretically saved by not building the tools to work with a database. And now I’m building those tools anyways. And in the event that we do stop working on the project, the work involved in coming up with a schema for a set of JSON (or similar) files and the output scripts to generate them would not be so big a deal.</p>
-
-<p>I’ve learned the lesson again: just use a relational database.</p>
-
-    
-    ]]>
-</description>
-<pubDate>Thu, 28 Mar 2019 00:00:00 -0400</pubDate>
-<link>http://tinaja.computer/2019/03/28/just-use-a-database.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/03/28/just-use-a-database.html</guid>
 </item>
 
 </channel>
