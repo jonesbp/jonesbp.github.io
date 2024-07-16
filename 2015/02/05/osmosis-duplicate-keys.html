@@ -55,29 +55,29 @@
 
 
 <div class="post tech_note">
-<p>Today I had cause to set a server running OpenStreetMap’s <a href="http://wiki.openstreetmap.org/wiki/Nominatim">Nominatim</a> to run periodic automatic updates. The server is set up with the complete <code class="highlighter-rouge">planet.osm</code> file, and I wanted to run the updates using <a href="http://wiki.openstreetmap.org/wiki/Osmosis">Osmosis</a>. During testing, I had no problem running continuous updates using:</p>
+<p>Today I had cause to set a server running OpenStreetMap’s <a href="http://wiki.openstreetmap.org/wiki/Nominatim">Nominatim</a> to run periodic automatic updates. The server is set up with the complete <code class="language-plaintext highlighter-rouge">planet.osm</code> file, and I wanted to run the updates using <a href="http://wiki.openstreetmap.org/wiki/Osmosis">Osmosis</a>. During testing, I had no problem running continuous updates using:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./utils/update.php --import-osmosis-all --no-npi
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./utils/update.php --import-osmosis-all --no-npi
 </code></pre></div></div>
 
 <p>but for production I wanted to scale back the updates to run every 20 minutes with a cron job. So the first time I ran the one-time osmosis import:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./utils/update.php --import-osmosis --no-npi
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./utils/update.php --import-osmosis --no-npi
 </code></pre></div></div>
 
-<p>It worked fine and the ‘Last Updated’ datetime stamp on the web interface for the server updated. I came back an hour later to see that the datetime stamp hadn’t updated again. There should have been three more updates in the time I’d left things alone, but something had gone wrong. I looked for <code class="highlighter-rouge">cron</code> in the log files:</p>
+<p>It worked fine and the ‘Last Updated’ datetime stamp on the web interface for the server updated. I came back an hour later to see that the datetime stamp hadn’t updated again. There should have been three more updates in the time I’d left things alone, but something had gone wrong. I looked for <code class="language-plaintext highlighter-rouge">cron</code> in the log files:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep CRON /var/log/syslog
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep CRON /var/log/syslog
 </code></pre></div></div>
 
 <p>and found that my script had been executing right on time. So I tried to run the update myself again and received the following error:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>insert_node failed: ERROR: duplicate key value violates unique constraint planet_osm_nodes_pkey
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>insert_node failed: ERROR: duplicate key value violates unique constraint planet_osm_nodes_pkey
 </code></pre></div></div>
 
-<p>I tried manually grabbing the most recent <code class="highlighter-rouge">state.txt</code> file with <code class="highlighter-rouge">wget</code>, but that didn’t make a difference. I re-indexed and afterwards ran the update successfully. When I tried to run the update again, same problem.</p>
+<p>I tried manually grabbing the most recent <code class="language-plaintext highlighter-rouge">state.txt</code> file with <code class="language-plaintext highlighter-rouge">wget</code>, but that didn’t make a difference. I re-indexed and afterwards ran the update successfully. When I tried to run the update again, same problem.</p>
 
-<p>Finally, I updated my version of <code class="highlighter-rouge">osm2pgsql</code> to make sure that I had a 64-bit capable version. Turns out, I did not. The updates have been firing successfully every 20 minutes ever since.</p>
+<p>Finally, I updated my version of <code class="language-plaintext highlighter-rouge">osm2pgsql</code> to make sure that I had a 64-bit capable version. Turns out, I did not. The updates have been firing successfully every 20 minutes ever since.</p>
 
 </div>
 
@@ -228,17 +228,6 @@
           </div>
         </div>
 
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-244154-10', 'auto');
-          ga('send', 'pageview');
-
-        </script>
-        <script async src="https://cdn.simpleanalytics.io/hello.js"></script>
-        <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+        <script src="https://tinylytics.app/embed/K-cCJcFZJYH1sH7rxC56.js" defer></script>
     </body>
 </html>

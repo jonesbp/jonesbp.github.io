@@ -3,7 +3,7 @@
 <channel>
 <title>La Tinaja</title>
 <description>My name is Brian Jones. These are my notes on topics including books, publishing, tech, and history.</description>
-<link>http://tinaja.computer</link>
+<link>http://localhost:4000</link>
 <atom:link href="http://tinaja.computer/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
@@ -177,8 +177,8 @@
     ]]>
 </description>
 <pubDate>Wed, 25 Dec 2019 17:21:01 +0100</pubDate>
-<link>http://tinaja.computer/2019/12/25/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/12/25/recent-reading.html</guid>
+<link>http://localhost:4000/2019/12/25/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/12/25/recent-reading.html</guid>
 </item>
 
 <item>
@@ -198,8 +198,8 @@
     ]]>
 </description>
 <pubDate>Mon, 14 Oct 2019 15:47:01 +0200</pubDate>
-<link>http://tinaja.computer/2019/10/14/business-and-authorship.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/10/14/business-and-authorship.html</guid>
+<link>http://localhost:4000/2019/10/14/business-and-authorship.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/10/14/business-and-authorship.html</guid>
 </item>
 
 <item>
@@ -358,8 +358,8 @@
     ]]>
 </description>
 <pubDate>Fri, 13 Sep 2019 22:21:01 +0200</pubDate>
-<link>http://tinaja.computer/2019/09/13/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/09/13/recent-reading.html</guid>
+<link>http://localhost:4000/2019/09/13/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/09/13/recent-reading.html</guid>
 </item>
 
 <item>
@@ -473,8 +473,8 @@
     ]]>
 </description>
 <pubDate>Sat, 06 Jul 2019 08:27:01 +0200</pubDate>
-<link>http://tinaja.computer/2019/07/06/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/07/06/recent-reading.html</guid>
+<link>http://localhost:4000/2019/07/06/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/07/06/recent-reading.html</guid>
 </item>
 
 <item>
@@ -494,8 +494,8 @@
     ]]>
 </description>
 <pubDate>Tue, 25 Jun 2019 10:47:01 +0200</pubDate>
-<link>http://tinaja.computer/2019/06/25/climate-protest.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/06/25/climate-protest.html</guid>
+<link>http://localhost:4000/2019/06/25/climate-protest.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/06/25/climate-protest.html</guid>
 </item>
 
 <item>
@@ -505,9 +505,9 @@
     <![CDATA[
     <p>Recently I was working on a custom touring map for <a href="https://local-memory.org/athens-on-the-colorado/narratives/territory-bands">an article on <em>Local Memory</em></a>. The site is built with <a href="https://gatsbyjs.org">Gatsby</a>, and I use <a href="https://leafletjs.com">Leaflet</a> for mapping. I use <a href="https://react-leaflet.js.org">React-Leaflet</a> for some convenience with treating the Leaflet maps as React components.</p>
 
-<p>The problem comes when running <code class="highlighter-rouge">gatsby build</code>. In the Node.js environment, there is no <code class="highlighter-rouge">window</code> object, and Webpack fails to build the first page it encounters where a React-Leaflet <code class="highlighter-rouge">Map</code> component is rendered.</p>
+<p>The problem comes when running <code class="language-plaintext highlighter-rouge">gatsby build</code>. In the Node.js environment, there is no <code class="language-plaintext highlighter-rouge">window</code> object, and Webpack fails to build the first page it encounters where a React-Leaflet <code class="language-plaintext highlighter-rouge">Map</code> component is rendered.</p>
 
-<p>The fix is to make a check against the <code class="highlighter-rouge">window</code> object in the page’s <code class="highlighter-rouge">render()</code> function before using a <code class="highlighter-rouge">Map</code> component:</p>
+<p>The fix is to make a check against the <code class="language-plaintext highlighter-rouge">window</code> object in the page’s <code class="language-plaintext highlighter-rouge">render()</code> function before using a <code class="language-plaintext highlighter-rouge">Map</code> component:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nb">window</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">undefined</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
@@ -531,7 +531,7 @@
 
 <p>This was enough to avoid the Webpack error, but the problem was that the map would intermittently fail to display in the built version.</p>
 
-<p>The problem was returning <code class="highlighter-rouge">null</code> from the <code class="highlighter-rouge">render()</code> function which meant that there was not an element in the DOM to mount the map on when it was ready. Outputting an empty wrapper <code class="highlighter-rouge">&lt;div&gt;</code> rather than nothing at all from the <code class="highlighter-rouge">render()</code> function when not in a browser environment satisfies both conditions.</p>
+<p>The problem was returning <code class="language-plaintext highlighter-rouge">null</code> from the <code class="language-plaintext highlighter-rouge">render()</code> function which meant that there was not an element in the DOM to mount the map on when it was ready. Outputting an empty wrapper <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> rather than nothing at all from the <code class="language-plaintext highlighter-rouge">render()</code> function when not in a browser environment satisfies both conditions.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">return</span> <span class="p">(</span>
@@ -553,7 +553,7 @@
 
 <hr />
 
-<p>A related Webpack related build error can be fixed with the following in your <code class="highlighter-rouge">gatsby-node.js</code> so that the build doesn’t fail on pages that import <code class="highlighter-rouge">react-leaflet</code> because of the absence of a browser environment:</p>
+<p>A related Webpack related build error can be fixed with the following in your <code class="language-plaintext highlighter-rouge">gatsby-node.js</code> so that the build doesn’t fail on pages that import <code class="language-plaintext highlighter-rouge">react-leaflet</code> because of the absence of a browser environment:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">exports</span><span class="p">.</span><span class="nx">onCreateWebpackConfig</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">stage</span><span class="p">,</span> <span class="nx">rules</span><span class="p">,</span> <span class="nx">loaders</span><span class="p">,</span> <span class="nx">actions</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="k">switch</span> <span class="p">(</span><span class="nx">stage</span><span class="p">)</span> <span class="p">{</span>
@@ -578,8 +578,8 @@
     ]]>
 </description>
 <pubDate>Thu, 20 Jun 2019 08:31:00 +0200</pubDate>
-<link>http://tinaja.computer/2019/06/20/leaflet-in-gatsby.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/06/20/leaflet-in-gatsby.html</guid>
+<link>http://localhost:4000/2019/06/20/leaflet-in-gatsby.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/06/20/leaflet-in-gatsby.html</guid>
 </item>
 
 <item>
@@ -663,8 +663,8 @@
     ]]>
 </description>
 <pubDate>Wed, 05 Jun 2019 10:15:00 +0200</pubDate>
-<link>http://tinaja.computer/2019/06/05/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/06/05/recent-reading.html</guid>
+<link>http://localhost:4000/2019/06/05/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/06/05/recent-reading.html</guid>
 </item>
 
 <item>
@@ -748,8 +748,8 @@
     ]]>
 </description>
 <pubDate>Sat, 11 May 2019 05:33:00 +0200</pubDate>
-<link>http://tinaja.computer/2019/05/11/recent-reading.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/05/11/recent-reading.html</guid>
+<link>http://localhost:4000/2019/05/11/recent-reading.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/05/11/recent-reading.html</guid>
 </item>
 
 <item>
@@ -778,9 +778,9 @@
 
 <p>To connect to the server, I use the <a href="https://en.m.wikipedia.org/wiki/Mosh_(software)">Mosh shell</a> with the <a href="https://www.blink.sh">Blink</a> app. In contrast to SSH, Mosh is designed to maintain a session over intermittent and slow connections. Mosh does this by requiring a server component to be installed on your server so that the responsibility for maintaining the session’s state is not only on the client end. On iOS, this has the added consequence of allowing a Mosh session to stay alive even when Blink is not the active app (or iOS removes it from memory entirely.) With SSH, I would likely have to make a new connection every time I returned to the terminal from doing work in my text editor.</p>
 
-<p>The reason for the cloud server is to be able to run build tools and a ‘local’ development server, neither of which can be done on the iPad itself. However, running a development server at <code class="highlighter-rouge">localhost</code> in the cloud doesn’t do me a lot of good when I want to visit it in a web browser from my iPad.</p>
+<p>The reason for the cloud server is to be able to run build tools and a ‘local’ development server, neither of which can be done on the iPad itself. However, running a development server at <code class="language-plaintext highlighter-rouge">localhost</code> in the cloud doesn’t do me a lot of good when I want to visit it in a web browser from my iPad.</p>
 
-<p><a href="https://ngrok.com">Ngrok</a> allows me to set up a tunnel with a public URL to my localhost server. So I can start, for example, an <a href="https://expressjs.com">Express</a> or <a href="https://jekyllrb.com">Jekyll</a> server in one Mosh session and then start ngrok in another. Ngrok will show me a public URL in the style of  <code class="highlighter-rouge">https://&lt;subdomain&gt;.ngrok.io</code> which I can then visit in Safari to view my changes. This bit of glue allows me to use a cloud server the same way I would use a local development environment.</p>
+<p><a href="https://ngrok.com">Ngrok</a> allows me to set up a tunnel with a public URL to my localhost server. So I can start, for example, an <a href="https://expressjs.com">Express</a> or <a href="https://jekyllrb.com">Jekyll</a> server in one Mosh session and then start ngrok in another. Ngrok will show me a public URL in the style of  <code class="language-plaintext highlighter-rouge">https://&lt;subdomain&gt;.ngrok.io</code> which I can then visit in Safari to view my changes. This bit of glue allows me to use a cloud server the same way I would use a local development environment.</p>
 
 <h3 id="editing">Editing</h3>
 
@@ -813,8 +813,8 @@
     ]]>
 </description>
 <pubDate>Sat, 27 Apr 2019 00:00:00 +0200</pubDate>
-<link>http://tinaja.computer/2019/04/27/ipad-web-dev.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/04/27/ipad-web-dev.html</guid>
+<link>http://localhost:4000/2019/04/27/ipad-web-dev.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/04/27/ipad-web-dev.html</guid>
 </item>
 
 <item>
@@ -836,8 +836,8 @@
     ]]>
 </description>
 <pubDate>Fri, 19 Apr 2019 11:47:01 +0200</pubDate>
-<link>http://tinaja.computer/2019/04/19/biography.html</link>
-<guid isPermaLink="true">http://tinaja.computer/2019/04/19/biography.html</guid>
+<link>http://localhost:4000/2019/04/19/biography.html</link>
+<guid isPermaLink="true">http://localhost:4000/2019/04/19/biography.html</guid>
 </item>
 
 </channel>

@@ -76,9 +76,9 @@
 
 <p>To connect to the server, I use the <a href="https://en.m.wikipedia.org/wiki/Mosh_(software)">Mosh shell</a> with the <a href="https://www.blink.sh">Blink</a> app. In contrast to SSH, Mosh is designed to maintain a session over intermittent and slow connections. Mosh does this by requiring a server component to be installed on your server so that the responsibility for maintaining the session’s state is not only on the client end. On iOS, this has the added consequence of allowing a Mosh session to stay alive even when Blink is not the active app (or iOS removes it from memory entirely.) With SSH, I would likely have to make a new connection every time I returned to the terminal from doing work in my text editor.</p>
 
-<p>The reason for the cloud server is to be able to run build tools and a ‘local’ development server, neither of which can be done on the iPad itself. However, running a development server at <code class="highlighter-rouge">localhost</code> in the cloud doesn’t do me a lot of good when I want to visit it in a web browser from my iPad.</p>
+<p>The reason for the cloud server is to be able to run build tools and a ‘local’ development server, neither of which can be done on the iPad itself. However, running a development server at <code class="language-plaintext highlighter-rouge">localhost</code> in the cloud doesn’t do me a lot of good when I want to visit it in a web browser from my iPad.</p>
 
-<p><a href="https://ngrok.com">Ngrok</a> allows me to set up a tunnel with a public URL to my localhost server. So I can start, for example, an <a href="https://expressjs.com">Express</a> or <a href="https://jekyllrb.com">Jekyll</a> server in one Mosh session and then start ngrok in another. Ngrok will show me a public URL in the style of  <code class="highlighter-rouge">https://&lt;subdomain&gt;.ngrok.io</code> which I can then visit in Safari to view my changes. This bit of glue allows me to use a cloud server the same way I would use a local development environment.</p>
+<p><a href="https://ngrok.com">Ngrok</a> allows me to set up a tunnel with a public URL to my localhost server. So I can start, for example, an <a href="https://expressjs.com">Express</a> or <a href="https://jekyllrb.com">Jekyll</a> server in one Mosh session and then start ngrok in another. Ngrok will show me a public URL in the style of  <code class="language-plaintext highlighter-rouge">https://&lt;subdomain&gt;.ngrok.io</code> which I can then visit in Safari to view my changes. This bit of glue allows me to use a cloud server the same way I would use a local development environment.</p>
 
 <h3 id="editing">Editing</h3>
 
@@ -247,17 +247,6 @@
           </div>
         </div>
 
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-244154-10', 'auto');
-          ga('send', 'pageview');
-
-        </script>
-        <script async src="https://cdn.simpleanalytics.io/hello.js"></script>
-        <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+        <script src="https://tinylytics.app/embed/K-cCJcFZJYH1sH7rxC56.js" defer></script>
     </body>
 </html>

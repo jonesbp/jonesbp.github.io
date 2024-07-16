@@ -59,9 +59,9 @@
 
 <p>It has increasingly been bothering me that a  big problem with this solution long-term was the growing movement towards privileging web content served over HTTPS by services like Google as it conflicts with Github Pages inability to serve sites with custom domains over HTTPS. I was listening to the <a href="https://syntax.fm/show/033/large-files-cdns-image-compression-video-hosting-and-big-zips">Syntax podcast</a> yesterday when Wes made an aside that even free-tire <a href="http://cloudflare.com">Cloudflare</a> get served over HTTPS for free. That seemed like a solution to my problem.</p>
 
-<p>I signed up for Cloudflare this morning, added the <code class="highlighter-rouge">theappendix.net</code> domain, changed my DNS settings to point to Cloudflare, and checked about 15 minutes later to find the site being served over HTTPS. Done.</p>
+<p>I signed up for Cloudflare this morning, added the <code class="language-plaintext highlighter-rouge">theappendix.net</code> domain, changed my DNS settings to point to Cloudflare, and checked about 15 minutes later to find the site being served over HTTPS. Done.</p>
 
-<p>This site is supposed to be an archive that will hopefully persist with little maintenance for a long, long time. In putting Cloudflare in front of it, I’ve added another layer of dependency. However, Cloudflare sits in front of the hosting. All I have to do to remove my dependency on it if it should disappear is to change my DNS settings again. As long as I’m maintaining the <code class="highlighter-rouge">theappendix.net</code> domain name I’ll be able to support at least that level of maintenance supervision.</p>
+<p>This site is supposed to be an archive that will hopefully persist with little maintenance for a long, long time. In putting Cloudflare in front of it, I’ve added another layer of dependency. However, Cloudflare sits in front of the hosting. All I have to do to remove my dependency on it if it should disappear is to change my DNS settings again. As long as I’m maintaining the <code class="language-plaintext highlighter-rouge">theappendix.net</code> domain name I’ll be able to support at least that level of maintenance supervision.</p>
 
 <p>One caveat is that Cloudflare’s free certificate is a shared SSL certificate which presents some security concerns. In the context of the problem I am trying to solve—providing a Github Pages-hosted static site over HTTPS—I don’t think those concerns are relevant; however, it will not be the correct approach to security for all situations.</p>
 
@@ -214,17 +214,6 @@
           </div>
         </div>
 
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-244154-10', 'auto');
-          ga('send', 'pageview');
-
-        </script>
-        <script async src="https://cdn.simpleanalytics.io/hello.js"></script>
-        <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+        <script src="https://tinylytics.app/embed/K-cCJcFZJYH1sH7rxC56.js" defer></script>
     </body>
 </html>

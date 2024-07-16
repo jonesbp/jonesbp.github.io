@@ -55,9 +55,9 @@
 
 
 <div class="post long">
-<p>For a while I’ve had the frustration of any files with a <code class="highlighter-rouge">.erb</code> extension opening in Sublime Text with the HTML (Rails) syntax coloring. I have some SASS stylesheets that I’d like to run through the Ruby interpreter, so they need the <code class="highlighter-rouge">.erb</code> extension, but I want the syntax coloring from the <a href="https://sublime.wbond.net/packages/Sass">Sass package</a>.</p>
+<p>For a while I’ve had the frustration of any files with a <code class="language-plaintext highlighter-rouge">.erb</code> extension opening in Sublime Text with the HTML (Rails) syntax coloring. I have some SASS stylesheets that I’d like to run through the Ruby interpreter, so they need the <code class="language-plaintext highlighter-rouge">.erb</code> extension, but I want the syntax coloring from the <a href="https://sublime.wbond.net/packages/Sass">Sass package</a>.</p>
 
-<p>None of the <code class="highlighter-rouge">.sublime-settings</code> files that came with the default install of Sublime Text had file extension patterns for anything but single extensions, but it turns out that the same approach works for any arbitrary string of text following a dot, even if that string includes dots: <code class="highlighter-rouge">css.scss.erb</code> works just as well as <code class="highlighter-rouge">erb</code> would. My extension patterns for Sass and HTML (Rails) syntax coloring now look like the following.</p>
+<p>None of the <code class="language-plaintext highlighter-rouge">.sublime-settings</code> files that came with the default install of Sublime Text had file extension patterns for anything but single extensions, but it turns out that the same approach works for any arbitrary string of text following a dot, even if that string includes dots: <code class="language-plaintext highlighter-rouge">css.scss.erb</code> works just as well as <code class="language-plaintext highlighter-rouge">erb</code> would. My extension patterns for Sass and HTML (Rails) syntax coloring now look like the following.</p>
 
 <figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="err">//</span><span class="w"> </span><span class="err">Sass.sublime-settings</span><span class="w">
 </span><span class="p">{</span><span class="w">
@@ -201,17 +201,6 @@
           </div>
         </div>
 
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-244154-10', 'auto');
-          ga('send', 'pageview');
-
-        </script>
-        <script async src="https://cdn.simpleanalytics.io/hello.js"></script>
-        <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+        <script src="https://tinylytics.app/embed/K-cCJcFZJYH1sH7rxC56.js" defer></script>
     </body>
 </html>

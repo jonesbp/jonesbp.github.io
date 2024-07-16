@@ -71,20 +71,20 @@
 
 <p>I’m going to assume you already have things well-configured to get your project deployed to a public production enviornment on Heroku.</p>
 
-<p>First, set up a new app on Heroku and set it up with all of the same add-ons you have running your production app.<sup id="fnref:gocheap"><a href="#fn:gocheap" class="footnote">1</a></sup> Go to the Settings view to find your Git URL. It should follow the format <code class="highlighter-rouge">git@heroku.com:your-staging-app-name.git</code>. While your application’s directory on your development machine, add this repo as a remote called <code class="highlighter-rouge">staging-heroku</code>:</p>
+<p>First, set up a new app on Heroku and set it up with all of the same add-ons you have running your production app.<sup id="fnref:gocheap" role="doc-noteref"><a href="#fn:gocheap" class="footnote" rel="footnote">1</a></sup> Go to the Settings view to find your Git URL. It should follow the format <code class="language-plaintext highlighter-rouge">git@heroku.com:your-staging-app-name.git</code>. While your application’s directory on your development machine, add this repo as a remote called <code class="language-plaintext highlighter-rouge">staging-heroku</code>:</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">git remote add staging-heroku git@heroku.com:your-staging-app-name.git</code></pre></figure>
 
-<p>If you haven’t already created a <code class="highlighter-rouge">staging</code> branch on your local Git repo, make sure to do that and merge over your active <code class="highlighter-rouge">development</code> branch (or whatever other branch you want to see in your staging environment):</p>
+<p>If you haven’t already created a <code class="language-plaintext highlighter-rouge">staging</code> branch on your local Git repo, make sure to do that and merge over your active <code class="language-plaintext highlighter-rouge">development</code> branch (or whatever other branch you want to see in your staging environment):</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout <span class="nt">-b</span> staging
 git merge development</code></pre></figure>
 
-<p>Here’s a special case when dealing with Heroku. Its Git-based deployment approach assumes that the <code class="highlighter-rouge">master</code> branch is the branch that will be deployed. When we’re using a Heroku application as a staging environment, we’ll almost certainly be pushing a branch named something other than <code class="highlighter-rouge">master</code> (<code class="highlighter-rouge">staging</code> if you’re following these instructions, of course), so we’ll need to make a slight variation to our usual <code class="highlighter-rouge">git push</code> command:</p>
+<p>Here’s a special case when dealing with Heroku. Its Git-based deployment approach assumes that the <code class="language-plaintext highlighter-rouge">master</code> branch is the branch that will be deployed. When we’re using a Heroku application as a staging environment, we’ll almost certainly be pushing a branch named something other than <code class="language-plaintext highlighter-rouge">master</code> (<code class="language-plaintext highlighter-rouge">staging</code> if you’re following these instructions, of course), so we’ll need to make a slight variation to our usual <code class="language-plaintext highlighter-rouge">git push</code> command:</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">git push staging-heroku staging:master</code></pre></figure>
 
-<p>In the above command we’re pushing from our local <code class="highlighter-rouge">staging</code> branch to the <code class="highlighter-rouge">master</code> branch on the remote named <code class="highlighter-rouge">staging-heroku</code>. If we’ve done everything correctly, we should see the usual Heroku deployment output, but on our Heroku staging app rather than the usual production app.</p>
+<p>In the above command we’re pushing from our local <code class="language-plaintext highlighter-rouge">staging</code> branch to the <code class="language-plaintext highlighter-rouge">master</code> branch on the remote named <code class="language-plaintext highlighter-rouge">staging-heroku</code>. If we’ve done everything correctly, we should see the usual Heroku deployment output, but on our Heroku staging app rather than the usual production app.</p>
 
 <p>You’ll need to run your migrations against the database you’ve set up on the staging app:</p>
 
@@ -104,7 +104,7 @@ heroku pgbackups:restore HEROKU_POSTGRESQL_BLUE <span class="nt">--app</span> yo
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">heroku config:add <span class="nv">RACK_ENV</span><span class="o">=</span>staging <span class="nv">RAILS_ENV</span><span class="o">=</span>staging <span class="nt">--app</span> your-staging-app-name</code></pre></figure>
 
-<p>Now you can add a new environment configuration file for the staging environment to your Rails app at <code class="highlighter-rouge">/config/environments/staging.rb</code>. Just as in <code class="highlighter-rouge">development.rb</code> or <code class="highlighter-rouge">production.rb</code>, you’ll add staging-specific settings here. As an example, we can set up basic HTTP authentication to keep casual passers-by away from seeing our in-progress work at staging. We can use our new staging configuration file to save the username and password.<sup id="fnref:password"><a href="#fn:password" class="footnote">2</a></sup> Then we’ll put a simple <code class="highlighter-rouge">authenticate</code> method in our application controller along with a <code class="highlighter-rouge">before_filter</code> to call that method when we’re running in the staging environment.</p>
+<p>Now you can add a new environment configuration file for the staging environment to your Rails app at <code class="language-plaintext highlighter-rouge">/config/environments/staging.rb</code>. Just as in <code class="language-plaintext highlighter-rouge">development.rb</code> or <code class="language-plaintext highlighter-rouge">production.rb</code>, you’ll add staging-specific settings here. As an example, we can set up basic HTTP authentication to keep casual passers-by away from seeing our in-progress work at staging. We can use our new staging configuration file to save the username and password.<sup id="fnref:password" role="doc-noteref"><a href="#fn:password" class="footnote" rel="footnote">2</a></sup> Then we’ll put a simple <code class="language-plaintext highlighter-rouge">authenticate</code> method in our application controller along with a <code class="language-plaintext highlighter-rouge">before_filter</code> to call that method when we’re running in the staging environment.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># /config/environments/staging.rb</span>
 <span class="n">config</span><span class="p">.</span><span class="nf">user_id</span> <span class="o">=</span> <span class="s2">"staging_user"</span>
@@ -122,13 +122,13 @@ heroku pgbackups:restore HEROKU_POSTGRESQL_BLUE <span class="nt">--app</span> yo
   <span class="k">end</span>
 <span class="k">end</span></code></pre></figure>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:gocheap">
-      <p>I know I said that your staging environment should be configured precisely as the production server is, but unless absolutely necessary, I actually tend to cheap out when configuring the staging app on Heroku. Unless I’m planning on specifically testing elements that would require running at scale, I stick with the free add-ons. Heroku makes it easy to ramp these services up and down as needed. <a href="#fnref:gocheap" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:gocheap" role="doc-endnote">
+      <p>I know I said that your staging environment should be configured precisely as the production server is, but unless absolutely necessary, I actually tend to cheap out when configuring the staging app on Heroku. Unless I’m planning on specifically testing elements that would require running at scale, I stick with the free add-ons. Heroku makes it easy to ramp these services up and down as needed. <a href="#fnref:gocheap" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:password">
-      <p>This approach is convenient, but it’s not the most secure. In this case, I’m envisioning a small client project where I’m not sharing the code on an open repository. In cases where you anticipate sharing your code without wanting to share the passwords, using environment variables on Heroku for these settings would be more secure. <a href="#fnref:password" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:password" role="doc-endnote">
+      <p>This approach is convenient, but it’s not the most secure. In this case, I’m envisioning a small client project where I’m not sharing the code on an open repository. In cases where you anticipate sharing your code without wanting to share the passwords, using environment variables on Heroku for these settings would be more secure. <a href="#fnref:password" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -267,17 +267,6 @@ heroku pgbackups:restore HEROKU_POSTGRESQL_BLUE <span class="nt">--app</span> yo
           </div>
         </div>
 
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-244154-10', 'auto');
-          ga('send', 'pageview');
-
-        </script>
-        <script async src="https://cdn.simpleanalytics.io/hello.js"></script>
-        <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+        <script src="https://tinylytics.app/embed/K-cCJcFZJYH1sH7rxC56.js" defer></script>
     </body>
 </html>

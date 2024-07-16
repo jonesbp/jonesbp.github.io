@@ -80,9 +80,9 @@
 
 <p>A typical URL for a book on Worldcat.org reached through their onsite search might look like the following:</p>
 
-<p><code class="highlighter-rouge">http://www.worldcat.org/title/history-and-gis-epistemologies-considerations-and-reflections/oclc/910980341&amp;referer=brief_results</code></p>
+<p><code class="language-plaintext highlighter-rouge">http://www.worldcat.org/title/history-and-gis-epistemologies-considerations-and-reflections/oclc/910980341&amp;referer=brief_results</code></p>
 
-<p>The only part I care about are the numerals between <code class="highlighter-rouge">/oclc/</code> and the <code class="highlighter-rouge">&amp;</code> (in this case, <code class="highlighter-rouge">910980341</code>). With that unique identifier I can construct my own tidier Worldcat.org URLs later or use their API in a script.</p>
+<p>The only part I care about are the numerals between <code class="language-plaintext highlighter-rouge">/oclc/</code> and the <code class="language-plaintext highlighter-rouge">&amp;</code> (in this case, <code class="language-plaintext highlighter-rouge">910980341</code>). With that unique identifier I can construct my own tidier Worldcat.org URLs later or use their API in a script.</p>
 
 <hr />
 
@@ -91,7 +91,7 @@
 <p>The screenshot above shows the final layout of the workflow. Assuming we have the URL on the clipboard, the workflow performs the following actions:</p>
 
 <ol>
-  <li>Launch when invoked with the keyword <code class="highlighter-rouge">oclc</code> from Alfred</li>
+  <li>Launch when invoked with the keyword <code class="language-plaintext highlighter-rouge">oclc</code> from Alfred</li>
   <li>Grab the clipboard contents with a bash script</li>
   <li>Take those contents and match them against a simple regular expression (in this case in a Python script)</li>
   <li>Copy to the clipboard and paste in the front most app</li>
@@ -105,39 +105,39 @@
 
 <h3 id="2-grab-clipboard">2. Grab Clipboard</h3>
 
-<p>Link your ‘Keyword’ input to a new ’Action’ of type ’Run Script’. You can leave all of the sets for this script alone; the default language choice, <code class="highlighter-rouge">/bin/bash</code>, is what we want in this case. Our script will be a single bash command to grab the contents of the clipboard.</p>
+<p>Link your ‘Keyword’ input to a new ’Action’ of type ’Run Script’. You can leave all of the sets for this script alone; the default language choice, <code class="language-plaintext highlighter-rouge">/bin/bash</code>, is what we want in this case. Our script will be a single bash command to grab the contents of the clipboard.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pbpaste
 </code></pre></div></div>
 
 <h3 id="3-find-oclc">3. Find OCLC</h3>
 
-<p>Link your <code class="highlighter-rouge">/bin/bash</code> ‘Run Script’ action to a new ’Action’ of type ’Run Script’. This time we will want to change our settings for the Language to <code class="highlighter-rouge">/usr/bin/python</code>. (All we’re doing is matching a regular expression which would be possible using any of the language options. I just like Python.)</p>
+<p>Link your <code class="language-plaintext highlighter-rouge">/bin/bash</code> ‘Run Script’ action to a new ’Action’ of type ’Run Script’. This time we will want to change our settings for the Language to <code class="language-plaintext highlighter-rouge">/usr/bin/python</code>. (All we’re doing is matching a regular expression which would be possible using any of the language options. I just like Python.)</p>
 
-<p>The script is simple. We take the input from our bash script that grabbed the clipboard contents and we match it against a regular expression that essentially says “Give me the run of numerals that follow the string <code class="highlighter-rouge">/oclc/</code> in the provided text.” Finally, we write our result to standard output which is how our next Alfred action will receive it.</p>
+<p>The script is simple. We take the input from our bash script that grabbed the clipboard contents and we match it against a regular expression that essentially says “Give me the run of numerals that follow the string <code class="language-plaintext highlighter-rouge">/oclc/</code> in the provided text.” Finally, we write our result to standard output which is how our next Alfred action will receive it.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">re</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 
 <span class="n">url</span> <span class="o">=</span> <span class="s">"{query}"</span>
 
-<span class="n">matchObj</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">r'/oclc/([0-9]*)'</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+<span class="n">matchObj</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s">'/oclc/([0-9]*)'</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
 
-<span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">matchObj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">sys</span><span class="p">.</span><span class="n">stdout</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">matchObj</span><span class="p">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
 </code></pre></div></div>
 
 <p>A couple of things to note:</p>
 
 <ol>
-  <li><code class="highlighter-rouge">{query}</code> is a placeholder Alfred looks for in our script in order to insert whatever string of data is coming from the previous action in our workflow. It is not a standard piece of Python syntax.</li>
-  <li>A ‘regular expression’ is a string of characters that defines a pattern of text. In the case of the above script, it is the part that reads <code class="highlighter-rouge">/oclc/([0-9]*)</code>, but they can be far more complex. For a good introduction to using regular expressions, you can look at the Google lesson on <a href="https://developers.google.com/edu/python/regular-expressions">Python Regular Expressions</a>.</li>
+  <li><code class="language-plaintext highlighter-rouge">{query}</code> is a placeholder Alfred looks for in our script in order to insert whatever string of data is coming from the previous action in our workflow. It is not a standard piece of Python syntax.</li>
+  <li>A ‘regular expression’ is a string of characters that defines a pattern of text. In the case of the above script, it is the part that reads <code class="language-plaintext highlighter-rouge">/oclc/([0-9]*)</code>, but they can be far more complex. For a good introduction to using regular expressions, you can look at the Google lesson on <a href="https://developers.google.com/edu/python/regular-expressions">Python Regular Expressions</a>.</li>
 </ol>
 
 <h3 id="4-output">4. Output</h3>
 
 <p><img src="/images/2017/OCLC-4-output.jpg" alt="Output Settings" /></p>
 
-<p>Finally, we just want to link a new ‘Output’ of type ‘Copy to Clipboard’ and use the default content which is just to pass through the input from our Python script. Depending on the context, we could do additional formatting here by editing the text around <code class="highlighter-rouge">{query}</code>.</p>
+<p>Finally, we just want to link a new ‘Output’ of type ‘Copy to Clipboard’ and use the default content which is just to pass through the input from our Python script. Depending on the context, we could do additional formatting here by editing the text around <code class="language-plaintext highlighter-rouge">{query}</code>.</p>
 
 <p>In this case, I have also checked the box to ‘Automatically paste to front most app’ because that matches my needs the vast majority of the time I’m using this particular workflow, but in some cases it may be preferable to leave the result on the clipboard without automatically pasting.</p>
 
@@ -281,17 +281,6 @@
           </div>
         </div>
 
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-244154-10', 'auto');
-          ga('send', 'pageview');
-
-        </script>
-        <script async src="https://cdn.simpleanalytics.io/hello.js"></script>
-        <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+        <script src="https://tinylytics.app/embed/K-cCJcFZJYH1sH7rxC56.js" defer></script>
     </body>
 </html>
